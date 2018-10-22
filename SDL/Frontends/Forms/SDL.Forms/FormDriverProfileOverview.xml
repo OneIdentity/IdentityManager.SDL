@@ -1,0 +1,91 @@
+﻿<FormDefinition Version="1.1">
+	<Form ID="FORM0001" Name="FormDriverProfileOverview" Version="1.0.0">
+		<Header>
+			<AssociatedFiles>
+				<Library DesignMode="Ignore" Name="SDL.Forms.dll" Path="localfile:bin\debug" />
+				<TypeDefinition Name="TypeDefinition.xml" Path="localfile:Definitions" Usage="Gui" />
+				<TypeDefinition Name="TypeDefinitionWeb.xml" Path="localfile:Definitions" Usage="Web" />
+				<Resource Name="FormDriverProfileOverview.vires" Path="localfile:" Reader="VIResourceReaderV2" />
+				<StyleDefinition Name="StyleDefinition.xml" Path="localfile:Definitions" Reader="StyleDefinitionReaderXml" />
+			</AssociatedFiles>
+			<Customizer Type="SDL.Forms.FormDriverProfileOverview" />
+			<Description>
+			</Description>
+			<Units Measurement="Pixel" />
+		</Header>
+		<Properties>
+			<Property Name="CacheSafe" Type="Boolean" Value="True" />
+			<Property Name="Caption" Type="String" Value="Form1" />
+		</Properties>
+		<Frames>
+			<Frame ID="FRAME001" Name="Main" Style="MainFrame">
+				<Properties>
+					<Property Name="Enabled" Type="Boolean" Value="True" />
+					<Property Name="Visible" Type="Boolean" Value="True" />
+				</Properties>
+				<Content>
+					<Components>
+						<Component ID="COMPD4D99C6D" Name="MainActivator" Type="ActivatorComponent">
+							<Properties>
+								<Property Name="ActivationFilter" Type="String" Value="DriverProfile" />
+								<Property Name="IsRootActivator" Type="Boolean" Value="True" />
+							</Properties>
+							<Events>
+								<Event Handler="MainActivator_OnActivating" Name="Activating" />
+							</Events>
+						</Component>
+					</Components>
+					<Controls>
+						<Control ID="CTRLFE187DEF" Name="MainPanel" Style="VIPanel" Type="VIPanel">
+							<Properties>
+								<Property Name="AutoSize" Type="Boolean" Value="False" />
+								<Property Name="ControlStyle" Type="VIControlStyle" Value="Modify" />
+								<Property Name="Enabled" Type="Boolean" Value="True" />
+								<Property Name="TabIndex" Type="Integer" Value="0" />
+							</Properties>
+							<Content>
+								<Controls>
+									<Layout Style="ColumnMain" Type="Column">
+										<Control ID="CTRL67401609" Name="HorizFormBar3" Style="VIHorizFormBar" Type="VIHorizFormBar">
+											<Properties>
+												<Property Name="Activator" Ref="CTRLFE187DEF" Type="Activator" />
+												<Property Name="AutoSize" Type="Boolean" Value="False" />
+												<Property Name="Caption" Type="String" Value="" />
+												<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+												<Property Name="Enabled" Type="Boolean" Value="True" />
+												<Property Name="TabIndex" Type="Integer" Value="1" />
+											</Properties>
+										</Control>
+										<Layout Style="RowDefault" Type="Row">
+											<Control ID="CTRL898FCD71" Name="Label1" Style="VICaptionLabel" Type="VICaptionLabel">
+												<Properties>
+													<Property Name="Activator" Ref="CTRLFE187DEF" Type="Activator" />
+													<Property Name="AutoSize" Type="Boolean" Value="False" />
+													<Property Name="Caption" Type="String" Value="SDL_FormDriverProfileOverview_DriverProfiles" />
+													<Property Name="ControlStyle" Type="VIControlStyle" Value="Information" />
+													<Property Name="Enabled" Type="Boolean" Value="True" />
+													<Property Name="TabIndex" Type="Integer" Value="5" />
+												</Properties>
+											</Control>
+											<Control ID="CTRLB6D00843" Name="ListViewProfiles" Style="ListView" Type="ListView">
+												<Properties>
+													<Property Name="Enabled" Type="Boolean" Value="True" />
+													<Property Name="FullRowSelect" Type="Boolean" Value="True" />
+													<Property Name="GridLines" Type="Boolean" Value="True" />
+													<Property Name="HeaderStyle" Type="System.ColumnHeaderStyle" Value="Nonclickable" />
+													<Property Name="TabIndex" Type="Integer" Value="4" />
+													<Property Name="TileSize" Type="Size" Value="0, 0" />
+													<Property Name="View" Type="System.View" Value="Details" />
+												</Properties>
+											</Control>
+										</Layout>
+									</Layout>
+								</Controls>
+							</Content>
+						</Control>
+					</Controls>
+				</Content>
+			</Frame>
+		</Frames>
+	</Form>
+</FormDefinition>

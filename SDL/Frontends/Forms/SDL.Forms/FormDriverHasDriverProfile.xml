@@ -1,0 +1,88 @@
+﻿<FormDefinition Version="1.1">
+	<Form ID="FORM0001" Name="FormDriverHasDriverProfile" Version="1.0.0">
+		<Header>
+			<AssociatedFiles>
+				<Library DesignMode="Ignore" Name="SDL.Forms.dll" Path="localfile:bin\debug" />
+				<TypeDefinition Name="TypeDefinition.xml" Path="localfile:Definitions" Usage="Gui" />
+				<TypeDefinition Name="TypeDefinitionWeb.xml" Path="localfile:Definitions" Usage="Web" />
+				<Resource Name="FormDriverHasDriverProfile.vires" Path="localfile:" Reader="VIResourceReaderV2" />
+				<StyleDefinition Name="StyleDefinition.xml" Path="localfile:Definitions" Reader="StyleDefinitionReaderXml" />
+			</AssociatedFiles>
+			<Customizer Type="SDL.Forms.FormDriverHasDriverProfile" />
+			<Description>
+			</Description>
+			<Units Measurement="Pixel" />
+		</Header>
+		<Properties>
+			<Property Name="CacheSafe" Type="Boolean" Value="True" />
+			<Property Name="Caption" Type="String" Value="Form1" />
+		</Properties>
+		<Frames>
+			<Frame ID="FRAME001" Name="Main" Style="MainFrame">
+				<Properties>
+					<Property Name="Enabled" Type="Boolean" Value="True" />
+					<Property Name="Visible" Type="Boolean" Value="True" />
+				</Properties>
+				<Content>
+					<Components>
+						<Component ID="COMP33FBAA63" Name="MainActivator" Type="ActivatorComponent">
+							<Properties>
+								<Property Name="IsRootActivator" Type="Boolean" Value="True" />
+							</Properties>
+							<Events>
+								<Event Handler="MainActivator_OnActivating" Name="Activating" />
+							</Events>
+						</Component>
+					</Components>
+					<Controls>
+						<Control ID="CTRL0BEC229E" Name="MainPanel" Style="LargeClientAreaVIPanel" Type="VIPanel">
+							<Properties>
+								<Property Name="AutoSize" Type="Boolean" Value="False" />
+								<Property Name="ControlStyle" Type="VIControlStyle" Value="Modify" />
+								<Property Name="Enabled" Type="Boolean" Value="True" />
+								<Property Name="TabIndex" Type="Integer" Value="0" />
+							</Properties>
+							<Content>
+								<Controls>
+									<Layout Style="ColumnMain" Type="Column">
+										<Control ID="CTRL9FA1EF8D" Name="HorizFormBar2" Style="VIHorizFormBar" Type="VIHorizFormBar">
+											<Properties>
+												<Property Name="AutoSize" Type="Boolean" Value="False" />
+												<Property Name="Caption" Type="String" Value="" />
+												<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+												<Property Name="Enabled" Type="Boolean" Value="True" />
+												<Property Name="TabIndex" Type="Integer" Value="1" />
+											</Properties>
+										</Control>
+										<Control ID="CTRL6DDDB8D5" Name="ChildRelation1" Style="VIChildRelation" Type="VITwoChildRelation">
+											<Properties>
+												<Property Name="Activator" Ref="COMP33FBAA63" Type="Activator" />
+												<Property Name="AutoSize" Type="Boolean" Value="False" />
+												<Property Name="CaptionMode" Type="Boolean" Value="False" />
+												<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+												<Property Name="CRColumnName" Type="String" Value="UID_Driver" />
+												<Property Name="CRTableName" Type="String" Value="Driverprofile" />
+												<Property Name="DisplayPattern" Type="String" Value="%Ident_DomainRD% - %DisplayName%" />
+												<Property Name="Enabled" Type="Boolean" Value="True" />
+												<Property Name="ShowCaption" Type="Boolean" Value="False" />
+												<Property Name="ShowCaptionBar" Type="Boolean" Value="False" />
+												<Property Name="ShowForeign" Type="Boolean" Value="False" />
+												<Property Name="ShowMandatoryIndicator" Type="Boolean" Value="False" />
+												<Property Name="TabIndex" Type="Integer" Value="4" />
+												<Property Name="TabStop" Type="Boolean" Value="True" />
+												<Property Name="UseHierarchyModelInformation" Type="Boolean" Value="True" />
+											</Properties>
+											<Events>
+												<Event Handler="ChildRelation_OnShowInformation" Name="ShowInformation" />
+											</Events>
+										</Control>
+									</Layout>
+								</Controls>
+							</Content>
+						</Control>
+					</Controls>
+				</Content>
+			</Frame>
+		</Frames>
+	</Form>
+</FormDefinition>

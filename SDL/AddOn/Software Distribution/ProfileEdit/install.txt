@@ -1,0 +1,2 @@
+[StartMenu]
+Group0=Quest Software\Profilerstellung

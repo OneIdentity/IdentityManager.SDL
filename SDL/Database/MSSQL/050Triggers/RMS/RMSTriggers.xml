@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Commands>
+
+
+  <Command Type="SqlFile">SDL_TRMSDriver.sql</Command>
+  <Command Type="SqlFile">SDL_TRMSESetHasEntitlement.sql</Command>
+</Commands>
+

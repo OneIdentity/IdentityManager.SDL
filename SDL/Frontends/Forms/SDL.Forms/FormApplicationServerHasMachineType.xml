@@ -1,0 +1,71 @@
+﻿
+<FormDefinition Version="1.1">
+	<Form ID="FORM0001" Name="FormApplicationServerHasMachineType" Version="1.0.0">
+		<Header>
+			<AssociatedFiles>
+				<Library Name="SDL.Forms.dll" Path="localfile:bin\debug" DesignMode="Ignore" />
+				<TypeDefinition Usage="Gui" Name="TypeDefinition.xml" Path="localfile:Definitions" />
+				<TypeDefinition Usage="Web" Name="TypeDefinitionWeb.xml" Path="localfile:Definitions" />
+				<Resource Name="FormApplicationServerHasMachineType.vires" Path="localfile:" Reader="VIResourceReaderV2" />
+				<StyleDefinition Name="StyleDefinition.xml" Path="localfile:Definitions" Reader="StyleDefinitionReaderXml" />
+			</AssociatedFiles>
+			<Customizer Type="SDL.Forms.FormApplicationServerHasMachineType" />
+			<Description>
+			</Description>
+			<Units Measurement="Pixel" />
+		</Header>
+		<Properties>
+			<Property Name="CacheSafe" Type="Boolean" Value="True" />
+			<Property Name="Caption" Type="String" Value="Form1" />
+		</Properties>
+		<Frames>
+			<Frame ID="FRAME001" Name="Main" Style="MainFrame">
+				<Properties>
+					<Property Name="Enabled" Type="Boolean" Value="True" />
+					<Property Name="Visible" Type="Boolean" Value="True" />
+				</Properties>
+				<Content>
+					<Components>
+						<Component ID="COMPD4D99C6D" Name="MainActivator" Type="ActivatorComponent">
+							<Properties>
+								<Property Name="ActivationFilter" Type="String" Value="ApplicationServer" />
+								<Property Name="IsRootActivator" Type="Boolean" Value="True" />
+							</Properties>
+							<Events>
+								<Event Name="Activating" Handler="MainActivator_OnActivating" />
+							</Events>
+						</Component>
+					</Components>
+					<Controls>
+						<Control ID="CTRLFE187DEF" Name="MainPanel" Type="VIPanel" Style="VIPanel">
+							<Properties>
+								<Property Name="AutoSize" Type="Boolean" Value="False" />
+								<Property Name="ControlStyle" Type="VIControlStyle" Value="Modify" />
+								<Property Name="Enabled" Type="Boolean" Value="True" />
+								<Property Name="ShowCaptionBar" Type="Boolean" Value="False" />
+								<Property Name="TabIndex" Type="Integer" Value="0" />
+							</Properties>
+							<Content>
+								<Controls>
+									<Layout Type="Column" Style="ColumnMain">
+										<Control ID="CTRLEBE8E0F1" Name="TreeList" Type="VITreeList" Style="FullVITreeList">
+											<Properties>
+												<Property Name="Enabled" Type="Boolean" Value="True" />
+												<Property Name="HeaderFont" Type="Font" Value="Tahoma, 8.25pt" />
+												<Property Name="ScrollPadding" Type="System.Padding" Value="0, 0, 0, 0" />
+												<Property Name="ShowRootLines" Type="Boolean" Value="False" />
+												<Property Name="SubTextColor" Type="Color" Value="Blue" />
+												<Property Name="TabIndex" Type="Integer" Value="1" />
+												<Property Name="Text" Type="String" Value="" />
+											</Properties>
+										</Control>
+									</Layout>
+								</Controls>
+							</Content>
+						</Control>
+					</Controls>
+				</Content>
+			</Frame>
+		</Frames>
+	</Form>
+</FormDefinition>

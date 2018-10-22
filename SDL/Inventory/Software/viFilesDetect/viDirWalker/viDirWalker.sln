@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "viDirWalker", "Source\viDirWalker.vcproj", "{4F11A0AD-DB00-49C0-BADA-DFDF52A09957}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug LIBCD|Win32 = Debug LIBCD|Win32
+		Debug LIBCMTD|Win32 = Debug LIBCMTD|Win32
+		Debug MSVCRTD|Win32 = Debug MSVCRTD|Win32
+		Release LIBC|Win32 = Release LIBC|Win32
+		Release LIBCMT|Win32 = Release LIBCMT|Win32
+		Release MSVCRT|Win32 = Release MSVCRT|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F11A0AD-DB00-49C0-BADA-DFDF52A09957}.Debug LIBCD|Win32.ActiveCfg = Debug LIBCD|Win32
+		{4F11A0AD-DB00-49C0-BADA-DFDF52A09957}.Debug LIBCD|Win32.Build.0 = Debug LIBCD|Win32
+		{4F11A0AD-DB00-49C0-BADA-DFDF52A09957}.Debug LIBCMTD|Win32.ActiveCfg = Debug LIBCMTD|Win32
+		{4F11A0AD-DB00-49C0-BADA-DFDF52A09957}.Debug LIBCMTD|Win32.Build.0 = Debug LIBCMTD|Win32
+		{4F11A0AD-DB00-49C0-BADA-DFDF52A09957}.Debug MSVCRTD|Win32.ActiveCfg = Debug MSVCRTD|Win32
+		{4F11A0AD-DB00-49C0-BADA-DFDF52A09957}.Debug MSVCRTD|Win32.Build.0 = Debug MSVCRTD|Win32
+		{4F11A0AD-DB00-49C0-BADA-DFDF52A09957}.Release LIBC|Win32.ActiveCfg = Release LIBC|Win32
+		{4F11A0AD-DB00-49C0-BADA-DFDF52A09957}.Release LIBC|Win32.Build.0 = Release LIBC|Win32
+		{4F11A0AD-DB00-49C0-BADA-DFDF52A09957}.Release LIBCMT|Win32.ActiveCfg = Release LIBCMT|Win32
+		{4F11A0AD-DB00-49C0-BADA-DFDF52A09957}.Release LIBCMT|Win32.Build.0 = Release LIBCMT|Win32
+		{4F11A0AD-DB00-49C0-BADA-DFDF52A09957}.Release MSVCRT|Win32.ActiveCfg = Release MSVCRT|Win32
+		{4F11A0AD-DB00-49C0-BADA-DFDF52A09957}.Release MSVCRT|Win32.Build.0 = Release MSVCRT|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

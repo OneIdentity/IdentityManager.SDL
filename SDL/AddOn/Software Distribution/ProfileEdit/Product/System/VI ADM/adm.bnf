@@ -1,0 +1,169 @@
+#####################################################################
+#																	#
+#	EBNF file for ADM grammar										#
+#																	#
+#	History:														#					
+#	- 06/03/1998 JR Created											#
+#	- 26/03/1998 JR Added DLL functionality							#
+#	- 31/03/1998 JR Removed string section code						#
+#	- 11/08/1998 JR Inserted DEFAULT in Itemlist					#
+#   - 05/10/1998 JR Included KEYNAME in parts loop					#
+#	- 20/11/1998 JR	EOF included									#
+#	- 23/06/1999 JR	viADM.ocx is now DLL							#					
+#	- 05/07/1999 JR SPIN without value = default					#
+#					Set version to 3								#
+#					Added EXPLAIN without functionality				#
+#					Overread CLIENTEXT								#
+#																	#
+#####################################################################
+
+DLL viADM.ocx
+
+DEFINES
+	VI
+	VERSION = 3
+
+<file>	=	{<class>} 
+			('[' strings ']' | <EOF> ).
+
+<class> =   CLASS 
+			( USER		$BeginClass  
+			| MACHINE	$BeginClass
+			) { <category> } .
+
+<category> = CATEGORY <admstring>		$BeginCategory 
+			 { [ KEYNAME <admstring>	$SetKeyname ] 
+			 (<policy> | <category>) } 
+			 END CATEGORY 				$EndCategory .
+
+<policy> =	POLICY <admstring>			$BeginPolicy
+			{	 
+				KEYNAME <admstring>		$SetKeyname
+			  |	EXPLAIN <admstring>		$PolicyExplain
+			  | CLIENTEXT <admstring>	$PolicyClientExt
+			  |	ACTIONLISTON <actionlist> END ACTIONLISTON 		# 1 time
+										$PolicyActionlistOn
+			  |	ACTIONLISTOFF <actionlist> END ACTIONLISTOFF 	# 1 time
+										$PolicyActionlistOff
+			  |	VALUENAME <admstring>	$PolicyValuename		# 1 time
+			  |	VALUEON	<value>			$PolicyValueOn			# 1 time
+			  |	VALUEOFF <value>	  	$PolicyValueOff			# 1 time
+			  | <part>											# 0 - N times
+			}
+			END POLICY					$EndPolicy .
+
+<part>	=	PART <admstring>	
+			(	CHECKBOX		$CreateCheckbox <checkbox>
+				| NUMERIC		$CreateNumeric	<numeric>
+				| EDITTEXT		$CreateEdittext	<edittext>
+				| COMBOBOX		$CreateCombobox	<combobox>
+				| TEXT			$CreateText		# no specific values
+				| DROPDOWNLIST	$CreateDropdown	<dropdownlist>
+				| LISTBOX		$CreateListbox	<listbox>
+			)
+			END PART	$EndPart .
+
+
+<checkbox>	=	{
+					KEYNAME <admstring>			$SetKeyname 
+					| DEFCHECKED				$CheckboxChecked
+					| VALUEON <value>			$CheckboxValueOn
+					| VALUEOFF <value>			$CheckboxValueOff
+					| ACTIONLISTON <actionlist> END ACTIONLISTON
+						$CheckboxActionlistOn
+					| ACTIONLISTOFF <actionlist> END ACTIONLISTOFF
+						$CheckboxActionlistOff
+					| VALUENAME <admstring>		$PartValuename
+					| CLIENTEXT <admstring>		$PartClientExt
+				} .
+
+<numeric>	=	{
+					KEYNAME <admstring>			$SetKeyname
+					| DEFAULT <Integer>			$NumericDefault
+					| MIN	<Integer>			$NumericMin
+					| MAX	<Integer>			$NumericMax
+					| SPIN	(<Integer>			$NumericSpin
+							|<NIL>				$NumericSpin
+							)
+					| REQUIRED					$PartRequired
+					| TXTCONVERT				$NumericTxtconvert
+					| VALUENAME <admstring>		$PartValuename
+					| CLIENTEXT <admstring>		$PartClientExt
+				} .
+
+<edittext>	=	{
+					KEYNAME <admstring>			$SetKeyname
+					| DEFAULT <admstring>		$EdittextDefault
+					| MAXLEN <Integer>			$EdittextMaxlen
+					| REQUIRED					$PartRequired
+					| VALUENAME <admstring>		$PartValuename
+					| EXPANDABLETEXT			$EdittextExpandable
+					| CLIENTEXT <admstring>		$PartClientExt
+				} .
+
+<combobox>	=	{
+					KEYNAME <admstring>			$SetKeyname
+					| DEFAULT <admstring>		$ComboboxDefault
+					| MAXLEN <Integer>			$ComboboxMaxlen
+					| REQUIRED					$PartRequired
+					| SUGGESTIONS 
+						{<suggestionstring>		$ComboboxSuggestion } 
+					  END SUGGESTIONS
+					| VALUENAME <admstring>		$PartValuename
+					| NOSORT					$ComboboxNosort	# VERSION > 1 ???
+					| CLIENTEXT <admstring>		$PartClientExt
+				} .
+
+<dropdownlist>	=	{
+						KEYNAME <admstring>		$SetKeyname
+						| REQUIRED				$PartRequired
+						| ITEMLIST 
+						  <itemlist>
+						  END ITEMLIST
+						| VALUENAME <admstring>	$PartValuename
+						| NOSORT				$DropdownNosort		# VERSION > 1 ?????
+						| CLIENTEXT <admstring>	$PartClientExt
+					} .
+
+<listbox>	=	{	# ATTENTION: NO VALUENAME for this part!!!
+					KEYNAME <admstring>			$SetKeyname
+					| VALUEPREFIX <admstring>	$ListboxValueprefix
+					| EXPLICITVALUE				$ListboxExplicit
+					| ADDITIVE					$ListboxAdditive
+					| CLIENTEXT <admstring>		$PartClientExt
+				} .
+
+<admstring>	=	<Stringname>		$SaveStringFromName	# entry in text section (!!Name)
+				| <QString>			$SaveString			# "String"
+				| <String>			$SaveString			# String
+				| <Stringsymbol>	$SaveMorphString 	# i.e. END
+				| <Integer>			$SaveMorphString .	# i.e. VALUE 3 --> 3 is a string
+
+<suggestionstring> =
+				<Stringname>		$SaveStringFromName	# entry in text section (!!Name)
+				| <QString>			$SaveString			# "String"
+				| <String>			$SaveString			# String
+				| <Integer>			$SaveMorphString .	# i.e. VALUE 3 --> 3 is a string
+
+
+<value>		=	DELETE				$ValueDelete
+				| NUMERIC <Integer>	$ValueNumeric
+				| <admstring>		$ValueString	.		
+
+
+<actionlist>	=	<NIL> $BeginActionlist
+					{
+						[ KEYNAME <admstring>	$SetKeyname ] 
+						  VALUENAME <admstring>	
+						  VALUE <value>			$ActionlistValue
+					} 
+					<NIL> $EndActionlist .
+
+<itemlist>		=	{
+						NAME <admstring>	
+						VALUE <value>		
+						[DEFAULT	$DropdownSetSel]
+						[ACTIONLIST <actionlist> END ACTIONLIST] 
+						<NIL>	$DropdownAddItem
+					} .
+

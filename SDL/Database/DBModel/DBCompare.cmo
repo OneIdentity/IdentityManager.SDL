@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<!DOCTYPE ERStudioCompareMergeWizard SYSTEM "file:///CompareMergeWiz.dtd">
+<!--Name		  : Embarcadero Project File
+Description   : This file contains an Embarcadero generated data file.
+Version	   : Version 1.00
+Creation Date : 09/07/17 - 10:38:16
+Last Update   : 09/07/17 - 10:38:16
+-->
+<ERStudioCompareMergeWizard><CompareMergePropertyValue CompareMergePropertyValue=""/>
+
+<BooleanVariables m_bAlias="0" m_bAliasAttach="0" m_bAliasLine="0" m_bAliasOwnerName="1" m_bAttrCkConstName="0" m_bAttrCkConstValue="0" m_bAttrLogOnly="1" m_bAttrPhysOnly="1" m_bAttributeName="1" m_bAttributeNote="0" m_bAuxTable="0" m_bAuxTableAttach="0" m_bAuxTableLine="0" m_bAuxTblOwnerName="1" m_bBufferPool="0" m_bBufferPoolAttach="0" m_bBufferPoolLine="0" m_bColCollectStats="0" m_bColComments="0" m_bColConstraints="0" m_bColDatatype="1" m_bColDefaultName="0" m_bColDefaults="0" m_bColDomain="1" m_bColEncrypted="1" m_bColEncryptionInfo="1" m_bColFormat="0" m_bColHidden="0" m_bColHivePartitioningCol="1" m_bColIdentity="0" m_bColIdentityProperties="0" m_bColName="1" m_bColNullability="1" m_bColSequence="0" m_bColSparse="0" m_bColSystemName="1" m_bCollate="0" m_bColumnAverageWidth="0" m_bColumnCapacityPlanningMetrics="0" m_bColumnPercentNull="0" m_bColumnPermissions="0" m_bColumns="1" m_bColumnsAttach="1" m_bColumnsFreezeNames="1" m_bColumnsNamingStandardsTemplate="1" m_bColumnsSecurityProps="1" m_bComparePKAsUniqueIndex="0" m_bConnectConnection="0" m_bDB2OSNotEnforced="1" m_bDatabase="0" m_bDatabaseAttach="0" m_bDatabaseLine="0" m_bDelNativeAttr="0" m_bDirectConnection="1" m_bEncryptionAlgorithm="1" m_bEncryptionKey="1" m_bEncryptionSALT="1" m_bEntityDoNotGenerate="0" m_bEntityLine="0" m_bEntityName="1" m_bExcludeAttachments="1" m_bExcludeDefinitions="1" m_bExcludeNotes="1" m_bFKNoCheck="0" m_bFuncDescription="0" m_bFuncLine="0" m_bFuncOwner="0" m_bFuncs="0" m_bFuncsAttach="1" m_bFunctionPermissions="0" m_bGenAlterSQLUpdateTarget="1" m_bGenLogicalKeys="0" m_bGenerationExpression="0" m_bIdxColSeq="0" m_bIdxCollectStats="0" m_bIdxDisabled="1" m_bIdxNoValidate="1" m_bIdxOptions="0" m_bIdxPartitionStorage="1" m_bIdxPartitionStorageLocation="1" m_bIdxPartitions="1" m_bIdxStorage="0" m_bIdxStorageLocation="0" m_bIgnoreBDiffColDef="1" m_bIgnoreCaseOption="1" m_bIgnoreIndexPartitions="0" m_bIgnoreTablePartitions="0" m_bIgnoreTargetTblOnly="1" m_bIncIndexCompress="1" m_bIncTableCompress="1" m_bIncTableRowMovement="1" m_bIncludeDBTablesNotInCurrent="0" m_bIncludeOtherDependencies="0" m_bIncludeViewDependencies="0" m_bIndexLogOnly="1" m_bIndexName="0" m_bIndexOwner="1" m_bIndexPhysOnly="1" m_bIndexes="0" m_bIndexesAttach="1" m_bLOBSegments="1" m_bMatView="0" m_bMatViewAttach="0" m_bMatViewLine="0" m_bMatViewOwnerName="1" m_bMatViewPermissions="0" m_bMatViewPostSQL="0" m_bMatViewPreSQL="0" m_bMatchNativeToForeign="1" m_bMergeSelectTblOnly="1" m_bNodeGroup="0" m_bNodeGroupAttach="0" m_bNodeGroupLine="0" m_bNotForReplication="0" m_bObjType="0" m_bObjTypeAttach="1" m_bObjTypeLine="0" m_bObjTypeOwnerName="1" m_bOdbConnection="0" m_bOraIdxHashPartitionCount="1" m_bOraIdxHashPartitionTbs="1" m_bOraIdxPartitionOptions="1" m_bOraIdxPartitionType="1" m_bOraTempTable="0" m_bOraTempTableType="0" m_bPKConstraintName="1" m_bPackOwnerName="1" m_bPackageLine="0" m_bPackagePermissions="0" m_bPackages="0" m_bPackagesAttach="1" m_bPersisted="0" m_bPreSQL="1" m_bProcDescription="0" m_bProcLine="0" m_bProcOwner="0" m_bProcedurePermissions="0" m_bProcs="0" m_bProcsAttach="1" m_bRBSegment="0" m_bRBSegmentAttach="0" m_bRecompileDependentFunctions="1" m_bRecompileDependentPackages="1" m_bRecompileDependentProcedures="1" m_bRecompileDependentTriggers="1" m_bRecompileDependentViews="1" m_bRefVal="1" m_bRelAttach="1" m_bRelBusinessName="0" m_bRelCardinality="0" m_bRelDeferrable="1" m_bRelDeferred="1" m_bRelDefinition="0" m_bRelDisabled="1" m_bRelDoNotGenerate="0" m_bRelLogOnly="1" m_bRelName="0" m_bRelNoValidate="1" m_bRelNote="0" m_bRelPhrases="0" m_bRelPhysOnly="1" m_bRelTriggers="0" m_bRevEngrSelectTablesOnly="0" m_bRoleAttach="0" m_bRoleDescription="0" m_bRoleOwner="0" m_bRolePermissions="1" m_bRoles="0" m_bRollbackSegLine="0" m_bSP_BindDefault="1" m_bSP_BindRule="1" m_bSQLFileGenAlterSQL="0" m_bSchemaAttach="0" m_bSchemaDescription="0" m_bSchemaPermissions="1" m_bSchemas="0" m_bSelectAll="0" m_bSelectAllGenOpt="0" m_bSelectDatabase="1" m_bSequence="0" m_bSequenceAttach="0" m_bSequenceLine="0" m_bSequenceOwnerName="0" m_bSequencePermissions="0" m_bSequencePostSQL="0" m_bSequencePreSQL="0" m_bShape="0" m_bShapeAttach="0" m_bShapeLine="0" m_bSrcSelectAllAlias="0" m_bSrcSelectAllAuxTable="0" m_bSrcSelectAllBufferPool="0" m_bSrcSelectAllDatabase="0" m_bSrcSelectAllFuncs="0" m_bSrcSelectAllMatView="0" m_bSrcSelectAllNodeGroup="0" m_bSrcSelectAllObjType="0" m_bSrcSelectAllPackages="0" m_bSrcSelectAllProcs="0" m_bSrcSelectAllRBSegment="0" m_bSrcSelectAllRoles="0" m_bSrcSelectAllSchemas="0" m_bSrcSelectAllSequence="0" m_bSrcSelectAllShapes="0" m_bSrcSelectAllStoGroup="0" m_bSrcSelectAllSubjectAreas="0" m_bSrcSelectAllSummaryTable="0" m_bSrcSelectAllSynonym="0" m_bSrcSelectAllTableSpace="0" m_bSrcSelectAllTables="0" m_bSrcSelectAllTblTriggers="0" m_bSrcSelectAllTransforms="0" m_bSrcSelectAllUsers="0" m_bSrcSelectAllViews="0" m_bSrcTrgtColMappingDSDesc="0" m_bSrcTrgtColMappingDSLogic="0" m_bSrcTrgtColMappingDTDesc="0" m_bSrcTrgtColMappingDTLogic="0" m_bSrcTrgtColMappingProperties="0" m_bSrcTrgtColMappingSSDesc="0" m_bSrcTrgtColMappingSSLogic="0" m_bSrcTrgtColMappingSTDesc="0" m_bSrcTrgtColMappingSTLogic="0" m_bStoGroup="0" m_bStoGroupAttach="0" m_bStoGroupLine="0" m_bSubjectAreas="0" m_bSubjectAreasAttachment="0" m_bSubjectAreasDescription="0" m_bSubjectAreasName="0" m_bSummTblOwnerName="1" m_bSummaryTable="0" m_bSummaryTableAttach="0" m_bSynonym="0" m_bSynonymAttach="0" m_bSynonymLine="0" m_bSynonymOwnerName="0" m_bTableAvgRowSize="0" m_bTableDisplay="0" m_bTableLabel="0" m_bTablePermissions="0" m_bTableRowCount="0" m_bTableSpace="0" m_bTableSpaceAttach="0" m_bTableSysName="0" m_bTables="1" m_bTablesAttach="1" m_bTablesFreezeNames="1" m_bTablesNamingStandardsTemplate="1" m_bTablesSecurityProps="1" m_bTablespaceLine="0" m_bTblChildViews="1" m_bTblComments="0" m_bTblConstraints="0" m_bTblDefinitions="0" m_bTblHiveBucketing="1" m_bTblHiveSkewedBy="1" m_bTblLogOnly="1" m_bTblName="1" m_bTblOwnerName="0" m_bTblPK="1" m_bTblPartitionNumber="1" m_bTblPartitionStorage="1" m_bTblPartitionStorageLocation="1" m_bTblPartitions="1" m_bTblPhysOnly="1" m_bTblPostSQL="1" m_bTblPreSQL="1" m_bTblRelationships="0" m_bTblStorage="0" m_bTblStorageLocation="0" m_bTblTriggers="0" m_bTblType="1" m_bTransformDescription="0" m_bTransformSourcesVisible="1" m_bTransforms="0" m_bTrgSelectAllAlias="0" m_bTrgSelectAllAuxTable="0" m_bTrgSelectAllBufferPool="0" m_bTrgSelectAllDatabase="0" m_bTrgSelectAllFuncs="0" m_bTrgSelectAllMatView="0" m_bTrgSelectAllNodeGroup="0" m_bTrgSelectAllObjType="0" m_bTrgSelectAllPackages="0" m_bTrgSelectAllProcs="0" m_bTrgSelectAllRBSegment="0" m_bTrgSelectAllRoles="0" m_bTrgSelectAllSchemas="0" m_bTrgSelectAllSequence="0" m_bTrgSelectAllShapes="0" m_bTrgSelectAllStoGroup="0" m_bTrgSelectAllSubjectAreas="0" m_bTrgSelectAllSummaryTable="0" m_bTrgSelectAllSynonym="0" m_bTrgSelectAllTableSpace="0" m_bTrgSelectAllTables="0" m_bTrgSelectAllTblTriggers="0" m_bTrgSelectAllTransforms="0" m_bTrgSelectAllUsers="0" m_bTrgSelectAllViews="0" m_bTriggerOwnerName="1" m_bTriggersAttach="1" m_bUseWindowsAuthentication="0" m_bUserAttach="0" m_bUserDescription="0" m_bUserPermissions="1" m_bUsers="0" m_bViewComments="0" m_bViewLine="0" m_bViewLogOnly="1" m_bViewOwnerName="0" m_bViewPermissions="0" m_bViewPhysOnly="1" m_bViewPostSQL="0" m_bViewPreSQL="0" m_bViews="0" m_bViewsAttach="1" m_bViewsSecurityProps="1" m_bXMLTypeStorages="1"/>
+
+<NumberVariables m_nConnectDatasourceId="-1" m_nNamingOption="2" m_nTargetSQLDBId="89" m_nTargetType="4"/>
+
+<CStringVariables m_DbConnectString="xxx" m_DbServerString="xxx" m_csAnotherDM1="" m_csConnectString="xxx" m_csConnectionString="" m_csDataSourceName="MS SQL Server" m_csDatabase="xxx" m_csDatabaseOwner="dbo" m_csModifyDBScriptFilePath="C:\Users\xxx\AppData\Roaming\Embarcadero\ERStudio\SQLCode\Physical.sql" m_csPassword="xxx" m_csRepoFile="" m_csSQLFile="" m_csSelectedDTMapping="" m_csSelectedSourceModel="Physical" m_csSelectedSourceSubmodel="Main Model" m_csSelectedTargetModel="" m_csSelectedTargetSubmodel="" m_csUserName="sa"/>
+
+<DataObjectList><m_SourceEntityList><Object ObjectName="MachineHasDriver" OwnerName="dbo"/>
+
+<Object ObjectName="InstallationType" OwnerName="dbo"/>
+
+<Object ObjectName="ApplicationType" OwnerName="dbo"/>
+
+<Object ObjectName="HardwareTypeHasDriver" OwnerName="dbo"/>
+
+<Object ObjectName="ProfileCanUsedByRD" OwnerName="dbo"/>
+
+<Object ObjectName="DriverDependsOnDriver" OwnerName="dbo"/>
+
+<Object ObjectName="DriverCanUsedByRD" OwnerName="dbo"/>
+
+<Object ObjectName="ApplicationDependsOnDriver" OwnerName="dbo"/>
+
+<Object ObjectName="ApplicationServer" OwnerName="dbo"/>
+
+<Object ObjectName="AppServerGotAppProfile" OwnerName="dbo"/>
+
+<Object ObjectName="SDLDomain" OwnerName="dbo"/>
+
+<Object ObjectName="BaseTreeRelatedToBasetree" OwnerName="dbo"/>
+
+<Object ObjectName="AppServerGotDriverProfile" OwnerName="dbo"/>
+
+<Object ObjectName="MachineType" OwnerName="dbo"/>
+
+<Object ObjectName="Driver" OwnerName="dbo"/>
+
+<Object ObjectName="ApplicationProfile" OwnerName="dbo"/>
+
+<Object ObjectName="ProfileCanUsedAlso" OwnerName="dbo"/>
+
+<Object ObjectName="AppServerGotMactypeInfo" OwnerName="dbo"/>
+
+<Object ObjectName="DriverProfile" OwnerName="dbo"/>
+
+<Object ObjectName="SoftwareDependsOnSoftware" OwnerName="dbo"/>
+
+<Object ObjectName="WorkDeskHasDriver" OwnerName="dbo"/>
+
+<Object ObjectName="MachineAppsInfo" OwnerName=""/>
+
+<Object ObjectName="ADSAccountAppsInfo" OwnerName="dbo"/>
+
+<Object ObjectName="MachineAppsConfig" OwnerName="dbo"/>
+
+<Object ObjectName="DriverExcludeDriver" OwnerName="dbo"/>
+
+<Object ObjectName="ApplicationExcludeDriver" OwnerName="dbo"/>
+
+<Object ObjectName="OsInstType" OwnerName="dbo"/>
+
+<Object ObjectName="MachineTypeHasDriver" OwnerName="dbo"/>
+
+<Object ObjectName="BaseTreeHasDriver" OwnerName="dbo"/>
+
+<Object ObjectName="ClientLog" OwnerName="dbo"/>
+
+<Object ObjectName="LicenceType" OwnerName="dbo"/>
+
+<Object ObjectName="Licence" OwnerName="dbo"/>
+
+<Object ObjectName="LicencePurchase" OwnerName="dbo"/>
+
+<Object ObjectName="AppHasLicence" OwnerName="dbo"/>
+
+<Object ObjectName="DriverHasLicence" OwnerName="dbo"/>
+
+<Object ObjectName="LicenceSubstitute" OwnerName="dbo"/>
+
+<Object ObjectName="BaseTreeHasLicencePurchase" OwnerName="dbo"/>
+
+<Object ObjectName="BaseTreeHasLicence" OwnerName="dbo"/>
+
+<Object ObjectName="LicenceSubstituteTotal" OwnerName="dbo"/>
+
+<Object ObjectName="SectionName" OwnerName="dbo"/>
+
+</m_SourceEntityList>
+
+<m_SourceViewList/>
+
+<m_SourceBufferPoolList/>
+
+<m_SourceDatabaseList/>
+
+<m_SourceMaterializedViewList/>
+
+<m_SourceNodeGroupList/>
+
+<m_SourcePackageList/>
+
+<m_SourceObjectTypeList/>
+
+<m_SourceProcedureList/>
+
+<m_SourceFunctionList/>
+
+<m_SourceRollbackSegmentList/>
+
+<m_SourceSequenceList/>
+
+<m_SourceSynonymList/>
+
+<m_SourceAliasList/>
+
+<m_SourceStoGroupList/>
+
+<m_SourceTablespaceList/>
+
+<m_SourceSummaryTableList/>
+
+<m_SourceTriggerList/>
+
+<m_SourceAuxTableList/>
+
+<m_SourceShapeList/>
+
+<m_SourceSubjectAreaList/>
+
+<m_SourceTransformList/>
+
+<m_SourceUserList/>
+
+<m_SourceRoleList/>
+
+<m_SourceSchemaList/>
+
+<m_TargetEntityList><Object ObjectName="ADSAccountAppsInfo" OwnerName="dbo"/>
+
+<Object ObjectName="AppHasLicence" OwnerName="dbo"/>
+
+<Object ObjectName="ApplicationDependsOnDriver" OwnerName="dbo"/>
+
+<Object ObjectName="ApplicationExcludeDriver" OwnerName="dbo"/>
+
+<Object ObjectName="ApplicationProfile" OwnerName="dbo"/>
+
+<Object ObjectName="ApplicationServer" OwnerName="dbo"/>
+
+<Object ObjectName="ApplicationType" OwnerName="dbo"/>
+
+<Object ObjectName="AppServerGotAppProfile" OwnerName="dbo"/>
+
+<Object ObjectName="AppServerGotDriverProfile" OwnerName="dbo"/>
+
+<Object ObjectName="AppServerGotMactypeInfo" OwnerName="dbo"/>
+
+<Object ObjectName="BaseTreeHasDriver" OwnerName="dbo"/>
+
+<Object ObjectName="BaseTreeHasLicence" OwnerName="dbo"/>
+
+<Object ObjectName="BaseTreeHasLicencePurchase" OwnerName="dbo"/>
+
+<Object ObjectName="BaseTreeRelatedToBasetree" OwnerName="dbo"/>
+
+<Object ObjectName="ClientLog" OwnerName="dbo"/>
+
+<Object ObjectName="Driver" OwnerName="dbo"/>
+
+<Object ObjectName="DriverCanUsedByRD" OwnerName="dbo"/>
+
+<Object ObjectName="DriverDependsOnDriver" OwnerName="dbo"/>
+
+<Object ObjectName="DriverExcludeDriver" OwnerName="dbo"/>
+
+<Object ObjectName="DriverHasLicence" OwnerName="dbo"/>
+
+<Object ObjectName="DriverProfile" OwnerName="dbo"/>
+
+<Object ObjectName="HardwareTypeHasDriver" OwnerName="dbo"/>
+
+<Object ObjectName="InstallationType" OwnerName="dbo"/>
+
+<Object ObjectName="Licence" OwnerName="dbo"/>
+
+<Object ObjectName="LicencePurchase" OwnerName="dbo"/>
+
+<Object ObjectName="LicenceSubstitute" OwnerName="dbo"/>
+
+<Object ObjectName="LicenceSubstituteTotal" OwnerName="dbo"/>
+
+<Object ObjectName="LicenceType" OwnerName="dbo"/>
+
+<Object ObjectName="MachineAppsConfig" OwnerName="dbo"/>
+
+<Object ObjectName="MachineAppsInfo" OwnerName="dbo"/>
+
+<Object ObjectName="MachineHasDriver" OwnerName="dbo"/>
+
+<Object ObjectName="MachineType" OwnerName="dbo"/>
+
+<Object ObjectName="MachineTypeHasDriver" OwnerName="dbo"/>
+
+<Object ObjectName="OsInstType" OwnerName="dbo"/>
+
+<Object ObjectName="ProfileCanUsedAlso" OwnerName="dbo"/>
+
+<Object ObjectName="ProfileCanUsedByRD" OwnerName="dbo"/>
+
+<Object ObjectName="SDLDomain" OwnerName="dbo"/>
+
+<Object ObjectName="SectionName" OwnerName="dbo"/>
+
+<Object ObjectName="SoftwareDependsOnSoftware" OwnerName="dbo"/>
+
+<Object ObjectName="WorkDeskHasDriver" OwnerName="dbo"/>
+
+</m_TargetEntityList>
+
+<m_TargetViewList/>
+
+<m_TargetTriggerList/>
+
+<m_TargetPackageList/>
+
+<m_TargetObjectTypeList/>
+
+<m_TargetProcedureList/>
+
+<m_TargetFunctionList/>
+
+<m_TargetBufferPoolList/>
+
+<m_TargetDatabaseList/>
+
+<m_TargetMaterializedViewList/>
+
+<m_TargetNodeGroupList/>
+
+<m_TargetRollbackSegmentList/>
+
+<m_TargetSequenceList/>
+
+<m_TargetSynonymList/>
+
+<m_TargetAliasList/>
+
+<m_TargetStoGroupList/>
+
+<m_TargetTablespaceList/>
+
+<m_TargetAuxTableList/>
+
+<m_TargetSummaryTableList/>
+
+<m_TargetUserList/>
+
+<m_TargetRoleList/>
+
+<m_TargetSchemaList/>
+
+</DataObjectList>
+
+</ERStudioCompareMergeWizard>
+
+
+

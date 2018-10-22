@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Steps>
+<Macro Name ="QBMAllTablesFillInsert"/>
+
+<Macro Name ="QBMAllTablesFillUpdate"/>
+
+<Macro Name ="QBMAllTablesFillWait"/>
+  <Macro Name ="QBMViewBuildV"/>
+  <Macro Name ="QBMViewsPreContent"/>
+
+  <Macro Name ="QBMCheckPointIfModule"/>
+
+</Steps>

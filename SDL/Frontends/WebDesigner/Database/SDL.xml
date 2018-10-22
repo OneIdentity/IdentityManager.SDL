@@ -1,0 +1,48 @@
+<WebDesignerProject Module="SDL">
+  <File FileName="SDL_Common_HyperView_AccProduct_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="Configuration" UID="SDL-2AE9B8AD3F468C750E2A0CB13748077F" UIDParent="QER-0684C43ED9AC37078BFF4B330F270E14" FileNameParent="VI_Common_HyperView_AccProduct" />
+  <File FileName="SDL_Common_HyperView_AccProduct_Ext" ObjectType="CF" SubObjectType="" DocumentColumnName="CustomCode" UID="SDL-2AE9B8AD3F468C750E2A0CB13748077F" UIDParent="QER-0684C43ED9AC37078BFF4B330F270E14" FileNameParent="VI_Common_HyperView_AccProduct" />
+  <File FileName="SDL_Common_HyperView_AccProduct_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="CustomConfiguration" UID="SDL-2AE9B8AD3F468C750E2A0CB13748077F" UIDParent="QER-0684C43ED9AC37078BFF4B330F270E14" FileNameParent="VI_Common_HyperView_AccProduct" />
+  <File FileName="SDL_Common_HyperView_Application_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="Configuration" UID="SDL-42BD71989E0AD83C5A908A0A29962368" UIDParent="APC-B28051410B186D555AC95F9B560D5853" FileNameParent="VI_Common_HyperView_Application" />
+  <File FileName="SDL_Common_HyperView_Application_Ext" ObjectType="CF" SubObjectType="" DocumentColumnName="CustomCode" UID="SDL-42BD71989E0AD83C5A908A0A29962368" UIDParent="APC-B28051410B186D555AC95F9B560D5853" FileNameParent="VI_Common_HyperView_Application" />
+  <File FileName="SDL_Common_HyperView_Application_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="CustomConfiguration" UID="SDL-42BD71989E0AD83C5A908A0A29962368" UIDParent="APC-B28051410B186D555AC95F9B560D5853" FileNameParent="VI_Common_HyperView_Application" />
+  <File FileName="SDL_Common_HyperView_Department_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="Configuration" UID="SDL-EA1696E76FC3DF103A5AAF64FB6109AA" UIDParent="QER-95C4A923A9E3BCD4A5FBCFA7663A1B85" FileNameParent="VI_Common_HyperView_Department" />
+  <File FileName="SDL_Common_HyperView_Department_Ext" ObjectType="CF" SubObjectType="" DocumentColumnName="CustomCode" UID="SDL-EA1696E76FC3DF103A5AAF64FB6109AA" UIDParent="QER-95C4A923A9E3BCD4A5FBCFA7663A1B85" FileNameParent="VI_Common_HyperView_Department" />
+  <File FileName="SDL_Common_HyperView_Department_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="CustomConfiguration" UID="SDL-EA1696E76FC3DF103A5AAF64FB6109AA" UIDParent="QER-95C4A923A9E3BCD4A5FBCFA7663A1B85" FileNameParent="VI_Common_HyperView_Department" />
+  <File FileName="SDL_Common_HyperView_ESet_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="Configuration" UID="SDL-134C41A8E8B690CF8137A503CAA75A20" UIDParent="RMS-66C3131B142FDF0E7C2CD46B187D61B9" FileNameParent="VI_Common_HyperView_ESet" />
+  <File FileName="SDL_Common_HyperView_ESet_Ext" ObjectType="CF" SubObjectType="" DocumentColumnName="CustomCode" UID="SDL-134C41A8E8B690CF8137A503CAA75A20" UIDParent="RMS-66C3131B142FDF0E7C2CD46B187D61B9" FileNameParent="VI_Common_HyperView_ESet" />
+  <File FileName="SDL_Common_HyperView_ESet_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="CustomConfiguration" UID="SDL-134C41A8E8B690CF8137A503CAA75A20" UIDParent="RMS-66C3131B142FDF0E7C2CD46B187D61B9" FileNameParent="VI_Common_HyperView_ESet" />
+  <File FileName="SDL_Common_HyperView_LDAPAccount_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="Configuration" UID="SDL-C54F4BCB96DCB49CE1723C88D8ADA968" UIDParent="LDP-54A12EB13E96FFB4166AE8B52EF73E74" FileNameParent="VI_Common_HyperView_LDAPAccount" />
+  <File FileName="SDL_Common_HyperView_LDAPAccount_Ext" ObjectType="CF" SubObjectType="" DocumentColumnName="CustomCode" UID="SDL-C54F4BCB96DCB49CE1723C88D8ADA968" UIDParent="LDP-54A12EB13E96FFB4166AE8B52EF73E74" FileNameParent="VI_Common_HyperView_LDAPAccount" />
+  <File FileName="SDL_Common_HyperView_LDAPAccount_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="CustomConfiguration" UID="SDL-C54F4BCB96DCB49CE1723C88D8ADA968" UIDParent="LDP-54A12EB13E96FFB4166AE8B52EF73E74" FileNameParent="VI_Common_HyperView_LDAPAccount" />
+  <File FileName="SDL_Common_HyperView_Locality_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="Configuration" UID="SDL-B44748AB86E8AF535CCC775EB558B756" UIDParent="QER-236FA15D26EA61F0E0F9ADAC1BDAB67B" FileNameParent="VI_Common_HyperView_Locality" />
+  <File FileName="SDL_Common_HyperView_Locality_Ext" ObjectType="CF" SubObjectType="" DocumentColumnName="CustomCode" UID="SDL-B44748AB86E8AF535CCC775EB558B756" UIDParent="QER-236FA15D26EA61F0E0F9ADAC1BDAB67B" FileNameParent="VI_Common_HyperView_Locality" />
+  <File FileName="SDL_Common_HyperView_Locality_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="CustomConfiguration" UID="SDL-B44748AB86E8AF535CCC775EB558B756" UIDParent="QER-236FA15D26EA61F0E0F9ADAC1BDAB67B" FileNameParent="VI_Common_HyperView_Locality" />
+  <File FileName="SDL_Common_HyperView_Org_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="Configuration" UID="SDL-9C048BB90EDE823803C316B33FCCDCF0" UIDParent="RMB-1669523AF8C4786BD3F00AEBFCC731DD" FileNameParent="VI_Common_HyperView_Org" />
+  <File FileName="SDL_Common_HyperView_Org_Ext" ObjectType="CF" SubObjectType="" DocumentColumnName="CustomCode" UID="SDL-9C048BB90EDE823803C316B33FCCDCF0" UIDParent="RMB-1669523AF8C4786BD3F00AEBFCC731DD" FileNameParent="VI_Common_HyperView_Org" />
+  <File FileName="SDL_Common_HyperView_Org_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="CustomConfiguration" UID="SDL-9C048BB90EDE823803C316B33FCCDCF0" UIDParent="RMB-1669523AF8C4786BD3F00AEBFCC731DD" FileNameParent="VI_Common_HyperView_Org" />
+  <File FileName="SDL_Common_HyperView_Person_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="Configuration" UID="SDL-FD9544879AEF694DCD497ECDF69C0DC6" UIDParent="QER-7DA76C4D104D4F896F2B44BBAF0792D4" FileNameParent="VI_Common_HyperView_Person" />
+  <File FileName="SDL_Common_HyperView_Person_Ext" ObjectType="CF" SubObjectType="" DocumentColumnName="CustomCode" UID="SDL-FD9544879AEF694DCD497ECDF69C0DC6" UIDParent="QER-7DA76C4D104D4F896F2B44BBAF0792D4" FileNameParent="VI_Common_HyperView_Person" />
+  <File FileName="SDL_Common_HyperView_Person_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="CustomConfiguration" UID="SDL-FD9544879AEF694DCD497ECDF69C0DC6" UIDParent="QER-7DA76C4D104D4F896F2B44BBAF0792D4" FileNameParent="VI_Common_HyperView_Person" />
+  <File FileName="SDL_Common_HyperView_ProfitCenter_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="Configuration" UID="SDL-132CFB0EFB5AA9CCBBAE424C286FD91B" UIDParent="QER-0B59CEE0862B5CE8AB1667E705DF65C4" FileNameParent="VI_Common_HyperView_ProfitCenter" />
+  <File FileName="SDL_Common_HyperView_ProfitCenter_Ext" ObjectType="CF" SubObjectType="" DocumentColumnName="CustomCode" UID="SDL-132CFB0EFB5AA9CCBBAE424C286FD91B" UIDParent="QER-0B59CEE0862B5CE8AB1667E705DF65C4" FileNameParent="VI_Common_HyperView_ProfitCenter" />
+  <File FileName="SDL_Common_HyperView_ProfitCenter_Ext" ObjectType="AT" SubObjectType="" DocumentColumnName="CustomConfiguration" UID="SDL-132CFB0EFB5AA9CCBBAE424C286FD91B" UIDParent="QER-0B59CEE0862B5CE8AB1667E705DF65C4" FileNameParent="VI_Common_HyperView_ProfitCenter" />
+  <ModuleInfo Name="ACN" IsDirectPredecessor="false" />
+  <ModuleInfo Name="ADS" IsDirectPredecessor="true" />
+  <ModuleInfo Name="APC" IsDirectPredecessor="true" />
+  <ModuleInfo Name="ATT" IsDirectPredecessor="false" />
+  <ModuleInfo Name="CAP" IsDirectPredecessor="false" />
+  <ModuleInfo Name="CCC" IsDirectPredecessor="false" />
+  <ModuleInfo Name="CPL" IsDirectPredecessor="false" />
+  <ModuleInfo Name="DPR" IsDirectPredecessor="false" />
+  <ModuleInfo Name="HDS" IsDirectPredecessor="false" />
+  <ModuleInfo Name="LDP" IsDirectPredecessor="true" />
+  <ModuleInfo Name="MDK" IsDirectPredecessor="false" />
+  <ModuleInfo Name="POL" IsDirectPredecessor="false" />
+  <ModuleInfo Name="QBM" IsDirectPredecessor="false" />
+  <ModuleInfo Name="QER" IsDirectPredecessor="false" />
+  <ModuleInfo Name="RMB" IsDirectPredecessor="true" />
+  <ModuleInfo Name="RMS" IsDirectPredecessor="false" />
+  <ModuleInfo Name="RPS" IsDirectPredecessor="false" />
+  <ModuleInfo Name="SDL" IsDirectPredecessor="false" />
+  <ModuleInfo Name="TSB" IsDirectPredecessor="false" />
+</WebDesignerProject>

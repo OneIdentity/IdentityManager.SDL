@@ -1,0 +1,63 @@
+[FrmKonfigApplikationsserverMaschinentypen]
+MSSQL =		select	m.Ident_MachineType as Maschinentyp,
+					i.ProfileStateProduction as N'Profilstatus (Site)',
+					i.ProfileStateShadow as N'Profilstatus (Pufferverzeichnis)',
+					i.ChgNumber as Version
+			from	machinetype m, applicationserver a, AppServerGotMactypeInfo i
+			where	{0}
+						and a.uid_applicationserver = i.uid_applicationserver
+						and m.uid_MachineType  = i.uid_machinetype
+			order by m.ident_machinetype;
+
+Oracle =	select	m.Ident_MachineType as Maschinentyp,
+					i.ProfileStateProduction as "Profilstatus (Site)",
+					i.ProfileStateShadow as "Profilstatus (Pufferverz.)",
+					i.ChgNumber as Version
+			from	machinetype m, applicationserver a, AppServerGotMactypeInfo i
+			where	{0}
+						and a.uid_applicationserver = i.uid_applicationserver
+						and m.uid_MachineType  = i.uid_machinetype
+			order by m.ident_machinetype;			[FrmKonfigApplikationsserverApplikationsprofile]
+MSSQL =		select	p.displayName as Applikationsprofil,
+					i.ProfileStateProduction as N'Profilstatus (Site)',
+					i.ProfileStateShadow as N'Profilstatus (Pufferverzeichnis)',
+					i.ChgNumber as Version
+			from	applicationprofile p, applicationserver a, appservergotappprofile i
+			where	{0}
+						and a.uid_applicationserver = i.uid_applicationserver
+						and p.UID_Profile = i.UID_Profile
+			order by p.displayName;
+
+Oracle =	select	p.displayName as Applikationsprofil,
+					i.ProfileStateProduction as "Profilstatus (Site)",
+					i.ProfileStateShadow as "Profilstatus (Pufferverz.)",
+					i.ChgNumber as Version
+			from	applicationprofile p, applicationserver a, appservergotappprofile i
+			where	{0}
+						and a.uid_applicationserver = i.uid_applicationserver
+						and p.UID_Profile = i.UID_Profile
+			order by p.displayName;
+
+
+[FrmKonfigApplikationsserverTreiberprofile]
+MSSQL = select	p.displayName as Treiberprofil,
+				i.ProfileStateProduction as N'Profilstatus (Site)',
+				i.ProfileStateShadow as N'Profilstatus (Pufferverzeichnis)',
+				i.ChgNumber as Version
+		from	driverprofile p, applicationserver a, appservergotdriverprofile i
+		where	{0}
+					and a.uid_applicationserver = i.uid_applicationserver
+					and p.UID_Profile = i.UID_Profile
+		order by p.displayName;
+
+Oracle = select	p.displayName as Treiberprofil,
+				i.ProfileStateProduction as "Profilstatus (Site)",
+				i.ProfileStateShadow as "Profilstatus (Pufferverz.)",
+				i.ChgNumber as Version
+		from	driverprofile p, applicationserver a, appservergotdriverprofile i
+		where	{0}
+					and a.uid_applicationserver = i.uid_applicationserver
+					and p.UID_Profile = i.UID_Profile
+		order by p.displayName;
+
+

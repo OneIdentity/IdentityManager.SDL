@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Steps>
+
+  <Macro Name ="QBMPackageHeader"/>
+
+
+  <Macro Name ="QBMViewBuildP"/>
+
+
+  <Macro Name ="QBMAllTablesFillInsert"/>
+
+  <Macro Name ="QBMAllTablesFillUpdate"/>
+
+  <Macro Name ="QBMAllTablesFillWait"/>
+
+  <Macro Name ="QBMManualViews"/>
+
+  <Macro Name ="QBMTemporaryTables"/>
+
+  <Macro Name ="QBMViewBuildV"/>
+
+
+
+
+</Steps>

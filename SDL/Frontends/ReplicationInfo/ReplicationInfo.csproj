@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED8CC603-737E-4F9B-8E05-3200320DA59C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>ReplicationInfo</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>VI.Tools.ReplicationInfo</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\SDL.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Prefer32Bit>false</Prefer32Bit>
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActiproSoftware.Shared.WinForms, Version=16.1.330.0, Culture=neutral, PublicKeyToken=c27e062d3c1a4763, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Assemblies\ActiproSoftware.Shared.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="ActiproSoftware.SyntaxEditor.WinForms, Version=16.1.330.0, Culture=neutral, PublicKeyToken=c27e062d3c1a4763, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Assemblies\ActiproSoftware.SyntaxEditor.WinForms.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SandBar">
+      <Name>sandbar</Name>
+      <HintPath>..\..\..\assemblies\sandbar.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SandDock">
+      <Name>sanddock</Name>
+      <HintPath>..\..\..\assemblies\sanddock.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="VI.Base">
+      <Name>VI.Base</Name>
+      <HintPath>..\..\..\Assemblies\VI.Base.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VI.CommonDialogs">
+      <Name>VI.CommonDialogs</Name>
+      <HintPath>..\..\..\Assemblies\VI.CommonDialogs.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VI.Controls">
+      <Name>vi.controls</Name>
+      <HintPath>..\..\..\assemblies\vi.controls.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VI.Controls.SyntaxEdit">
+      <Name>vi.controls.syntaxedit</Name>
+      <HintPath>..\..\..\assemblies\vi.controls.syntaxedit.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VI.DB">
+      <Name>VI.DB</Name>
+      <HintPath>..\..\..\Assemblies\VI.DB.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VI.FormBase">
+      <Name>VI.FormBase</Name>
+      <HintPath>..\..\..\Assemblies\VI.FormBase.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VI.ImageLibrary">
+      <Name>vi.imagelibrary</Name>
+      <HintPath>..\..\..\assemblies\vi.imagelibrary.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Devart.Data.Oracle">
+      <Name>Devart.Data.Oracle</Name>
+      <HintPath>..\..\..\Assemblies\Devart.Data.Oracle.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.ico" />
+    <Content Include="Pictures\AppProfil.ico" />
+    <Content Include="Pictures\AppProfil_black.ico" />
+    <Content Include="Pictures\AppProfil_red.ico" />
+    <Content Include="Pictures\AppProfil_red_2.ico" />
+    <Content Include="Pictures\DBDel_gray_.ico" />
+    <Content Include="Pictures\DBNew_gray.ico" />
+    <Content Include="Pictures\DB_green.ico" />
+    <Content Include="Pictures\DB_red.ico" />
+    <Content Include="Pictures\DB_yellow.ico" />
+    <Content Include="Pictures\Domain.ico" />
+    <Content Include="Pictures\Domain_2.ico" />
+    <Content Include="Pictures\Green Light.ico" />
+    <Content Include="Pictures\MachineType.ico" />
+    <Content Include="Pictures\MachineType_red.ico" />
+    <Content Include="Pictures\Question.ico" />
+    <Content Include="Pictures\Red Light.ico" />
+    <Content Include="Pictures\Server.ico" />
+    <Content Include="Pictures\Server_000.ico" />
+    <Content Include="Pictures\Server_001.ico" />
+    <Content Include="Pictures\Server_010.ico" />
+    <Content Include="Pictures\Server_011.ico" />
+    <Content Include="Pictures\Server_100.ico" />
+    <Content Include="Pictures\Server_101.ico" />
+    <Content Include="Pictures\Server_110.ico" />
+    <Content Include="Pictures\Server_111.ico" />
+    <Content Include="Pictures\Server_Apps.ico" />
+    <Content Include="Pictures\Server_Both.ico" />
+    <Content Include="Pictures\Server_Drv.ico" />
+    <Content Include="Pictures\Server_Ok.ico" />
+    <Content Include="Pictures\TreeRoot.ico" />
+    <Content Include="Pictures\TreiberProfil.ico" />
+    <Content Include="Pictures\TreiberProfil_black.ico" />
+    <Content Include="Pictures\TreiberProfil_red.ico" />
+    <Content Include="Pictures\Yellow Light.ico" />
+    <Content Include="Pictures\Yellow Red Light.ico" />
+    <Compile Include="..\..\GlobalVersion.cs">
+      <Link>GlobalVersion.cs</Link>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="clsMain.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DCFDSProfileOnServer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCProfileOnServer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DCServerHasProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobQueueCheck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NodeData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectBaseHash.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectServer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ObjectServer2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VIWaitCursor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="DCFDSProfileOnServer.resx">
+      <DependentUpon>DCFDSProfileOnServer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCProfileOnServer.resx">
+      <DependentUpon>DCProfileOnServer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DCServerHasProfile.resx">
+      <DependentUpon>DCServerHasProfile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSetup.resx">
+      <DependentUpon>frmSetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\HelpMap.xml">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ReplicationInfo.vii" />
+    <EmbeddedResource Include="Resources\SQL.vii" />
+    <None Include="App.config" />
+    <None Include="ReplicationInfo.exe.manifest" />
+    <EmbeddedResource Include="..\..\GlobalLicences.licx">
+      <Link>GlobalLicences.licx</Link>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>copy /y $(TargetDir)$(TargetName).* "..\..\..\..\..\Assemblies"</PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,171 @@
+﻿<FormDefinition Version="1.1">
+	<Form ID="FORM0001" Name="FormHardwarePCClientlog" Version="1.0.0">
+		<Header>
+			<AssociatedFiles>
+				<Library DesignMode="Ignore" Name="SDL.Forms.dll" Path="localfile:bin\debug" />
+				<TypeDefinition Name="TypeDefinition.xml" Path="localfile:Definitions" Usage="Gui" />
+				<TypeDefinition Name="TypeDefinitionWeb.xml" Path="localfile:Definitions" Usage="Web" />
+				<Resource Name="FormHardwarePCClientlog.vires" Path="localfile:" Reader="VIResourceReaderV2" />
+				<StyleDefinition Name="StyleDefinition.xml" Path="localfile:Definitions" Reader="StyleDefinitionReaderXml" />
+			</AssociatedFiles>
+			<Customizer Type="SDL.Forms.FormHardwarePCClientlog" />
+			<Description>
+			</Description>
+			<Units Measurement="Pixel" />
+		</Header>
+		<Properties>
+			<Property Name="CacheSafe" Type="Boolean" Value="True" />
+			<Property Name="Caption" Type="String" Value="Form1" />
+		</Properties>
+		<Frames>
+			<Frame ID="FRAME001" Name="Main" Style="MainFrame">
+				<Properties>
+					<Property Name="Enabled" Type="Boolean" Value="True" />
+					<Property Name="Visible" Type="Boolean" Value="True" />
+				</Properties>
+				<Content>
+					<Components>
+						<Component ID="COMPD4D99C6D" Name="MainActivator" Type="ActivatorComponent">
+							<Properties>
+								<Property Name="ActivationFilter" Type="String" Value="Hardware" />
+								<Property Name="IsRootActivator" Type="Boolean" Value="True" />
+							</Properties>
+							<Events>
+								<Event Handler="MainActivator_OnActivating" Name="Activating" />
+							</Events>
+						</Component>
+					</Components>
+					<Controls>
+						<Control ID="CTRLFE187DEF" Name="MainPanel" Style="VIPanel" Type="VIPanel">
+							<Properties>
+								<Property Name="AutoSize" Type="Boolean" Value="False" />
+								<Property Name="ControlStyle" Type="VIControlStyle" Value="Modify" />
+								<Property Name="Enabled" Type="Boolean" Value="True" />
+								<Property Name="TabIndex" Type="Integer" Value="0" />
+							</Properties>
+							<Content>
+								<Controls>
+									<Control ID="CTRL85A1B8D8" Name="CustomTab1" Style="VITabControl" Type="VITabControl">
+										<Properties>
+											<Property Name="Activator" Ref="COMPD4D99C6D" Type="Activator" />
+											<Property Name="AutoSize" Type="Boolean" Value="False" />
+											<Property Name="Caption" Type="String" Value="" />
+											<Property Name="CaptionMode" Type="Boolean" Value="False" />
+											<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+											<Property Name="Enabled" Type="Boolean" Value="True" />
+											<Property Name="SelectedIndex" Type="Integer" Value="0" />
+											<Property Name="TabIndex" Type="Integer" Value="1" />
+											<Property Name="TabStop" Type="Boolean" Value="True" />
+										</Properties>
+										<Content>
+											<Controls>
+												<Control ID="CTRL2A97D1CB" Name="TabPage_00" Style="VITabPage" Type="VITabPage">
+													<Properties>
+														<Property Name="Activator" Ref="CTRL85A1B8D8" Type="Activator" />
+														<Property Name="AutoSize" Type="Boolean" Value="False" />
+														<Property Name="Caption" Type="String" Value="~Apps" />
+														<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+														<Property Name="Dock" Type="DockStyle" Value="Fill" />
+														<Property Name="Enabled" Type="Boolean" Value="True" />
+														<Property Name="ShowCaptionBar" Type="Boolean" Value="False" />
+														<Property Name="TabIndex" Type="Integer" Value="0" />
+														<Property Name="TabStop" Type="Boolean" Value="True" />
+													</Properties>
+													<Content>
+														<Controls>
+															<Layout Style="ColumnFullSize" Type="Column">
+																<Control ID="CTRLB20A3F67" Name="TreeListApps" Style="FullVITreeList" Type="VITreeList">
+																	<Properties>
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="HeaderFont" Type="Font" Value="Tahoma, 8.25pt" />
+																		<Property Name="ScrollPadding" Type="System.Padding" Value="0, 0, 0, 0" />
+																		<Property Name="SubTextColor" Type="Color" Value="Blue" />
+																		<Property Name="TabIndex" Type="Integer" Value="7" />
+																		<Property Name="Text" Type="String" Value="" />
+																	</Properties>
+																</Control>
+															</Layout>
+														</Controls>
+													</Content>
+												</Control>
+												<Control ID="CTRL8FD20595" Name="TabPage_01" Style="VITabPage" Type="VITabPage">
+													<Properties>
+														<Property Name="Activator" Ref="CTRL85A1B8D8" Type="Activator" />
+														<Property Name="AutoSize" Type="Boolean" Value="False" />
+														<Property Name="Caption" Type="String" Value="~Drivers" />
+														<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+														<Property Name="Dock" Type="DockStyle" Value="Fill" />
+														<Property Name="Enabled" Type="Boolean" Value="True" />
+														<Property Name="ShowCaption" Type="Boolean" Value="False" />
+														<Property Name="ShowCaptionBar" Type="Boolean" Value="False" />
+														<Property Name="TabIndex" Type="Integer" Value="0" />
+													</Properties>
+													<Content>
+														<Controls>
+															<Layout Style="ColumnFullSize" Type="Column">
+																<Control ID="CTRLFFB2F84B" Name="TreeListDrivers" Style="FullVITreeList" Type="VITreeList">
+																	<Properties>
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="HeaderFont" Type="Font" Value="Tahoma, 8.25pt" />
+																		<Property Name="ScrollPadding" Type="System.Padding" Value="0, 0, 0, 0" />
+																		<Property Name="SubTextColor" Type="Color" Value="Blue" />
+																		<Property Name="TabIndex" Type="Integer" Value="8" />
+																		<Property Name="Text" Type="String" Value="" />
+																	</Properties>
+																</Control>
+															</Layout>
+														</Controls>
+													</Content>
+												</Control>
+												<Control ID="CTRLC0E4AF62" Name="TabPage_02" Style="VITabPage" Type="VITabPage">
+													<Properties>
+														<Property Name="Activator" Ref="CTRL85A1B8D8" Type="Activator" />
+														<Property Name="AutoSize" Type="Boolean" Value="False" />
+														<Property Name="Caption" Type="String" Value="~VIClient" />
+														<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+														<Property Name="Dock" Type="DockStyle" Value="Fill" />
+														<Property Name="Enabled" Type="Boolean" Value="True" />
+														<Property Name="TabIndex" Type="Integer" Value="0" />
+													</Properties>
+													<Content>
+														<Controls>
+															<Layout Style="ColumnTabPage" Type="Column">
+																<Control ID="CTRL811EF0E1" Name="ActivatorCombo" Style="IndentComboBox" Type="ComboBox">
+																	<Properties>
+																		<Property Name="DropDownStyle" Type="ComboBoxStyle" Value="DropDownList" />
+																		<Property Name="DropDownWidth" Type="Integer" Value="261" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="ItemHeight" Type="Integer" Value="13" />
+																		<Property Name="MaximumSize" Type="Size" Value="0, 0" />
+																		<Property Name="TabIndex" Type="Integer" Value="5" />
+																		<Property Name="Text" Type="String" Value="" />
+																	</Properties>
+																	<Events>
+																		<Event Handler="ActivatorCombo_OnSelectionChangeCommitted" Name="SelectionChangeCommitted" />
+																	</Events>
+																</Control>
+																<Control ID="CTRLB64C7F89" Name="RichTextBox1" Style="RichTextBox" Type="RichTextBox">
+																	<Properties>
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="ReadOnly" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="6" />
+																		<Property Name="Text" Type="String" Value="" />
+																		<Property Name="WordWrap" Type="Boolean" Value="False" />
+																	</Properties>
+																</Control>
+															</Layout>
+														</Controls>
+													</Content>
+												</Control>
+											</Controls>
+										</Content>
+									</Control>
+								</Controls>
+							</Content>
+						</Control>
+					</Controls>
+				</Content>
+			</Frame>
+		</Frames>
+	</Form>
+</FormDefinition>

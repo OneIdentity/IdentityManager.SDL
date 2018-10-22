@@ -1,0 +1,506 @@
+[ApplicationProfile]
+MSSQL=select Isnull(x.fehler, 0) as Fehler, AP.DisplayName as DisplayText, AP.UID_Profile as UID_Profile, AP.ChgNumber as ChgNrSoll, Isnull(x.fehler, 0) as ChgNrIst
+  from ApplicationProfile AP left outer join
+    (
+     select a.uid_profile , 1 as Fehler
+            from Applicationprofile a join AppServerGotAppProfile ag
+                on a.uid_profile = ag.uid_profile and (isnull(a.ChgNumber,0) <> isnull(ag.ChgNumber,0) or  isnull(ag.ProfileStateProduction, N'') <> N'READY' )
+            where a.ident_domainrd = @Ident_DomainRD
+                and a.chgnumber > 0
+      Union
+     select a.uid_profile, 1
+        from applicationprofile a , applicationserver aps
+        Where a.Ident_DomainRD = aps.Ident_Domain
+           and not exists (select 1 from appservergotappprofile ag
+                        Where a.UID_Profile = ag.UID_Profile
+                        and aps.uid_applicationserver = ag.uid_applicationserver
+                )
+          and a.ident_domainrd = @Ident_DomainRD
+          and a.chgnumber > 0
+    ) as x on ap.uid_profile = x.uid_profile
+ where ap.ident_domainrd = @Ident_DomainRD
+    and ap.chgnumber > 0
+    @ErrorOnly 
+order by AP.DisplayName;
+
+Oracle=select nvl(x.fehler, 0) as Fehler, AP.DisplayName as DisplayText, AP.UID_Profile as UID_Profile, AP.ChgNumber as ChgNrSoll, nvl(x.fehler, 0) as ChgNrIst
+  from ApplicationProfile AP left outer join
+    (
+     select a.uid_profile , 1 as Fehler
+            from Applicationprofile a join AppServerGotAppProfile ag
+                on a.uid_profile = ag.uid_profile and (nvl(a.ChgNumber,0) <> nvl(ag.ChgNumber,0) or  upper(nvl(ag.ProfileStateProduction, N' ')) <> N'READY' )
+            where upper(a.ident_domainrd) = upper(@Ident_DomainRD)
+                and a.chgnumber > 0
+      Union
+     select a.uid_profile, 1
+        from applicationprofile a , applicationserver aps
+        Where a.Ident_DomainRD = aps.Ident_Domain
+           and not exists (select 1 from appservergotappprofile ag
+                        Where a.UID_Profile = ag.UID_Profile
+                        and aps.uid_applicationserver = ag.uid_applicationserver
+                )
+          and upper(a.ident_domainrd) = upper(@Ident_DomainRD)
+          and a.chgnumber > 0
+    )  x on ap.uid_profile = x.uid_profile
+ where upper(ap.ident_domainrd) = upper(@Ident_DomainRD)
+    and ap.chgnumber > 0
+    @ErrorOnly 
+order by AP.DisplayName;
+
+
+[ApplicationProfileServer]
+MSSQL=select ApS.Ident_ApplicationServer as displaytext, AsGAp.ChgNumber as chgnr, AsGAp.ProfileStateProduction as state_p, AsGAp.ProfileStateShadow as state_s, AsGAp.XDateUpdated as changed, ApS.UID_ApplicationServer as uid_applicationserver, ApS.UID_ParentApplicationServer as uid_parentapplicationserver
+  from ApplicationServer ApS
+  left outer join AppServerGotAppProfile AsGAp on AsGAp.UID_Profile = @UID_Profile and ApS.UID_ApplicationServer = AsGAp.UID_ApplicationServer
+  left outer join ApplicationProfile AP on   AsGAp.UID_Profile = AP.UID_Profile
+where ApS.Ident_Domain = @Ident_Domain
+order by displaytext;
+
+Oracle=select ApS.Ident_ApplicationServer as displaytext, AsGAp.ChgNumber as chgnr, AsGAp.ProfileStateProduction as state_p, AsGAp.ProfileStateShadow as state_s, AsGAp.XDateUpdated as changed, ApS.UID_ApplicationServer as uid_applicationserver, ApS.UID_ParentApplicationServer as uid_parentapplicationserver
+  from ApplicationServer ApS
+  left outer join AppServerGotAppProfile AsGAp on AsGAp.UID_Profile = @UID_Profile and ApS.UID_ApplicationServer = AsGAp.UID_ApplicationServer
+  left outer join ApplicationProfile AP on   AsGAp.UID_Profile = AP.UID_Profile
+where upper(ApS.Ident_Domain) = upper(@Ident_Domain)
+order by displaytext;
+
+[DriverProfile]
+MSSQL=select Isnull(x.fehler, 0) as Fehler, DP.DisplayName as DisplayText, DP.UID_Profile as UID_Profile, DP.ChgNumber as ChgNrSoll, Isnull(x.fehler, 0) as ChgNrIst
+  from DriverProfile DP left outer join
+    (
+     select a.uid_profile , 1 as Fehler
+            from DriverProfile a join AppServerGotDriverProfile ag
+                on a.uid_profile = ag.uid_profile and (isnull(a.ChgNumber,0) <> isnull(ag.ChgNumber,0) or  isnull(ag.ProfileStateProduction, N'') <> N'READY' )
+            where a.ident_domainrd = @Ident_DomainRD
+                and a.chgnumber > 0
+      Union
+     
+     select a.uid_profile, 1
+        from DriverProfile a , applicationserver aps
+        Where a.Ident_DomainRD = aps.Ident_Domain
+           and not exists (select 1 from appservergotDriverProfile ag
+                        Where a.UID_Profile = ag.UID_Profile
+                        and aps.uid_applicationserver = ag.uid_applicationserver
+                )
+          and a.ident_domainrd = @Ident_DomainRD
+          and a.chgnumber > 0
+    ) as x on DP.uid_profile = x.uid_profile
+ where DP.ident_domainrd = @Ident_DomainRD
+    and DP.chgnumber > 0
+	@ErrorOnly
+order by DP.DisplayName;
+
+Oracle=select nvl(x.fehler, 0) as Fehler, DP.DisplayName as DisplayText, DP.UID_Profile as UID_Profile, DP.ChgNumber as ChgNrSoll, nvl(x.fehler, 0) as ChgNrIst
+  from DriverProfile DP left outer join
+    (
+     select a.uid_profile , 1 as Fehler
+            from DriverProfile a join AppServerGotDriverProfile ag
+                on a.uid_profile = ag.uid_profile and (nvl(a.ChgNumber,0) <> nvl(ag.ChgNumber,0) or upper(nvl(ag.ProfileStateProduction, N' ')) <> N'READY' )
+            where upper(a.ident_domainrd) = upper(@Ident_DomainRD)
+                and a.chgnumber > 0
+      Union
+     select a.uid_profile, 1
+        from DriverProfile a , applicationserver aps
+        Where a.Ident_DomainRD = aps.Ident_Domain
+           and not exists (select 1 from appservergotDriverProfile ag
+                        Where a.UID_Profile = ag.UID_Profile
+                        and aps.uid_applicationserver = ag.uid_applicationserver
+                )
+          and upper(a.ident_domainrd) = upper(@Ident_DomainRD)
+          and a.chgnumber > 0
+    ) x on DP.uid_profile = x.uid_profile
+ where upper(DP.ident_domainrd) = upper(@Ident_DomainRD)
+    and DP.chgnumber > 0
+      @ErrorOnly
+order by DP.DisplayName;
+
+
+[DriverProfileServer]
+MSSQL=select ApS.Ident_ApplicationServer as displaytext, AsGDp.ChgNumber as chgnr, AsGDp.ProfileStateProduction as state_p, AsGDp.ProfileStateShadow as state_s, AsGDp.XDateUpdated as changed, ApS.UID_ApplicationServer as uid_applicationserver, ApS.UID_ParentApplicationServer as uid_parentapplicationserver
+  from ApplicationServer ApS
+  left outer join AppServerGotDriverProfile AsGDp on AsGDp.UID_Profile = @UID_Profile and ApS.UID_ApplicationServer = AsGDp.UID_ApplicationServer
+  left outer join DriverProfile DP on   AsGDp.UID_Profile = DP.UID_Profile
+ where ApS.Ident_Domain = @Ident_Domain
+ order by displaytext;
+ 
+Oracle=select ApS.Ident_ApplicationServer as displaytext, AsGDp.ChgNumber as chgnr, AsGDp.ProfileStateProduction as state_p, AsGDp.ProfileStateShadow as state_s, AsGDp.XDateUpdated as changed, ApS.UID_ApplicationServer as uid_applicationserver, ApS.UID_ParentApplicationServer as uid_parentapplicationserver
+  from ApplicationServer ApS
+  left outer join AppServerGotDriverProfile AsGDp on AsGDp.UID_Profile = @UID_Profile and ApS.UID_ApplicationServer = AsGDp.UID_ApplicationServer
+  left outer join DriverProfile DP on   AsGDp.UID_Profile = DP.UID_Profile
+ where upper(ApS.Ident_Domain) = upper(@Ident_Domain)
+ order by displaytext;
+
+[MachineType]
+MSSQL=select Isnull(x.fehler, 0) as Fehler, MT.Ident_MachineType as DisplayText, MT.UID_MachineType as UID_Profile, MT.ChgNumber as ChgNrSoll, Isnull(x.fehler, 0) as ChgNrIst
+  from MachineType MT left outer join
+    (
+     select a.UID_MachineType , 1 as Fehler
+            from MachineType a join AppServerGotMacTypeInfo AsGMti
+                on a.uid_machineType = AsGMti.uid_MachineType and (isnull(a.ChgNumber,0) <> isnull(AsGMti.ChgNumber,0) or isnull(AsGMti.ProfileStateProduction, N'') <> N'READY' )
+            where a.ident_domainMachineType = @Ident_DomainRD
+                and a.chgnumber > 0
+      Union
+     select MT.UID_MachineType, 1
+        from MachineType MT , applicationserver APS
+        Where MT.Ident_DomainMachineType = APS.Ident_Domain
+           and not exists (select 1 from AppServerGotMacTypeInfo AsGMtI
+                        Where MT.UID_MachineType = AsGMtI.UID_MachineType
+                        and APS.uid_applicationserver = AsGMtI.uid_applicationserver
+                )
+          and MT.ident_domainMachineType = @Ident_DomainRD
+          and MT.chgnumber > 0
+    ) as x on MT.uid_machineType = x.uid_machineType
+ where MT.ident_domainMachineType = @Ident_DomainRD
+    and MT.chgnumber > 0
+	@ErrorOnly
+order by MT.Ident_MachineType;
+
+Oracle=select nvl(x.fehler, 0) as Fehler, MT.Ident_MachineType as DisplayText, MT.UID_MachineType as UID_Profile, MT.ChgNumber as ChgNrSoll, nvl(x.fehler, 0) as ChgNrIst
+  from MachineType MT left outer join
+    (
+     select a.UID_MachineType , 1 as Fehler
+            from MachineType a join AppServerGotMacTypeInfo AsGMti
+                on a.uid_machineType = AsGMti.uid_MachineType and (nvl(a.ChgNumber,0) <> nvl(AsGMti.ChgNumber,0) or upper(nvl(AsGMti.ProfileStateProduction, N' ')) <> N'READY')
+            where upper(a.ident_domainMachineType) = upper(@Ident_DomainRD)
+                and a.chgnumber > 0
+      Union
+     select MT.UID_MachineType, 1
+        from MachineType MT , applicationserver APS
+        Where upper(MT.Ident_DomainMachineType) = upper(APS.Ident_Domain)
+           and not exists (select 1 from AppServerGotMacTypeInfo AsGMtI
+                        Where MT.UID_MachineType = AsGMtI.UID_MachineType
+                        and APS.uid_applicationserver = AsGMtI.uid_applicationserver
+                )
+          and upper(MT.ident_domainMachineType) = upper(@Ident_DomainRD)
+          and MT.chgnumber > 0
+    ) x on MT.uid_machineType = x.uid_machineType
+ where upper(MT.ident_domainMachineType) = upper(@Ident_DomainRD)
+    and MT.chgnumber > 0
+      @ErrorOnly
+order by MT.Ident_MachineType;
+
+[MachineTypeServer]
+MSSQL=select ApS.Ident_ApplicationServer as displaytext, AsGMtI.ChgNumber as chgnr, AsGMtI.ProfileStateProduction as state_p, AsGMtI.ProfileStateShadow as state_s, AsGMtI.XDateUpdated as changed, ApS.UID_ApplicationServer as uid_applicationserver, ApS.UID_ParentApplicationServer as uid_parentapplicationserver
+  from ApplicationServer ApS
+  left outer join AppServerGotMacTypeInfo AsGMtI on AsGMtI.UID_MachineType = @UID_Profile and ApS.UID_ApplicationServer = AsGMtI.UID_ApplicationServer
+  left outer join MachineType MT on   AsGMtI.UID_MachineType = MT.UID_MachineType
+ where ApS.Ident_Domain = @Ident_Domain
+ order by displaytext;
+ 
+Oracle=select ApS.Ident_ApplicationServer as displaytext, AsGMtI.ChgNumber as chgnr, AsGMtI.ProfileStateProduction as state_p, AsGMtI.ProfileStateShadow as state_s, AsGMtI.XDateUpdated as changed, ApS.UID_ApplicationServer as uid_applicationserver, ApS.UID_ParentApplicationServer as uid_parentapplicationserver
+  from ApplicationServer ApS
+  left outer join AppServerGotMacTypeInfo AsGMtI on AsGMtI.UID_MachineType = @UID_Profile and ApS.UID_ApplicationServer = AsGMtI.UID_ApplicationServer
+  left outer join MachineType MT on   AsGMtI.UID_MachineType = MT.UID_MachineType
+ where upper(ApS.Ident_Domain) = upper(@Ident_Domain)
+ order by displaytext;
+
+
+[ApplicationServer]
+MSSQL=select ax.Ident_Applicationserver, ax.UID_ApplicationServer, isnull(ax.UID_ParentApplicationServer, N'') as UID_ParentApplicationServer , Isnull(y.appfehler, 0) as appFehler, Isnull(y.drvfehler, 0) as drvFehler, Isnull(y.MacFehler, 0) as macFehler
+  from Applicationserver ax left outer join
+    (
+    select x.uid_applicationServer , sum(x.AppFehler) as AppFehler, sum(x.DrvFehler) as DrvFehler, sum(x.MacFehler) as MacFehler
+    From
+    (
+     -- die Apps, die drauf sind, aber mit falschem Status
+     select ag.uid_applicationServer , 1 as AppFehler, 0 as DrvFehler, 0 as MacFehler
+            from Applicationprofile a join AppServerGotAppProfile ag
+                on a.uid_profile = ag.uid_profile and (isnull(a.ChgNumber,0) <> isnull(ag.ChgNumber,0) or  isnull(ag.ProfileStateProduction, N'') <> N'READY' )
+            where a.ident_domainrd = @Ident_DomainRD
+                and a.chgnumber > 0
+      Union
+     -- die, wo mindestens 1 Profil der Domäne fehlt
+     select s.uid_ApplicationServer, 1 , 0, 0
+        from applicationprofile a , applicationserver s
+        Where a.Ident_DomainRD = s.Ident_Domain
+           and not exists (select 1 from appservergotappprofile ag
+                        Where a.UID_Profile = ag.UID_Profile
+                        and s.uid_applicationserver = ag.uid_applicationserver
+                )
+          and a.ident_domainrd = @Ident_DomainRD
+          and a.chgnumber > 0
+      Union
+     -- die Driver, die drauf sind, aber mit falschem Status
+     select ag.uid_applicationServer , 0, 1, 0
+            from Driverprofile a join AppServerGotDriverProfile ag
+                on a.uid_profile = ag.uid_profile and (isnull(a.ChgNumber,0) <> isnull(ag.ChgNumber,0) or isnull(ag.ProfileStateProduction, N'') <> N'READY' )
+            where a.ident_domainrd = @Ident_DomainRD
+                and a.chgnumber > 0
+      Union
+     -- die, wo mindestens 1 Driver-Profil der Domäne fehlt
+     select s.uid_ApplicationServer, 0 , 1, 0
+        from Driverprofile a , applicationserver s
+        Where a.Ident_DomainRD = s.Ident_Domain
+           and not exists (select 1 from appservergotDriverProfile ag
+                        Where a.UID_Profile = ag.UID_Profile
+                        and s.uid_applicationserver = ag.uid_applicationserver
+                )
+          and a.ident_domainrd = @Ident_DomainRD
+          and a.chgnumber > 0
+      Union
+     -- die MachineType, die drauf sind, aber mit falschem Status
+     select AsGMti.uid_applicationServer , 0, 0, 1
+            from MachineType MT join AppServerGotMacTypeInfo AsGMti
+                on MT.UID_MachineType = AsGMti.UID_MachineType and (isnull(MT.ChgNumber,0) <> isnull(AsGMti.ChgNumber,0) or  isnull(AsGMti.ProfileStateProduction, N'') <> N'READY')
+            where MT.Ident_DomainMachineType = @Ident_DomainRD
+                and MT.chgnumber > 0
+      Union
+     -- die, wo mindestens 1 MachineType der Domäne fehlt
+     select s.UID_ApplicationServer, 0 , 0, 1
+        from MachineType MT , ApplicationServer s
+        Where MT.Ident_DomainMachineType = s.Ident_Domain
+           and not exists (select 1 from AppServerGotMacTypeInfo AsGMti
+                        Where MT.UID_MachineType = AsGMti.UID_MachineType
+                        and s.uid_applicationserver = AsGMti.uid_applicationserver
+                )
+          and MT.Ident_DomainMachineType = @Ident_DomainRD
+          and MT.ChgNumber > 0
+    ) as x
+    group by x.uid_applicationserver
+    ) as y  on ax.uid_applicationserver = y.uid_applicationserver
+ where ax.ident_domain = @Ident_DomainRD
+order by ax.Ident_ApplicationServer asc;
+
+Oracle=select ax.Ident_Applicationserver, ax.UID_ApplicationServer, ax.UID_ParentApplicationServer as UID_ParentApplicationServer , nvl(y.appfehler, 0) as appFehler, nvl(y.drvfehler, 0) as drvFehler, nvl(y.MacFehler, 0) as macFehler
+  from Applicationserver ax left outer join
+    (
+    select x.uid_applicationServer , sum(x.AppFehler) as AppFehler, sum(x.DrvFehler) as DrvFehler, sum(x.MacFehler) as MacFehler
+    From
+    (
+     -- die Apps, die drauf sind, aber mit falschem Status
+     select ag.uid_applicationServer , 1 as AppFehler, 0 as DrvFehler, 0 as MacFehler
+            from Applicationprofile a join AppServerGotAppProfile ag
+                on a.uid_profile = ag.uid_profile and (nvl(a.ChgNumber,0) <> nvl(ag.ChgNumber,0) or upper(nvl(ag.ProfileStateProduction, N' ')) <> N'READY' )
+            where upper(a.ident_domainrd) = upper(@Ident_DomainRD)
+                and a.chgnumber > 0
+      Union
+     -- die, wo mindestens 1 Profil der Domäne fehlt
+     select s.uid_ApplicationServer, 1 , 0, 0
+        from applicationprofile a , applicationserver s
+        Where a.Ident_DomainRD = s.Ident_Domain
+           and not exists (select 1 from appservergotappprofile ag
+                        Where a.UID_Profile = ag.UID_Profile
+                        and s.uid_applicationserver = ag.uid_applicationserver
+                )
+          and upper(a.ident_domainrd) = upper(@Ident_DomainRD)
+          and a.chgnumber > 0
+      Union
+     -- die Driver, die drauf sind, aber mit falschem Status
+     select ag.uid_applicationServer , 0, 1, 0
+            from Driverprofile a join AppServerGotDriverProfile ag
+                on a.uid_profile = ag.uid_profile and (nvl(a.ChgNumber,0) <> nvl(ag.ChgNumber,0) or upper( nvl(ag.ProfileStateProduction, N' ') ) <> N'READY' )
+            where upper(a.ident_domainrd) = upper(@Ident_DomainRD)
+                and a.chgnumber > 0
+      Union
+     -- die, wo mindestens 1 Driver-Profil der Domäne fehlt
+     select s.uid_ApplicationServer, 0 , 1, 0
+        from Driverprofile a , applicationserver s
+        Where a.Ident_DomainRD = s.Ident_Domain
+           and not exists (select 1 from appservergotDriverProfile ag
+                        Where a.UID_Profile = ag.UID_Profile
+                        and s.uid_applicationserver = ag.uid_applicationserver
+                )
+          and upper(a.ident_domainrd) = upper(@Ident_DomainRD)
+          and a.chgnumber > 0
+      Union
+     -- die MachineType, die drauf sind, aber mit falschem Status
+     select AsGMti.uid_applicationServer , 0, 0, 1
+            from MachineType MT join AppServerGotMacTypeInfo AsGMti
+                on MT.UID_MachineType = AsGMti.UID_MachineType and ( nvl(MT.ChgNumber,0) <> nvl(AsGMti.ChgNumber,0) or  upper( nvl(AsGMti.ProfileStateProduction, N' ') ) <> N'READY' )
+            where upper(MT.Ident_DomainMachineType) = upper(@Ident_DomainRD)
+                and MT.chgnumber > 0
+      Union
+     -- die, wo mindestens 1 MachineType der Domäne fehlt
+     select s.UID_ApplicationServer, 0 , 0, 1
+        from MachineType MT , ApplicationServer s
+        Where MT.Ident_DomainMachineType = s.Ident_Domain
+           and not exists (select 1 from AppServerGotMacTypeInfo AsGMti
+                        Where MT.UID_MachineType = AsGMti.UID_MachineType
+                        and s.uid_applicationserver = AsGMti.uid_applicationserver
+                )
+          and upper(MT.Ident_DomainMachineType) = upper(@Ident_DomainRD)
+          and MT.ChgNumber > 0
+    ) x
+    group by x.uid_applicationserver
+    ) y  on ax.uid_applicationserver = y.uid_applicationserver
+ where upper(ax.ident_domain) = upper(@Ident_DomainRD)
+order by ax.Ident_ApplicationServer asc;
+
+
+[ServerAppProfile]
+MSSQL=select Ap.UID_Profile as uid_profile, Ap.DisplayName as displayname, AsGAp.ChgNumber as chgnrist, Ap.ChgNumber as chgnrsoll, AsGAp.ProfileStateProduction as state_p, AsGAp.ProfileStateShadow as state_s, AsGAp.XDateUpdated as xdate
+ from ApplicationProfile AP
+    left outer join AppServerGotAppProfile AsGAp on Ap.UID_Profile = AsGAp.UID_Profile and UID_ApplicationServer = @UID_ApplicationServer
+where AP.Ident_DomainRD = @Ident_DomainRD
+  and Ap.ChgNumber > 0
+      @ErrorsOnly
+order by Ap.DisplayName;
+
+Oracle=select Ap.UID_Profile as uid_profile, Ap.DisplayName as displayname, AsGAp.ChgNumber as chgnrist, Ap.ChgNumber as chgnrsoll, AsGAp.ProfileStateProduction as state_p, AsGAp.ProfileStateShadow as state_s, AsGAp.XDateUpdated as xdate
+ from ApplicationProfile AP
+    left outer join AppServerGotAppProfile AsGAp on Ap.UID_Profile = AsGAp.UID_Profile and upper(UID_ApplicationServer) = upper(@UID_ApplicationServer)
+where upper(AP.Ident_DomainRD) = upper(@Ident_DomainRD)
+  and Ap.ChgNumber > 0
+      @ErrorsOnly
+order by Ap.DisplayName;
+
+
+[ServerAppProfileErrorsOnly]
+MSSQL=  and (IsNull(AsGAp.ChgNumber, -1) <> IsNull(Ap.ChgNumber, -2) or AsGAp.ProfileStateProduction <> N'READY');
+
+Oracle= and (nvl(AsGAp.ChgNumber, -1) <> nvl(Ap.ChgNumber, -2) or upper(AsGAp.ProfileStateProduction) <> N'READY');
+        
+[ServerDrvProfile]
+MSSQL=select Dp.UID_Profile as uid_profile, Dp.DisplayName as displayname, AsGDp.ChgNumber as chgnrist, Dp.ChgNumber as chgnrsoll, AsGDp.ProfileStateProduction as state_p, AsGDp.ProfileStateShadow as state_s, AsGDp.XDateUpdated as xdate
+ from DriverProfile DP
+    left outer join AppServerGotDriverProfile AsGDp on Dp.UID_Profile = AsGDp.UID_Profile and UID_ApplicationServer = @UID_ApplicationServer
+where DP.Ident_DomainRD = @Ident_DomainRD
+  and Dp.ChgNumber > 0
+      @ErrorsOnly
+order by Dp.DisplayName;
+
+Oracle=
+-- spaltenname date könnte u.U. Probleme bereiten
+select Dp.UID_Profile as uid_profile, Dp.DisplayName as displayname, AsGDp.ChgNumber as chgnrist, Dp.ChgNumber as chgnrsoll, AsGDp.ProfileStateProduction as state_p, AsGDp.ProfileStateShadow as state_s, AsGDp.XDateUpdated as xdate
+ from DriverProfile DP
+    left outer join AppServerGotDriverProfile AsGDp on Dp.UID_Profile = AsGDp.UID_Profile and upper(UID_ApplicationServer) = upper(@UID_ApplicationServer)
+where upper(DP.Ident_DomainRD) = upper(@Ident_DomainRD)
+  and Dp.ChgNumber > 0
+      @ErrorsOnly
+order by Dp.DisplayName;
+
+
+[ServerDrvProfileErrorsOnly]
+MSSQL=  and (IsNull(AsGDp.ChgNumber, -1) <> IsNull(Dp.ChgNumber, -2) or AsGDp.ProfileStateProduction <> N'READY');
+
+Oracle=  and (nvl(AsGDp.ChgNumber, -1) <> nvl(Dp.ChgNumber, -2)  or upper(AsGDp.ProfileStateProduction) <> N'READY');
+        
+[ServerMacType]
+MSSQL=select MT.UID_MachineType as uid_profile, MT.Ident_MachineType as displayname, AsGMti.ChgNumber as chgnrist, MT.ChgNumber as chgnrsoll, AsGMti.ProfileStateProduction as state_p, AsGMti.ProfileStateShadow as state_s, AsGMti.XDateUpdated as xdate
+  from MachineType MT
+    left outer join AppServerGotMacTypeInfo AsGMti on MT.UID_MachineType = AsGMti.UID_MachineType and AsGMti.UID_ApplicationServer = @UID_ApplicationServer
+ where MT.Ident_DomainMachineType = @Ident_DomainRD
+   and MT.ChgNumber > 0
+       @ErrorsOnly
+ order by MT.Ident_MachineType;
+ 
+Oracle=select MT.UID_MachineType as uid_profile, MT.Ident_MachineType as displayname, AsGMti.ChgNumber as chgnrist, MT.ChgNumber as chgnrsoll, AsGMti.ProfileStateProduction as state_p, AsGMti.ProfileStateShadow as state_s, AsGMti.XDateUpdated as xdate
+  from MachineType MT
+    left outer join AppServerGotMacTypeInfo AsGMti on MT.UID_MachineType = AsGMti.UID_MachineType and upper(AsGMti.UID_ApplicationServer) = upper(@UID_ApplicationServer)
+ where upper(MT.Ident_DomainMachineType) = upper(@Ident_DomainRD)
+   and MT.ChgNumber > 0
+       @ErrorsOnly
+ order by MT.Ident_MachineType;
+
+[ServerMacTypeErrorsOnly]
+MSSQL=   and (IsNull(AsGMti.ChgNumber, -1) <> IsNull(MT.ChgNumber, -2) or AsGMti.ProfileStateProduction <> N'READY' );
+Oracle=  and (nvl(AsGMti.ChgNumber, -1) <> nvl(MT.ChgNumber, -2) or upper(AsGMti.ProfileStateProduction) <> N'READY' );
+
+[FDSApplicationProfileServer]
+MSSQL= select appS.Ident_ApplicationServer as displaytext, 
+ Wa.ChgCL as chgnr,
+ WA.state_p as state_p, 
+ WA.state_s as state_s,
+ WA.changed as changed,
+ appS.UID_ApplicationServer as uid_applicationserver,
+ appS.UID_ParentApplicationServer as uid_parentapplicationserver,
+ AppS.Ident_Domain as domain
+from ApplicationProfile AP_CL
+join ProfileCanUsedByRD PCU on AP_CL.UID_Profile = PCU.UID_Profile
+                                         and AP_CL.UID_Profile = @UID_Profile
+join ApplicationServer AppS on PCU.Ident_DomainAllowed = AppS.Ident_Domain
+left outer join ( select AP_FDS.ChgCL, AP_FDS.DisplayName, AP_FDS.UID_Profile, Pos.UID_ApplicationServer, AP_FDS.uid_application , AP_FDS.Ident_os, AP_FDS.Ident_Insttype, AP_FDS.ChgNumber, PoS.ProfileStateProduction as state_p, PoS.ProfileStateShadow as state_s,  AP_FDS.XDateUpdated as changed
+                             from AppServerGotAppProfile PoS join ApplicationProfile AP_FDS on PoS.UID_Profile = AP_FDS.UID_Profile
+                        ) Wa on Wa.uid_application = AP_CL.uid_application
+                             and Wa.Ident_os = AP_CL.Ident_os
+                             and Wa.Ident_Insttype = AP_CL.Ident_Insttype
+                             and Wa.UID_ApplicationServer = AppS.UID_ApplicationServer;                             
+
+ORACLE= select appS.Ident_ApplicationServer as displaytext, 
+ Wa.ChgCL as chgnr,
+ WA.state_p as state_p, 
+ WA.state_s as state_s,
+ WA.changed as changed,
+ appS.UID_ApplicationServer as uid_applicationserver,
+ appS.UID_ParentApplicationServer as uid_parentapplicationserver,
+ AppS.Ident_Domain as domain
+from ApplicationProfile AP_CL
+join ProfileCanUsedByRD PCU on AP_CL.UID_Profile = PCU.UID_Profile
+                                         and upper(AP_CL.UID_Profile) = upper(@UID_Profile)
+join ApplicationServer AppS on PCU.Ident_DomainAllowed = AppS.Ident_Domain
+left outer join ( select AP_FDS.ChgCL, AP_FDS.DisplayName, AP_FDS.UID_Profile, Pos.UID_ApplicationServer, AP_FDS.uid_application , AP_FDS.Ident_os, AP_FDS.Ident_Insttype, AP_FDS.ChgNumber, PoS.ProfileStateProduction as state_p, PoS.ProfileStateShadow as state_s,  AP_FDS.XDateUpdated as changed
+                             from AppServerGotAppProfile PoS join ApplicationProfile AP_FDS on PoS.UID_Profile = AP_FDS.UID_Profile
+                        ) Wa on Wa.uid_application = AP_CL.uid_application
+                             where Wa.Ident_os = AP_CL.Ident_os
+                             and Wa.Ident_Insttype = AP_CL.Ident_Insttype
+                             and Wa.UID_ApplicationServer = AppS.UID_ApplicationServer;                             
+
+
+
+[FDSDriverProfileServer]
+MSSQL= select appS.Ident_ApplicationServer as displaytext, 
+ Wa.ChgCL as chgnr,
+ WA.state_p as state_p, 
+ WA.state_s as state_s,
+ WA.changed as changed,
+ appS.UID_ApplicationServer as uid_applicationserver,
+ appS.UID_ParentApplicationServer as uid_parentapplicationserver,
+ AppS.Ident_Domain as domain
+from DriverProfile DP_CL
+join DriverCanUsedByRD DCU on DP_CL.UID_Profile = DCU.UID_Profile
+                                         and DP_CL.UID_Profile = @UID_Profile
+join ApplicationServer AppS on DCU.Ident_DomainAllowed = AppS.Ident_Domain
+left outer join ( select DP_FDS.ChgCL, DP_FDS.Ident_DomainRDOwner, DP_FDS.DisplayName, DP_FDS.Subpath, DP_FDS.UID_Profile, Pos.UID_ApplicationServer, DP_FDS.uid_driver , DP_FDS.ChgNumber, PoS.ProfileStateProduction as state_p, PoS.ProfileStateShadow as state_s,  DP_FDS.XDateUpdated as changed
+                             from AppServerGotDriverProfile PoS join DriverProfile DP_FDS on PoS.UID_Profile = DP_FDS.UID_Profile
+                        ) Wa on Wa.uid_driver = DP_CL.uid_driver
+							and DCU.Ident_DomainAllowed = wa.Ident_DomainRDOwner
+							and Wa.Subpath = DP_CL.SubPath
+							and Wa.UID_ApplicationServer = AppS.UID_ApplicationServer;
+
+ORACLE= select appS.Ident_ApplicationServer as displaytext, 
+ Wa.ChgCL as chgnr,
+ WA.state_p as state_p, 
+ WA.state_s as state_s,
+ WA.changed as changed,
+ appS.UID_ApplicationServer as uid_applicationserver,
+ appS.UID_ParentApplicationServer as uid_parentapplicationserver,
+ AppS.Ident_Domain as domain
+from DriverProfile DP_CL
+join DriverCanUsedByRD DCU on DP_CL.UID_Profile = DCU.UID_Profile
+                                         and upper(DP_CL.UID_Profile) = upper(@UID_Profile)
+join ApplicationServer AppS on DCU.Ident_DomainAllowed = AppS.Ident_Domain
+left outer join ( select DP_FDS.ChgCL, DP_FDS.Ident_DomainRDOwner, DP_FDS.DisplayName, DP_FDS.Subpath, DP_FDS.UID_Profile, Pos.UID_ApplicationServer, DP_FDS.uid_driver , DP_FDS.ChgNumber, PoS.ProfileStateProduction as state_p, PoS.ProfileStateShadow as state_s,  DP_FDS.XDateUpdated as changed
+                             from AppServerGotDriverProfile PoS join DriverProfile DP_FDS on PoS.UID_Profile = DP_FDS.UID_Profile
+                        ) Wa on Wa.uid_driver = DP_CL.uid_driver
+							where DCU.Ident_DomainAllowed = wa.Ident_DomainRDOwner
+							and Wa.Subpath like DP_CL.SubPath
+							and Wa.UID_ApplicationServer = AppS.UID_ApplicationServer;
+
+
+
+
+[CL_ApplicationProfile]
+MSSQL=select 0 as Fehler, AP.DisplayName as DisplayText, AP.UID_Profile as UID_Profile, AP.ChgNumber as ChgNrSoll, 0 as ChgNrIst
+  from ApplicationProfile AP
+ where ap.ident_domainrd = @Ident_DomainRD
+    and ap.chgnumber > 0
+order by AP.DisplayName;
+
+Oracle=select 0 as Fehler, AP.DisplayName as DisplayText, AP.UID_Profile as UID_Profile, AP.ChgNumber as ChgNrSoll, 0 as ChgNrIst
+  from ApplicationProfile AP 
+ where upper(ap.ident_domainrd) = upper(@Ident_DomainRD)
+    and ap.chgnumber > 0
+order by AP.DisplayName;
+
+
+[CL_DriverProfile]
+MSSQL=select 0 as Fehler, DP.DisplayName as DisplayText, DP.UID_Profile as UID_Profile, DP.ChgNumber as ChgNrSoll, 0 as ChgNrIst
+  from DriverProfile DP 
+ where DP.ident_domainrd = @Ident_DomainRD
+    and DP.chgnumber > 0
+order by DP.DisplayName;
+
+Oracle=select 0 as Fehler, DP.DisplayName as DisplayText, DP.UID_Profile as UID_Profile, DP.ChgNumber as ChgNrSoll, 0 as ChgNrIst
+  from DriverProfile DP
+ where upper(DP.ident_domainrd) = upper(@Ident_DomainRD)
+    and DP.chgnumber > 0
+order by DP.DisplayName;

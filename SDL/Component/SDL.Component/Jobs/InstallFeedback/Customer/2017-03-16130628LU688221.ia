@@ -1,0 +1,371 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<ApplicationInfo>
+	<VIClientErrorLevel>0</VIClientErrorLevel>
+	<UserInfo Account="Oma" NameSpace="ADS" DomainKontext="DOTNET">
+		<Apps SectionName="DG_PRG_VCREDIT20XX" Revision="4" InstallType="ClientBased" OS="W7D64"/>
+		<Apps SectionName="DG_PRG_SIVERL64_5.1" Revision="4" InstallType="ClientBased" OS="W7D64"/>
+		<Apps SectionName="DG_PRG_DOTNETFW4FULL" Revision="9" InstallType="ClientBased" OS="W7D64"/>
+		<Apps SectionName="DG_PRG_SCCMCLIENT_CB" Revision="9" InstallType="ClientBased" OS="W7D64"/>
+		<Apps SectionName="DG_PRG_ADOFLASH12044" Revision="7" InstallType="ClientBased" OS="W7D64"/>
+		<Apps SectionName="DG_PRG_LESAGENT46278" Revision="3" InstallType="ClientBased" OS="W7D64"/>
+		<Apps SectionName="DG_PRG_CITREC4408014" Revision="5" InstallType="ClientBased" OS="W7D64"/>
+	</UserInfo>
+	<MachineInfo Account="VINETS02" NameSpace="ADS" DomainKontext="DOTNET">
+		<Apps SectionName="DG_PRG_VCREDIT20XX" Revision="4" InstallType="ClientBased" OS="W7D64"/>
+		<Apps SectionName="DG_PRG_SIVERL64_5.1" Revision="4" InstallType="ClientBased" OS="W7D64"/>
+		<Apps SectionName="DG_PRG_DOTNETFW4FULL" Revision="9" InstallType="ClientBased" OS="W7D64"/>
+		<Apps SectionName="DG_PRG_ADOFLASH12044" Revision="7" InstallType="ClientBased" OS="W7D64"/>
+		<Apps SectionName="DG_PRG_CITREC4408014" Revision="5" InstallType="ClientBased" OS="W7D64"/>
+		<Apps SectionName="DG_PRG_LESAGENT46278" Revision="3" InstallType="ClientBased" OS="W7D64"/>
+		<Apps SectionName="DG_PRG_SCCMCLIENT_CB" Revision="9" InstallType="ClientBased" OS="W7D64"/>
+	</MachineInfo>
+	<InstallLog>
+		<![CDATA[VIClient, v5.0 (1.4.2.8), Protokoll der Operationen, erzeugt 03/16/17 13:06:13
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+Ancestors from current Process:
+  cmd.exe
+  wscript.exe
+  userinit.exe
+  winlogon.exe
+Proof by 'IsRunningByLogonW7()' ...
+=: Proof was positive.
+Zugriffs Token wird durch Ini-Parameter '[RECHTEGRUPPE]::ZugriffsTokenVomProcess' mit dem Wert 'UsrUsr' bestimmt.
+Aufbau der Verbindung zum Server Service auf 'LU388081' -:
+Ping erfolgreich.
+Verbindung zum Server Service hergestellt.
+Verbindung zum Server Service beendet.
+Anomalie: Error on process elevation: Error Code 0:
+
+=: Retry after 10000 milliseconds ...
+Loaded Language:
+  Setting: :not specified in 'C:\Users\LU14854\AppData\Local\Temp\VICL10.tmp', Section 'LANGUAGE', Key 'Parameters':
+  Detected: GER
+  Correspond File: 'C:\VI\viclient\Languages\GER.txt':
+    File not available =: Default Language will be used.
+
+VI Network Client: Protokoll der Operationen vom 16/03/17 13:06:25 Uhr (FileVersion 1.4.2.8)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+Alle Pfadangaben sind lokal aus User's Sicht.
+Detektiertes OS:
+  OS
+    Type: Workstation
+    Platform: Microsoft® Windows NT(TM) 
+    Version: 6.1
+    Build Number: 7601
+  Service Pack
+    Name: Service Pack 1
+    Version: 1.0
+  Suites
+    none
+Account: LUCORP\LU14854;  Administrator: Nein, DenyOnly (UAC)
+PC: LU688221
+Benutzer: LU14854
+
+Parameter werden aus '\\LU388081\NETLOGON\LUCORP\VI_CLIENT_W7.INI' entnommen:
+  SCHALTER:
+    DekomprimierenBeiBedarf = OFF -: Schalter ist deaktiviert.
+    Wiederherstellbarkeit = ON -: Schalter ist aktiviert.
+    ZeitSynchronisation = ON -: Schalter ist aktiviert.
+    BetriebssystemVerarbeitung = OFF -: Schalter ist deaktiviert.
+    NurFehlerReport = ON -: Schalter ist aktiviert.
+    KeinReportInStatusInfo = OFF -: Schalter ist deaktiviert.
+    SpiegelungUnterbinden = OFF -: Schalter ist deaktiviert.
+    NurStammBenutzerInstallation = OFF -: Schalter ist deaktiviert.
+    RegIgnorierenBeimDeinstallieren = OFF -: Schalter ist deaktiviert.
+    NeueSymboleAnzeigen = OFF -: Schalter ist deaktiviert.
+    FremdeProgrammGruppenLöschen = OFF -: Schalter ist deaktiviert.
+    DateiErsetzungNurNachAlter = OFF -: Schalter ist deaktiviert.
+    PersönlicheEinstellungenÜbernehmen = OFF -: Schalter ist deaktiviert.
+    KeineUpdateOptimierung = OFF -: Schalter ist deaktiviert.
+    ImmerSpiegeln = OFF -: Schalter ist deaktiviert.
+    SynchroneVerarbeitung = OFF -: Schalter ist deaktiviert.
+    MeldungWennTolerierteFehlerUnterbinden = OFF -: Schalter ist deaktiviert.
+    AuswahlDialogUnterdrücken = OFF -: Schalter ist deaktiviert.
+    Instandsetzung = OFF -: Schalter ist deaktiviert.
+    SitzungsMonitorDeaktivieren = OFF -: Schalter ist deaktiviert.
+    UnterbindenVonVerarbeitungPcAnteilApplikationen = OFF -: Schalter ist deaktiviert.
+    KeinStandardKommentarInShortcutsAufBatches = OFF -: Schalter ist deaktiviert.
+    TestModusInfoDlgUnterdrücken = ON -: Schalter ist aktiviert.
+    SchreibschutzBeiIniVerarbeitungUmgehen = OFF -: Schalter ist deaktiviert.
+    VerwendungEreignisProtokollProZustandEineEventID = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    DateienUndIniBehandlungBeimRevUpdateCaseSensitiv = OFF -: Schalter ist deaktiviert.
+    ApplikationsAbhängigkeitenIgnorieren = OFF -: Schalter ist deaktiviert.
+    ApplikationsAusschlüsseIgnorieren = OFF -: Schalter ist deaktiviert.
+    KeineBenutzerInteraktion = ON -: Schalter ist aktiviert.
+    VerarbeitungHkcuBeimDeinstallieren = OFF -: Schalter ist deaktiviert.
+    SupportSortOrder = OFF -: Schalter ist deaktiviert.
+    PoliciesUmgehen = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    EinfacheOberfläche = OFF -: Schalter ist deaktiviert.
+    LokalesBenutzerkontoAnlegen = OFF -: Schalter ist deaktiviert.
+    BenutzerInformationenAusZugriffsTokenEntnehmen = OFF -: Schalter ist deaktiviert.
+    UmgehenVonWfp = OFF -: Schalter ist deaktiviert.
+    ErhaltenDerTemporärenAppListe = OFF -: Schalter ist deaktiviert.
+    RegIgnorieren = OFF -: Schalter ist deaktiviert.
+      -: Modus LOCAL, Registry wird lokal bearbeitet.
+  DATEIEN:
+    Report = log.r
+    KommandozeileWennTolerierteFehler = \\LU388081\NETLOGON\LUCORP\COPY_LOGR.CMD C:\VI\PROT\log.r
+    KommandozeileWennAbbruchFehler = ECHO FEHLER: VICLIENT WIRD ABGEBROCHEN
+    AppListe = \\LU388081\LUCORP\NET\PATH.VII
+    ProtokollMaschine = C:\VI\PROT\VIPROT.INI
+    InfoBenutzer = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    Variablen = \\LU388081\NETLOGON\LUCORP\VIVars.INI
+    InfoMaschine = \\LU388081\NETLOGON\LUCORP\MACHINES\LU688221.VII
+    Applikationsersetzungen = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    ProtokollBenutzer = C:\VI\PROT\USER\LU14854\VIPROT.INI
+  VERZEICHNISSE:
+    ReportArchiv = C:\VI\ARCHIV
+    SpiegelBasis = C:\VI\PROT\LU14854\VIMirror
+    StatusInfo = \\LUPDFS01\LUKB\Applikationen\IDM\Inventory\InstallFeedback
+    Diagnose = OFF
+  MODI:
+    MeldungWennAbbruchFehler = Modus ON_WITH_CONFIRM, Benutzer wird bei Fehlerabbruch informiert, mit erforderlicher Bestätigung.
+    DateiErsetzung = Modus OLDER, vorhandene Datei wird ersetzt, wenn diese älter.
+    ProgrammGruppenArt = Modus PERSONAL, Programmgruppen werden als 'Personal' erzeugt.
+    BenutzerZuRechnerKontrolle = Modus OFF, Benutzer-Rechner Kontrolle wird nicht durchgeführt.
+    BenutzerZuRechnerDomaenenKontrolle = Modus OFF, Benutzer-MacDomainGroup Kontrolle wird nicht durchgeführt.
+    PlattenSpeicherReserve = 0 [KB]
+    VerarbeitungAbschaltbar = 0 [s]
+    SimultaneSitzungenKontrolle_AntwortzeitBegrenzung = 0
+    ReportArchivTiefe = 15 [Anzahl]
+    UpdateOptimierung = 0x0
+    InstallationstypenKontrolle = Modus OFF, Installationstyp-Kontrolle wird nicht durchgeführt.
+    IniStandardVerarbeitung = Modus NEW, Ini Standard Verarbeitung: Key's immer neu anlegen.
+    RebootTyp = Modus IMMEDIATELY, Reboot: Reboot erfolgt unmittelbar nach Beendigung des VIClient (vor Programmgruppen-Verarbeitung).
+    Steuerlogik = Modus PC_DEPENDED, Benutzer erhält automatisch alle Applikationen, die für den PC installiert sind.
+    BenutzerTyp = Modus AUTO_DETECT, BenutzerTyp wird aus der SAM entnommen.
+    SimultaneSitzungenKontrolle = Modus OFF, Simultane-Sitzungen-Kontrolle wird nicht durchgeführt.
+    VariablenQuellenSuchreihenfolge = Modus FILE_GENERAL,FILE_SPECIAL,ENVIRONMENT, ist die Suchreihenfolge der Variablenquellen.
+    TerminalServerBenutzerSitzungSimulieren = -1 =: Keine Simulation einer Terminal-Sitzung.
+    NeutralisierungVonVerarbeitungen = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: Keine Verarbeitungen werden neutralisiert.
+    BatchTimeout = 3600
+    ZugriffsKontext = Modus COMMON_LOCAL; Zugriffskontext, -Lokal: System, -Netz: Benutzer.
+    NetzwerkprotokollNr = Netzwerkprotokoll 'ncacn_np' wird benutzt.
+    VerwendungEreignisProtokollBeiTerminierung = Modus AS_OF_ERROR_ABORT, Es werden nur Läufe mit Abbruch-Fehlern im EventLog notiert.
+    VerwendungEreignisProtokollPerApplikationsProfil = Modus AS_OF_ERROR_ABORT, Es werden nur Applikationsprofile mit Abbruch-Fehlern im EventLog notiert.
+  DIVERSE:
+    VariablenSequenzBeginn = [VI:VAR=
+    VariablenSequenzEnde = ]
+    DienstServer = LU388081
+    KommandozeilePre = \\LU388081\NETLOGON\LUCORP\Clntpre.cmd
+    KommandozeilePost = \\LU388081\NETLOGON\LUCORP\Clntpost.cmd
+    NamensPrefixeArbeitsplatzApps = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    IgnorierenBeiKennwoertern = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    DesktopFürBatches = WinSta0\Default
+    ProcessCreationFlags_ForChildProcesses = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: 134217728
+  RECHTEGRUPPE:
+    GruppenNameWizardRechte = Domain Users
+      MitgliedschaftsKontrolle = Modus OFF, Benutzer-Gruppen Kontrolle wird nicht durchgeführt.
+    ZugriffsTokenVomProcess = UsrUsr
+    ZugriffsTokenVomThread = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: UsrAdmin
+    VerwendungZugriffsTokenDienst = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: Modus AUTO, Verwendung des Zugriffs-Token-Dienst: Die Verwendung des Dienstes erfolgt automatisch.
+  APPLIKATIONENZUGRIFFSKONTROLLE:
+    Kontrolle = Modus OFF, Applikations-Zugriffskontrolle ist deaktiviert.
+    DynamischeBenutzerTokenAnpassung = Modus ALL_PROCESSES, Dynamische Benutzer-Token Anpassung erfolgt über alle Prozesse des Benutzers.
+    IgnorierenBeiInstandsetzung = OFF -: Schalter ist deaktiviert.
+    EinbeziehenVonMsiProfilen = OFF -: Schalter ist deaktiviert.
+  NETZWERK:
+    MinTransferRateRelativ = 0
+  LOKALEPROFILE:
+    Caching = Modus OFF, Lokales AppProfil Caching ist deaktiviert.
+    VerzeichnisCaching = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    VerzeichnisNurLesend = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    FürWenCachen = 0x6
+    AktualisierungsIntervall = 60
+    TransferRateNutzungsgrad = 50
+    TransferBlockGroesse = 4096
+    TransferMaxPausePerBlock = 10000
+    PlatteFürVerzeichnisCachingIstOptional = OFF -: Schalter ist deaktiviert.
+    BitsEnable = OFF -: Schalter ist deaktiviert.
+    BitsReportingServer = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    BitsReportingTimeout = 600
+    BitsAssignmentServiceSingleClient = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    BitsAssignmentServiceOrg = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    BitsAssignmentServiceResourceDomain = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    AutoShutdownAfter = 0
+    RunAsService = OFF -: Schalter ist deaktiviert.
+    DisableTrayIcon = OFF -: Schalter ist deaktiviert.
+    IgnorierenBeiKennwoerternBeruecksichtigen = OFF -: Schalter ist deaktiviert.
+  LICENSING:
+    Server = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+  ADS:
+    InfoProvider = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+  MIGRATION:
+    WechselAppPräfix = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    WechselDrvPräfix = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    ÜbernameRevNummer = OFF -: Schalter ist deaktiviert.
+  MSI:
+    ZugriffsTokenVomProcess = :Process:
+    ZugriffsTokenVomThread = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    ImmerProtokollieren = ON -: Schalter ist aktiviert.
+    BatchPre = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    BatchPost = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+  INSTANDSETZUNG:
+    AuwahlAllerApplikationenMöglich = Modus OFF, RepairScope: Umfasst nur die auf die auf dem PC installierten Applikationen, deren Benutzeranteil auch Installiert ist für den aktuellen Benutzer.
+  FEHLERTOLERANZ:
+    AnzahlVersuche = 60
+    WartezeitZwischenVersuchenInMs = 10000
+
+Testmodus: Nein
+Ausführungsmodus: LOGONSCRIPT
+Multithreading enabled: Ja
+Applikationen mit folgenden Kennwörtern ignorieren:
+  Kennwörter aus Environment-Variable 'viClientIgnorierenBeiKennwoertern': Keine
+  Kennwörter aus Ini: Keine
+Konsistenzprüfung der Parameter:
+  Abgeschlossen.
+
+Zugriffskontext wurde erfolgreich auf Modus 'COMMON_LOCAL' gesetzt.
+Globale AppListe '\\LU388081\LUCORP\NET\PATH.VII' wurde temporär nach 'C:\VI\PROT\TEMP\CachedGlobalAppList.ini' gecached.
+-: und wird am Ende gelöscht.
+
+Lokale Uhrzeit wurde mit Server '\\LU388081' synchronisiert.
+Installationstyp des PC: W7D64 ClientBased
+
+Folgende Pfade/Dateien werden benutzt:
+  VI Client Start-Verzeichnis: 'C:\VI\viclient\'.
+  AppListe, global: '\\LU388081\LUCORP\NET\PATH.VII'.
+  Protokoll-Datei: 'C:\VI\PROT\VIPROT.INI'.
+  Daten PC: '\\LU388081\NETLOGON\LUCORP\MACHINES\LU688221.VII'.
+  Daten Benutzer: ''.
+  Liste aller verwendeten Dateien: ':ProtRegMac:\InstalledFiles\Originals'.
+  Liste aller gespiegelten Dateien: 'C:\VI\PROT\USER\LU14854\MirroredFiles.VIP'.
+  Liste aller gespiegelten Values: 'C:\VI\PROT\USER\LU14854\MirroredValues.VIP'.
+  Kommandozeile wenn tolerierte Fehler: '\\LU388081\NETLOGON\LUCORP\COPY_LOGR.CMD C:\VI\PROT\log.r'.
+  Kommandozeile wenn Abbruch-Fehler: 'ECHO FEHLER: VICLIENT WIRD ABGEBROCHEN'.
+  Report-Archiv: 'C:\VI\ARCHIV\'.
+  Protokoll-Verzeichnis PC: 'C:\VI\PROT\'.
+  Rescue Basis-Verzeichnis: 'C:\VI\PROT\VIRescue\'.
+  Benutzer Arbeits-Verzeichnis: 'C:\VI\viclient'.
+  Benutzer Temp: 'C:\Users\LU14854\AppData\Local\Temp\'.
+  viClient Temp: 'C:\VI\PROT\TEMP\'.
+  Kommunikations-Server: 'LU388081'.
+  Für WalkingUser Modus:
+    Protokoll-Verzeichnis Benutzer: 'C:\VI\PROT\USER\LU14854\'.
+    Protokoll-Datei Benutzer: 'C:\VI\PROT\USER\LU14854\VIPROT.INI'.
+    Spiegel-Basisverzeichnis: 'C:\VI\PROT\LU14854\VIMirror\'.
+    Spiegel-Dateiliste: 'C:\VI\PROT\USER\LU14854\MirroredFiles.VIP'.
+    Spiegel-Valueliste: 'C:\VI\PROT\USER\LU14854\MirroredValues.VIP'.
+
+Batch '\\LU388081\NETLOGON\LUCORP\Clntpre.cmd' wird synchron gestartet -:
+  Ist terminiert mit Errorlevel 0.
+
+Es wurde in '\\LU388081\NETLOGON\LUCORP\VI_CLIENT_W7.INI' keine Datei unter 'InfoBenutzer' angegeben =: Applikationen des User werden über das Netz ermittelt.
+
+Es wurde in '\\LU388081\NETLOGON\LUCORP\VI_CLIENT_W7.INI' eine Datei unter 'InfoMaschine' angegeben -: Applikationen des Computer werden aus '\\LU388081\NETLOGON\LUCORP\MACHINES\LU688221.VII' entnommen.
+Benutzer ist Stammbenutzer des PC: Nein
+•Hinweis: Konfigurations-Datei '\\LU388081\NETLOGON\LUCORP\VI_CLIENT_W7.INI' unter Kommandozeilen-Parameter '-I' wurde geändert - entweder namentlich oder inhaltlich.
+Abhängige Applikationen:
+
+Folgende Applikationen werden verarbeitet:
+App                 Pfad                                                                  Allgemein Benutzer ProgGroupsRevisionsNr OS  
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+DG_PRG_ADOFLASH12044\\LU388081\LUCORP\NET\APPS\W7\Adobe\Flashplayer\12.0.0.44             OK        OK       OK        7           AUTO
+DG_PRG_CITREC4408014\\LU388081\LUCORP\NET\APPS\W7\Citrix\Receiver\4.4.0.8014              OK        OK       OK        5           AUTO
+DG_PRG_DOTNETFW4FULL\\LU388081\LUCORP\NET\APPS\W7\MS\DOTNETFRAMEWORK\4.0_FULL             OK        OK       OK        9           AUTO
+DG_PRG_LESAGENT46278\\LU388081\LUCORP\NET\APPS\W7\Lumension\EndpointSecurity\Agent\4.6.278OK        OK       OK        3           FORCE_IMMEDIATELY
+DG_PRG_SCCMCLIENT_CB\\LU388081\LUCORP\NET\APPS\W7\SCCM\Client\CURRENTBRANCH               OK        OK       OK        9           AUTO
+DG_PRG_SIVERL64_5.1 \\LU388081\LUCORP\NET\APPS\W7\MS\Silverlight\5.1.10411.0              OK        OK       OK        4           AUTO
+DG_PRG_VCREDIT20XX  \\LU388081\LUCORP\NET\APPS\W7\MS\VC++Redistributable\2005_2008_2010   OK        OK       OK        4           AUTO
+DG_PRG_TTGUIDE110411\\LU388081\LUCORP\NET\APPS\W7\TTGuideCreator\11.0.41.1                NO        DEL      DEL       3           AUTO
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+Reihenfolge der Verarbeitung:
+App                 Pfad                                                                  Allgemein Benutzer ProgGroupsRevisionsNr OS  
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+DG_PRG_TTGUIDE110411\\LU388081\LUCORP\NET\APPS\W7\TTGuideCreator\11.0.41.1                NO        DEL      DEL       3           AUTO
+DG_PRG_VCREDIT20XX  \\LU388081\LUCORP\NET\APPS\W7\MS\VC++Redistributable\2005_2008_2010   OK        OK       OK        4           AUTO
+DG_PRG_SIVERL64_5.1 \\LU388081\LUCORP\NET\APPS\W7\MS\Silverlight\5.1.10411.0              OK        OK       OK        4           AUTO
+DG_PRG_DOTNETFW4FULL\\LU388081\LUCORP\NET\APPS\W7\MS\DOTNETFRAMEWORK\4.0_FULL             OK        OK       OK        9           AUTO
+DG_PRG_SCCMCLIENT_CB\\LU388081\LUCORP\NET\APPS\W7\SCCM\Client\CURRENTBRANCH               OK        OK       OK        9           AUTO
+DG_PRG_ADOFLASH12044\\LU388081\LUCORP\NET\APPS\W7\Adobe\Flashplayer\12.0.0.44             OK        OK       OK        7           AUTO
+DG_PRG_LESAGENT46278\\LU388081\LUCORP\NET\APPS\W7\Lumension\EndpointSecurity\Agent\4.6.278OK        OK       OK        3           FORCE_IMMEDIATELY
+DG_PRG_CITREC4408014\\LU388081\LUCORP\NET\APPS\W7\Citrix\Receiver\4.4.0.8014              OK        OK       OK        5           AUTO
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+Anzahl aller zu Verarbeitenden Einträge: 0
+
+Applikation: DG_PRG_TTGUIDE110411
+Verarbeitung für Subsystem: Windows 32 Bit.
+Batch '\\LU388081\LUCORP\NET\APPS\W7\TTGuideCreator\11.0.41.1\USRPRE#.CMD' wird synchron gestartet -:
+  Ist terminiert mit Errorlevel 0.
+Resultat der Batch ('\\LU388081\LUCORP\NET\APPS\W7\TTGuideCreator\11.0.41.1\USRPRE#.CMD') wurde nicht zurückgemeldet =: Batch wird als erfolgreich behandelt!
+MSI-Steuerdatei 'USRMSIPRE.vip' nicht spezifiziert für dieses Applikationsprofil.
+Verarbeitung von Batchfile 'C:\VI\PROT\USER\LU14854\DG_PRG_TTGUIDE110411\USRFILES.VIP':
+Anzahl Einträge: 0
+Verarbeitung von Batchfile 'C:\VI\PROT\USER\LU14854\DG_PRG_TTGUIDE110411\USRINIS.VIP':
+Anzahl Einträge: 0
+Verarbeitung von Batchfile 'C:\VI\PROT\USER\LU14854\DG_PRG_TTGUIDE110411\USRREG.VIP':
+Anzahl Einträge: 0
+Verarbeitung von Batchfile 'C:\VI\PROT\USER\LU14854\DG_PRG_TTGUIDE110411\USRSHELL.VIP':
+Anzahl Einträge: 0
+Programmgruppen BatchFiles geflusht.
+Erzeugen Programmgruppen BatchFiles erfolgreich.
+MSI-Steuerdatei 'USRMSIPOST.vip' nicht spezifiziert für dieses Applikationsprofil.
+Batch '\\LU388081\LUCORP\NET\APPS\W7\TTGuideCreator\11.0.41.1\USRPOST#.CMD' wird synchron gestartet -:
+  Ist terminiert mit Errorlevel 0.
+Resultat der Batch ('\\LU388081\LUCORP\NET\APPS\W7\TTGuideCreator\11.0.41.1\USRPOST#.CMD') wurde nicht zurückgemeldet =: Batch wird als erfolgreich behandelt!
+
+Applikation: DG_PRG_VCREDIT20XX
+Verarbeitung für Subsystem: Windows 32 Bit.
+Verarbeitung von Batchfile 'C:\VI\PROT\USER\LU14854\DG_PRG_VCREDIT20XX\USRSHELL.VIP':
+Anzahl Einträge: 0
+Programmgruppen BatchFiles geflusht.
+Erzeugen Programmgruppen BatchFiles erfolgreich.
+
+Applikation: DG_PRG_SIVERL64_5.1
+Verarbeitung für Subsystem: Windows 32 Bit.
+Verarbeitung von Batchfile 'C:\VI\PROT\USER\LU14854\DG_PRG_SIVERL64_5.1\USRSHELL.VIP':
+Anzahl Einträge: 0
+Programmgruppen BatchFiles geflusht.
+Erzeugen Programmgruppen BatchFiles erfolgreich.
+
+Applikation: DG_PRG_DOTNETFW4FULL
+Verarbeitung für Subsystem: Windows 64 Bit.
+Verarbeitung von Batchfile 'C:\VI\PROT\USER\LU14854\DG_PRG_DOTNETFW4FULL\USRSHELL.VIP':
+Anzahl Einträge: 0
+Programmgruppen BatchFiles geflusht.
+Erzeugen Programmgruppen BatchFiles erfolgreich.
+
+Applikation: DG_PRG_SCCMCLIENT_CB
+Verarbeitung für Subsystem: Windows 64 Bit.
+Verarbeitung von Batchfile 'C:\VI\PROT\USER\LU14854\DG_PRG_SCCMCLIENT_CB\USRSHELL.VIP':
+Anzahl Einträge: 0
+Programmgruppen BatchFiles geflusht.
+Erzeugen Programmgruppen BatchFiles erfolgreich.
+
+Applikation: DG_PRG_ADOFLASH12044
+Verarbeitung für Subsystem: Windows 32 Bit.
+Verarbeitung von Batchfile 'C:\VI\PROT\USER\LU14854\DG_PRG_ADOFLASH12044\USRSHELL.VIP':
+Anzahl Einträge: 0
+Programmgruppen BatchFiles geflusht.
+Erzeugen Programmgruppen BatchFiles erfolgreich.
+
+Applikation: DG_PRG_LESAGENT46278
+Verarbeitung für Subsystem: Windows 64 Bit.
+Verarbeitung von Batchfile 'C:\VI\PROT\USER\LU14854\DG_PRG_LESAGENT46278\USRSHELL.VIP':
+Anzahl Einträge: 0
+Programmgruppen BatchFiles geflusht.
+Erzeugen Programmgruppen BatchFiles erfolgreich.
+
+Applikation: DG_PRG_CITREC4408014
+Verarbeitung für Subsystem: Windows 32 Bit.
+Verarbeitung von Batchfile 'C:\VI\PROT\USER\LU14854\DG_PRG_CITREC4408014\USRSHELL.VIP':
+Anzahl Einträge: 0
+Programmgruppen BatchFiles geflusht.
+Erzeugen Programmgruppen BatchFiles erfolgreich.
+
+Paralleler Prozess: 'C:\VI\viclient\DoProp.exe' -:
+  wurde gestartet.
+Batch '\\LU388081\NETLOGON\LUCORP\Clntpost.cmd' wird synchron gestartet -:
+  Ist terminiert mit Errorlevel 0.
+
+Abgleich abgeschlossen.
+Kein Fehler aufgetreten.
+Keine Warnungen aufgetreten.
+1 Hinweise ("Hinweis:") aufgetreten!
+Laufzeit in [s]: 3
+ExitCode: 0, Kein Abbruch.
+]]>
+	</InstallLog>
+</ApplicationInfo>

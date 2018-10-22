@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StyleDefinition Version="1.1">
+	<Style Name="Layout" AssignableControls="">
+		<Property Name="BackColor" Type="Color" Value="Transparent" />
+	</Style>
+	<Style Name="ColumnTabPage" Extends="Layout" AssignableControls="ColumnLayout">
+		<Property Name="PaddingBottom" Type="Integer" Value="16" />
+		<Property Name="PaddingTop" Type="Integer" Value="8" />
+		<!--<Property Name="Alignment" Type="Alignment" Value="Fill" />-->
+	</Style>
+	<Style Name="OverlayDefault" Extends="Layout" AssignableControls="OverlayLayout" >
+		<Property Name="AutoScroll" Type="Boolean" Value="False" />
+	</Style>
+
+	<Style Name="ColumnMain" Extends="Layout" AssignableControls="ColumnLayout">
+		<Property Name="PaddingLeft" Type="Integer" Value="0" />
+		<Property Name="PaddingRight" Type="Integer" Value="0" />
+		<Property Name="Alignment" Type="Alignment" Value="Fill" />
+	</Style>
+
+	<Style Name="RowRightAligned" Extends="Layout" AssignableControls="RowLayout">
+		<Property Name="Alignment" Type="Alignment" Value="Right" />
+	</Style>
+	<Style Name="OverlayTabPage" Extends="Layout" AssignableControls="OverlayLayout" Obsolete="True">
+		<Property Name="PaddingTop" Type="Integer" Value="16" />
+	</Style>
+
+	<Style Name="AnchorTopLeft" Extends="Layout" AssignableControls="AnchorLayout">
+		<Property Name="Anchor" Type="AnchorStyle" Value="Top, Left" />
+	</Style>
+	<Style Name="AnchorTopRight" Extends="Layout" AssignableControls="AnchorLayout">
+		<Property Name="Anchor" Type="AnchorStyle" Value="Top, Right" />
+	</Style>
+	<Style Name="AnchorBottomLeft" Extends="Layout" AssignableControls="AnchorLayout">
+		<Property Name="Anchor" Type="AnchorStyle" Value="Bottom, Left" />
+	</Style>
+	<Style Name="AnchorBottomRight" Extends="Layout" AssignableControls="AnchorLayout">
+		<Property Name="Anchor" Type="AnchorStyle" Value="Bottom, Right" />
+	</Style>
+
+
+	<Style Name="PlaceHolderRowDistance" Extends="Layout" AssignableControls="PlaceHolderLayout" Obsolete="True">
+		<Property Name="Width" Type="Integer" Value="1" />
+		<Property Name="Height" Type="Integer" Value="8" />
+	</Style>
+
+    <Style Name="PlaceHolder" Extends="Layout" AssignableControls="PlaceHolderLayout">
+		<Property Name="Width" Type="Integer" Value="8" />
+		<Property Name="Height" Type="Integer" Value="8" />
+	</Style>
+
+    <Style Name="PlaceHolderSmall" Extends="Layout" AssignableControls="PlaceHolderLayout">
+		<Property Name="Width" Type="Integer" Value="4" />
+		<Property Name="Height" Type="Integer" Value="4" />
+	</Style>
+
+    <Style Name="PlaceHolderLarge" Extends="Layout" AssignableControls="PlaceHolderLayout">
+		<Property Name="Width" Type="Integer" Value="12" />
+		<Property Name="Height" Type="Integer" Value="12" />
+	</Style>
+
+  <Style Name="ColumnFullSize" Extends="Layout" AssignableControls="ColumnLayout">
+		<Property Name="PaddingBottom" Type="Integer" Value="0" />
+		<Property Name="PaddingTop" Type="Integer" Value="8" />
+		<Property Name="PaddingRight" Type="Integer" Value="0" />
+		<Property Name="Alignment" Type="Alignment" Value="Fill" />
+	</Style>
+
+	<Style Name="ColumnDefault" Extends="Layout" AssignableControls="ColumnLayout">
+		<Property Name="MarginRight" Type="Integer" Value="10" />
+		<Property Name="PaddingRight" Type="Integer" Value="0" />
+	</Style>
+	<Style Name="ColumnFlipFrame" Extends="Layout" AssignableControls="ColumnLayout">
+		<Property Name="PaddingBottom" Type="Integer" Value="10" />
+		<Property Name="PaddingTop" Type="Integer" Value="5" />
+		<Property Name="PaddingRight" Type="Integer" Value="5" />
+		<Property Name="Alignment" Type="Alignment" Value="Fill" />
+	</Style>
+	<Style Name="RowDefault" Extends="Layout" AssignableControls="RowLayout">
+		<Property Name="Alignment" Type="Alignment" Value="Left" />
+	</Style>
+	<Style Name="RowDefaultIndented" Extends="RowDefault" AssignableControls="RowLayout">
+		<Property Name="PaddingLeft" Type="Integer" Value="181" />
+	</Style>
+
+	<Style Name="Control" AssignableControls="">
+		<Property Name="Visible" Type="Boolean" Value="True" />
+		<Property Name="Dock" Type="DockStyle" Value="None" />
+		<Property Name="MarginBottom" Type="Integer" Value="5" />
+		<Property Name="MarginTop" Type="Integer" Value="0" />
+		<Property Name="MarginRight" Type="Integer" Value="10" />
+		<Property Name="MarginLeft" Type="Integer" Value="0" />
+	</Style>
+	<Style Name="VIControl" Extends="Control" AssignableControls="">
+		<Property Name="Design" Type="ControlDesign" Value="Default" />
+	</Style>
+    <Style Name="VIHtmlDecorator" Extends="VIControl" AssignableControls="VIHtmlDecorator">
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="Height" Type="Integer" Value="50" />
+	</Style>
+	<Style Name="IndentVIHtmlDecorator" Extends="VIHtmlDecorator" AssignableControls="VIHtmlDecorator">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="LargeVIHtmlDecorator" Extends="VIHtmlDecorator" AssignableControls="VIHtmlDecorator">
+		<Property Name="Width" Type="Integer" Value="532" />
+	</Style>
+
+	<Style Name="VICheckBox" Extends="VIControl" AssignableControls="VICheckBox">
+		<Property Name="MarginBottom" Type="Integer" Value="1" />
+		<Property Name="Width" Type="Integer" Value="167" />
+		<Property Name="Height" Type="Integer" Value="17" />
+	</Style>
+	<Style Name="IndentVICheckBox" Extends="VICheckBox" AssignableControls="VICheckBox">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="IndentLargeVICheckBox" Extends="VICheckBox" AssignableControls="VICheckBox">
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="LargeVICheckBox" Extends="VICheckBox" AssignableControls="VICheckBox">
+		<Property Name="Width" Type="Integer" Value="351" />
+	</Style>
+	<Style Name="IndentMultiLineVIEdit" Extends="IndentVIEdit" AssignableControls="VIEdit">
+            <Property Name="ScrollBars" Type="ScrollBars" Value="Vertical" />
+            <Property Name="NumberOfLines" Type="Integer" Value="4" />
+      </Style>
+      <Style Name="MultiLineVIEdit" Extends="VIEdit" AssignableControls="VIEdit">
+            <Property Name="ScrollBars" Type="ScrollBars" Value="Vertical" />
+            <Property Name="NumberOfLines" Type="Integer" Value="4" />
+      </Style>
+
+	<Style Name="SmallVICheckBox" Extends="VICheckBox" AssignableControls="VICheckBox">
+		<Property Name="Width" Type="Integer" Value="90" />
+	</Style>
+	<Style Name="VIFKLink" Extends="VIControl" AssignableControls="VILinkComboBox">
+		<Property Name="Width" Type="Integer" Value="532" />
+		<Property Name="Height" Type="Integer" Value="22" />
+	</Style>
+	<Style Name="VILinkList" Extends="VIControl" AssignableControls="VILinkList">
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="MinWidth" Type="Integer" Value="351" />
+		<Property Name="Height" Type="Integer" Value="200" />
+		<Property Name="Alignment" Type="Alignment" Value="Fill" />
+	</Style>
+	<Style Name="IndentVILinkList" Extends="VILinkList" AssignableControls="VILinkList">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="VIFlipFrame" Extends="VIControl" AssignableControls="VIFlipFrame">
+		<Property Name="MinWidth" Type="Integer" Value="559" />
+		<Property Name="Width" Type="Integer" Value="559" />
+		<Property Name="Height" Type="Integer" Value="24" />
+		<Property Name="Alignment" Type="Alignment" Value="Fill" />
+	</Style>
+	<Style Name="VIPanel" Extends="VIControl" AssignableControls="VIPanel">
+		<Property Name="BorderStyle" Type="BorderStyle" Value="None" />
+		<Property Name="Dock" Type="DockStyle" Value="Fill" />
+		<Property Name="AutoScroll" Type="Boolean" Value="True" />
+		<Property Name="BackColor" Type="Color" Value="WhiteSmoke" />
+		<Property Name="Width" Type="Integer" Value="605" />
+		<Property Name="Height" Type="Integer" Value="800" />
+	</Style>
+	<Style Name="LargeClientAreaVIPanel" Extends="VIPanel" AssignableControls="VIPanel">
+		<Property Name="ShowCaptionBar" Type="Boolean" Value="False" />
+	</Style>
+
+
+
+	<Style Name="VIMemberRelation" Extends="VIControl" AssignableControls="VIMemberRelation">
+		<Property Name="MarginBottom" Type="Integer" Value="5" />
+		<Property Name="Width" Type="Integer" Value="532" />
+		<Property Name="MinWidth" Type="Integer" Value="532" />
+		<Property Name="Height" Type="Integer" Value="400" />
+		<Property Name="Alignment" Type="Alignment" Value="Fill" />
+		<Property Name="PaddingLeft" Type="Integer" Value="8" />
+		<Property Name="PaddingTop" Type="Integer" Value="0" />
+		<Property Name="PaddingRight" Type="Integer" Value="8" />
+		<Property Name="PaddingBottom" Type="Integer" Value="8" />
+	</Style>
+	<Style Name="SmallVIMemberRelation" Extends="VIMemberRelation" AssignableControls="VIMemberRelation">
+		<Property Name="Width" Type="Integer" Value="351" />
+	</Style>
+	<Style Name="IndentSmallVIMemberRelation" Extends="SmallVIMemberRelation" AssignableControls="VIMemberRelation">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="FlatVIMemberRelation" Extends="VIMemberRelation" AssignableControls="VIMemberRelation">
+		<Property Name="Height" Type="Integer" Value="200" />
+	</Style>
+	<Style Name="FlatSmallVIMemberRelation" Extends="FlatVIMemberRelation" AssignableControls="VIMemberRelation">
+		<Property Name="Width" Type="Integer" Value="351" />
+	</Style>
+	<Style Name="IndentFlatSmallVIMemberRelation" Extends="FlatSmallVIMemberRelation" AssignableControls="VIMemberRelation">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+
+
+
+	<Style Name="VIEdit" Extends="VIControl" AssignableControls="VIEdit">
+		<Property Name="Width" Type="Integer" Value="442" />
+		<Property Name="Height" Type="Integer" Value="22" />
+	</Style>
+	<Style Name="LargeVIEdit" Extends="VIEdit" AssignableControls="VIEdit">
+		<Property Name="Width" Type="Integer" Value="532" />
+	</Style>
+    <Style Name="SmallVIEdit" Extends="VIEdit" AssignableControls="VIEdit">
+		<Property Name="Width" Type="Integer" Value="380" />
+	</Style>
+    <Style Name="ShortVIEdit" Extends="VIEdit" AssignableControls="VIEdit">
+		<Property Name="Width" Type="Integer" Value="300" />
+	</Style>
+	<Style Name="LargeMultiLineVIEdit" Extends="LargeVIEdit" AssignableControls="VIEdit">
+		<Property Name="ScrollBars" Type="ScrollBars" Value="Vertical" />
+		<Property Name="NumberOfLines" Type="Integer" Value="4" />
+	</Style>
+	<Style Name="IndentLargeVIEdit" Extends="VIEdit" AssignableControls="VIEdit">
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="IndentLargeMultiLineVIEdit" Extends="IndentLargeVIEdit" AssignableControls="VIEdit">
+		<Property Name="ScrollBars" Type="ScrollBars" Value="Vertical" />
+		<Property Name="NumberOfLines" Type="Integer" Value="4" />
+	</Style>
+	<Style Name="IndentVIEdit" Extends="VIEdit" AssignableControls="VIEdit">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+
+
+	<Style Name="VITrackBar" Extends="VIControl" AssignableControls="VITrackBar">
+		<Property Name="Width" Type="Integer" Value="442" />
+		<Property Name="Height" Type="Integer" Value="22" />
+	</Style>
+	<Style Name="LargeVITrackBar" Extends="VITrackBar" AssignableControls="VITrackBar">
+		<Property Name="Width" Type="Integer" Value="532" />
+	</Style>
+
+	<Style Name="VITreeList" Extends="VIControl" AssignableControls="VITreeList">
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="Height" Type="Integer" Value="320" />
+		<Property Name="BackColor" Type="Color" Value="Window" />
+	</Style>
+	<Style Name="IndentVITreeList" Extends="VITreeList" AssignableControls="VITreeList">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="FullVITreeList" Extends="VITreeList" AssignableControls="VITreeList">
+		<Property Name="Width" Type="Integer" Value="532" />
+		<Property Name="MinWidth" Type="Integer" Value="532" />
+		<Property Name="Alignment" Type="Alignment" Value="Fill" />
+	</Style>
+	<Style Name="LargeVITreeList" Extends="VITreeList" AssignableControls="VITreeList">
+		<Property Name="Width" Type="Integer" Value="532" />
+	</Style>
+	<Style Name="VIDBSchedule" Extends="VIControl" AssignableControls="VIDBSchedule">
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="Height" Type="Integer" Value="480" />
+	</Style>
+	<Style Name="LargeVIDBSchedule" Extends="VIDBSchedule" AssignableControls="VIDBSchedule">
+		<Property Name="MinWidth" Type="Integer" Value="540" />
+		<Property Name="Alignment" Type="Alignment" Value="Fill" />
+		<Property Name="Height" Type="Integer" Value="226" />
+	</Style>
+	<Style Name="IndentVIDBSchedule" Extends="VIDBSchedule" AssignableControls="VIDBSchedule">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="IndentLargeVIDBSchedule" Extends="LargeVIDBSchedule" AssignableControls="VIDBSchedule">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="VILink" Extends="VIControl" AssignableControls="VILink">
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="Height" Type="Integer" Value="22" />
+	</Style>
+		<Style Name="IndentVILink" Extends="VILink" AssignableControls="VILink">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="VITabPage" Extends="VIControl" AssignableControls="VITabPage">
+		<Property Name="AutoScroll" Type="Boolean" Value="True" />
+	</Style>
+	<Style Name="LargeClientAreaVITabPage" Extends="VITabPage" AssignableControls="VITabPage">
+		<Property Name="ShowCaptionBar" Type="Boolean" Value="False" />
+	</Style>
+
+	<Style Name="VIRadioButton" Extends="VIControl" AssignableControls="VIRadioButton">
+		<Property Name="MarginBottom" Type="Integer" Value="1" />
+		<Property Name="Width" Type="Integer" Value="167" />
+		<Property Name="Height" Type="Integer" Value="17" />
+	</Style>
+  <Style Name="SmallVIRadioButton" Extends="VIRadioButton" AssignableControls="VIRadioButton">
+		<Property Name="Width" Type="Integer" Value="90" />
+	</Style>
+
+	<Style Name="IndentVIRadioButton" Extends="VIRadioButton" AssignableControls="VIRadioButton">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="IndentLargeVIRadioButton" Extends="IndentVIRadioButton" AssignableControls="VIRadioButton">
+		<Property Name="Width" Type="Integer" Value="351" />
+	</Style>
+    <Style Name="LargeVIRadioButton" Extends="VIRadioButton" AssignableControls="VIRadioButton">
+		<Property Name="Width" Type="Integer" Value="351" />
+	</Style>
+
+	<Style Name="VIMultiValue" Extends="VIControl" AssignableControls="VIMultiValue">
+		<Property Name="Width" Type="Integer" Value="442" />
+		<Property Name="Height" Type="Integer" Value="22" />
+	</Style>
+	<Style Name="LargeVIMultiValue" Extends="VIMultiValue" AssignableControls="VIMultiValue">
+		<Property Name="Width" Type="Integer" Value="532" />
+	</Style>
+	<Style Name="MainFrame" Extends="VIControl" AssignableControls="VI.Frame">
+		<Property Name="BorderStyle" Type="BorderStyle" Value="None" />
+		<Property Name="Width" Type="Integer" Value="805" />
+		<Property Name="Height" Type="Integer" Value="805" />
+	</Style>
+
+	<Style Name="WizardFrame" Extends="VIControl" AssignableControls="VI.Frame">
+		<Property Name="BorderStyle" Type="BorderStyle" Value="None" />
+		<Property Name="Width" Type="Integer" Value="640" />
+		<Property Name="Height" Type="Integer" Value="480" />
+	</Style>
+
+	<Style Name="VIComboBox" Extends="VIControl" AssignableControls="VIBitMaskComboBox;VILinkComboBox;VITextComboBox;VITreeComboBox">
+		<Property Name="Width" Type="Integer" Value="442" />
+		<Property Name="Height" Type="Integer" Value="20" />
+	</Style>
+	<Style Name="IndentVIComboBox" Extends="VIComboBox" AssignableControls="VIBitMaskComboBox;VILinkComboBox;VITextComboBox;VITreeComboBox">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="LargeVIComboBox" Extends="VIComboBox" AssignableControls="VIBitMaskComboBox;VILinkComboBox;VITextComboBox;VITreeComboBox">
+		<Property Name="Width" Type="Integer" Value="532" />
+	</Style>
+	<Style Name="IndentLargeVIComboBox" Extends="VIComboBox" AssignableControls="VIBitMaskComboBox;VILinkComboBox;VITextComboBox;VITreeComboBox">
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+    <Style Name="SmallVIComboBox" Extends="VIComboBox" AssignableControls="VIBitMaskComboBox;VILinkComboBox;VITextComboBox;VITreeComboBox">
+		<Property Name="Width" Type="Integer" Value="380" />
+	</Style>
+    <Style Name="ShortVIComboBox" Extends="VIComboBox" AssignableControls="VIBitMaskComboBox;VILinkComboBox;VITextComboBox;VITreeComboBox">
+		<Property Name="Width" Type="Integer" Value="300" />
+	</Style>
+
+  <Style Name="GroupBox" Extends="Control" AssignableControls="GroupBox">
+    <Property Name="Width" Type="Integer" Value="460" />
+    <Property Name="MarginLeft" Type="Integer" Value="8" />
+    <Property Name="MarginRight" Type="Integer" Value="8" />
+    <Property Name="MarginBottom" Type="Integer" Value="8" />
+  </Style>
+  <Style Name="FullGroupBox" Extends="GroupBox" AssignableControls="GroupBox">
+    <Property Name="Alignment" Type="Alignment" Value="Fill" />
+  </Style>
+
+
+  <Style Name="VIChildRelationActivator" Extends="VIControl" AssignableControls="VIChildRelationActivator">
+		<Property Name="Width" Type="Integer" Value="486" />
+		<Property Name="Height" Type="Integer" Value="20" />
+	</Style>
+	<Style Name="IndentVIChildRelationActivator" Extends="VIChildRelationActivator" AssignableControls="VIChildRelationActivator">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="LargeVIChildRelationActivator" Extends="VIChildRelationActivator" AssignableControls="VIChildRelationActivator">
+		<Property Name="Width" Type="Integer" Value="532" />
+	</Style>
+	<Style Name="IndentLargeVIChildRelationActivator" Extends="VIChildRelationActivator" AssignableControls="VIChildRelationActivator">
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+    <Style Name="SmallVIChildRelationActivator" Extends="VIChildRelationActivator" AssignableControls="VIChildRelationActivator">
+		<Property Name="Width" Type="Integer" Value="380" />
+	</Style>
+    <Style Name="ShortVIChildRelationActivator" Extends="VIChildRelationActivator" AssignableControls="VIChildRelationActivator">
+		<Property Name="Width" Type="Integer" Value="300" />
+	</Style>
+
+
+	<Style Name="VITabControl" Extends="VIControl" AssignableControls="VITabControl">
+		<Property Name="Dock" Type="DockStyle" Value="Fill" />
+		<Property Name="ShowCaption" Type="Boolean" Value="False" />
+		<Property Name="Width" Type="Integer" Value="559" />
+		<Property Name="Height" Type="Integer" Value="750" />
+		<Property Name="MarginBottom" Type="Integer" Value="0" />
+		<Property Name="MarginTop" Type="Integer" Value="0" />
+		<Property Name="MarginRight" Type="Integer" Value="0" />
+		<Property Name="MarginLeft" Type="Integer" Value="0" />
+	</Style>
+
+	<Style Name="VIPasswordEdit" Extends="VIControl" AssignableControls="VIPasswordEdit">
+		<Property Name="Width" Type="Integer" Value="442" />
+		<Property Name="Height" Type="Integer" Value="46" />
+		<Property Name="ControlMargin" Type="Integer" Value="5" />
+	</Style>
+	<Style Name="VIHorizFormBar" Extends="VIControl" AssignableControls="VIHorizFormBar">
+		<Property Name="MarginBottom" Type="Integer" Value="5" />
+		<Property Name="ShowCaption" Type="Boolean" Value="False" />
+		<Property Name="MinWidth" Type="Integer" Value="559" />
+		<Property Name="Width" Type="Integer" Value="559" />
+		<Property Name="Height" Type="Integer" Value="24" />
+		<Property Name="Alignment" Type="Alignment" Value="Fill" />
+	</Style>
+	<Style Name="VIShrinkFrame" Extends="VIControl" AssignableControls="VIShrinkFrame">
+		<Property Name="MarginBottom" Type="Integer" Value="0" />
+		<Property Name="MarginRight" Type="Integer" Value="0" />
+	</Style>
+	<Style Name="IndentVIShrinkFrame" Extends="VIShrinkFrame" AssignableControls="VIShrinkFrame">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="OverlayVIShrinkFrame" Extends="VIShrinkFrame" AssignableControls="VIShrinkFrame" Obsolete="True">
+		<Property Name="Alignment" Type="Alignment" Value="Fill" />
+	</Style>
+	<Style Name="VIImageBox" Extends="VIControl" AssignableControls="VIImageBox">
+		<Property Name="Width" Type="Integer" Value="442" />
+		<Property Name="Height" Type="Integer" Value="64" />
+	</Style>
+	<Style Name="VICaptionLabel" Extends="VIControl" AssignableControls="VICaptionLabel">
+		<Property Name="MarginRight" Type="Integer" Value="0" />
+	</Style>
+
+
+	<Style Name="VIChildRelation" Extends="VIControl" AssignableControls="VIChildRelation">
+		<Property Name="MinWidth" Type="Integer" Value="532" />
+    <Property Name="Height" Type="Integer" Value="400" />
+    <Property Name="Alignment" Type="Alignment" Value="Fill" />
+		<Property Name="PaddingLeft" Type="Integer" Value="8" />
+		<Property Name="PaddingTop" Type="Integer" Value="0" />
+		<Property Name="PaddingRight" Type="Integer" Value="8" />
+		<Property Name="PaddingBottom" Type="Integer" Value="8" />
+	</Style>
+	<Style Name="SmallVIChildRelation" Extends="VIChildRelation" AssignableControls="VIChildRelation">
+		<Property Name="Width" Type="Integer" Value="351" />
+	</Style>
+	<Style Name="IndentSmallVIChildRelation" Extends="SmallVIChildRelation" AssignableControls="VIChildRelation">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="FlatVIChildRelation" Extends="VIChildRelation" AssignableControls="VIChildRelation">
+		<Property Name="Height" Type="Integer" Value="200" />
+	</Style>
+	<Style Name="FlatSmallVIChildRelation" Extends="FlatVIChildRelation" AssignableControls="VIChildRelation">
+		<Property Name="Width" Type="Integer" Value="351" />
+	</Style>
+	<Style Name="IndentFlatSmallVIChildRelation" Extends="FlatSmallVIChildRelation" AssignableControls="VIChildRelation">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+
+	<Style Name="ComboBox" Extends="Control" AssignableControls="ComboBox">
+		<Property Name="BackColor" Type="Color" Value="Window" />
+		<Property Name="Width" Type="Integer" Value="261" />
+		<Property Name="Height" Type="Integer" Value="20" />
+	</Style>
+	<Style Name="IndentComboBox" Extends="ComboBox" AssignableControls="ComboBox">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="LargeComboBox" Extends="ComboBox" AssignableControls="ComboBox">
+		<Property Name="Width" Type="Integer" Value="351" />
+	</Style>
+    <Style Name="SmallComboBox" Extends="ComboBox" AssignableControls="ComboBox">
+		<Property Name="Width" Type="Integer" Value="199" />
+	</Style>
+        <Style Name="ShortComboBox" Extends="ComboBox" AssignableControls="ComboBox">
+		<Property Name="Width" Type="Integer" Value="119" />
+	</Style>
+	<Style Name="IndentLargeComboBox" Extends="LargeComboBox" AssignableControls="ComboBox">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+
+
+
+	<Style Name="ListBox" Extends="Control" AssignableControls="ListBox;System.ListBox">
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="Height" Type="Integer" Value="256" />
+	</Style>
+	<Style Name="LinkLabel" Extends="Control" AssignableControls="LinkLabel;System.LinkLabel">
+		<Property Name="BackColor" Type="Color" Value="Transparent" />
+		<Property Name="Width" Type="Integer" Value="532" />
+		<Property Name="Height" Type="Integer" Value="22" />
+	</Style>
+	<Style Name="IndentLinkLabel" Extends="LinkLabel" AssignableControls="LinkLabel;System.LinkLabel">
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="RichTextBox" Extends="Control" AssignableControls="RichTextBox;System.RichTextBox">
+		<Property Name="BorderStyle" Type="BorderStyle" Value="None" />
+		<Property Name="FontName" Type="String" Value="Microsoft Sans Serif" />
+		<Property Name="FontSize" Type="Real" Value="8" />
+		<Property Name="BackColor" Type="Color" Value="White" />
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="Height" Type="Integer" Value="400" />
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="IndentRichTextBox" Extends="RichTextBox" AssignableControls="RichTextBox;System.RichTextBox">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="TreeViewDefault" Extends="Control" AssignableControls="System.TreeView;TreeView">
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="Height" Type="Integer" Value="320" />
+	</Style>
+	<Style Name="IndentTreeView" Extends="TreeViewDefault" AssignableControls="System.TreeView;TreeView">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="LargeTreeView" Extends="TreeViewDefault" AssignableControls="System.TreeView;TreeView">
+		<Property Name="Width" Type="Integer" Value="532" />
+	</Style>
+	<Style Name="DateTimePickerDefault" Extends="Control" AssignableControls="DateTimePicker;System.DateTimePicker">
+		<Property Name="BackColor" Type="Color" Value="White" />
+		<Property Name="Width" Type="Integer" Value="256" />
+		<Property Name="Height" Type="Integer" Value="22" />
+	</Style>
+	<Style Name="IndentDateTimePicker" Extends="DateTimePickerDefault" AssignableControls="DateTimePicker;System.DateTimePicker">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="IndentFilePicker" Extends="Control" AssignableControls="DateTimePicker;System.DateTimePicker">
+		<Property Name="BackColor" Type="Color" Value="WhiteSmoke" />
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="Height" Type="Integer" Value="200" />
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="MonthCalendarDefault" Extends="Control" AssignableControls="MonthCalendar;System.MonthCalendar">
+		<Property Name="BackColor" Type="Color" Value="White" />
+		<Property Name="Width" Type="Integer" Value="199" />
+		<Property Name="Height" Type="Integer" Value="155" />
+	</Style>
+	<Style Name="IndentMonthCalendar" Extends="MonthCalendarDefault" AssignableControls="MonthCalendar;System.MonthCalendar">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="ReportViewer" Extends="Control" AssignableControls="VIReportViewer">
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="Height" Type="Integer" Value="512" />
+	</Style>
+	<Style Name="IndentReportViewer" Extends="ReportViewer" AssignableControls="VIReportViewer">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="LargeReportViewer" Extends="ReportViewer" AssignableControls="VIReportViewer">
+		<Property Name="Width" Type="Integer" Value="532" />
+	</Style>
+	<Style Name="FullReportViewer" Extends="ReportViewer" AssignableControls="VIReportViewer">
+		<Property Name="Dock" Type="DockStyle" Value="Fill" />
+	</Style>
+	<Style Name="AutoSpacerFullSize" Extends="Control" AssignableControls="VIAutoSpacer">
+	</Style>
+	<Style Name="AutoSpacerFullHeight" Extends="Control" AssignableControls="VIAutoSpacer">
+	</Style>
+	<Style Name="AutoSpacerFullWidth" Extends="Control" AssignableControls="VIAutoSpacer">
+	</Style>
+	<Style Name="Button" Extends="Control" AssignableControls="VIButton">
+		<Property Name="Width" Type="Integer" Value="80" />
+		<Property Name="Height" Type="Integer" Value="22" />
+	</Style>
+	<Style Name="ButtonRightAligned" Extends="Button" AssignableControls="VIButton">
+		<Property Name="Alignment" Type="Alignment" Value="Right" />
+	</Style>
+	<Style Name="IndentButton" Extends="Button" AssignableControls="VIButton">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="LargeButton" Extends="Button" AssignableControls="VIButton">
+		<Property Name="Width" Type="Integer" Value="110" />
+	</Style>
+	<Style Name="IndentLargeButton" Extends="LargeButton" AssignableControls="VIButton">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="IconButton" Extends="Button" AssignableControls="VIButton">
+		<Property Name="MarginRight" Type="Integer" Value="5" />
+		<Property Name="Width" Type="Integer" Value="22" />
+	</Style>
+	<Style Name="ListView" Extends="Control" AssignableControls="ListView;System.ListView">
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="Height" Type="Integer" Value="300" />
+	</Style>
+	<Style Name="IndentListView" Extends="ListView" AssignableControls="ListView;System.ListView">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="PictureBox" Extends="Control" AssignableControls="System.PictureBox">
+		<Property Name="BorderStyle" Type="BorderStyle" Value="FixedSingle" />
+		<Property Name="BackColor" Type="Color" Value="White" />
+		<Property Name="Width" Type="Integer" Value="14" />
+		<Property Name="Height" Type="Integer" Value="35" />
+	</Style>
+	<Style Name="RadioButton" Extends="Control" AssignableControls="System.RadioButton">
+		<Property Name="MarginBottom" Type="Integer" Value="1" />
+		<Property Name="Height" Type="Integer" Value="17" />
+	</Style>
+	<Style Name="IndentRadioButton" Extends="RadioButton" AssignableControls="System.RadioButton">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="TextBox" Extends="Control" AssignableControls="System.TextBox;TextBox">
+		<Property Name="BorderStyle" Type="BorderStyle" Value="Fixed3D" />
+		<Property Name="FontName" Type="String" Value="Microsoft Sans Serif" />
+		<Property Name="FontSize" Type="Real" Value="8" />
+		<Property Name="BackColor" Type="Color" Value="White" />
+		<Property Name="Width" Type="Integer" Value="261" />
+		<Property Name="Height" Type="Integer" Value="22" />
+	</Style>
+	<Style Name="LargeTextBox" Extends="TextBox" AssignableControls="System.TextBox;TextBox">
+		<Property Name="Width" Type="Integer" Value="351" />
+	</Style>
+	<Style Name="IndentLargeTextBox" Extends="LargeTextBox" AssignableControls="System.TextBox;TextBox">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="IndentTextBox" Extends="TextBox" AssignableControls="System.TextBox;TextBox">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="MultiLineTextBox" Extends="TextBox" AssignableControls="System.TextBox;TextBox">
+		<Property Name="Height" Type="Integer" Value="80" />
+		<Property Name="ScrollBars" Type="ScrollBars" Value="Vertical" />
+		<Property Name="Multiline" Type="Boolean" Value="True" />
+	</Style>
+	<Style Name="LargeMultiLineTextBox" Extends="MultiLineTextBox" AssignableControls="System.TextBox;TextBox">
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="Height" Type="Integer" Value="80" />
+		<Property Name="ScrollBars" Type="ScrollBars" Value="Vertical" />
+		<Property Name="Multiline" Type="Boolean" Value="True" />
+	</Style>
+	<Style Name="IndentLargeMultiLineTextBox" Extends="LargeMultiLineTextBox" AssignableControls="System.TextBox;TextBox">
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+	<Style Name="Label" Extends="Control" AssignableControls="Label;System.Label">
+		<Property Name="Width" Type="Integer" Value="351" />
+		<Property Name="Height" Type="Integer" Value="22" />
+	</Style>
+	<Style Name="IndentLabel" Extends="Label" AssignableControls="Label;System.Label">
+		<Property Name="Height" Type="Integer" Value="60" />
+		<Property Name="MarginLeft" Type="Integer" Value="181" />
+	</Style>
+
+
+	<Style Name="VIElementEdit" Extends="VIControl" AssignableControls="VIElementEdit">
+		<Property Name="Width" Type="Integer" Value="532" />
+		<Property Name="Height" Type="Integer" Value="400" />
+		<Property Name="BackColor" Type="Color" Value="White" />
+        <Property Name="Dock" Type="DockStyle" Value="Fill" />
+	</Style>
+
+	<Style Name="VIPageController" AssignableControls="VIPageController">
+		<Property Name="Width" Type="Integer" Value="512" />
+	</Style>
+	<Style Name="FullVIPageController" AssignableControls="VIPageController">
+		<Property Name="Alignment" Type="Alignment" Value="Fill" />
+	</Style>
+
+    <Style Name="VIHtmlDecoratorList" AssignableControls="VIHtmlDecoratorList">
+		<Property Name="Width" Type="Integer" Value="512" />
+	</Style>
+	<Style Name="FullVIHtmlDecoratorList" AssignableControls="VIHtmlDecoratorList">
+		<Property Name="Alignment" Type="Alignment" Value="Fill" />
+	</Style>
+
+	<Style Name="VIHeaderControl" AssignableControls="VIHeaderControl">
+		<Property Name="Dock" Type="DockStyle" Value="Top" />
+		<Property Name="Height" Type="Integer" Value="48" />
+		<Property Name="BackColor" Type="Color" Value="172, 168, 153" />
+	</Style>
+
+	<Style Name="VIRichEditControl" Extends="Control" AssignableControls="Control">
+		<Property Name="Alignment" Type="Alignment" Value="Fill" />
+	</Style>
+
+  <Style Name="VIDialogParameterControl" Extends="Control" AssignableControls="Control">
+    <Property Name="Height" Type="Integer" Value="480" />
+  </Style>
+
+  <Style Name="VIDialogParameterValueControl" Extends="Control" AssignableControls="Control">
+  </Style>
+
+  <Style Name="WizardButtonPanel" AssignableControls="Panel">
+		<Property Name="Dock" Type="DockStyle" Value="Bottom" />
+		<Property Name="Height" Type="Integer" Value="48" />
+	</Style>
+
+	<Style Name="ScrollableControlContainer" AssignableControls="Panel">
+		<Property Name="Dock" Type="DockStyle" Value="Fill" />
+		<Property Name="AutoScroll" Type="Boolean" Value="True" />
+	</Style>
+
+	<Style Name="VIWizardInfoPage" AssignableControls="VIWizardInfoPage">
+		<Property Name="Width" Type="Integer" Value="640" />
+		<Property Name="Height" Type="Integer" Value="432" />
+		<Property Name="MarginBottom" Type="Integer" Value="0" />
+		<Property Name="MarginTop" Type="Integer" Value="0" />
+		<Property Name="MarginRight" Type="Integer" Value="0" />
+		<Property Name="MarginLeft" Type="Integer" Value="0" />
+		<Property Name="BackColor" Type="Color" Value="White" />
+	</Style>
+
+	<Style Name="WizardPageColumn" Extends="Layout" AssignableControls="ColumnLayout">
+		<Property Name="PaddingLeft" Type="Integer" Value="16" />
+		<Property Name="PaddingTop" Type="Integer" Value="16" />
+		<Property Name="PaddingRight" Type="Integer" Value="16" />
+		<Property Name="PaddingBottom" Type="Integer" Value="16" />
+	</Style>
+
+	<Style Name="WizardLabel" Extends="Control" AssignableControls="Label;System.Label">
+		<Property Name="AutoSize" Type="Boolean" Value="True" />
+		<Property Name="BackColor" Type="Color" Value="Transparent" />
+		<Property Name="Width" Type="Integer" Value="620" />
+		<Property Name="MaximumSize" Type="Size" Value="600, 0" />
+	</Style>
+
+</StyleDefinition>

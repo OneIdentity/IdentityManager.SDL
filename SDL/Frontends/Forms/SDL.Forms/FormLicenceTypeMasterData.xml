@@ -1,0 +1,381 @@
+﻿<FormDefinition Version="1.1">
+	<Form ID="FORM0001" Name="FormLicenceTypeMasterData" Version="1.0.0">
+		<Header>
+			<AssociatedFiles>
+				<Library DesignMode="Ignore" Name="SDL.Forms.dll" Path="localfile:bin\debug" />
+				<TypeDefinition Name="TypeDefinition.xml" Path="localfile:Definitions" Usage="Gui" />
+				<TypeDefinition Name="TypeDefinitionWeb.xml" Path="localfile:Definitions" Usage="Web" />
+				<Resource Name="FormLicenceTypeMasterData.vires" Path="localfile:" Reader="VIResourceReaderV2" />
+				<StyleDefinition Name="StyleDefinition.xml" Path="localfile:Definitions" Reader="StyleDefinitionReaderXml" />
+			</AssociatedFiles>
+			<Customizer Type="SDL.Forms.FormLicenceTypeMasterData" />
+			<Description>
+			</Description>
+			<Units Measurement="Pixel" />
+		</Header>
+		<Properties>
+			<Property Name="CacheSafe" Type="Boolean" Value="True" />
+			<Property Name="Caption" Type="String" Value="Form1" />
+		</Properties>
+		<Frames>
+			<Frame ID="FRAME001" Name="Main" Style="MainFrame">
+				<Properties>
+					<Property Name="Enabled" Type="Boolean" Value="True" />
+					<Property Name="Visible" Type="Boolean" Value="True" />
+				</Properties>
+				<Content>
+					<Components>
+						<Component ID="COMPD4D99C6D" Name="MainActivator" Type="ActivatorComponent">
+							<Properties>
+								<Property Name="ActivationFilter" Type="String" Value="Licencetype" />
+								<Property Name="IsRootActivator" Type="Boolean" Value="True" />
+							</Properties>
+							<Events>
+								<Event Handler="MainActivator_OnActivating" Name="Activating" />
+							</Events>
+						</Component>
+					</Components>
+					<Controls>
+						<Control ID="CTRLFE187DEF" Name="MainPanel" Style="VIPanel" Type="VIPanel">
+							<Properties>
+								<Property Name="AutoSize" Type="Boolean" Value="False" />
+								<Property Name="ControlStyle" Type="VIControlStyle" Value="Modify" />
+								<Property Name="Enabled" Type="Boolean" Value="True" />
+								<Property Name="TabIndex" Type="Integer" Value="0" />
+							</Properties>
+							<Content>
+								<Controls>
+									<Control ID="CTRL6C0C8447" Name="TabControl" Style="VITabControl" Type="VITabControl">
+										<Properties>
+											<Property Name="Activator" Ref="COMPD4D99C6D" Type="Activator" />
+											<Property Name="AutoSize" Type="Boolean" Value="False" />
+											<Property Name="Caption" Type="String" Value="" />
+											<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+											<Property Name="Enabled" Type="Boolean" Value="True" />
+											<Property Name="SelectedIndex" Type="Integer" Value="0" />
+											<Property Name="ShowCustomSchemaExtension" Type="Boolean" Value="True" />
+											<Property Name="TabIndex" Type="Integer" Value="0" />
+											<Property Name="TabStop" Type="Boolean" Value="True" />
+										</Properties>
+										<Content>
+											<Controls>
+												<Control ID="CTRL3ACC0FC7" Name="TabPageCommon" Style="VITabPage" Type="VITabPage">
+													<Properties>
+														<Property Name="Activator" Ref="CTRL6C0C8447" Type="Activator" />
+														<Property Name="AutoSize" Type="Boolean" Value="False" />
+														<Property Name="Caption" Type="String" Value="SDL_FormCommon_General" />
+														<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+														<Property Name="Dock" Type="DockStyle" Value="Fill" />
+														<Property Name="Enabled" Type="Boolean" Value="True" />
+														<Property Name="TabIndex" Type="Integer" Value="0" />
+														<Property Name="TabStop" Type="Boolean" Value="True" />
+													</Properties>
+													<Content>
+														<Controls>
+															<Layout Style="ColumnTabPage" Type="Column">
+																<Control ID="CTRL22717F19" Name="EditIdentLicenceType" Style="VIEdit" Type="VIEdit">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL3ACC0FC7" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="Ident_LicenceType" />
+																		<Property Name="ColumnName" Type="String" Value="Ident_LicenceType" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="0" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRL6C11DD70" Name="CheckBoxIsPerCompany" Style="IndentLargeVICheckBox" Type="VICheckBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL3ACC0FC7" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="IsPerCompany" />
+																		<Property Name="ColumnName" Type="String" Value="IsPerCompany" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="20" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRL5BE2FF9A" Name="CheckBoxIsLocalityBased" Style="IndentLargeVICheckBox" Type="VICheckBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL3ACC0FC7" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="IsLocalityBased" />
+																		<Property Name="ColumnName" Type="String" Value="IsLocalityBased" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="21" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRLC72AC2FB" Name="CheckBoxIsPerUser" Style="IndentLargeVICheckBox" Type="VICheckBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL3ACC0FC7" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="IsPerUser" />
+																		<Property Name="ColumnName" Type="String" Value="IsPerUser" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="30" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRL7E1F33A9" Name="CheckBoxIsPerMachine" Style="IndentLargeVICheckBox" Type="VICheckBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL3ACC0FC7" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="IsPerMachine" />
+																		<Property Name="ColumnName" Type="String" Value="IsPerMachine" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="40" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRL8579F98F" Name="CheckBoxIsPerProcessor" Style="IndentLargeVICheckBox" Type="VICheckBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL3ACC0FC7" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="IsPerProcessor" />
+																		<Property Name="ColumnName" Type="String" Value="IsPerProcessor" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="50" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRL0F12A50D" Name="CheckBoxIsConcurrentUse" Style="IndentVICheckBox" Type="VICheckBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL3ACC0FC7" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="IsConcurrentUse" />
+																		<Property Name="ColumnName" Type="String" Value="IsConcurrentUse" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="60" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Layout Style="PlaceHolder" Type="PlaceHolder" />
+																<Control ID="CTRL4AB1CE34" Name="CheckBoxIsForFree" Style="IndentLargeVICheckBox" Type="VICheckBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL3ACC0FC7" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="IsForFree" />
+																		<Property Name="ColumnName" Type="String" Value="IsForFree" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="70" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRLA83427C8" Name="CheckBoxIsToPayOnce" Style="IndentLargeVICheckBox" Type="VICheckBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL3ACC0FC7" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="IsToPayOnce" />
+																		<Property Name="ColumnName" Type="String" Value="IsToPayOnce" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="80" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRLEBDE323F" Name="CheckBoxIsToPayRecent" Style="IndentLargeVICheckBox" Type="VICheckBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL3ACC0FC7" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="IsToPayRecent" />
+																		<Property Name="ColumnName" Type="String" Value="IsToPayRecent" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="90" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRL7B9FC4E8" Name="EditDescription" Style="LargeMultiLineVIEdit" Type="VIEdit">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL3ACC0FC7" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="Description" />
+																		<Property Name="ColumnName" Type="String" Value="Description" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="100" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+															</Layout>
+														</Controls>
+													</Content>
+												</Control>
+												<Control ID="CTRL39C5184E" Name="TabPageCustom" Style="VITabPage" Type="VITabPage">
+													<Properties>
+														<Property Name="Activator" Ref="CTRL6C0C8447" Type="Activator" />
+														<Property Name="AutoSize" Type="Boolean" Value="False" />
+														<Property Name="Caption" Type="String" Value="SDL_FormCommon_UserDefined" />
+														<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+														<Property Name="Dock" Type="DockStyle" Value="Fill" />
+														<Property Name="Enabled" Type="Boolean" Value="True" />
+														<Property Name="TabIndex" Type="Integer" Value="1" />
+													</Properties>
+													<Content>
+														<Controls>
+															<Layout Style="ColumnTabPage" Type="Column">
+																<Control ID="CTRL8C6AB91B" Name="TextComboBoxCustomProperty01" Style="VIComboBox" Type="VITextComboBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL39C5184E" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="CustomProperty01" />
+																		<Property Name="ColumnName" Type="String" Value="CustomProperty01" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="DefaultText" Type="String" Value="" />
+																		<Property Name="EditMode" Type="TextComboEditMode" Value="LimitedValues" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="13" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRLD3655B17" Name="TextComboBoxCustomProperty02" Style="VIComboBox" Type="VITextComboBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL39C5184E" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="CustomProperty02" />
+																		<Property Name="ColumnName" Type="String" Value="CustomProperty02" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="DefaultText" Type="String" Value="" />
+																		<Property Name="EditMode" Type="TextComboEditMode" Value="LimitedValues" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="14" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRLE1720F4D" Name="TextComboBoxCustomProperty03" Style="VIComboBox" Type="VITextComboBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL39C5184E" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="CustomProperty03" />
+																		<Property Name="ColumnName" Type="String" Value="CustomProperty03" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="DefaultText" Type="String" Value="" />
+																		<Property Name="EditMode" Type="TextComboEditMode" Value="LimitedValues" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="15" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRLEF53EA87" Name="TextComboBoxCustomProperty04" Style="VIComboBox" Type="VITextComboBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL39C5184E" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="CustomProperty04" />
+																		<Property Name="ColumnName" Type="String" Value="CustomProperty04" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="DefaultText" Type="String" Value="" />
+																		<Property Name="EditMode" Type="TextComboEditMode" Value="LimitedValues" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="16" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRL14DBC694" Name="TextComboBoxCustomProperty05" Style="VIComboBox" Type="VITextComboBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL39C5184E" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="CustomProperty05" />
+																		<Property Name="ColumnName" Type="String" Value="CustomProperty05" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="DefaultText" Type="String" Value="" />
+																		<Property Name="EditMode" Type="TextComboEditMode" Value="LimitedValues" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="17" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRL37A1451C" Name="TextComboBoxCustomProperty06" Style="VIComboBox" Type="VITextComboBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL39C5184E" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="CustomProperty06" />
+																		<Property Name="ColumnName" Type="String" Value="CustomProperty06" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="DefaultText" Type="String" Value="" />
+																		<Property Name="EditMode" Type="TextComboEditMode" Value="LimitedValues" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="18" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRL67928CB5" Name="TextComboBoxCustomProperty07" Style="VIComboBox" Type="VITextComboBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL39C5184E" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="CustomProperty07" />
+																		<Property Name="ColumnName" Type="String" Value="CustomProperty07" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="DefaultText" Type="String" Value="" />
+																		<Property Name="EditMode" Type="TextComboEditMode" Value="LimitedValues" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="19" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRLD5C764C2" Name="TextComboBoxCustomProperty08" Style="VIComboBox" Type="VITextComboBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL39C5184E" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="CustomProperty08" />
+																		<Property Name="ColumnName" Type="String" Value="CustomProperty08" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="DefaultText" Type="String" Value="" />
+																		<Property Name="EditMode" Type="TextComboEditMode" Value="LimitedValues" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="20" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRL0C49C731" Name="TextComboBoxCustomProperty09" Style="VIComboBox" Type="VITextComboBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL39C5184E" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="CustomProperty09" />
+																		<Property Name="ColumnName" Type="String" Value="CustomProperty09" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="DefaultText" Type="String" Value="" />
+																		<Property Name="EditMode" Type="TextComboEditMode" Value="LimitedValues" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="21" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+																<Control ID="CTRLFCDC8339" Name="TextComboBoxCustomProperty10" Style="VIComboBox" Type="VITextComboBox">
+																	<Properties>
+																		<Property Name="Activator" Ref="CTRL39C5184E" Type="Activator" />
+																		<Property Name="AutoSize" Type="Boolean" Value="False" />
+																		<Property Name="Caption" Type="String" Value="CustomProperty10" />
+																		<Property Name="ColumnName" Type="String" Value="CustomProperty10" />
+																		<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+																		<Property Name="DefaultText" Type="String" Value="" />
+																		<Property Name="EditMode" Type="TextComboEditMode" Value="LimitedValues" />
+																		<Property Name="Enabled" Type="Boolean" Value="True" />
+																		<Property Name="TabIndex" Type="Integer" Value="22" />
+																		<Property Name="TabStop" Type="Boolean" Value="True" />
+																	</Properties>
+																</Control>
+															</Layout>
+														</Controls>
+													</Content>
+												</Control>
+											</Controls>
+										</Content>
+									</Control>
+								</Controls>
+							</Content>
+						</Control>
+					</Controls>
+				</Content>
+			</Frame>
+		</Frames>
+	</Form>
+</FormDefinition>

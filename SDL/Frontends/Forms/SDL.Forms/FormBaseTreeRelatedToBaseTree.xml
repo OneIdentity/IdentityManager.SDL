@@ -1,0 +1,86 @@
+﻿
+<FormDefinition Version="1.1">
+	<Form ID="FORM0001" Name="FormBaseTreeRelatedToBaseTree" Version="1.0.0">
+		<Header>
+			<AssociatedFiles>
+				<Library Name="SDL.Forms.dll" Path="localfile:bin\debug" DesignMode="Ignore" />
+				<TypeDefinition Usage="Gui" Name="TypeDefinition.xml" Path="localfile:Definitions" />
+				<TypeDefinition Usage="Web" Name="TypeDefinitionWeb.xml" Path="localfile:Definitions" />
+				<Resource Name="FormBaseTreeRelatedToBaseTree.vires" Path="localfile:" Reader="VIResourceReaderV2" />
+				<StyleDefinition Name="StyleDefinition.xml" Path="localfile:Definitions" Reader="StyleDefinitionReaderXml" />
+			</AssociatedFiles>
+			<Customizer Type="SDL.Forms.FormBaseTreeRelatedToBaseTree" />
+			<Description>
+			</Description>
+			<Units Measurement="Pixel" />
+		</Header>
+		<Properties>
+			<Property Name="CacheSafe" Type="Boolean" Value="True" />
+			<Property Name="Caption" Type="String" Value="FrmBaseTreeRelatedToBaseTree" />
+		</Properties>
+		<Frames>
+			<Frame ID="FRAME001" Name="Main" Style="MainFrame">
+				<Properties>
+					<Property Name="Enabled" Type="Boolean" Value="True" />
+					<Property Name="Visible" Type="Boolean" Value="True" />
+				</Properties>
+				<Content>
+					<Components>
+						<Component ID="COMPD4D99C6D" Name="MainActivator" Type="ActivatorComponent">
+							<Properties>
+								<Property Name="ActivationFilter" Type="String" Value="AERole,Org,Department,ProfitCenter,Locality" />
+								<Property Name="IsRootActivator" Type="Boolean" Value="True" />
+							</Properties>
+							<Events>
+								<Event Name="Activating" Handler="MainActivator_OnActivating" />
+							</Events>
+						</Component>
+					</Components>
+					<Controls>
+						<Control ID="CTRLFE187DEF" Name="MainPanel" Type="VIPanel" Style="LargeClientAreaVIPanel">
+							<Properties>
+								<Property Name="Activator" Type="Activator" Ref="COMPD4D99C6D" />
+								<Property Name="AutoSize" Type="Boolean" Value="False" />
+								<Property Name="ControlStyle" Type="VIControlStyle" Value="Modify" />
+								<Property Name="Enabled" Type="Boolean" Value="True" />
+								<Property Name="TabIndex" Type="Integer" Value="0" />
+							</Properties>
+							<Content>
+								<Controls>
+									<Layout Type="Column" Style="ColumnMain">
+										<Control ID="CTRLA0FB6AE8" Name="FormHeader" Type="VIHorizFormBar" Style="VIHorizFormBar">
+											<Properties>
+												<Property Name="AutoSize" Type="Boolean" Value="False" />
+												<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+												<Property Name="Enabled" Type="Boolean" Value="True" />
+												<Property Name="TabIndex" Type="Integer" Value="0" />
+											</Properties>
+										</Control>
+										<Control ID="CTRL87DF1571" Name="MemberRelation1" Type="VITwoMemberRelation" Style="VIMemberRelation">
+											<Properties>
+												<Property Name="Activator" Type="Activator" Ref="COMPD4D99C6D" />
+												<Property Name="AutoSize" Type="Boolean" Value="False" />
+												<Property Name="CaptionMode" Type="Boolean" Value="False" />
+												<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+												<Property Name="Enabled" Type="Boolean" Value="True" />
+												<Property Name="ShowCaption" Type="Boolean" Value="False" />
+												<Property Name="ShowCaptionBar" Type="Boolean" Value="False" />
+												<Property Name="ShowMandatoryIndicator" Type="Boolean" Value="False" />
+												<Property Name="TabIndex" Type="Integer" Value="4" />
+												<Property Name="TabStop" Type="Boolean" Value="True" />
+												<Property Name="UseHierarchyModelInformation" Type="Boolean" Value="True" />
+											</Properties>
+											<Events>
+												<Event Name="ShowInformation" Handler="MemberRelation_OnShowInformation" />
+											</Events>
+										</Control>
+									</Layout>
+								</Controls>
+							</Content>
+						</Control>
+					</Controls>
+				</Content>
+			</Frame>
+		</Frames>
+	</Form>
+</FormDefinition>

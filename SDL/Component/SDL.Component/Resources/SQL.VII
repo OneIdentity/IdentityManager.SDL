@@ -1,0 +1,22 @@
+[COUNT_ADS_ACCOUNT]
+MSSQL=
+	select count(*) from
+	(
+		select InstallDate from ADSAccountAppsInfo where {0}
+		union
+		select InstallDate from MachineAppsInfo where {1}
+		union
+		select InstallDate from ClientLog where {1}
+	) x where {2};
+
+Oracle=
+	select count(*) from
+	(
+		select INSTALLDATE from ADSACCOUNTAPPSINFO where {0}
+		union
+		select INSTALLDATE from MACHINEAPPSINFO where {1}
+		union
+		select INSTALLDATE from CLIENTLOG where {1}
+	) where {2};
+
+

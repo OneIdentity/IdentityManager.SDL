@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Commands>
+
+
+
+
+  <Command Type="SqlFile">SDL_TApplication.sql</Command>
+  <Command Type="SqlFile">SDL_TBaseTreeHasApp.sql</Command>
+  <Command Type="SqlFile">SDL_TPersonHasApp.sql</Command>
+  <Command Type="SqlFile">SDL_TApplicationDependsOnApp.sql</Command>
+  <Command Type="SqlFile">SDL_TApplicationDependsonDriver.sql</Command>
+  <Command Type="SqlFile">SDL_TApplicationExcludeApp.sql</Command>
+  <Command Type="SqlFile">SDL_TApplicationExcludeDriver.sql</Command>
+  <Command Type="SqlFile">SDL_TWorkdeskHasApp.sql</Command>
+
+  <Command Type="SqlFile">SDL_TBaseTreeHasDriver.sql</Command>
+  <Command Type="SqlFile">SDL_TDriver.sql</Command>
+  <Command Type="SqlFile">SDL_TDriverDependsOnDriver.sql</Command>
+  <Command Type="SqlFile">SDL_TDriverExcludeDriver.sql</Command>
+  <Command Type="SqlFile">SDL_THardwareTypeHasDriver.sql</Command>
+  <Command Type="SqlFile">SDL_TMachineHasDriver.sql</Command>
+  <Command Type="SqlFile">SDL_TMachineTypeHasDriver.sql</Command>
+  <Command Type="SqlFile">SDL_TWorkdeskHasDriver.sql</Command>
+
+  <Command Type="SqlFile">SDL_TLicence.sql</Command>
+  <Command Type="SqlFile">SDL_TLicenceSubstitute.sql</Command>
+  <Command Type="SqlFile">SDL_TSDLDomain.sql</Command>
+  <Command Type="SqlFile">SDL_THardware.sql</Command>
+
+  <Command Type="SqlFile">SDL_TADSAccount.sql</Command>
+  <Command Type="SqlFile">SDL_TADSAccountInADSGroup.sql</Command>
+  <Command Type="SqlFile">SDL_TADSContainer.sql</Command>
+  <Command Type="SqlFile">SDL_TADSGroup.sql</Command>
+  <Command Type="SqlFile">SDL_TADSMachineInADSGroup.sql</Command>
+
+  <Command Type="SqlFile">SDL_TLDAPAccount.sql</Command>
+  <Command Type="SqlFile">SDL_TLDAPAccountInLDAPGroup.sql</Command>
+  <Command Type="SqlFile">SDL_TLDPMachineInLDAPGroup.sql</Command>
+  <Command Type="SqlFile">SDL_TLDAPContainer.sql</Command>
+  <Command Type="SqlFile">SDL_TLDAPGroup.sql</Command>
+
+  
+ 
+  <Command Type="SqlFile">SDL_TESetHasEntitlement.sql</Command>
+
+
+</Commands>
+
+

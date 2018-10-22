@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Commands>
+      <Command Type="SqlFile">SDL_PInsertInAppServerGotApp.sql</Command>
+      <Command Type="SqlFile">SDL_PInsertInAppServerGotDrv.sql</Command>
+      <Command Type="SqlFile">SDL_PInsertInAppServerGotMac.sql</Command>
+      <Command Type="SqlFile">SDL_PDeleteAppProfileFAllChild.sql</Command>
+      <Command Type="SqlFile">SDL_PDeleteDrvProfileFAllChild.sql</Command>
+      <Command Type="SqlFile">SDL_PFillPAS.sql</Command>
+      <Command Type="SqlFile">SDL_PRepairAppServerGotXX.sql</Command>
+    </Commands>

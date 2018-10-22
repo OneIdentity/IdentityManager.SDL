@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{032F46E0-56EF-429F-82CB-182AA20A9B11}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VI.JobService.JobComponents</RootNamespace>
+    <AssemblyName>SDL.Component</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\SDL.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="JobComponent">
+      <HintPath>..\..\..\Assemblies\JobComponent.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VI.Base">
+      <HintPath>..\..\..\Assemblies\VI.Base.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VI.DB">
+      <HintPath>..\..\..\Assemblies\VI.DB.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VI.Samba.Tools">
+      <HintPath>..\..\..\Assemblies\VI.Samba.Tools.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\GlobalVersion.cs">
+      <Link>GlobalVersion.cs</Link>
+    </Compile>
+    <Compile Include="ADSNameSpace.cs" />
+    <Compile Include="ApplicationInfo.cs" />
+    <Compile Include="AccountNameSpace.cs" />
+    <Compile Include="AppsDrvProfileInfo.cs" />
+    <Compile Include="DBAppDrvInfo.cs" />
+    <Compile Include="ImportComponent.cs" />
+    <Compile Include="FeedBackFile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\SQL.VII" />
+    <EmbeddedResource Include="Properties\Strings.de.resx" />
+    <EmbeddedResource Include="Properties\Strings.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Jobs\ImportCustomer.ini" />
+    <None Include="Jobs\ImportLab.ini" />
+    <None Include="Jobs\InstallFeedback\Customer\2017-03-16130628LU688221.ia" />
+    <None Include="Jobs\InstallFeedback\Customer\2017-03-16135842LU688221.ia" />
+    <None Include="Jobs\InstallFeedback\Customer\2017-03-16145621LU688106.ia" />
+    <None Include="Jobs\InstallFeedback\Customer\2017-03-17073939LU688502.ia" />
+    <None Include="Jobs\InstallFeedback\Customer\2017-03-17081334LU788222.ia" />
+    <None Include="Jobs\InstallFeedback\Customer\2017-03-17143655LU688221.ia" />
+    <None Include="Jobs\InstallFeedback\Lab\2017-03-17174342VM-NT52-32-01.ia" />
+    <None Include="Jobs\InstallFeedback\Lab\2017-03-17174536VM-NT52-32-01.ia" />
+    <None Include="Jobs\InstallFeedback\Lab\2017-03-17174641VM-NT52-32-01.ia" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if "$(ConfigurationName)" == "Debug" copy "$(TargetDir)\$(TargetName).???" "$(ProjectDir)..\..\..\Assemblies\"
+if "$(ConfigurationName)" == "Debug" copy "$(TargetDir)\de\*.*" "$(ProjectDir)..\..\..\Assemblies\de\"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

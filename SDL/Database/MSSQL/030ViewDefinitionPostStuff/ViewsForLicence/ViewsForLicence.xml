@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Commands>
+      <Command Type="SqlFile">SDL_VLicenceNodeSubnode.sql</Command>
+      <Command Type="SqlFile">SDL_VLicLimitPerLicence.sql</Command>
+      <Command Type="SqlFile">SDL_VLicLimitPerLicenceAndOrg.sql</Command>
+      <Command Type="SqlFile">SDL_VLicLimitPerGroup.sql</Command>
+      <Command Type="SqlFile">SDL_VLicLimitPerGroupAndOrg.sql</Command>
+      <Command Type="SqlFile">SDL_VLicUseRealOrg.sql</Command>
+      <Command Type="SqlFile">SDL_VLicUseReal.sql</Command>
+      <Command Type="SqlFile">SDL_VLicUseActualOrg.sql</Command>
+      <Command Type="SqlFile">SDL_VLicUseActual.sql</Command>
+      <Command Type="SqlFile">SDL_VLicUseTargetOrg.sql</Command>
+      <Command Type="SqlFile">SDL_VLicUseTarget.sql</Command>
+    </Commands>

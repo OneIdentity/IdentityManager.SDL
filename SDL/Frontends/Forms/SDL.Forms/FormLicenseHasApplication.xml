@@ -1,0 +1,89 @@
+﻿<FormDefinition Version="1.1">
+	<Form ID="FORM0001" Name="FormLicenseHasApplication" Version="1.0.0">
+		<Header>
+			<AssociatedFiles>
+				<Library DesignMode="Ignore" Name="SDL.Forms.dll" Path="localfile:bin\debug" />
+				<TypeDefinition Name="TypeDefinition.xml" Path="localfile:Definitions" Usage="Gui" />
+				<TypeDefinition Name="TypeDefinitionWeb.xml" Path="localfile:Definitions" Usage="Web" />
+				<Resource Name="FormLicenseHasApplication.vires" Path="localfile:" Reader="VIResourceReaderV2" />
+				<StyleDefinition Name="StyleDefinition.xml" Path="localfile:Definitions" Reader="StyleDefinitionReaderXml" />
+			</AssociatedFiles>
+			<Customizer Type="SDL.Forms.FormLicenseHasApplication" />
+			<Description>
+			</Description>
+			<Units Measurement="Pixel" />
+		</Header>
+		<Properties>
+			<Property Name="CacheSafe" Type="Boolean" Value="True" />
+			<Property Name="Caption" Type="String" Value="Form1" />
+		</Properties>
+		<Frames>
+			<Frame ID="FRAME001" Name="Main" Style="MainFrame">
+				<Properties>
+					<Property Name="Enabled" Type="Boolean" Value="True" />
+					<Property Name="Visible" Type="Boolean" Value="True" />
+				</Properties>
+				<Content>
+					<Components>
+						<Component ID="COMPD4D99C6D" Name="MainActivator" Type="ActivatorComponent">
+							<Properties>
+								<Property Name="ActivationFilter" Type="String" Value="Licence" />
+								<Property Name="IsRootActivator" Type="Boolean" Value="True" />
+							</Properties>
+							<Events>
+								<Event Handler="MainActivator_OnActivating" Name="Activating" />
+							</Events>
+						</Component>
+					</Components>
+					<Controls>
+						<Control ID="CTRLFE187DEF" Name="MainPanel" Style="LargeClientAreaVIPanel" Type="VIPanel">
+							<Properties>
+								<Property Name="AutoSize" Type="Boolean" Value="False" />
+								<Property Name="ControlStyle" Type="VIControlStyle" Value="Modify" />
+								<Property Name="Enabled" Type="Boolean" Value="True" />
+								<Property Name="TabIndex" Type="Integer" Value="0" />
+							</Properties>
+							<Content>
+								<Controls>
+									<Layout Style="ColumnMain" Type="Column">
+										<Control ID="CTRLEF6AE2AD" Name="HorizFormBar2" Style="VIHorizFormBar" Type="VIHorizFormBar">
+											<Properties>
+												<Property Name="AutoSize" Type="Boolean" Value="False" />
+												<Property Name="Caption" Type="String" Value="" />
+												<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+												<Property Name="Enabled" Type="Boolean" Value="True" />
+												<Property Name="TabIndex" Type="Integer" Value="0" />
+											</Properties>
+										</Control>
+										<Control ID="CTRL87DF1571" Name="MemberRelation1" Style="VIMemberRelation" Type="VITwoMemberRelation">
+											<Properties>
+												<Property Name="Activator" Ref="COMPD4D99C6D" Type="Activator" />
+												<Property Name="AutoSize" Type="Boolean" Value="False" />
+												<Property Name="CaptionMode" Type="Boolean" Value="False" />
+												<Property Name="ControlStyle" Type="VIControlStyle" Value="Inherited" />
+												<Property Name="Enabled" Type="Boolean" Value="True" />
+												<Property Name="MNBaseColumnName" Type="String" Value="UID_Licence" />
+												<Property Name="MNTableName" Type="String" Value="AppHasLicence" />
+												<Property Name="OrderByClause" Type="String" Value="Ident_Application" />
+												<Property Name="RootNodeCaption" Type="String" Value="" />
+												<Property Name="ShowCaption" Type="Boolean" Value="False" />
+												<Property Name="ShowCaptionBar" Type="Boolean" Value="False" />
+												<Property Name="ShowMandatoryIndicator" Type="Boolean" Value="False" />
+												<Property Name="TabIndex" Type="Integer" Value="3" />
+												<Property Name="TabStop" Type="Boolean" Value="True" />
+												<Property Name="UseHierarchyModelInformation" Type="Boolean" Value="True" />
+											</Properties>
+											<Events>
+												<Event Handler="MemberRelation_OnShowInformation" Name="ShowInformation" />
+											</Events>
+										</Control>
+									</Layout>
+								</Controls>
+							</Content>
+						</Control>
+					</Controls>
+				</Content>
+			</Frame>
+		</Frames>
+	</Form>
+</FormDefinition>

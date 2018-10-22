@@ -1,0 +1,204 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "resource.h"
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 8,1,33,1
+ PRODUCTVERSION 8,1,33,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "One Identity"
+            VALUE "FileVersion", "8.1.33.1"
+            VALUE "LegalCopyright", "Copyright 2014"
+            VALUE "OriginalFilename", "viFilesDetect.exe"
+            VALUE "ProductVersion", "8.1.33.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""resource.h""\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_MAIN           ICON                    "..\\SharedSources\\iconMain.ico"
+IDI_ICON_TRAY           ICON                    "..\\SharedSources\\icontray.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MAIN DIALOGEX 0, 0, 224, 111
+STYLE DS_SETFONT | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | WS_BORDER
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    RADIOBUTTON     "Hide",IDC_BUTTON_HIDE,75,89,73,15,BS_PUSHLIKE,WS_EX_STATICEDGE
+    CONTROL         203,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,7,7,209,46,WS_EX_STATICEDGE
+    CTEXT           "viFilesDetect",IDC_TEXT,7,57,210,30,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_PRODUCT      BITMAP                  "..\\SharedSources\\Product.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_DE_101       "Der Laufwerksbuchstabe '%c' ist keine lokale Festplatte."
+    IDS_STRING_DE_102       "Info"
+    IDS_STRING_DE_103       "Warning"
+    IDS_STRING_DE_104       "Error"
+    IDS_STRING_DE_105       "Unbekannt"
+    IDS_STRING_DE_106       "Fehler: '%s' [%d - %s]"
+    IDS_STRING_DE_107       "Datei '%s' kann nicht ge�ffnet werden. [0x%02X - %s]"
+    IDS_STRING_DE_108       "Unbekannter Parameter: '%s'."
+    IDS_STRING_DE_109       "Die Ausgabedatei '%s' kann nicht angelegt werden. [%d - %s]"
+    IDS_STRING_DE_110       "viFilesDetect PathName\\[FileName] [/Drive:C-Z|*]|[/BaseDir:] /Files:FilterList /Dirs:FilterList /Get:[N][R][I][B] /P:Normal|Idle /Exe /Quiet"
+    IDS_STRING_DE_111       "viFilesDetect - One Identity"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_US_101       "Driveletter '%c' is not a local harddisk."
+    IDS_STRING_US_102       "Info"
+    IDS_STRING_US_103       "Warning"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_US_104       "Error"
+    IDS_STRING_US_105       "Unknown"
+    IDS_STRING_US_106       "Error: '%s' [%d - %s]"
+    IDS_STRING_US_107       "Can't open file  '%s'. [0x%02X - %s]"
+    IDS_STRING_US_108       "Unknown Parameter: '%s'."
+    IDS_STRING_US_109       "Can't create outputfile '%s'. [%d - %s]"
+    IDS_STRING_US_110       "viFilesDetect PathName\\[FileName] [/Drive:C-Z|*]|[/BaseDir:] /Files:FilterList /Dirs:FilterList /Get:[N][R][I][B] /P:Normal|Idle /Exe /Quiet"
+    IDS_STRING_US_111       "viFilesDetect - One Identity"
+    IDS_STRING_US_112       "Write to file %s returns error %d [%s]."
+    IDS_STRING_US_113       "hide"
+    IDS_STRING_US_114       "No files to process."
+    IDS_STRING_US_115       "Processing file '%s' failed with exception."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STRING_DE_112       "Bei schreiben der Datei '%s' trat Fehler %d [%s] auf."
+    IDS_STRING_DE_113       "Schlie�en"
+    IDS_STRING_DE_114       "Keine Dateien zur Erfassung."
+    IDS_STRING_DE_115       "Bei der Verarbeitung der Datei '%s' ist eine Exception aufgetreten."
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

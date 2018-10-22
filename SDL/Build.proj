@@ -1,0 +1,105 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0" >
+	<PropertyGroup>
+		<AssembliesFolder>..\Assemblies</AssembliesFolder>
+		<DeliveryFolder>..\Delivery</DeliveryFolder>
+		<InstallFolder>$(DeliveryFolder)\Modules\SDL</InstallFolder>
+		<InstallBinFolder>$(InstallFolder)\install\bin</InstallBinFolder>
+		<FormArchiveBuilder>$(AssembliesFolder)\FormArchiveBuilder.exe</FormArchiveBuilder>
+		<MsBuildProperties>Configuration=Release</MsBuildProperties>
+	</PropertyGroup>
+
+	<Target Name="all" DependsOnTargets="ModuleFiles;ControlFilesComponent;SDLComponent;SDLCustomizer;SDLForms;ReplicationInfo;IniConfigurator;Database;Documentation;AddOn">
+	</Target>
+
+	<Target Name="ModuleFiles">
+		<ItemGroup>
+			<SetupModuleFiles Include="ModuleInfo.xml" />
+			<SetupModuleFiles Include="ModuleInfo.vii" />
+		</ItemGroup>
+		<Copy SourceFiles="@(SetupModuleFiles)" DestinationFolder="$(InstallFolder)" />
+	</Target>
+
+	<Target Name="ControlFilesComponent">
+		<MSBuild Projects="Component\ControlFilesComponent\ControlFilesComponent\ControlFilesComponent.csproj" Properties="$(MsBuildProperties)" />
+
+		<ItemGroup>
+			<SetupFilesControlFilesComponent Include="Component\ControlFilesComponent\ControlFilesComponent\bin\Release\ControlFilesComponent.dll" />
+		</ItemGroup>
+		<Copy SourceFiles="@(SetupFilesControlFilesComponent)" DestinationFolder="$(InstallBinFolder)" />
+	</Target>
+
+	<Target Name="SDLComponent">
+		<MSBuild Projects="Component\SDL.Component\SDL.Component.csproj" Properties="$(MsBuildProperties)" />
+
+		<ItemGroup>
+			<SetupFilesSDLComponent Include="Component\SDL.Component\bin\Release\SDL.Component.dll" />
+		</ItemGroup>
+		<Copy SourceFiles="@(SetupFilesSDLComponent)" DestinationFolder="$(InstallBinFolder)" />
+	</Target>
+
+	<Target Name="SDLCustomizer">
+		<MSBuild Projects="Customizer\SDL.Customizer.csproj" Properties="$(MsBuildProperties)" />
+
+		<ItemGroup>
+			<SetupFilesSDLCustomizer Include="Customizer\bin\Release\SDL.Customizer.dll" />
+		</ItemGroup>
+		<Copy SourceFiles="@(SetupFilesSDLCustomizer)" DestinationFolder="$(InstallBinFolder)" />
+	</Target>
+
+	<Target Name="SDLForms">
+		<MSBuild Projects="Frontends\Forms\SDL.Forms\SDL.Forms.csproj" Properties="$(MsBuildProperties)" />
+		<Exec Command='"$(FormArchiveBuilder)" -T /Project:"$(MSBuildProjectDirectory)\Frontends\Forms\SDL.Forms\SDL.Forms.csproj" /Config:"Release"' />
+
+		<ItemGroup>
+			<SetupFilesSDLForms Include="Frontends\Forms\SDL.Forms\bin\Release\SDL.Forms.vif" />
+		</ItemGroup>
+		<Copy SourceFiles="@(SetupFilesSDLForms)" DestinationFolder="$(InstallBinFolder)" />
+	</Target>
+
+	<Target Name="ReplicationInfo">
+		<MSBuild Projects="Frontends\ReplicationInfo\ReplicationInfo.csproj" Properties="$(MsBuildProperties)" />
+
+		<ItemGroup>
+			<SetupFilesReplicationInfo Include="Frontends\ReplicationInfo\bin\Release\ReplicationInfo.exe" />
+			<SetupFilesReplicationInfo Include="Frontends\ReplicationInfo\bin\Release\ReplicationInfo.exe.config" />
+		</ItemGroup>
+		<Copy SourceFiles="@(SetupFilesReplicationInfo)" DestinationFolder="$(InstallBinFolder)" />
+	</Target>
+
+	<Target Name="IniConfigurator">
+		<MSBuild Projects="AppDeploy\VIClientIniConfigurator\IniConfigurator\IniConfigurator.csproj" Properties="$(MsBuildProperties)" />
+
+		<ItemGroup>
+			<SetupFilesIniConfigurator Include="AppDeploy\VIClientIniConfigurator\IniConfigurator\bin\Release\IniConfigurator.exe" />
+			<SetupFilesIniConfigurator Include="AppDeploy\VIClientIniConfigurator\IniConfigurator\bin\Release\IniConfigurator.exe.config" />
+			<SetupFilesIniConfigurator Include="AppDeploy\VIClientIniConfigurator\IniConfigurator\IniConfig.xml" />
+		</ItemGroup>
+		<Copy SourceFiles="@(SetupFilesIniConfigurator)" DestinationFolder="$(InstallFolder)\dvd\AddOn\Software Distribution\VIClientIniConfigurator" />
+	</Target>
+
+	<Target Name="Database">
+		<ItemGroup>
+			<DbFiles Include="Database\**\*.sql" />
+			<DbFiles Include="Database\**\*.xml" Exclude="Database\MSSQL\MasterContent.XML" />
+		</ItemGroup>
+
+		<Copy SourceFiles="@(DbFiles)" DestinationFiles="@(DbFiles ->'$(InstallFolder)\database\%(RecursiveDir)%(Filename)%(Extension)')" />
+	</Target>
+
+	<Target Name="Documentation">
+		<ItemGroup>
+			<DocFiles Include="Documentation\OneIM_SDL_AdminGuide_de-de.pdf" />
+		</ItemGroup>
+
+		<Copy SourceFiles="Documentation\OneIM_SDL_AdminGuide_de-de.pdf" DestinationFolder="$(InstallFolder)\dvd\documentation\de-DE" />
+	</Target>
+
+	<Target Name="AddOn">
+		<ItemGroup>
+			<AddOnFiles Include="AddOn\**\*" />
+		</ItemGroup>
+
+		<Copy SourceFiles="@(AddOnFiles)" DestinationFiles="@(AddOnFiles ->'$(InstallFolder)\dvd\AddOn\%(RecursiveDir)%(Filename)%(Extension)')" />
+	</Target>
+
+</Project>

@@ -1,0 +1,199 @@
+[FileSystem]
+%USERPROFILE%\Cookies\*
+%USERPROFILE%\Temporary Internet Files\*
+%USERPROFILE%\Verlauf\*
+%USERPROFILE%\Recent\*
+%USERPROFILE%\NTUser.dat.log
+%USERPROFILE%\NTUser.dat
+%USERPROFILE%\*\Temporary Internet Files\*
+%USERPROFILE%\*\History\*
+%USERPROFILE%\*\Microsoft\Internet Explorer\Desktop.htt
+%APPDATA%\Microsoft\Windows\UsrClass.*
+%SystemRoot%\*\LocalService\*
+%SystemRoot%\*\NetworkService*
+*.ini
+%SystemRoot%\System32\config\*
+%SystemRoot%\Tasks\SA.DAT
+*MS Exchange-Einstellungen.NICK
+*MSOutlo.pip
+*SchedLog.txt
+*pagefile.sys
+*$Recycle.Bin\*
+*hiberfil.sys
+*Log.r
+*Log*.txt
+*\VICL*.tmp
+%ProgramData%\Microsoft\Search\Data\Applications\Windows\*
+%ProgramData%\Microsoft\Search\Data\Temp\*
+%SystemRoot%\CSC\*
+%SystemRoot%\Debug\*
+%SystemRoot%\LastGood\*
+%SystemRoot%\Prefetch\*
+%SystemRoot%\System32\LogFiles\WMI\RtBackup\*
+%SystemDrive%\Documents and Settings\*
+%SystemDrive%\Dokumente und Einstellungen\*
+%SystemDrive%\Programme\*
+%SystemDrive%\Program Files\Gemeinsame Dateien\*
+%SystemDrive%\Program Files\Windows NT\Zubehör\*
+%SystemDrive%\ProgramData\Anwendungsdaten\*
+%SystemDrive%\ProgramData\Application Data\*
+%SystemDrive%\ProgramData\Desktop\*
+%SystemDrive%\ProgramData\Documents\*
+%SystemDrive%\ProgramData\Dokumente\*
+%SystemDrive%\ProgramData\Favoriten\*
+%SystemDrive%\ProgramData\Favorites\*
+%SystemDrive%\ProgramData\Start Menu\*
+%SystemDrive%\ProgramData\Startmenü\*
+%SystemDrive%\ProgramData\Templates\*
+%SystemDrive%\ProgramData\Vorlagen\*
+%SystemDrive%\ProgramData\Microsoft\Windows\Start Menu\Programme\*
+%SystemDrive%\Users\All Users\*
+%SystemDrive%\Users\Default User\*
+%USERPROFILE%\Anwendungsdaten\*
+%USERPROFILE%\Cookies\*
+%USERPROFILE%\Druckumgebung\*
+%USERPROFILE%\Eigene Dateien\*
+%USERPROFILE%\Lokale Einstellungen\*
+%USERPROFILE%\Netzwerkumgebung\*
+%USERPROFILE%\Recent\*
+%USERPROFILE%\SendTo\*
+%USERPROFILE%\Startmenü\*
+%USERPROFILE%\Vorlagen\*
+%USERPROFILE%\AppData\Local\Anwendungsdaten\*
+%USERPROFILE%\AppData\Local\Temporary Internet Files\*
+%USERPROFILE%\AppData\Local\Verlauf\*
+%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programme\*
+%USERPROFILE%\Documents\Eigene Bilder\*
+%USERPROFILE%\Documents\Eigene Musik\*
+%USERPROFILE%\Documents\Eigene Videos\*
+%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Recent\*
+%USERPROFILE%\AppData\Local\Microsoft\Windows\History\*
+%USERPROFILE%\AppData\Local\Microsoft\Windows\Temporary Internet Files\*
+%SystemDrive%\Users\administrator\Anwendungsdaten\*
+%SystemDrive%\Users\administrator\Cookies\*
+%SystemDrive%\Users\administrator\Druckumgebung\*
+%SystemDrive%\Users\administrator\Eigene Dateien\*
+%SystemDrive%\Users\administrator\Lokale Einstellungen\*
+%SystemDrive%\Users\administrator\Netzwerkumgebung\*
+%SystemDrive%\Users\administrator\Recent\*
+%SystemDrive%\Users\administrator\SendTo\*
+%SystemDrive%\Users\administrator\Startmenü\*
+%SystemDrive%\Users\administrator\Vorlagen\*
+%SystemDrive%\Users\administrator\AppData\Local\Anwendungsdaten\*
+%SystemDrive%\Users\administrator\AppData\Local\Temporary Internet Files\*
+%SystemDrive%\Users\administrator\AppData\Local\Verlauf\*
+%SystemDrive%\Users\administrator\AppData\Roaming\Microsoft\Windows\Start Menu\Programme\*
+%SystemDrive%\Users\administrator\Documents\Eigene Bilder\*
+%SystemDrive%\Users\administrator\Documents\Eigene Musik\*
+%SystemDrive%\Users\administrator\Documents\Eigene Videos\*
+%SystemDrive%\Users\administrator\AppData\Roaming\Microsoft\Windows\Recent\*
+%SystemDrive%\Users\administrator\AppData\Local\Microsoft\Windows\History\*
+%SystemDrive%\Users\administrator\AppData\Local\Microsoft\Windows\Temporary Internet Files\*
+%SystemDrive%\Users\All Users\Anwendungsdaten\*
+%SystemDrive%\Users\All Users\Cookies\*
+%SystemDrive%\Users\All Users\Druckumgebung\*
+%SystemDrive%\Users\All Users\Eigene Dateien\*
+%SystemDrive%\Users\All Users\Lokale Einstellungen\*
+%SystemDrive%\Users\All Users\Netzwerkumgebung\*
+%SystemDrive%\Users\All Users\Recent\*
+%SystemDrive%\Users\All Users\SendTo\*
+%SystemDrive%\Users\All Users\Startmenü\*
+%SystemDrive%\Users\All Users\Vorlagen\*
+%SystemDrive%\Users\All Users\AppData\Local\Anwendungsdaten\*
+%SystemDrive%\Users\All Users\AppData\Local\Temporary Internet Files\*
+%SystemDrive%\Users\All Users\AppData\Local\Verlauf\*
+%SystemDrive%\Users\All Users\AppData\Roaming\Microsoft\Windows\Start Menu\Programme\*
+%SystemDrive%\Users\All Users\Documents\Eigene Bilder\*
+%SystemDrive%\Users\All Users\Documents\Eigene Musik\*
+%SystemDrive%\Users\All Users\Documents\Eigene Videos\*
+%SystemDrive%\Users\Default\Anwendungsdaten\*
+%SystemDrive%\Users\Default\Cookies\*
+%SystemDrive%\Users\Default\Druckumgebung\*
+%SystemDrive%\Users\Default\Eigene Dateien\*
+%SystemDrive%\Users\Default\Lokale Einstellungen\*
+%SystemDrive%\Users\Default\Netzwerkumgebung\*
+%SystemDrive%\Users\Default\Recent\*
+%SystemDrive%\Users\Default\SendTo\*
+%SystemDrive%\Users\Default\Startmenü\*
+%SystemDrive%\Users\Default\Vorlagen\*
+%SystemDrive%\Users\Default\AppData\Local\Anwendungsdaten\*
+%SystemDrive%\Users\Default\AppData\Local\Temporary Internet Files\*
+%SystemDrive%\Users\Default\AppData\Local\Verlauf\*
+%SystemDrive%\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu\Programme\*
+%SystemDrive%\Users\Default\Documents\Eigene Bilder\*
+%SystemDrive%\Users\Default\Documents\Eigene Musik\*
+%SystemDrive%\Users\Default\Documents\Eigene Videos\*
+%SystemDrive%\Users\Default\Documents\My Music\*
+%SystemDrive%\Users\Default\Documents\My Pictures\*
+%SystemDrive%\Users\Default\Documents\My Videos\*
+%SystemDrive%\Users\Public\Documents\Eigene Bilder\*
+%SystemDrive%\Users\Public\Documents\Eigene Musik\*
+%SystemDrive%\Users\Public\Documents\Eigene Videos\*
+%SystemDrive%\Users\Public\Documents\My Music\*
+%SystemDrive%\Users\Public\Documents\My Pictures\*
+%SystemDrive%\Users\Public\Documents\My Videos\*
+
+[REGMAC]
+SYSTEM\ControlSet*
+SYSTEM\RNG\Seed
+SYSTEM\Select\LastKnownGood\*
+SOFTWARE\Microsoft\Cryptography\RNG\Seed
+SOFTWARE\Microsoft\Windows\CurrentVersion\BITS\*
+SOFTWARE\Microsoft\Windows\CurrentVersion\SharedDLLs
+SOFTWARE\Microsoft\WBEM\*
+SYSTEM\CurrentControlSet\Control\Lsa\LsaPid
+SYSTEM\CurrentControlSet\Control\Print\Providers\LogonTime
+SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatibility\AppCompatCache
+SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management\PrefetchParameters\
+SYSTEM\CurrentControlSet\Control\Session Manager\Power\AcPolicy
+SYSTEM\CurrentControlSet\Control\Session Manager\Power\DcPolicy
+SYSTEM\CurrentControlSet\Control\Watchdog\Display\ShutdownCount
+SYSTEM\CurrentControlSet\Control\Windows\ShutdownTime
+SYSTEM\CurrentControlSet\Control\ServiceCurrent\
+SYSTEM\CurrentControlSet\Services\Dhcp\
+SYSTEM\CurrentControlSet\Services\kmixer\
+SYSTEM\CurrentControlSet\Services\Tcpip\
+
+[REGUSR]
+SOFTWARE\Microsoft\Internet Explorer\*
+SessionInformation\ProgramCount\*
+*\SOFTWARE\Microsoft\Windows\Shell\BagMRU\*
+*\SOFTWARE\Microsoft\Windows\Shell\Bags\*
+*\SOFTWARE\Microsoft\Windows\Shell\MuiCache\*
+*\Software\Microsoft\Windows\ShellNoRoam\BagMRU\*
+*\SOFTWARE\Microsoft\Windows\ShellNoRoam\Bags\*
+*\SOFTWARE\Microsoft\Windows\ShellNoRoam\MUICache\*
+Software\Microsoft\Windows\CurrentVersion\Applets\Regedit\
+Software\Microsoft\Windows\CurrentVersion\Explorer\Discardable\PostSetup\*
+SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Map Network Drive MRU\*
+Software\Microsoft\Windows\CurrentVersion\Explorer\MenuOrder\
+SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\*
+SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\*
+SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU\*
+SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\SessionInfo\*
+Software\Microsoft\Windows\CurrentVersion\Explorer\Shutdown Setting\*
+SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\StartPage\*
+SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\TrayNotify\*
+SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\*
+SOFTWARE\Microsoft\Windows\CurrentVersion\Ext\Stats\*
+SOFTWARE\Microsoft\Windows\CurrentVersion\Group Policy\*
+SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\*
+Software\Microsoft\Windows\CurrentVersion\NetCache\*
+SOFTWARE\Microsoft\Windows\CurrentVersion\Shell Extensions\*
+Software\Microsoft\Windows\CurrentVersion\WindowsUpdate\*
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform\Activation\*
+
+[Environment]
+
+[IniFile]
+*\ProfileScanner.ini
+%USERPROFILE%\Lokale Einstellungen\Temporary Internet Files\*.ini
+%USERPROFILE%\Lokale Einstellungen\Verlauf\*.ini
+%USERPROFILE%\Startmenü\*.ini
+%USERPROFILE%\Favoriten\*.ini
+%USERPROFILE%\Recent\*.ini
+%USERPROFILE%\SendTo\*.ini
+*\LocalService\*
+*\NetworkService\*
+%SYSTEMROOT%\system32\GroupPolicy\gpt.ini
+*\desktop.ini

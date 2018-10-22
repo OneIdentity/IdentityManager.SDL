@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<DatabaseInfo Id="SDL" DBVersion="2016.10.1.400">
+    <References>
+    </References>
+    <DataProviders>
+        <DataProvider SystemType="MSSQL" Type="FILE">MSSQL</DataProvider>
+        <DataProvider SystemType="ORACLE" Type="FILE">Oracle</DataProvider> 
+    </DataProviders>
+  <RelatedModules>
+    <Module Id="ACN" />
+    <Module Id="ATT" />
+    <Module Id="CAP" />
+    <Module Id="CPL" />
+    <Module Id="HDS" />
+    <Module Id="POL" />
+    <Module Id="RMS" />
+    <Module Id="RPS" />
+  </RelatedModules>
+  <PreConditions></PreConditions>
+    <PreInstall></PreInstall>
+
+    <InstallSchema>ControlFile1SchemaInitial.xml</InstallSchema>
+    <UpdateSchema>ControlFile2SchemaUpdate.xml</UpdateSchema>
+	<StartupContent>ControlFile3BaseContent.xml</StartupContent>
+    <InstallContent>ControlFile3Content.xml</InstallContent>
+    <InstallNonLinearContent>ControlFile4NonLinearContent.xml</InstallNonLinearContent>
+    <InstallCode>ControlFile5Code.xml</InstallCode>
+    <InstallCheck>ControlFile6Check.xml</InstallCheck>
+    <InstallFinalize>ControlFile7Finalize.xml</InstallFinalize>
+
+    <PostInstall></PostInstall>
+    <PreInstallUI></PreInstallUI>
+    <PostInstallUI></PostInstallUI>
+</DatabaseInfo>

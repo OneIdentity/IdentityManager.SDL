@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Steps>
+  <Step ID="Finalize" >
+    <Description Key="Key" Value="wait for post processing" />
+    <Prerequisites />
+    <GenConditions>
+      <Condition Type="Expression">ModuleSelected</Condition>
+    </GenConditions>
+    <Commands>
+      <!-- nothing so far-->
+    </Commands>
+    <Repair />
+  </Step>
+
+
+  <Macro Name ="QBMCheckPointIfModule"/>
+
+</Steps>

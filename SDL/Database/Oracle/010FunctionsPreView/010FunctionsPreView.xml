@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Commands>
+
+  <Command Type="SqlFile">SDL_GTempTableDef.sql</Command>
+  <Command Type="SqlFile">SDL_GTempTableDef_Body.sql</Command>
+
+
+
+  <Command Type="SqlFile">SDL_GConvert.sql</Command>
+  <Command Type="SqlFile">SDL_GDBQueueTasks.sql</Command>
+  <Command Type="SqlFile">SDL_GSoftwareDistribution.sql</Command>
+  <Command Type="SqlFile">SDL_GLateBindingImpl.sql</Command>
+
+
+
+</Commands>
+

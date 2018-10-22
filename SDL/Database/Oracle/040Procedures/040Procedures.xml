@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Commands>
+
+
+
+
+
+  <Command Type="SqlFile">SDL_GConvert_Body.sql</Command>
+  <Command Type="SqlFile">SDL_GDBQueueTasks_Body.sql</Command>
+  <Command Type="SqlFile">SDL_GSoftwareDistribution_Body.sql</Command>
+  <Command Type="SqlFile">SDL_GLateBindingImpl_Body.sql</Command>
+
+
+
+
+
+
+
+
+</Commands>
+
+

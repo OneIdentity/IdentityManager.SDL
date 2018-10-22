@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Steps>
+
+  <!-- processing is already in Controlfile3 because of 20013
+    <Macro Name ="Q B M N o n l i n e a r C o n t e n t F i l l"/>
+    <Macro Name ="Q B M N o n L i n e a r C o n t e n t P r o c e s s"/>
+  -->
+
+  <Macro Name ="QBMViewBuildVP"/>
+  <Macro Name ="QBMCheckPointIfModule"/>
+
+
+</Steps>

@@ -1,0 +1,237 @@
+[Properties]
+Suppresses the display of prompts for restarts to the user=REBOOTPROMPT|ENUM|S||If the REBOOTPROMPT property is set to Suppress (or just S) any reboot performed by the Windows Installer happens automatically.
+Root destination directory=TARGETDIR|STRING|||The TARGETDIR property specifies the root destination directory for the installation.
+Processing, Install features in default manner=ADDDEFAULT|STRING|ALL||List of features delimited by commas that are to be installed in their default configuration.
+Suppresses the automatic setting of the USERNAME=NOUSERNAME|BOOL|1||Set the NOUSERNAME property to 1 to suppress the installer from setting of the USERNAME property.
+Improves installation performance under specific OEM scenarios=FASTOEM|BOOL|1||See MSDN for informations.
+Mode of execution performed by the installer=EXECUTEMODE|ENUM|Script;None||None=No changes are made to the system. Script=All changes to the system are made through script execution. This is the default mode.
+Prevents Add/Remove in "Control Panel" -> "Add or Remove Programs"=ARPNOREMOVE|BOOL|1||Disables the Add or Remove Programs functionality in Control Panel that removes the product.
+Accompanying Installation, Patch File=PATCH|STRING|||Accompanying patch file for installation.
+Per Machine Installation=ALLUSERS|BOOL|1||Installation per machine vs per user.
+Accompanying Installation, Transform Files=TRANSFORMS|STRING|||Accompanying transform files for installation.
+License Key=PIDKEY|INTEGER|||Specify the License Key for Unattended Installation.
+Causes short file names to be used=SHORTFILENAMES|BOOL|1||When the SHORTFILENAMES property is set, the installer creates folders and installs files using short file names.
+Forces or suppresses restarting=REBOOT|ENUM|Force;Suppress;ReallySuppress||An administrator typically uses this property with a series of installations to install several products at the same time with only one reboot at the end.
+prevents source registering=DISABLEMEDIA|BOOL|1||Prevents the installer from registering any media source, such as a CD-ROM, as a valid source for the product. If browsing is enabled, however, a user may still browse to a media source.
+Provides ReadMe in "Control Panel" -> "Add or Remove Programs"=ARPREADME|STRING|||The property provides the Add or Remove Programs Control Panel ReadMe for the application that is written under the Uninstall Registry Key.
+Prevents Modify in "Control Panel" -> "Add or Remove Programs"=ARPNOMODIFY|BOOL|1||Disables the modify functionality in Control Panel that modifies the product.
+Disable managed shortcuts=DISABLEADVTSHORTCUTS|BOOL|1||Shortcuts be standard shortcuts vs managed msi shortcuts.
+Default drive=ROOTDRIVE|STRING|||The ROOTDRIVE property specifies the default drive for the destination directory of the installation.
+For installed product info, Comment=ARPCOMMENTS|STRING|||
+Processing, Uninstall features=REMOVE|STRING|ALL||List of features delimited by commas that are to be removed. ALL = all contained features.
+Designate a "primary" folder for the installation=PRIMARYFOLDER|STRING|||Global property that allows to designate a primary folder for the installation. The value must be the key name of a directory that exists in the Directory table.
+Specifies the primary icon for the installation package=ARPPRODUCTICON|STRING|||The ARPPRODUCTICON property specifies the foreign key to the Icon table, which is the primary icon for the Windows Installer package.
+License Key, input Template=PIDTemplate|STRING|||
+For installed product info, Company name=COMPANYNAME|STRING|||
+Processing, Install features completely local=ADDLOCAL|STRING|ALL||List of features delimited by commas that are to be installed locally ("full installation").
+Prevents displaying in "Control Panel" -> "Add or Remove Programs"=ARPSYSTEMCOMPONENT|BOOL|1||
+For installed product info, Contact=ARPCONTACT|STRING|||
+URL for application-update information=ARPURLUPDATEINFO|STRING|||The ARPURLUPDATEINFO property is the URL for the link used to update information on the application.
+Processing, Run features from source=ADDSOURCE|STRING|ALL||List of features delimited by commas that are to be installed to run from source.
+Prevents Repair in "Control Panel" -> "Add or Remove Programs"=ARPNOREPAIR|BOOL|1||Disables the repair functionality in Control Panel that modifies the product.
+Disables rollback for the current configuration=DISABLEROLLBACK|BOOL|1||Set this property to 1 to prevent the installer from generating a rollback script and saving copies of deleted files during the installation.
+Registry space in Kilobytes required by the application. Used by AllocateRegistrySpace action=AVAILABLEFREEREG|INTEGER|||The maximum value of the AVAILABLEFREEREG property is 2000000 kilobytes.
+Estimated size of the application=ARPSIZE|INTEGER|||The estimated size of the application in kilobytes.
+For installed product info, Telephone hotline=ARPHELPTELEPHONE|STRING|||
+Fully qualified path to the application's primary folder=ARPINSTALLLOCATION|STRING|||The ARPINSTALLLOCATION property is the full path to the application's primary folder.
+URL of the update channel for the application=ARPAUTHORIZEDCDFPREFIX|STRING|||The ARPAUTHORIZEDCDFPREFIX property is set to the URL of the update channel for the application.
+License Key, generated Product ID=ProductID|STRING|||Id of Product, generated over License Key.
+Suppresses the automatic setting of the COMPANYNAME=NOCOMPANYNAME|BOOL|1||Set the NOCOMPANYNAME property to 1 to suppress the automatic setting of the COMPANYNAME property by the installer.
+URL for an applications home page=ARPURLINFOABOUT|STRING|||The ARPURLINFOABOUT property is the URL for the link to the publishers home page or the application's home page.
+Processing, Advertise features=ADVERTISE|STRING|ALL||List of features delimited by commas that are to be advertised. ALL = all contained features.
+
+[Actions]
+Disk space check according to settings, part 3 (end)=CostFinalize|FileCost|
+Execute=INSTALL||Top-level action called to install or remove components.
+Disk space check according to settings, part 1 (begin)=CostInitialize||
+Disk space check according to settings, part 2 (execute)=FileCost|CostInitialize|
+License Key, validate=ValidateProductID|PIDKEY|Checks the License Key.
+Verify sufficient space=InstallValidate|CostFinalize|Verifies that all volumes to which cost has been attributed have sufficient space for the installation. The InstallValidate action ends the installation with a fatal error if any volume is short of disk space.
+Reboot=ScheduleReboot|INSTALL|Initiate an immediately Reboot.
+
+[InstallDefaultSequenz]
+ps=ARPCOMMENTS=Installed by VI Network Client
+ps=ALLUSERS=1
+ps=DISABLEADVTSHORTCUTS=1
+ps=ARPSYSTEMCOMPONENT=1
+a=INSTALL
+pg=INSTALLLEVEL
+pg=VersionMsi
+
+[UninstallDefaultSequenz]
+ps=REMOVE=ALL
+a=INSTALL
+pg=INSTALLLEVEL
+pg=VersionMsi
+
+[UpdateDefaultCommandLine]
+ps=Update=REINSTALLMODE=vamus REINSTALL=all
+
+[Comment]
+Das hier sind Kommentare. Diese werden nicht abgeräumt.
+
+[Captions]
+ps=GLOBAL_BUTTON_BACK=<&Back
+ps=GLOBAL_BUTTON_NEXT=&Next>
+ps=GLOBAL_BUTTON_READY=Com&plete
+ps=GLOBAL_BUTTON_CANCEL=&Cancel
+ps=GLOBAL_WINDOWCAPTION=MSI Controller
+
+ps=CHOOSEMSIPACKAGE_INFO_SHORT=MSI File Selection
+ps=CHOOSEMSIPACKAGE_INFO_LONG=Please choose an MSI or a patch file to be modified:
+ps=CHOOSEMSIPACKAGE_EDITPACKAGE=File
+
+ps=GENERALSETTINGS_INFO_SHORT=General Settings for Processing
+ps=GENERALSETTINGS_INFO_LONG=Please choose some general settings to control the package.
+ps=GENERALSETTINGS_CHECKBOX_AUTOUPDATE=package has &auto-update abilities
+ps=GENERALSETTINGS_CHECKBOX_PREWIZARD=process profiles MSI part before VIP part
+
+ps=INPUTMODI_INFO_SHORT=Select Input mode
+ps=INPUTMODI_INFO_LONG=For further installation and removal settings you can choose between guided mode and full featured mode.
+ps=INPUTMODI_OPTION_ASKFOR=&guided and simple mode
+ps=INPUTMODI_OPTION_DIREKT=&advanced and full MSI settings
+
+ps=USERMODI_INFO_SHORT=Settings for Installation: all users mode
+ps=USERMODI_INFO_LONG=Installation should be for:
+ps=USERMODI_OPTION_MAC=All users ("per &Machine")
+ps=USERMODI_OPTION_USR=Only current User ("per &User")
+
+ps=PIDKEY_INFO_SHORT=Settings for Installation: Licence key
+ps=PIDKEY_INFO_LONG=If you have a licence or product key you can enter it:
+ps=PIDKEY_EDIT_PIDKEY=Key
+
+ps=TRANSFORM_INFO_SHORT=Settings for Installation: transform file
+ps=TRANSFORM_INFO_LONG=If you have valid transform files (MST) you would like to apply, please select them
+ps=TRANSFORM_EDIT_TRANSFORM=File
+
+ps=PATCH_INFO_SHORT=Settings for Installation: Patch File
+ps=PATCH_INFO_LONG=If you have a valid Patch file (MSP) you would like to apply, please select it
+ps=PATCH_EDIT_PATCH=File
+
+ps=FINECONTROL_INFO_SHORT=Fine Tuning
+ps=FINECONTROL_INFO_LONG=You would like to install by Command line or by Sequence
+ps=FINECONTROL_OPTION_SEQUENZ=processing by &sequence
+ps=FINECONTROL_OPTION_COMMANDLINE=processing by &commandline
+
+ps=INSTALLDEINSTALL_INFO_SHORT=What Step Would Like to Modify?
+ps=INSTALLDEINSTALL_INFO_LONG=You can choose between installation and uninstall for modification
+ps=INSTALLDEINSTALL_OPTION_INSTALL=&Installation
+ps=INSTALLDEINSTALL_OPTION_DEINSTALL=&Uninstall
+
+ps=COMMANDLINE_INFO_SHORT_INSTALL=Command Line for Installing
+ps=COMMANDLINE_INFO_SHORT_UNINSTALL=Command Line for Uninstalling
+ps=COMMANDLINE_INFO_SHORT_UPDATE=Command line for Updating
+ps=COMMANDLINE_INFO_SHORT_PATCH=Command Line for Patching
+ps=COMMANDLINE_INFO_LONG=Please enter your additional command line parameters for processing
+ps=COMMANDLINE_INFO_LONGPATCH=Please enter a valid command line for applying the patch.
+ps=COMMANDLINE_EDIT_COMMANDLINE=Command line
+
+ps=NEWPROPERTYACTION_INFO_SHORT=New Property \ Action
+ps=NEWPROPERTYACTION_INFO_LONG=You would like to create a new property or action?
+ps=NEWPROPERTYACTION_TYPE=Type
+ps=NEWPROPERTYACTION_NAME=MSI specific name
+ps=NEWPROPERTYACTION_OPTION_PROPERTY=&Property
+ps=NEWPROPERTYACTION_OPTION_ACTION=A&ction
+
+ps=PROPERTYUSAGE_INFO_SHORT=Property Usage
+ps=PROPERTYUSAGE_INFO_LONG=You can set a property to process or get a property?
+ps=PROPERTYUSAGE_OPTION_SET=&Set
+ps=PROPERTYUSAGE_OPTION_GET=&Get
+
+ps=REUSAGE_INFO_SHORT=Information for Library
+ps=REUSAGE_INFO_LONG=Please define the action or property in more detail.
+ps=REUSAGE_EDIT_DISPLAYTEXT=Short description
+ps=REUSAGE_EDIT_INTERNALCOMMENT=Internal comment
+ps=REUSAGE_EDIT_DEPENDENCIES=Depends on property
+
+ps=NEWPROPERTYREUSE_INFO_SHORT=New Property for Library
+ps=NEWPROPERTYREUSE_INFO_LONG=Define a range for the property
+ps=NEWPROPERTYREUSE_TYPE=Type
+ps=NEWPROPERTYREUSE_DEFAULTVALUE=Default value or enumeration
+ps=NEWPROPERTYREUSE_OPTION_STRING=&String
+ps=NEWPROPERTYREUSE_OPTION_INTEGER=&Integer
+ps=NEWPROPERTYREUSE_OPTION_BOOL=&Bool
+ps=NEWPROPERTYREUSE_OPTION_ENUM=&Enum
+
+ps=PROPERTYVALUE_INFO_SHORT=Property Value
+ps=PROPERTYVALUE_INFO_LONG=Define a value for setting a property
+ps=PROPERTYVALUE_INFO_TEXTCOMBO=Value
+
+ps=SEQUENZ_TITEL_INSTALL=Processing Sequence for Installation
+ps=SEQUENZ_TITEL_DEINSTALL=Processing Sequence for Uninstall
+ps=SEQUENZ_FRAME_PREDEFINED=Predefined Properties and Actions
+ps=SEQUENZ_FRAME_SELECTED=Active Properties and Actions
+ps=SEQUENZ_FRAME_MOVE=Move selected
+ps=SEQUENZ_BUTTON_DEFINE=define...
+ps=SEQUENZ_BUTTON_REMOVE=remove
+ps=SEQUENZ_BUTTON_ADD=&Add...
+ps=SEQUENZ_BUTTON_DEFAULT=&Default Values
+ps=SEQUENZ_CONFIRM_DEFAULTS=Are you sure to revoke the current processing list and load default values?
+ps=SEQUENZ_TAB_INSTALL=Installation
+ps=SEQUENZ_TAB_UNINSTALL=Uninstall
+ps=SEQUENZ_TAB_UPDATE=Update
+ps=SEQUENZ_TAB_SEQUENZ=Sequence
+ps=SEQUENZ_TAB_DEFAULTSEQUENZ=Default Sequence
+
+[ContextHelp]
+ps=CHOOSEMSIPACKAGE_EDITPACKAGE_HELP=Please select a MSI or patch you would like to create a Profile.
+ps=GENERALSETTINGS_CHECKBOX_AUTOUPDATE_HELP=Select, if your MSI has auto-update abilities.
+ps=GENERALSETTINGS_CHECKBOX_PREWIZARD_HELP=Select, if this MSI part should be processed before or after the VIP part of profile.
+
+ps=INPUTMODI_OPTION_ASKFOR_HELP=Choose this option, if you would continue MSI-Control in WIZARD mode. You can always click on 'Complete'.
+ps=INPUTMODI_OPTION_DIREKT_HELP=You are a MSI expert and would like to set up advanced properties.
+
+ps=USERMODI_OPTION_MAC_HELP=Install this Package for all Users of this Computer.
+ps=USERMODI_OPTION_USR_HELP=Install this Package only for the current user.
+
+ps=PIDKEY_EDIT_PIDKEY_HELP=If this package requests a serial, you can define it. If not, you simply leave this box empty.
+
+ps=TRANSFORM_EDIT_TRANSFORM_HELP=If you would like to use a transform file, please select it. If not, you simply leave this box empty.
+
+ps=PATCH_EDIT_PATCH_HELP=If you would like to use a patch file, please select it. If not, you simply leave this box empty.
+
+ps=FINECONTROL_OPTION_SEQUENZ_HELP=With the help of the Sequence you customize the MSI behaviour. This is the expert mode.
+ps=FINECONTROL_OPTION_COMMANDLINE_HELP=Choose this option, if you would like to Control the package with the help of msiexec command line parameters
+
+ps=INSTALLDEINSTALL_OPTION_INSTALL_HELP=Change settings for installation
+ps=INSTALLDEINSTALL_OPTION_DEINSTALL_HELP=Change settings for removal.
+
+ps=COMMANDLINE_EDIT_COMMANDLINE_INSTALL_HELP=This Command line will be direct passed to the MSIInstallProduce API.
+ps=COMMANDLINE_EDIT_COMMANDLINE_UNINSTALL_HELP=This Command line will be direct passed to the MSIInstallProduce API.
+ps=COMMANDLINE_INFO_COMMANDLINE_UPDATE_HELP=This Command line will be direct passed to the MSIInstallProduce API.
+ps=COMMANDLINE_INFO_COMMANDLINE_PATCH_HELP=This Command line will be direct passed to the MSIInstallProduce API.
+
+ps=NEWPROPERTYACTION_NAME_HELP=Enter the MSI-internal Name.
+ps=NEWPROPERTYACTION_OPTION_PROPERTY_HELP=If you would like to create a Property.
+ps=NEWPROPERTYACTION_OPTION_ACTION_HELP=If you would like to create a Action.
+
+ps=PROPERTYUSAGE_OPTION_SET_HELP=Property to set.
+ps=PROPERTYUSAGE_OPTION_GET_HELP=Property print out instruction for installation log.
+
+ps=REUSAGE_EDIT_DISPLAYTEXT_HELP=A displayname for your property or action.
+ps=REUSAGE_EDIT_INTERNALCOMMENT_HELP=Additional comments.
+ps=REUSAGE_EDIT_DEPENDENCIES_HELP=A ; separated List of dependencies (MSI internal Name), which have to be set before
+
+ps=NEWPROPERTYREUSE_DEFAULTVALUE_HELP=Select a default value. If the property type is enum, you can enter a ; separated List of available Values.
+ps=NEWPROPERTYREUSE_OPTION_STRING_HELP=The property type is string. It can contain literal Values.
+ps=NEWPROPERTYREUSE_OPTION_INTEGER_HELP=The property type is numeric
+ps=NEWPROPERTYREUSE_OPTION_BOOL_HELP=The property can contain TRUE (1) or FALSE (NULL).
+ps=NEWPROPERTYREUSE_OPTION_ENUM_HELP=For default values you can enter a ; separated List of predefined Values.
+
+ps=PROPERTYVALUE_INFO_TEXTCOMBO_HELP=Select a value from the list or define a custom value.
+
+ps=SEQUENZ_LIST_AVAILABLE_HELP=This list box contains predefinded properties and actions. They can be chosen for processing in the lower List boxes. P=Property A=Action
+ps=SEQUENZ_LIST_SELECTED_HELP=This list box contains the selected properties and actions in processing order. Ps=Propertyset Pg=Propertyget A=Action
+ps=SEQUENZ_BUTTON_ADD_HELP=Add the choosen entry from the upper predefined list to the processing list
+ps=SEQUENZ_BUTTON_DEFINE_PREDEFINELIST_HELP=You can define new properties or actions for your predefined libary.
+ps=SEQUENZ_BUTTON_REMOVE_PREDEFINELIST_HELP=Selected Entry will be removed permanently from your predefinded library.
+ps=SEQUENZ_BUTTON_DEFINE_SELECTED_HELP=You can direct add new properties or actions to your processing sequence.
+ps=SEQUENZ_BUTTON_REMOVE_SELECTED_HELP=Remove selected entry from processing sequence
+ps=SEQUENZ_BUTTON_MOVE_HELP=Please order your sequence. It will be processed from top to Bottom.
+ps=SEQUENZ_BUTTON_DEFAULT_HELP=Apply Default settings to processing sequence.
+ps=UPDATE_BUTTON_DEFAULT_HELP=Apply Default values to command line
+ps=UPDATE_EDIT_HELP=Enter a command line to process in case of package updates
+ps=UPDATE_INFO=Command line
+
+ps=SEQUENZ_TAB_HORIZONTAL_HELP=Select between Sequence for installation or uninstall
+ps=SEQUENZ_TAB_VERTICAL_HELP=Select between current sequence or the predefined default sequence. Default sequence can be used for other profiles and is loaded with the "Default Sequence" Button.

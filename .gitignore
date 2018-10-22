@@ -1,0 +1,29 @@
+# Standard
+Assemblies/
+Delivery/
+Modules/
+obj/
+bin/
+Setup/
+SetupD/
+*.user
+*.suo
+*.trg
+*.orig
+_ReSharper.*/
+ignore.txt
+*.msi
+*.wixobj
+*.wixpdb
+*.tcu
+*.GhostDoc.xml
+*.*-*.tce
+.vs/
+tmp/
+*.pdb/
+*.js.map
+
+StyleCop.Cache
+
+# Do not ignore DLLs (aliens)
+!*.dll

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Steps>
+ 
+
+
+  <Step ID="CheckInsertJob" >
+    <Description Key="Key" Value="insert post processing jobs" />
+    <Prerequisites />
+    <GenConditions>
+      <Condition Type="Expression">ModuleSelected</Condition>
+    </GenConditions>
+    <RunConditions>
+      <Condition Type="SQL"  Replacement="True">
+        select 1 from dual
+      </Condition>
+
+    </RunConditions>
+    <Commands>
+
+      <!-- you can insert here some jobs into DBQueue, for processing after all other work is done
+      
+      -->
+
+    </Commands>
+    <Repair />
+  </Step>
+
+
+
+</Steps>

@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ModuleInfo Id="SDL" ModuleVersion="7.1.4.54" Selectable="True">
+  <ModuleGUID>987b2471-ece5-4d96-8cc6-3a11539b0854</ModuleGUID>
+  <Name Key="SDL_Name" Value="Software Distribution and Licensing Module" />
+  <Description Key="SDL_Description" Value="Software Distribution and Licensing Module" />
+  <Group Key="Group_Base_Technology" Value="Base Technology" SortOrder="999" />
+  <Author>One Identity</Author>
+  <RequiredModules>
+    <Module ModuleID="LDP" MinVersion="7.1.4.0" MaxVersion="7.1.*" />
+    <Module ModuleID="APC" MinVersion="7.1.4.0" MaxVersion="7.1.*" />
+    <Module ModuleID="ADS" MinVersion="7.1.4.0" MaxVersion="7.1.*" />
+    <Module ModuleID="RMB" MinVersion="7.1.4.0" MaxVersion="7.1.*" />
+  </RequiredModules>
+  <Packages>
+    <Package Id="d6034369-3213-4515-9315-ace5f05b30ed" Selectable="True">
+      <Name Key="ReplicationInfo.net7" Value="Replication Info7" />
+      <Description Key="ReplicationInfo.net7_description" Value="Replication monitor for software distribution" />
+      <Files>
+        <File>ReplicationInfo.exe</File>
+      </Files>
+      <PackageDependencies>
+        <Package Name="QBM/SqlWizard.Base" Auto="true" />
+        <Package Name="QBM/VI.FormEngine" Auto="true" />
+        <Package Name="QBM/VI.Controls.Design" Auto="true" />
+        <Package Name="QBM/VI.Update" Auto="true" />
+        <Package Name="QBM/VI.UI.Base" Auto="true" />
+        <Package Name="QBM/Common.Forms.Base" Auto="true" />
+        <Package Name="QBM/VI.UI.Base.DB" Auto="true" />
+        <Package Name="QBM/NLog" Auto="true" />
+        <Package Name="QBM/SyntaxEditor" Auto="true" />
+        <Package Name="QBM/InstallManager.Make" Auto="true" />
+        <Package Name="QBM/Devart Oracle Connector" Auto="true" />
+        <Package Name="QBM/Mono.Security" Auto="true" />
+        <Package Name="QBM/VI.FormBase" Auto="true" />
+        <Package Name="QBM/VI.Controls" Auto="true" />
+        <Package Name="QBM/VI.DB.dll" Auto="true" />
+        <Package Name="QBM/VI.Base.dll" Auto="true" />
+        <Package Name="QBM/VI.Controls.AlienSupport" Auto="true" />
+        <Package Name="QBM/SandDock.dll" Auto="true" />
+        <Package Name="QBM/Common.Customizer" Auto="true" />
+        <Package Name="QBM/VI.MVC" Auto="true" />
+        <Package Name="QBM/InstallManager.Msi" Auto="true" />
+        <Package Name="QBM/VI.Controls.SyntaxEdit" Auto="true" />
+        <Package Name="QER/Microsoft.Exchange.WebServices" Auto="true" />
+        <Package Name="QBM/VI.Parsers" Auto="true" />
+        <Package Name="QBM/VI.DialogEngine" Auto="true" />
+        <Package Name="QBM/System.Data.SQLite.dll" Auto="true" />
+        <Package Name="QBM/VI.ImageLibrary" Auto="true" />
+        <Package Name="QBM/VI.CommonDialogs" Auto="true" />
+        <Package Name="QBM/Eyefinder.dll" Auto="true" />
+        <Package Name="QER/QER.Customizer" Auto="true" />
+        <Package Name="QBM/XPExplorerBar" Auto="true" />
+        <Package Name="QBM/VI.FormProvider" Auto="true" />
+        <Package Name="QBM/InstallManager.Core" Auto="true" />
+        <Package Name="QBM/VI.Compile" Auto="true" />
+        <Package Name="QBM/SandBar.dll" Auto="true" />
+        <Package Name="QBM/SharpZipLib" Auto="true" />
+        <Package Name="QBM/SQL Wizard" Auto="true" />
+      </PackageDependencies>
+      <Source>SDL\Frontends\ReplicationInfo</Source>
+    </Package>
+    <Package Id="b1dc2e6c-caf0-46aa-9021-3dc1a21239ed" Selectable="False">
+      <Name Key="SDL.Customizer" Value="SDL.Customizer" />
+      <Description Key="SDL.Customizer_description" Value="Object layer customization for SDL module." />
+      <Files>
+        <File>SDL.Customizer.dll</File>
+      </Files>
+      <PackageDependencies>
+        <Package Name="QER/QER.Customizer" Auto="true" />
+        <Package Name="QBM/InstallManager.Make" Auto="true" />
+        <Package Name="QBM/NLog" Auto="true" />
+        <Package Name="QBM/Mono.Security" Auto="true" />
+        <Package Name="QBM/VI.DB.dll" Auto="true" />
+        <Package Name="QBM/VI.Update" Auto="true" />
+        <Package Name="QBM/VI.Base.dll" Auto="true" />
+        <Package Name="QBM/InstallManager.Msi" Auto="true" />
+        <Package Name="QBM/InstallManager.Core" Auto="true" />
+        <Package Name="QER/Microsoft.Exchange.WebServices" Auto="true" />
+        <Package Name="QBM/Common.Customizer" Auto="true" />
+        <Package Name="APC/APC.Customizer" Auto="true" />
+        <Package Name="QBM/Devart Oracle Connector" Auto="true" />
+      </PackageDependencies>
+      <Source>SDL\Customizer</Source>
+    </Package>
+    <Package Id="49178dfd-7a11-4c59-a5a9-3a448977a190" Selectable="False">
+      <Name Key="SDL.Component" Value="SDL.Component" />
+      <Description Key="Package_SDL.Component_Description" Value="SQL component" />
+      <Files>
+        <File>SDL.Component.dll</File>
+      </Files>
+      <PackageDependencies>
+        <Package Name="QBM/JobComponents.JobComponent" Auto="true" />
+        <Package Name="QBM/VI.Base.dll" Auto="true" />
+        <Package Name="QBM/VI.DB.dll" Auto="true" />
+        <Package Name="QBM/VI.Samba.Tools" Auto="true" />
+      </PackageDependencies>
+      <Source>SDL\Component\SDL.Component</Source>
+    </Package>
+    <Package Id="b7fa2912-8e4c-4d53-9a11-b3c4bd95b5a2" Selectable="False">
+      <Name Key="JobComponents.ControlFiles" Value="JobComponents.ControlFiles" />
+      <Description Key="Package_JobComponents.ControlFiles_Description" Value="ControlFiles component" />
+      <Files>
+        <File>ControlFilesComponent.dll</File>
+      </Files>
+      <PackageDependencies>
+        <Package Name="QBM/JobComponents.JobComponent" Auto="true" />
+        <Package Name="QBM/VI.Base.dll" Auto="true" />
+        <Package Name="QBM/VI.DB.dll" Auto="true" />
+        <Package Name="QBM/VI.Samba.Tools" Auto="true" />
+      </PackageDependencies>
+      <Source>SDL\Component\ControlFilesComponent</Source>
+    </Package>
+    <Package Id="5f428c66-5800-435c-b448-d1731ec67f06" Selectable="False">
+      <Name Key="SDL.Forms" Value="SDL.Forms" />
+      <Description Key="SDL.Forms_description" Value="Forms for SDL module" />
+      <Files>
+        <File>SDL.Forms.vif</File>
+      </Files>
+      <PackageDependencies>
+        <Package Name="QBM/VI.FormProvider" Auto="true" />
+        <Package Name="QBM/NLog" Auto="true" />
+        <Package Name="QBM/SqlWizard.Base" Auto="true" />
+        <Package Name="DPR/VI.Projector" Auto="true" />
+        <Package Name="QBM/InstallManager.Msi" Auto="true" />
+        <Package Name="DPR/VI.Projector.Database" Auto="true" />
+        <Package Name="QBM/QBM.AppServer.Reporting.Plugin" Auto="true" />
+        <Package Name="QBM/SQL Wizard" Auto="true" />
+        <Package Name="QBM/VI.UI.Base" Auto="true" />
+        <Package Name="QBM/VI.Controls.ElementEdit" Auto="true" />
+        <Package Name="QBM/Mono.Security" Auto="true" />
+        <Package Name="QBM/VI.UI.Wizards" Auto="true" />
+        <Package Name="DPR/VI.Projector.Database.UI" Auto="true" />
+        <Package Name="QBM/System.Data.SQLite.dll" Auto="true" />
+        <Package Name="QBM/VI.FormEngine" Auto="true" />
+        <Package Name="QBM/VI.FormBase" Auto="true" />
+        <Package Name="QBM/Common.Forms.Base" Auto="true" />
+        <Package Name="QBM/XPExplorerBar" Auto="true" />
+        <Package Name="QBM/VI.DialogEngine" Auto="true" />
+        <Package Name="QBM/VI.WebBase" Auto="true" />
+        <Package Name="QBM/VI.DataImport" Auto="true" />
+        <Package Name="QBM/SharpZipLib" Auto="true" />
+        <Package Name="QBM/VI.Controls.Design" Auto="true" />
+        <Package Name="QBM/VI.Base.dll" Auto="true" />
+        <Package Name="QBM/VI.Parsers" Auto="true" />
+        <Package Name="QBM/VI.FormDesignerSupport" Auto="true" />
+        <Package Name="QBM/VI.WebFormRenderer" Auto="true" />
+        <Package Name="DPR/VI.Projector.Templates" Auto="true" />
+        <Package Name="DPR/VI.Projector.ValueTemplates" Auto="true" />
+        <Package Name="QBM/StimulReport.Net Runtime" Auto="true" />
+        <Package Name="QBM/InstallManager.Core" Auto="true" />
+        <Package Name="QBM/VI.Compile" Auto="true" />
+        <Package Name="QBM/VI.Reporting" Auto="true" />
+        <Package Name="QBM/VI.MVC" Auto="true" />
+        <Package Name="QBM/VI.Controls" Auto="true" />
+        <Package Name="QBM/VI.ImageLibrary" Auto="true" />
+        <Package Name="QBM/VI.WebControls" Auto="true" />
+        <Package Name="QBM/QBM.AppServer.Client" Auto="true" />
+        <Package Name="QBM/VI.UI.Base.DB" Auto="true" />
+        <Package Name="QBM/SyntaxEditor" Auto="true" />
+        <Package Name="QBM/SandDock.dll" Auto="true" />
+        <Package Name="QBM/QBM.AppServer.Interface" Auto="true" />
+        <Package Name="QBM/InstallManager.Cli" Auto="true" />
+        <Package Name="QBM/VI.CommonDialogs" Auto="true" />
+        <Package Name="QBM/VI.Controls.AlienSupport" Auto="true" />
+        <Package Name="QBM/SandBar.dll" Auto="true" />
+        <Package Name="QBM/JobService.Configuration" Auto="true" />
+        <Package Name="QBM/VI.Controls.SyntaxEdit" Auto="true" />
+        <Package Name="QBM/Devart Oracle Connector" Auto="true" />
+        <Package Name="MDK/MDK.FormArchiveBuilder" Auto="true" />
+        <Package Name="DPR/VI.Projector.Reporting" Auto="true" />
+        <Package Name="DPR/VI.Projector.Migration" Auto="true" />
+        <Package Name="QBM/ServiceStack" Auto="true" />
+        <Package Name="QBM/VI.DB.dll" Auto="true" />
+        <Package Name="QBM/VI.Controls.Special" Auto="true" />
+        <Package Name="QBM/InstallManager.Make" Auto="true" />
+        <Package Name="QBM/Common.Customizer" Auto="true" />
+        <Package Name="QER/AE.Forms.Base" Auto="true" />
+        <Package Name="QBM/VI.Update" Auto="true" />
+        <Package Name="DPR/VI.Projector.UI.Wizards" Auto="true" />
+        <Package Name="QBM/VI.FormTools" Auto="true" />
+        <Package Name="DPR/VI.Projector.ScriptSupport" Auto="true" />
+        <Package Name="QBM/Eyefinder.dll" Auto="true" />
+        <Package Name="QBM/VI.UI.Wizards.Gui" Auto="true" />
+        <Package Name="QBM/RemoteDeployment" Auto="true" />
+        <Package Name="QER/AE.Controls" Auto="true" />
+        <Package Name="DPR/VI.Projector.UI" Auto="true" />
+        <Package Name="DPR/VI.Projector.Editor" Auto="true" />
+      </PackageDependencies>
+      <Source>SDL\Frontends\Forms\SDL.Forms</Source>
+    </Package>
+  </Packages>
+  <Deploymenttargets>
+    <Deploymenttarget>
+      <Name Key="Target_AdminWebPortal_Name" Value="AdminWebPortal" />
+      <Description Key="Target_AdminWebPortal_Description" Value="AdminWebPortal" />
+      <FullPath>Server\Web\AdminWebPortal</FullPath>
+      <RelatedPackages>
+        <Package Name="SDL.Forms" SubDirectory="bin" />
+      </RelatedPackages>
+    </Deploymenttarget>
+    <Deploymenttarget>
+      <Name Key="Target_API_Name" Value="API" />
+      <Description Key="Target_API_Description" Value="Contains only API relevant Files" />
+      <FullPath>API</FullPath>
+      <RelatedPackages>
+        <Package Name="SDL.Customizer" />
+      </RelatedPackages>
+    </Deploymenttarget>
+    <Deploymenttarget>
+      <Name Key="Target_Client_Name" Value="Client" />
+      <Description Key="Target_Client_Description" Value="Workstation" />
+      <FullPath>Client</FullPath>
+      <RelatedPackages>
+        <Package Name="SDL.Customizer" />
+      </RelatedPackages>
+    </Deploymenttarget>
+    <Deploymenttarget>
+      <Name Key="Target_Configuration_Name" Value="Configuration" />
+      <Description Key="Target_Configuration_Description" Value="Configuration" />
+      <FullPath>Client\Configuration</FullPath>
+      <RelatedPackages>
+        <Package Name="AE3Tools" />
+      </RelatedPackages>
+    </Deploymenttarget>
+    <Deploymenttarget>
+      <Name Key="Target_Jobserver_Name" Value="Jobserver" />
+      <Description Key="Target_Jobserver_Description" Value="Jobserver" />
+      <FullPath>Server\Jobserver</FullPath>
+      <RelatedPackages>
+        <Package Name="JobComponents.ControlFiles" />
+        <Package Name="JobComponents.WakeOnLanComponent" />
+        <Package Name="SDL.Component" />
+      </RelatedPackages>
+    </Deploymenttarget>
+    <Deploymenttarget>
+      <Name Key="Target_Monitoring_Name" Value="Monitoring" />
+      <Description Key="Target_Monitoring_Description" Value="Monitoring" />
+      <FullPath>Client\Monitoring</FullPath>
+      <RelatedPackages>
+        <Package Name="ReplicationInfo.net7" />
+      </RelatedPackages>
+    </Deploymenttarget>
+    <Deploymenttarget>
+      <Name Key="Target_Server_Name" Value="Server" />
+      <Description Key="Target_Server_Description" Value="Server" />
+      <FullPath>Server</FullPath>
+      <RelatedPackages>
+        <Package Name="SDL.Customizer" />
+      </RelatedPackages>
+    </Deploymenttarget>
+  </Deploymenttargets>
+</ModuleInfo>

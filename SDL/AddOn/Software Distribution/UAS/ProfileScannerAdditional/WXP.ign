@@ -1,0 +1,141 @@
+[FileSystem]
+%USERPROFILE%\Cookies\
+%USERPROFILE%\Temporary Internet Files\
+%USERPROFILE%\Verlauf\
+%USERPROFILE%\Recent\
+%USERPROFILE%\NTUser.*
+%USERPROFILE%\Lokale Einstellungen\Temporary Internet Files\
+%USERPROFILE%\Lokale Einstellungen\Anwendungsdaten\Microsoft\Windows\*.dat.*
+%USERPROFILE%\Startmenü\
+%USERPROFILE%.%USERDOMAIN%\Cookies\
+%USERPROFILE%.%USERDOMAIN%\Temporary Internet Files\
+%USERPROFILE%.%USERDOMAIN%\Verlauf\
+%USERPROFILE%.%USERDOMAIN%\Recent\
+%USERPROFILE%.%USERDOMAIN%\NTUser.*
+%USERPROFILE%.%USERDOMAIN%\Lokale Einstellungen\Temporary Internet Files\
+%USERPROFILE%.%USERDOMAIN%\Lokale Einstellungen\Anwendungsdaten\Microsoft\Windows\*.dat.*
+%USERPROFILE%.%USERDOMAIN%\Startmenü\
+%ALLUSERSPROFILE%\Anwendungsdaten\Microsoft\Machine Debug Manager\
+%ALLUSERSPROFILE%\Startmenü\
+*\LocalService*
+*\NetworkService*
+VI\
+%APPDATA%\Microsoft\Windows\UsrClass.*
+*.ini
+*\MS Exchange-Einstellungen.NICK
+*\MSOutlo.pip
+*\SchedLog.txt
+*\ShellIconCache
+PageFile.sys
+hiberfil.sys
+*\VICL*.tmp
+%SYSTEMROOT%\0.log
+%SYSTEMROOT%\bootstat.dat
+%SYSTEMROOT%\SchedLgU.Txt
+%SystemRoot%\Tasks\SA.DAT
+%SYSTEMROOT%\CSC\
+%SYSTEMROOT%\Debug\
+%SYSTEMROOT%\Prefetch\*
+%SYSTEMROOT%\security\*
+%SYSTEMROOT%\System32\CCM\
+%SYSTEMROOT%\System32\grouppolicy\
+%SYSTEMROOT%\System32\restore\
+%SystemRoot%\System32\config\
+%SYSTEMROOT%\system32\wbem\
+
+[REGMAC]
+HARDWARE\
+SYSTEM\ControlSet*
+SYSTEM\Select\LastKnownGood
+SYSTEM\CurrentControlSet\Control\Session Manager\Power\AcPolicy
+SYSTEM\CurrentControlSet\Control\Session Manager\Power\DcPolicy
+SYSTEM\CurrentControlSet\Control\hivelist\*
+SYSTEM\CurrentControlSet\Control\Lsa\LsaPid
+SYSTEM\CurrentControlSet\Control\Print\Providers\LogonTime
+SYSTEM\CurrentControlSet\Control\Session Manager\AppCompatibility\AppCompatCache
+SYSTEM\CurrentControlSet\Control\Watchdog\Display\ShutdownCount
+SYSTEM\CurrentControlSet\Control\Windows\ShutdownTime
+SYSTEM\CurrentControlSet\Control\ServiceCurrent\*
+SYSTEM\CurrentControlSet\Services\Dhcp\
+SYSTEM\CurrentControlSet\Services\Tcpip\
+SOFTWARE\VI\
+SOFTWARE\Microsoft\Cryptography\RNG\Seed
+SOFTWARE\Microsoft\EventSystem\{26c409cc-ae86-11d1-b616-00805fc79216}\
+SOFTWARE\Microsoft\Rpc\UuidSequenceNumber
+SOFTWARE\Microsoft\WBEM\
+SOFTWARE\Microsoft\PCHealth\
+SOFTWARE\Microsoft\Windows\CurrentVersion\Internet Settings\Cache\
+SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\LastWaitTimeout
+SOFTWARE\Microsoft\Windows\CurrentVersion\Group Policy\
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\Prefetcher\
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\LicenseInfo
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\SystemRestore\DisableSR
+SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\DCacheUpdate
+SOFTWARE\Microsoft\WZCSVC\
+SYSTEM\CurrentControlSet\Enum\acpi\
+SYSTEM\CurrentControlSet\Enum\Root\*PNP0501\1_0_17_0_0_0\
+SYSTEM\CurrentControlSet\Enum\Root\*PNP0501\1_0_17_1_0_0\
+SYSTEM\CurrentControlSet\Enum\Root\*PNP0501\1_0_17_2_0_0\
+SYSTEM\CurrentControlSet\Enum\Root\*PNP0501\1_0_17_3_0_0\
+SYSTEM\CurrentControlSet\Enum\Root\LEGACY_IMAPISERVICE\
+SYSTEM\CurrentControlSet\Enum\Root\LEGACY_APPMGMT\
+SYSTEM\CurrentControlSet\Enum\Root\LEGACY_FASTFAT\
+SYSTEM\CurrentControlSet\Enum\Root\LEGACY_RDPWD\
+SYSTEM\CurrentControlSet\Enum\Root\LEGACY_SR\
+SYSTEM\CurrentControlSet\Enum\Root\LEGACY_TDTCP\
+
+SYSTEM\CurrentControlSet\Enum\Root\LEGACY_MSISERVER\
+SYSTEM\CurrentControlSet\Services\{F100800E-6FFF-4929-AE48-36BD7685304B}\
+SYSTEM\CurrentControlSet\Services\aec\
+SYSTEM\CurrentControlSet\Services\DMusic\
+SYSTEM\CurrentControlSet\Services\drmkaud\
+SYSTEM\CurrentControlSet\Services\Eventlog\Application\ESENT\
+SYSTEM\CurrentControlSet\Services\ialm\
+SYSTEM\CurrentControlSet\Services\RDPWD\
+SYSTEM\CurrentControlSet\Services\splitter\
+SYSTEM\CurrentControlSet\Services\sr\
+SYSTEM\CurrentControlSet\Services\swmidi\
+SYSTEM\CurrentControlSet\Services\TDTCP\
+SYSTEM\CurrentControlSet\Services\TrkWks\
+SYSTEM\CurrentControlSet\Services\{C548C7BB-0F4D-46F6-A20D-9F294E048690}\
+
+[REGUSR]
+Software\Microsoft\Internet Explorer\*
+SessionInformation\ProgramCount
+Control Panel\Keyboard\InitialKeyboardIndicators
+Software\Microsoft\Windows\CurrentVersion\Explorer\SessionInfo\
+Software\Microsoft\Windows\CurrentVersion\Explorer\StartPage\
+Software\Microsoft\Windows\CurrentVersion\Explorer\MountPoints2\
+Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU\
+Software\Microsoft\Windows\CurrentVersion\Explorer\RecentDocs\
+Software\Microsoft\Windows\CurrentVersion\Explorer\TrayNotify\
+Software\Microsoft\Windows\CurrentVersion\Explorer\Discardable\PostSetup\Component Categories\
+Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist\{75048700-EF1F-11D0-9888-006097DEACF9}\
+Software\Microsoft\Windows\CurrentVersion\Applets\Regedit\
+Software\Microsoft\Windows\CurrentVersion\NetCache\
+Software\Microsoft\Windows\ShellNoRoam\BagMRU\
+Software\Microsoft\Windows\ShellNoRoam\Bags\
+Software\Microsoft\Windows NT\CurrentVersion\Winlogon\GPExtensions\
+
+[Environment]
+
+[IniFile]
+*\ProfileScanner.ini
+%USERPROFILE%\Lokale Einstellungen\desktop.ini
+%USERPROFILE%\Lokale Einstellungen\Temporary Internet Files\*.ini
+%USERPROFILE%\Lokale Einstellungen\Verlauf\*.ini
+%USERPROFILE%\Startmenü\*.ini
+%USERPROFILE%\Favoriten\*.ini
+%USERPROFILE%\Recent\*.ini
+%USERPROFILE%\SendTo\*.ini
+%USERPROFILE%.%USERDOMAIN%\Lokale Einstellungen\desktop.ini
+%USERPROFILE%.%USERDOMAIN%\Lokale Einstellungen\Temporary Internet Files\*.ini
+%USERPROFILE%.%USERDOMAIN%\Lokale Einstellungen\Verlauf\*.ini
+%USERPROFILE%.%USERDOMAIN%\Startmenü\*.ini
+%USERPROFILE%.%USERDOMAIN%\Favoriten\*.ini
+%USERPROFILE%.%USERDOMAIN%\Recent\*.ini
+%USERPROFILE%.%USERDOMAIN%\SendTo\*.ini
+*\LocalService\*
+*\NetworkService\*
+%SYSTEMROOT%\system32\GroupPolicy\gpt.ini\

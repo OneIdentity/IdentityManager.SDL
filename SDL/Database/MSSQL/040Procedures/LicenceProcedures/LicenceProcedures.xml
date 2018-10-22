@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+    <Commands>
+      <Command Type="SqlFile">SDL_PLicenceOrg_Basics.sql</Command>
+      <Command Type="SqlFile">SDL_ZLicenceCompanyTarget.sql</Command>
+      <Command Type="SqlFile">SDL_ZLicenceOrgTarget.sql</Command>
+      <Command Type="SqlFile">SDL_ZLicenceSubstitute.sql</Command>
+      <Command Type="SqlFile">SDL_ZLicenceRecalculate.sql</Command>
+
+      <Command Type="SqlFile">SDL_ZLicenceCompanyActual.sql</Command>
+      <Command Type="SqlFile">SDL_ZLicenceCompanyReal.sql</Command>
+      <Command Type="SqlFile">SDL_ZLicenceOrgActual.sql</Command>
+      <Command Type="SqlFile">SDL_ZLicenceOrgReal.sql</Command>
+      
+    </Commands>

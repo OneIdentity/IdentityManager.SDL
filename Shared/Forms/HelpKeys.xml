@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HelpMappingTable>
+	<Map Key="HelpKey\Dialog\FormAccProductDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormAccProductGroupDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormAERoleDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormDecisionLevelDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormDecisionSubMethodDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormDecisionMethodDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormFirmPartnerDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormHardwareDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormITShopMoveProductDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormITShopProductExpireDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormOrgDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormOrgTypeDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormPersonApprovalStateDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormDecisionStepDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormQERResourceTypeDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormQERTermsOfUseDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormWorkDeskDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormSectionNameDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormPrefixDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormPasswordQueryDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FrmDialogParameterUserQueryDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FrmRequestReportParamaterDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormComplianceGroupDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormComplianceRuleCopyDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormEX0DLDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormEX0MailContactDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormEX0MailBoxDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormEX0MailUserDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormQERPolicyCopyDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormQERPolicyGroupDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormSAPFunctionCategoryDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormSAPRightsEditorApplySAPAuthObjectTemplateParameterDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormSAPRightsEditorApplySAPFunctionTemplateParameterDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormSAPRightsEditorApplySAPMenuTemplateParameterDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormSAPRightsEditorApplySAPTransactionTemplateParameterDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormSAPRightsEditorSelectSAPActivityDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormSAPRightsEditorSAPAuthObjectCheckDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormSAPRightsEditorSelectSAPAuthObjectDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormSAPRigthsEditorSelectVariableDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormSAPVariableSetApplyUsedVarsDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="HelpKey\Dialog\FormTSBAccountDefDialog">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>
+	<Map Key="Help\Dialog\FormAttestationAdhoc">
+		<Chapter Manual="Dummy" Uid="Dummy" />
+	</Map>	
+</HelpMappingTable>

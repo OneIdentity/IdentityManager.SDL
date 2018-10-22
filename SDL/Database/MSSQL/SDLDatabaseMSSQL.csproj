@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A78B87ED-2AC2-4F2D-88FD-717EF4BFD608}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>HDBDatabase.MSSQL</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SDLDatabaseMSSQL</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\DatabaseInfo.xml">
+      <Link>Migration\DatabaseInfo.xml</Link>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="010FunctionsPreView\010FunctionsPreView.xml" />
+    <Content Include="020ViewDefinitionManual\020ViewDefinitionManual.xml" />
+    <Content Include="030ViewDefinitionPostStuff\030ViewDefinitionPostStuff.xml" />
+    <Content Include="030ViewDefinitionPostStuff\SDL_VADSNearestAppContainer.sql" />
+    <Content Include="030ViewDefinitionPostStuff\SDL_VLDPNearestAppContainer.sql" />
+    <Content Include="030ViewDefinitionPostStuff\ViewsForLicence\SDL_VLicenceNodeSubnode.sql" />
+    <Content Include="030ViewDefinitionPostStuff\ViewsForLicence\SDL_VLicLimitPerGroup.sql" />
+    <Content Include="030ViewDefinitionPostStuff\ViewsForLicence\SDL_VLicLimitPerGroupAndOrg.sql" />
+    <Content Include="030ViewDefinitionPostStuff\ViewsForLicence\SDL_VLicLimitPerLicence.sql" />
+    <Content Include="030ViewDefinitionPostStuff\ViewsForLicence\SDL_VLicLimitPerLicenceAndOrg.sql" />
+    <Content Include="030ViewDefinitionPostStuff\ViewsForLicence\SDL_VLicUseActual.sql" />
+    <Content Include="030ViewDefinitionPostStuff\ViewsForLicence\SDL_VLicUseActualOrg.sql" />
+    <Content Include="030ViewDefinitionPostStuff\ViewsForLicence\SDL_VLicUseReal.sql" />
+    <Content Include="030ViewDefinitionPostStuff\ViewsForLicence\SDL_VLicUseRealOrg.sql" />
+    <Content Include="030ViewDefinitionPostStuff\ViewsForLicence\SDL_VLicUseTarget.sql" />
+    <Content Include="030ViewDefinitionPostStuff\ViewsForLicence\SDL_VLicUseTargetOrg.sql" />
+    <Content Include="030ViewDefinitionPostStuff\ViewsForLicence\ViewsForLicence.xml" />
+    <Content Include="040Procedures\040Procedures.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="040Procedures\LicenceProcedures\SDL_ZLicenceCompanyActual.sql" />
+    <Content Include="040Procedures\LicenceProcedures\SDL_ZLicenceCompanyReal.sql" />
+    <Content Include="040Procedures\LicenceProcedures\SDL_ZLicenceOrgActual.sql" />
+    <Content Include="040Procedures\LicenceProcedures\SDL_ZLicenceOrgReal.sql" />
+    <Content Include="040Procedures\SDL_ZADSAccountInADSGroup.sql" />
+    <Content Include="040Procedures\SDL_ZADSMachineInADSGroup.sql" />
+    <Content Include="040Procedures\SDL_ZLDAPAccountInLDAPGroup.sql" />
+    <Content Include="040Procedures\LicenceProcedures\LicenceProcedures.xml" />
+    <Content Include="040Procedures\LicenceProcedures\SDL_ZLicenceCompanyTarget.sql" />
+    <Content Include="040Procedures\LicenceProcedures\SDL_ZLicenceOrgTarget.sql" />
+    <Content Include="040Procedures\LicenceProcedures\SDL_PLicenceOrg_Basics.sql" />
+    <Content Include="040Procedures\LicenceProcedures\SDL_ZLicenceRecalculate.sql" />
+    <Content Include="040Procedures\LicenceProcedures\SDL_ZLicenceSubstitute.sql" />
+    <Content Include="040Procedures\ProfileProcedures\ProfileProcedures.xml" />
+    <Content Include="040Procedures\ProfileProcedures\SDL_PDeleteAppProfileFAllChild.sql" />
+    <Content Include="040Procedures\ProfileProcedures\SDL_PDeleteDrvProfileFAllChild.sql" />
+    <Content Include="040Procedures\ProfileProcedures\SDL_PFillPAS.sql" />
+    <Content Include="040Procedures\ProfileProcedures\SDL_PInsertInAppServerGotApp.sql" />
+    <Content Include="040Procedures\ProfileProcedures\SDL_PInsertInAppServerGotDrv.sql" />
+    <Content Include="040Procedures\ProfileProcedures\SDL_PInsertInAppServerGotMac.sql" />
+    <Content Include="040Procedures\ProfileProcedures\SDL_PRepairAppServerGotXX.sql" />
+    <Content Include="040Procedures\SDL_FCVDNToCanonical.sql" />
+    <Content Include="040Procedures\SDL_FCVADSCommonName.sql" />
+    <Content Include="040Procedures\SDL_FCVADSDistinguishedName.sql" />
+    <Content Include="040Procedures\SDL_PDistributeAppgroup.sql" />
+    <Content Include="040Procedures\SDL_PFILLOsInsttype.sql" />
+    <Content Include="040Procedures\SDL_PPersonHasAppCreate.sql" />
+    <Content Include="040Procedures\SDL_PStammPC.sql" />
+    <Content Include="040Procedures\SDL_ZADSAccountForApplication.sql" />
+    <Content Include="040Procedures\SDL_ZADSAccountInAppGroup.sql" />
+    <Content Include="040Procedures\SDL_ZAllForOneDriver.sql" />
+    <Content Include="040Procedures\SDL_ZAllForOneWorkdesk.sql" />
+    <Content Include="040Procedures\SDL_ZAppContainerDelete.sql" />
+    <Content Include="040Procedures\SDL_ZAppContainerInsert.sql" />
+    <Content Include="040Procedures\SDL_ZApplicationMakeSortorder.sql" />
+    <Content Include="040Procedures\SDL_ZBaseTreeHasObject.sql" />
+    <Content Include="040Procedures\SDL_ZDriverMakeSortorder.sql" />
+    <Content Include="040Procedures\SDL_ZADSMachineInADSAppGroup.sql" />
+    <Content Include="040Procedures\SDL_ZLDPMachineInLDAPGroup.sql" />
+    <Content Include="040Procedures\SDL_ZLDPMachineInLDPAppGroup.sql" />
+    <Content Include="040Procedures\SDL_ZHardwareUpdateCNAME.sql" />
+    <Content Include="040Procedures\SDL_ZLDPAccountForApplication.sql" />
+    <Content Include="040Procedures\SDL_ZLDPAccountInAppGroup.sql" />
+    <Content Include="040Procedures\SDL_ZLDPAppContainerDelete.sql" />
+    <Content Include="040Procedures\SDL_ZLDPAppContainerInsert.sql" />
+    <Content Include="040Procedures\SDL_ZMachineHasDriver.sql" />
+    <Content Include="040Procedures\SDL_ZMachinesForApplication.sql" />
+    <Content Include="040Procedures\SDL_ZMachinesForDriver.sql" />
+    <Content Include="040Procedures\SDL_ZOrgHasDriver.sql" />
+    <Content Include="040Procedures\SDL_ZSoftwareDependsPhysical.sql" />
+    <Content Include="040Procedures\SDL_ZSoftwareExclusion.sql" />
+    <Content Include="040Procedures\SDL_ZSoftwareExclusionADD.sql" />
+    <Content Include="040Procedures\SDL_ZSoftwareExclusionDEL.sql" />
+    <Content Include="040Procedures\SDL_ZWorkDeskHasDriver.sql" />
+    <Content Include="050Triggers\050Triggers.xml" />
+    <Content Include="050Triggers\RMS\RMSTriggers.xml" />
+    <Content Include="050Triggers\RMS\SDL_TRMSDriver.sql" />
+    <Content Include="050Triggers\RMS\SDL_TRMSESetHasEntitlement.sql" />
+    <Content Include="050Triggers\SDL_TWorkdeskHasDriver.sql" />
+    <Content Include="050Triggers\SDL_TADSAccount.sql" />
+    <Content Include="050Triggers\SDL_TADSAccountInADSGroup.sql" />
+    <Content Include="050Triggers\SDL_TAdsContainer.sql" />
+    <Content Include="050Triggers\SDL_TAdsGroup.sql" />
+    <Content Include="050Triggers\SDL_TAppHasLicence.sql" />
+    <Content Include="050Triggers\SDL_TApplication.sql" />
+    <Content Include="050Triggers\SDL_TApplicationDependsOnApp.sql" />
+    <Content Include="050Triggers\SDL_TApplicationDependsonDriver.sql" />
+    <Content Include="050Triggers\SDL_TApplicationExcludeApp.sql" />
+    <Content Include="050Triggers\SDL_TApplicationExcludeDriver.sql" />
+    <Content Include="050Triggers\SDL_TBaseTreeHasApp.sql" />
+    <Content Include="050Triggers\SDL_TBaseTreeHasDriver.sql" />
+    <Content Include="050Triggers\SDL_TDriver.sql" />
+    <Content Include="050Triggers\SDL_TDriverDependsOnDriver.sql" />
+    <Content Include="050Triggers\SDL_TDriverExcludeDriver.sql" />
+    <Content Include="050Triggers\SDL_TDriverHasLicence.sql" />
+    <Content Include="050Triggers\SDL_THardware.sql" />
+    <Content Include="050Triggers\SDL_TADSMachineInADSGroup.sql" />
+    <Content Include="050Triggers\SDL_TLDAPAccount.sql" />
+    <Content Include="050Triggers\SDL_TLDPMachineInLDAPGroup.sql" />
+    <Content Include="050Triggers\SDL_THardwareTypeHasDriver.sql" />
+    <Content Include="050Triggers\SDL_TLDAPAccountInLDAPGroup.sql" />
+    <Content Include="050Triggers\SDL_TLDAPContainer.sql" />
+    <Content Include="050Triggers\SDL_TLDAPGroup.sql" />
+    <Content Include="050Triggers\SDL_TLicence.sql" />
+    <Content Include="050Triggers\SDL_TLicenceSubstitute.sql" />
+    <Content Include="050Triggers\SDL_TMachineHasDriver.sql" />
+    <Content Include="050Triggers\SDL_TMachineType.sql" />
+    <Content Include="050Triggers\SDL_TMachineTypeHasDriver.sql" />
+    <Content Include="050Triggers\SDL_TPersonHasApp.sql" />
+    <Content Include="050Triggers\SDL_TSDLDomain.sql" />
+    <Content Include="050Triggers\SDL_TWorkDeskHasApp.sql" />
+    <Content Include="ControlFile1SchemaInitial.xml" />
+    <Content Include="ControlFile3BaseContent.xml" />
+    <Content Include="ControlFile3Content.xml" />
+    <Content Include="ControlFile4NonLinearContent.xml" />
+    <Content Include="ControlFile2SchemaUpdate.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ControlFile5Code.xml" />
+    <Content Include="ControlFile6Check.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ControlFile7Finalize.xml" />
+    <Content Include="Migration\2015.0008.0023.0000.sql" />
+    <Content Include="Migration\2015.0008.0023.0200.sql" />
+    <Content Include="Migration\2015.0008.0023.0201.sql" />
+    <Content Include="Migration\2015.0008.0023.0300.sql" />
+    <Content Include="Migration\2016.0001.0018.0000.sql" />
+    <Content Include="Migration\2016.0010.0001.0000.sql" />
+    <Content Include="Migration\2016.0010.0001.0100.sql" />
+    <Content Include="Migration\2016.0010.0001.0101.sql" />
+    <Content Include="Migration\2016.0010.0001.0102.sql" />
+    <Content Include="Migration\2016.0010.0001.0103.sql" />
+    <Content Include="Migration\2016.0010.0001.0104.sql" />
+    <Content Include="Migration\2016.0010.0001.0200.sql" />
+    <Content Include="Migration\2016.0010.0001.0201.sql" />
+    <Content Include="Migration\2016.0010.0001.0210.sql" />
+    <Content Include="Migration\2016.0010.0001.0211.sql" />
+    <Content Include="Migration\2016.0010.0001.0300.sql" />
+    <Content Include="Migration\2016.0010.0001.0400.sql" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

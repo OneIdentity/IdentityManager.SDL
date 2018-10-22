@@ -1,0 +1,101 @@
+﻿<FormDefinition Version="1.1">
+	<Form ID="FORM0001" Name="FormApplicationProfileSyncViiFiles" Version="1.0.0">
+		<Header>
+			<AssociatedFiles>
+				<Library DesignMode="Ignore" Name="SDL.Forms.dll" Path="localfile:bin\debug" />
+				<TypeDefinition Name="TypeDefinition.xml" Path="localfile:Definitions" Usage="Gui" />
+				<TypeDefinition Name="TypeDefinitionWeb.xml" Path="localfile:Definitions" Usage="Web" />
+				<Resource Name="FormApplicationProfileSyncViiFiles.vires" Path="localfile:" Reader="VIResourceReaderV2" />
+				<StyleDefinition Name="StyleDefinition.xml" Path="localfile:Definitions" Reader="StyleDefinitionReaderXml" />
+			</AssociatedFiles>
+			<Customizer Type="SDL.Forms.FormApplicationProfileSyncViiFiles" />
+			<Description>
+			</Description>
+			<Units Measurement="Pixel" />
+		</Header>
+		<Properties>
+			<Property Name="CacheSafe" Type="Boolean" Value="True" />
+			<Property Name="Caption" Type="String" Value="Form1" />
+		</Properties>
+		<Events>
+			<Event Handler="FrmSyncApplicationProfile_OnLoad" Name="Load" />
+		</Events>
+		<Frames>
+			<Frame ID="FRAME001" Name="Main" Style="MainFrame">
+				<Properties>
+					<Property Name="Enabled" Type="Boolean" Value="True" />
+					<Property Name="Visible" Type="Boolean" Value="True" />
+				</Properties>
+				<Content>
+					<Components>
+						<Component ID="COMP000" Name="MainActivator" Type="ActivatorComponent">
+							<Properties>
+								<Property Name="ActivationFilter" Type="String" Value="ApplicationProfile" />
+								<Property Name="IsRootActivator" Type="Boolean" Value="True" />
+							</Properties>
+							<Events>
+								<Event Handler="MainActivator_OnActivating" Name="Activating" />
+								<Event Handler="MainActivator_OnActivated" Name="Activated" />
+							</Events>
+						</Component>
+					</Components>
+					<Controls>
+						<Control ID="CTRL000" Name="MainPanel" Style="VIPanel" Type="VIPanel">
+							<Properties>
+								<Property Name="ControlStyle" Type="VIControlStyle" Value="Modify" />
+								<Property Name="Enabled" Type="Boolean" Value="True" />
+								<Property Name="TabIndex" Type="Integer" Value="0" />
+							</Properties>
+							<Content>
+								<Controls>
+									<Layout Style="ColumnMain" Type="Column">
+										<Control ID="CTRL001" Name="HorizFormBar1" Style="VIHorizFormBar" Type="VIHorizFormBar">
+											<Properties>
+												<Property Name="ControlStyle" Type="VIControlStyle" Value="Information" />
+												<Property Name="Activator" Ref="CTRL000" Type="Activator" />
+												<Property Name="Caption" Type="String" Value="" />
+												<Property Name="EnabledByUser" Type="Boolean" Value="False" />
+												<Property Name="Enabled" Type="Boolean" Value="True" />
+												<Property Name="TabIndex" Type="Integer" Value="2" />
+											</Properties>
+										</Control>
+										<Control ID="CTRL002" Name="EditAsLabel4" Style="LargeVIEdit" Type="VIEdit">
+											<Properties>
+												<Property Name="ControlStyle" Type="VIControlStyle" Value="Information" />
+												<Property Name="Activator" Ref="CTRL000" Type="Activator" />
+												<Property Name="Caption" Type="String" Value="VIP7_SyncAppProfile_ProfilePath" />
+												<Property Name="EnabledByUser" Type="Boolean" Value="False" />
+												<Property Name="Enabled" Type="Boolean" Value="True" />
+												<Property Name="TabIndex" Type="Integer" Value="5" />
+											</Properties>
+										</Control>
+										<Control ID="CTRL003" Name="EditAsLabel3" Style="LargeMultiLineVIEdit" Type="VIEdit">
+											<Properties>
+												<Property Name="ControlStyle" Type="VIControlStyle" Value="Information" />
+												<Property Name="Activator" Ref="CTRL000" Type="Activator" />
+												<Property Name="Caption" Type="String" Value="Profile.vii" />
+												<Property Name="EnabledByUser" Type="Boolean" Value="False" />
+												<Property Name="Enabled" Type="Boolean" Value="True" />
+												<Property Name="TabIndex" Type="Integer" Value="3" />
+											</Properties>
+										</Control>
+										<Control ID="CTRL004" Name="EditAsLabel2" Style="LargeMultiLineVIEdit" Type="VIEdit">
+											<Properties>
+												<Property Name="ControlStyle" Type="VIControlStyle" Value="Information" />
+												<Property Name="Activator" Ref="CTRL000" Type="Activator" />
+												<Property Name="Caption" Type="String" Value="ProfileDescription.vii" />
+												<Property Name="EnabledByUser" Type="Boolean" Value="False" />
+												<Property Name="Enabled" Type="Boolean" Value="True" />
+												<Property Name="TabIndex" Type="Integer" Value="4" />
+											</Properties>
+										</Control>
+									</Layout>
+								</Controls>
+							</Content>
+						</Control>
+					</Controls>
+				</Content>
+			</Frame>
+		</Frames>
+	</Form>
+</FormDefinition>

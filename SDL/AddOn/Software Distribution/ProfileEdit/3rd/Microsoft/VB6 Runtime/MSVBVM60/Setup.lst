@@ -1,0 +1,41 @@
+[Setup]
+Title=MSVBVM60.dll
+DefaultDir=$(WinSysPath)
+AppExe=MSVBVM60.dll
+AppToUninstall=MSVBVM60.dll
+
+[Bootstrap]
+SetupTitle=Install
+SetupText=Copying Files, please stand by.
+CabFile=
+Spawn=Setup1.exe
+Uninstal=st6unst.exe
+TmpDir=msftqws.pdw
+Cabs=0
+
+[Bootstrap Files]
+File1=@COMCAT.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,5/31/98 12:00:00 AM,22288,4.71.1460.1
+File2=@ASYCFILT.DLL,$(WinSysPathSysFile),,,3/8/99 12:00:00 AM,147728,2.40.4275.1
+File3=@OLEPRO32.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,3/8/99 12:00:00 AM,164112,5.0.4275.1
+File4=@OLEAUT32.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,4/12/00 12:00:00 AM,598288,2.40.4275.1
+File5=@STDOLE2.TLB,$(WinSysPathSysFile),$(TLBRegister),,6/3/99 12:00:00 AM,17920,2.40.4275.1
+File6=@MSVBVM50.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,5/13/99 12:05:00 PM,1355776,5.2.82.44
+File7=@MSVCRT40.DLL,$(WinSysPathSysFile),,,2/8/99 12:00:00 AM,326656,4.22.0.0
+File8=@VB6STKIT.DLL,$(WinSysPathSysFile),,,3/26/99 12:00:00 AM,101888,6.0.84.50
+File9=@MSVBVM60.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,5/27/00 12:00:00 AM,1388544,6.0.88.77
+
+[Setup1 Files]
+File1=@MSVBVM60.DLL,,$(DLLSelfRegister),,2000-05-27 00:00:00,1388544,6.0.88.77
+
+[VI_UNINSTALL]
+
+[VI_CTYPE]
+
+[Setup (Vorlage)]
+Title=
+DefaultDir=
+AppExe=
+AppToUninstall=
+
+[VI_SPECIAL]
+Condition=

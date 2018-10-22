@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Steps>
+
+  <Macro Name ="QBMMasterImportRelationships"/>
+
+  <Macro Name ="QBMViewProcedureTrigger"/>
+
+  <Step ID="CodeFileInsertConditional RMS" >
+    <Description Key="Key" Value="create module dependend triggers for RMS" />
+    <Prerequisites />
+    <GenConditions>
+      <Condition Type="Expression">ModuleSelected</Condition>
+    </GenConditions>
+    <RunConditions>
+      <Condition Type="SQL">
+        select  1
+        where exists ( select top 1 1
+        from QBMModuleDef
+        where ModuleName = 'RMS'
+        )
+      </Condition>
+    </RunConditions>
+    <Commands>
+
+      <Include>050Triggers\RMS\RMSTriggers.xml</Include>
+
+
+    </Commands>
+    <Repair />
+  </Step>
+
+  <Macro Name ="QBMCheckPointIfModule"/>
+
+</Steps>

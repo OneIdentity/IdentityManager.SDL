@@ -1,0 +1,11 @@
+﻿[AppProfile_MaxOrderNumber]
+MSSQL=isnull(ordernumber, 0) = (Select MAX(ordernumber) from ApplicationProfile where ({0}) and ({1}));
+Oracle=ordernumber = (SELECT MAX(ORDERNUMBER) FROM APPLICATIONPROFILE WHERE ({0}) AND ({1}));
+
+[SDL_AppProfile_MaxOrderNumber]
+MSSQL=isnull(ordernumber, 0) = (Select MAX(ordernumber) from ApplicationProfile where {0});
+Oracle=ordernumber = (SELECT MAX(ORDERNUMBER) FROM APPLICATIONPROFILE WHERE {0});
+
+[SDL_DriverProfile_MaxOrderNumber]
+MSSQL=isnull(ordernumber, 0) = (Select MAX(ordernumber) from DriverProfile where {0});
+Oracle=ordernumber = (SELECT MAX(ORDERNUMBER) FROM DriverProfile WHERE {0});

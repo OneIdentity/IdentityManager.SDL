@@ -1,0 +1,13 @@
+Installation des Dienstes auf dem Server:
+1. Kopieren von "0708Svc.exe" auf den Servern/PC's auf denen visvcx läuft.
+2. Aufrufen von "0708Svc.exe" über folgende Kommandozeile:
+   "<uncToServer>\<dir>\0708Svc.exe -b InstallAndStart -p all -u #"
+   
+Manuelle installation des Dienstes auf einem Client:
+Die Installation auf den Clients erfolgt normalerweise automatisch durch die Instanz des Dienstes auf dem Server!
+Gleichwohl kann der Dienst auch manuell auf einem Client installiert werden:
+1. Kopieren von "0708Svc.exe" auf den Client.
+2. Aufrufen von "0708Svc.exe" über folgende Kommandozeile:
+   "<dir>\0708Svc.exe -b InstallAndStart"
+
+

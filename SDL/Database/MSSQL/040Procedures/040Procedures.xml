@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Commands>
+
+  <Command Type="SqlFile">SDL_FCVDNToCanonical.sql</Command>
+  <Command Type="SqlFile">SDL_FCVADSCommonName.sql</Command>
+  <Command Type="SqlFile">SDL_FCVADSDistinguishedName.sql</Command>
+  <Command Type="SqlFile">SDL_PDistributeAppgroup.sql</Command>
+  <Command Type="SqlFile">SDL_PPersonHasAppCreate.sql</Command>
+  <Command Type="SqlFile">SDL_PStammPC.sql</Command>
+  <Command Type="SqlFile">SDL_PFILLOsInsttype.sql</Command>
+
+  <Command Type="SqlFile">SDL_ZADSAccountForApplication.sql</Command>
+  <Command Type="SqlFile">SDL_ZADSAccountInAppGroup.sql</Command>
+  <Command Type="SqlFile">SDL_ZAllForOneDriver.sql</Command>
+  <Command Type="SqlFile">SDL_ZAppContainerDelete.sql</Command>
+  <Command Type="SqlFile">SDL_ZAppContainerInsert.sql</Command>
+  <Command Type="SqlFile">SDL_ZApplicationMakeSortorder.sql</Command>
+  <Command Type="SqlFile">SDL_ZDriverMakeSortorder.sql</Command>
+  <Command Type="SqlFile">SDL_ZADSMachineInADSAppGroup.sql</Command>
+  <Command Type="SqlFile">SDL_ZLDPMachineInLDPAppGroup.sql</Command>
+  <Command Type="SqlFile">SDL_ZHardwareUpdateCNAME.sql</Command>
+  <Command Type="SqlFile">SDL_ZLDPAccountForApplication.sql</Command>
+  <Command Type="SqlFile">SDL_ZLDPAccountInAppGroup.sql</Command>
+  <Command Type="SqlFile">SDL_ZLDPAppContainerDelete.sql</Command>
+  <Command Type="SqlFile">SDL_ZLDPAppContainerInsert.sql</Command>
+  <Command Type="SqlFile">SDL_ZMachineHasDriver.sql</Command>
+  <Command Type="SqlFile">SDL_ZMachinesForApplication.sql</Command>
+  <Command Type="SqlFile">SDL_ZMachinesForDriver.sql</Command>
+  <Command Type="SqlFile">SDL_ZOrgHasDriver.sql</Command>
+
+  <Command Type="SqlFile">SDL_ZSoftwareDependsPhysical.sql</Command>
+  <Command Type="SqlFile">SDL_ZSoftwareExclusion.sql</Command>
+  <Command Type="SqlFile">SDL_ZSoftwareExclusionADD.sql</Command>
+  <Command Type="SqlFile">SDL_ZSoftwareExclusionDEL.sql</Command>
+  <Command Type="SqlFile">SDL_ZWorkDeskHasDriver.sql</Command>
+
+  <Include>LicenceProcedures\LicenceProcedures.xml</Include>
+  <Include>ProfileProcedures\ProfileProcedures.xml</Include>
+
+  <Command Type="SqlFile">SDL_ZBaseTreeHasObject.sql</Command>
+  <Command Type="SqlFile">SDL_ZAllForOneWorkDesk.sql</Command>
+  <Command Type="SqlFile">SDL_ZADSAccountInADSGroup.sql</Command>
+  <Command Type="SqlFile">SDL_ZLDAPAccountInLDAPGroup.sql</Command>
+
+  <Command Type="SqlFile">SDL_ZADSMachineInADSGroup.sql</Command>
+  <Command Type="SqlFile">SDL_ZLDPMachineInLDAPGroup.sql</Command>
+
+</Commands>
+
+

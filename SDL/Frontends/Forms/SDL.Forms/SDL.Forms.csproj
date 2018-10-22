@@ -1,0 +1,762 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{01E1EB80-C0BA-11E3-B01D-D4BED96B0574}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>SDL.Forms</AssemblyName>
+    <AssemblyOriginatorKeyFile>..\..\..\SDL.snk</AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>SDL.Forms</RootNamespace>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SignAssembly>true</SignAssembly>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AE.Forms.Base, Version=3.2.2007.1031, Culture=neutral, PublicKeyToken=5d0660cde5b231fd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Assemblies\AE.Forms.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="VI.Base">
+      <Name>VI.Base</Name>
+      <HintPath>..\..\..\..\Assemblies\VI.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="VI.Controls">
+      <Name>VI.Controls</Name>
+      <HintPath>..\..\..\..\Assemblies\VI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="VI.DB">
+      <Name>VI.DB</Name>
+      <HintPath>..\..\..\..\Assemblies\VI.DB.dll</HintPath>
+    </Reference>
+    <Reference Include="VI.FormBase">
+      <Name>VI.FormBase</Name>
+      <HintPath>..\..\..\..\Assemblies\VI.FormBase.dll</HintPath>
+    </Reference>
+    <Reference Include="VI.FormDesignerSupport">
+      <Name>VI.FormDesignerSupport</Name>
+      <HintPath>..\..\..\..\Assemblies\VI.FormDesignerSupport.dll</HintPath>
+    </Reference>
+    <Reference Include="VI.FormEngine">
+      <Name>VI.FormEngine</Name>
+      <HintPath>..\..\..\..\Assemblies\VI.FormEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="VI.FormTools">
+      <Name>VI.FormTools</Name>
+      <HintPath>..\..\..\..\Assemblies\VI.FormTools.dll</HintPath>
+    </Reference>
+    <Reference Include="VI.ImageLibrary">
+      <Name>VI.ImageLibrary</Name>
+      <HintPath>..\..\..\..\Assemblies\VI.ImageLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="VI.MVC">
+      <HintPath>..\..\..\..\Assemblies\VI.MVC.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\GlobalVersion.cs">
+      <Link>GlobalVersion.cs</Link>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProfileTool.cs" />
+    <Content Include="Config.ini" />
+    <Content Include="Definitions\TypeDefinition.xml" />
+    <Content Include="..\..\..\..\Shared\Forms\StyleDefinition.xml">
+      <Link>Definitions\StyleDefinition.xml</Link>
+    </Content>
+    <Content Include="..\..\..\..\Shared\Forms\TypeDefinitionWeb.xml">
+      <Link>Definitions\TypeDefinitionWeb.xml</Link>
+    </Content>
+    <EmbeddedResource Include="FormApplicationHasLicense.resx">
+      <DependentUpon>FormApplicationHasLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDriverHasMachineType.resx">
+      <DependentUpon>FormDriverHasMachineType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDriverHasWorkdesk.resx">
+      <DependentUpon>FormDriverHasWorkdesk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Lizenz.ico" />
+    <EmbeddedResource Include="FormDepartmentHasLicenseGrid.resx">
+      <DependentUpon>FormDepartmentHasLicenseGrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDriverHasLicense.resx">
+      <DependentUpon>FormDriverHasLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHardwarePCHasTASDriver.resx">
+      <DependentUpon>FormHardwarePCHasTASDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SDL.Forms.vii" />
+    <Compile Include="FormDriverHasLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormDriverHasLicense.xml">
+      <DependentUpon>FormDriverHasLicense.cs</DependentUpon>
+    </Content>
+    <None Include="FormDriverHasLicense.vires">
+      <DependentUpon>FormDriverHasLicense.cs</DependentUpon>
+    </None>
+    <Compile Include="FormBaseTreeRelatedToBaseTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormBaseTreeRelatedToBaseTree.xml">
+      <DependentUpon>FormBaseTreeRelatedToBaseTree.cs</DependentUpon>
+    </Content>
+    <None Include="FormBaseTreeRelatedToBaseTree.vires">
+      <DependentUpon>FormBaseTreeRelatedToBaseTree.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormBaseTreeRelatedToBaseTree.resx">
+      <DependentUpon>FormBaseTreeRelatedToBaseTree.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormBaseTreeHasLicenceDetailsMasterData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormBaseTreeHasLicenceDetailsMasterData.xml">
+      <DependentUpon>FormBaseTreeHasLicenceDetailsMasterData.cs</DependentUpon>
+    </Content>
+    <None Include="FormBaseTreeHasLicenceDetailsMasterData.vires">
+      <DependentUpon>FormBaseTreeHasLicenceDetailsMasterData.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormBaseTreeHasLicenceDetailsMasterData.resx">
+      <DependentUpon>FormBaseTreeHasLicenceDetailsMasterData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormDriverProfileCanUsedByRD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormDriverProfileCanUsedByRD.xml">
+      <DependentUpon>FormDriverProfileCanUsedByRD.cs</DependentUpon>
+    </Content>
+    <None Include="FormDriverProfileCanUsedByRD.vires">
+      <DependentUpon>FormDriverProfileCanUsedByRD.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormDriverProfileCanUsedByRD.resx">
+      <DependentUpon>FormDriverProfileCanUsedByRD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormLicenseHasDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormLicenseHasDriver.xml">
+      <DependentUpon>FormLicenseHasDriver.cs</DependentUpon>
+    </Content>
+    <None Include="FormLicenseHasDriver.vires">
+      <DependentUpon>FormLicenseHasDriver.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormLicenseHasDriver.resx">
+      <DependentUpon>FormLicenseHasDriver.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormDriverProfileOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormDriverProfileOverview.xml">
+      <DependentUpon>FormDriverProfileOverview.cs</DependentUpon>
+    </Content>
+    <None Include="FormDriverProfileOverview.vires">
+      <DependentUpon>FormDriverProfileOverview.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormDriverProfileOverview.resx">
+      <DependentUpon>FormDriverProfileOverview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormDriverHasHardwarePC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormDriverHasHardwarePC.xml">
+      <DependentUpon>FormDriverHasHardwarePC.cs</DependentUpon>
+    </Content>
+    <None Include="FormDriverHasHardwarePC.vires">
+      <DependentUpon>FormDriverHasHardwarePC.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormDriverHasHardwarePC.resx">
+      <DependentUpon>FormDriverHasHardwarePC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormApplicationProfileMasterData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormApplicationProfileMasterData.xml">
+      <DependentUpon>FormApplicationProfileMasterData.cs</DependentUpon>
+    </Content>
+    <None Include="FormApplicationProfileMasterData.vires">
+      <DependentUpon>FormApplicationProfileMasterData.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormApplicationProfileMasterData.resx">
+      <DependentUpon>FormApplicationProfileMasterData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormMachineTypeCopyToOtherSite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormMachineTypeCopyToOtherSite.xml">
+      <DependentUpon>FormMachineTypeCopyToOtherSite.cs</DependentUpon>
+    </Content>
+    <None Include="FormMachineTypeCopyToOtherSite.vires">
+      <DependentUpon>FormMachineTypeCopyToOtherSite.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormMachineTypeCopyToOtherSite.resx">
+      <DependentUpon>FormMachineTypeCopyToOtherSite.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormDriverMasterData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormDriverMasterData.xml">
+      <DependentUpon>FormDriverMasterData.cs</DependentUpon>
+    </Content>
+    <None Include="FormDriverMasterData.vires">
+      <DependentUpon>FormDriverMasterData.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormDriverMasterData.resx">
+      <DependentUpon>FormDriverMasterData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormDriverProfileSyncViiFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormDriverProfileSyncViiFiles.xml">
+      <DependentUpon>FormDriverProfileSyncViiFiles.cs</DependentUpon>
+    </Content>
+    <None Include="FormDriverProfileSyncViiFiles.vires">
+      <DependentUpon>FormDriverProfileSyncViiFiles.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormDriverProfileSyncViiFiles.resx">
+      <DependentUpon>FormDriverProfileSyncViiFiles.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormHardwarePCHasTASDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormHardwarePCHasTASDriver.xml">
+      <DependentUpon>FormHardwarePCHasTASDriver.cs</DependentUpon>
+    </Content>
+    <None Include="FormHardwarePCHasTASDriver.vires">
+      <DependentUpon>FormHardwarePCHasTASDriver.cs</DependentUpon>
+    </None>
+    <Compile Include="FormADSAccountAppsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormADSAccountAppsInfo.xml">
+      <DependentUpon>FormADSAccountAppsInfo.cs</DependentUpon>
+    </Content>
+    <None Include="FormADSAccountAppsInfo.vires">
+      <DependentUpon>FormADSAccountAppsInfo.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormADSAccountAppsInfo.resx">
+      <DependentUpon>FormADSAccountAppsInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormApplicationProfileSyncViiFiles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormApplicationProfileSyncViiFiles.xml">
+      <DependentUpon>FormApplicationProfileSyncViiFiles.cs</DependentUpon>
+    </Content>
+    <None Include="FormApplicationProfileSyncViiFiles.vires">
+      <DependentUpon>FormApplicationProfileSyncViiFiles.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormApplicationProfileSyncViiFiles.resx">
+      <DependentUpon>FormApplicationProfileSyncViiFiles.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormApplicationHasLicense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormApplicationHasLicense.xml">
+      <DependentUpon>FormApplicationHasLicense.cs</DependentUpon>
+    </Content>
+    <None Include="FormApplicationHasLicense.vires">
+      <DependentUpon>FormApplicationHasLicense.cs</DependentUpon>
+    </None>
+    <Compile Include="FormDriverHasWorkdesk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormDriverHasWorkdesk.xml">
+      <DependentUpon>FormDriverHasWorkdesk.cs</DependentUpon>
+    </Content>
+    <None Include="FormDriverHasWorkdesk.vires">
+      <DependentUpon>FormDriverHasWorkdesk.cs</DependentUpon>
+    </None>
+    <Compile Include="FormDriverHasMachineType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormDriverHasMachineType.xml">
+      <DependentUpon>FormDriverHasMachineType.cs</DependentUpon>
+    </Content>
+    <None Include="FormDriverHasMachineType.vires">
+      <DependentUpon>FormDriverHasMachineType.cs</DependentUpon>
+    </None>
+    <Compile Include="FormMachineTypeCopy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormMachineTypeCopy.xml">
+      <DependentUpon>FormMachineTypeCopy.cs</DependentUpon>
+    </Content>
+    <None Include="FormMachineTypeCopy.vires">
+      <DependentUpon>FormMachineTypeCopy.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormMachineTypeCopy.resx">
+      <DependentUpon>FormMachineTypeCopy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormApplicationProfileCopyAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormApplicationProfileCopyAll.xml">
+      <DependentUpon>FormApplicationProfileCopyAll.cs</DependentUpon>
+    </Content>
+    <None Include="FormApplicationProfileCopyAll.vires">
+      <DependentUpon>FormApplicationProfileCopyAll.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormApplicationProfileCopyAll.resx">
+      <DependentUpon>FormApplicationProfileCopyAll.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormLicencePurchaseMasterData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormLicencePurchaseMasterData.xml">
+      <DependentUpon>FormLicencePurchaseMasterData.cs</DependentUpon>
+    </Content>
+    <None Include="FormLicencePurchaseMasterData.vires">
+      <DependentUpon>FormLicencePurchaseMasterData.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormLicencePurchaseMasterData.resx">
+      <DependentUpon>FormLicencePurchaseMasterData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FprmApplicationProfileOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FprmApplicationProfileOverview.xml">
+      <DependentUpon>FprmApplicationProfileOverview.cs</DependentUpon>
+    </Content>
+    <None Include="FprmApplicationProfileOverview.vires">
+      <DependentUpon>FprmApplicationProfileOverview.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FprmApplicationProfileOverview.resx">
+      <DependentUpon>FprmApplicationProfileOverview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormApplicationServerHasMachineType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormApplicationServerHasMachineType.xml">
+      <DependentUpon>FormApplicationServerHasMachineType.cs</DependentUpon>
+    </Content>
+    <None Include="FormApplicationServerHasMachineType.vires">
+      <DependentUpon>FormApplicationServerHasMachineType.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormApplicationServerHasMachineType.resx">
+      <DependentUpon>FormApplicationServerHasMachineType.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormApplicationServerMasterData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormApplicationServerMasterData.xml">
+      <DependentUpon>FormApplicationServerMasterData.cs</DependentUpon>
+    </Content>
+    <None Include="FormApplicationServerMasterData.vires">
+      <DependentUpon>FormApplicationServerMasterData.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormApplicationServerMasterData.resx">
+      <DependentUpon>FormApplicationServerMasterData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormObjectHasDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormObjectHasDriver.xml">
+      <DependentUpon>FormObjectHasDriver.cs</DependentUpon>
+    </Content>
+    <None Include="FormObjectHasDriver.vires">
+      <DependentUpon>FormObjectHasDriver.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormObjectHasDriver.resx">
+      <DependentUpon>FormObjectHasDriver.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormApplicationProfileCopyToOtherSites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormApplicationProfileCopyToOtherSites.xml">
+      <DependentUpon>FormApplicationProfileCopyToOtherSites.cs</DependentUpon>
+    </Content>
+    <None Include="FormApplicationProfileCopyToOtherSites.vires">
+      <DependentUpon>FormApplicationProfileCopyToOtherSites.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormApplicationProfileCopyToOtherSites.resx">
+      <DependentUpon>FormApplicationProfileCopyToOtherSites.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormApplicationDependsOnApplicationMasterData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormApplicationDependsOnApplicationMasterData.xml">
+      <DependentUpon>FormApplicationDependsOnApplicationMasterData.cs</DependentUpon>
+    </Content>
+    <None Include="FormApplicationDependsOnApplicationMasterData.vires">
+      <DependentUpon>FormApplicationDependsOnApplicationMasterData.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormApplicationDependsOnApplicationMasterData.resx">
+      <DependentUpon>FormApplicationDependsOnApplicationMasterData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormBaseTreeHasLicencePurchaseDetailsMasterData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormBaseTreeHasLicencePurchaseDetailsMasterData.xml">
+      <DependentUpon>FormBaseTreeHasLicencePurchaseDetailsMasterData.cs</DependentUpon>
+    </Content>
+    <None Include="FormBaseTreeHasLicencePurchaseDetailsMasterData.vires">
+      <DependentUpon>FormBaseTreeHasLicencePurchaseDetailsMasterData.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormBaseTreeHasLicencePurchaseDetailsMasterData.resx">
+      <DependentUpon>FormBaseTreeHasLicencePurchaseDetailsMasterData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormADSAccountTASUserInApplicationGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormADSAccountTASUserInApplicationGroup.xml">
+      <DependentUpon>FormADSAccountTASUserInApplicationGroup.cs</DependentUpon>
+    </Content>
+    <None Include="FormADSAccountTASUserInApplicationGroup.vires">
+      <DependentUpon>FormADSAccountTASUserInApplicationGroup.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormADSAccountTASUserInApplicationGroup.resx">
+      <DependentUpon>FormADSAccountTASUserInApplicationGroup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormDriverDependsOnDriverMasterData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormDriverDependsOnDriverMasterData.xml">
+      <DependentUpon>FormDriverDependsOnDriverMasterData.cs</DependentUpon>
+    </Content>
+    <None Include="FormDriverDependsOnDriverMasterData.vires">
+      <DependentUpon>FormDriverDependsOnDriverMasterData.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormDriverDependsOnDriverMasterData.resx">
+      <DependentUpon>FormDriverDependsOnDriverMasterData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormLicenseHasApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormLicenseHasApplication.xml">
+      <DependentUpon>FormLicenseHasApplication.cs</DependentUpon>
+    </Content>
+    <None Include="FormLicenseHasApplication.vires">
+      <DependentUpon>FormLicenseHasApplication.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormLicenseHasApplication.resx">
+      <DependentUpon>FormLicenseHasApplication.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormMachineTypeMasterData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormMachineTypeMasterData.xml">
+      <DependentUpon>FormMachineTypeMasterData.cs</DependentUpon>
+    </Content>
+    <None Include="FormMachineTypeMasterData.vires">
+      <DependentUpon>FormMachineTypeMasterData.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormMachineTypeMasterData.resx">
+      <DependentUpon>FormMachineTypeMasterData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormLicenceMasterData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormLicenceMasterData.xml">
+      <DependentUpon>FormLicenceMasterData.cs</DependentUpon>
+    </Content>
+    <None Include="FormLicenceMasterData.vires">
+      <DependentUpon>FormLicenceMasterData.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormLicenceMasterData.resx">
+      <DependentUpon>FormLicenceMasterData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormLicenceTypeMasterData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormLicenceTypeMasterData.xml">
+      <DependentUpon>FormLicenceTypeMasterData.cs</DependentUpon>
+    </Content>
+    <None Include="FormLicenceTypeMasterData.vires">
+      <DependentUpon>FormLicenceTypeMasterData.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormLicenceTypeMasterData.resx">
+      <DependentUpon>FormLicenceTypeMasterData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormSDLDomainNetlogon.cs" />
+    <Content Include="FormSDLDomainNetlogon.xml">
+      <DependentUpon>FormSDLDomainNetlogon.cs</DependentUpon>
+    </Content>
+    <None Include="FormSDLDomainNetlogon.vires">
+      <DependentUpon>FormSDLDomainNetlogon.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormSDLDomainNetlogon.resx">
+      <DependentUpon>FormSDLDomainNetlogon.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormApplicationDependencyAndExclude.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormApplicationDependencyAndExclude.xml">
+      <DependentUpon>FormApplicationDependencyAndExclude.cs</DependentUpon>
+    </Content>
+    <None Include="FormApplicationDependencyAndExclude.vires">
+      <DependentUpon>FormApplicationDependencyAndExclude.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormApplicationDependencyAndExclude.resx">
+      <DependentUpon>FormApplicationDependencyAndExclude.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormDepartmentHasLicenseGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormDepartmentHasLicenseGrid.xml">
+      <DependentUpon>FormDepartmentHasLicenseGrid.cs</DependentUpon>
+    </Content>
+    <None Include="FormDepartmentHasLicenseGrid.vires">
+      <DependentUpon>FormDepartmentHasLicenseGrid.cs</DependentUpon>
+    </None>
+    <Compile Include="FormApplicationProfileCanUsedByRD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormApplicationProfileCanUsedByRD.xml">
+      <DependentUpon>FormApplicationProfileCanUsedByRD.cs</DependentUpon>
+    </Content>
+    <None Include="FormApplicationProfileCanUsedByRD.vires">
+      <DependentUpon>FormApplicationProfileCanUsedByRD.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormApplicationProfileCanUsedByRD.resx">
+      <DependentUpon>FormApplicationProfileCanUsedByRD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormApplicationServerDriverProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormApplicationServerDriverProfile.xml">
+      <DependentUpon>FormApplicationServerDriverProfile.cs</DependentUpon>
+    </Content>
+    <None Include="FormApplicationServerDriverProfile.vires">
+      <DependentUpon>FormApplicationServerDriverProfile.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormApplicationServerDriverProfile.resx">
+      <DependentUpon>FormApplicationServerDriverProfile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormDriverProfileCopyToOtherSites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormDriverProfileCopyToOtherSites.xml">
+      <DependentUpon>FormDriverProfileCopyToOtherSites.cs</DependentUpon>
+    </Content>
+    <None Include="FormDriverProfileCopyToOtherSites.vires">
+      <DependentUpon>FormDriverProfileCopyToOtherSites.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormDriverProfileCopyToOtherSites.resx">
+      <DependentUpon>FormDriverProfileCopyToOtherSites.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormDriverProfileCopyAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormDriverProfileCopyAll.xml">
+      <DependentUpon>FormDriverProfileCopyAll.cs</DependentUpon>
+    </Content>
+    <None Include="FormDriverProfileCopyAll.vires">
+      <DependentUpon>FormDriverProfileCopyAll.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormDriverProfileCopyAll.resx">
+      <DependentUpon>FormDriverProfileCopyAll.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormApplicationHasApplicationProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormApplicationHasApplicationProfile.xml">
+      <DependentUpon>FormApplicationHasApplicationProfile.cs</DependentUpon>
+    </Content>
+    <None Include="FormApplicationHasApplicationProfile.vires">
+      <DependentUpon>FormApplicationHasApplicationProfile.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormApplicationHasApplicationProfile.resx">
+      <DependentUpon>FormApplicationHasApplicationProfile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormLicenseHasLicenseSubstitute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormLicenseHasLicenseSubstitute.xml">
+      <DependentUpon>FormLicenseHasLicenseSubstitute.cs</DependentUpon>
+    </Content>
+    <None Include="FormLicenseHasLicenseSubstitute.vires">
+      <DependentUpon>FormLicenseHasLicenseSubstitute.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormLicenseHasLicenseSubstitute.resx">
+      <DependentUpon>FormLicenseHasLicenseSubstitute.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormDriverHasDriverProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormDriverHasDriverProfile.xml">
+      <DependentUpon>FormDriverHasDriverProfile.cs</DependentUpon>
+    </Content>
+    <None Include="FormDriverHasDriverProfile.vires">
+      <DependentUpon>FormDriverHasDriverProfile.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormDriverHasDriverProfile.resx">
+      <DependentUpon>FormDriverHasDriverProfile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormApplicationServerHasAppProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormApplicationServerHasAppProfile.xml">
+      <DependentUpon>FormApplicationServerHasAppProfile.cs</DependentUpon>
+    </Content>
+    <None Include="FormApplicationServerHasAppProfile.vires">
+      <DependentUpon>FormApplicationServerHasAppProfile.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormApplicationServerHasAppProfile.resx">
+      <DependentUpon>FormApplicationServerHasAppProfile.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormADSGroupHasADSAccountPack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormADSGroupHasADSAccountPack.xml">
+      <DependentUpon>FormADSGroupHasADSAccountPack.cs</DependentUpon>
+    </Content>
+    <None Include="FormADSGroupHasADSAccountPack.vires">
+      <DependentUpon>FormADSGroupHasADSAccountPack.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormADSGroupHasADSAccountPack.resx">
+      <DependentUpon>FormADSGroupHasADSAccountPack.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormHardwarePCClientlog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormHardwarePCClientlog.xml">
+      <DependentUpon>FormHardwarePCClientlog.cs</DependentUpon>
+    </Content>
+    <None Include="FormHardwarePCClientlog.vires">
+      <DependentUpon>FormHardwarePCClientlog.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormHardwarePCClientlog.resx">
+      <DependentUpon>FormHardwarePCClientlog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="FormDriverProfileMasterData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Content Include="FormDriverProfileMasterData.xml">
+      <DependentUpon>FormDriverProfileMasterData.cs</DependentUpon>
+    </Content>
+    <None Include="FormDriverProfileMasterData.vires">
+      <DependentUpon>FormDriverProfileMasterData.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FormDriverProfileMasterData.resx">
+      <DependentUpon>FormDriverProfileMasterData.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\SQL.vii" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,623 @@
+<IniConfiguration Version="1.0" ShowVersion="true" ConfiguratorCaption="VI Client INI-Konfigurator">
+  <Section DeleteIfEmpty="true" Name="ADS">
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="InfoProvider" Comment="Dieser Parameter wird derzeit noch nicht benutzt und ist für eine zukünftige Verwendung vorbereitet." />
+  </Section>
+  <Section DeleteIfEmpty="true" Name="Allgemeine_Verzeichnisse">
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Folder" Comment="Aufzählung von Verzeichnissen die von mehreren Applikationen gemeinsam genutzt werden (Shared Folders). Nur ein Verzeichnis je Variable." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Folder" Comment="Aufzählung von Verzeichnissen die von mehreren Applikationen gemeinsam genutzt werden (Shared Folders). Nur ein Verzeichnis je Variable." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Folder" Comment="Aufzählung von Verzeichnissen die von mehreren Applikationen gemeinsam genutzt werden (Shared Folders). Nur ein Verzeichnis je Variable." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Folder" Comment="Aufzählung von Verzeichnissen die von mehreren Applikationen gemeinsam genutzt werden (Shared Folders). Nur ein Verzeichnis je Variable." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Folder" Comment="Aufzählung von Verzeichnissen die von mehreren Applikationen gemeinsam genutzt werden (Shared Folders). Nur ein Verzeichnis je Variable." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Folder" Comment="Aufzählung von Verzeichnissen die von mehreren Applikationen gemeinsam genutzt werden (Shared Folders). Nur ein Verzeichnis je Variable." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Folder" Comment="Aufzählung von Verzeichnissen die von mehreren Applikationen gemeinsam genutzt werden (Shared Folders). Nur ein Verzeichnis je Variable." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Folder" Comment="Aufzählung von Verzeichnissen die von mehreren Applikationen gemeinsam genutzt werden (Shared Folders). Nur ein Verzeichnis je Variable." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Folder" Comment="Aufzählung von Verzeichnissen die von mehreren Applikationen gemeinsam genutzt werden (Shared Folders). Nur ein Verzeichnis je Variable." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Folder" Comment="Aufzählung von Verzeichnissen die von mehreren Applikationen gemeinsam genutzt werden (Shared Folders). Nur ein Verzeichnis je Variable." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Folder" Comment="Aufzählung von Verzeichnissen die von mehreren Applikationen gemeinsam genutzt werden (Shared Folders). Nur ein Verzeichnis je Variable." />
+  </Section>
+  <Section DeleteIfEmpty="true" Name="ApplikationenZugriffsKontrolle">
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="DynamischeBenutzerTokenAnpassung" Comment="Steuert die Anpassung des Benutzertokens um eine Neuanmeldung zu Verhindern." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="ONLY_ROOT_PROCESS" />
+        <Member Value="ALL_PROCESSES" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="Kontrolle" Comment="Aktiviert, wird jede Installierte Datei mit einer Domain- oder einer lokalen Rechtegruppe versehen die das alleinige Zugriffsrecht für die Applikation bestimmt" CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="LOCAL_GROUPS_DYNAMIC" />
+        <Member Value="GLOBAL_GROUPS_STATIC" />
+      </EnumMembers>
+    </Property>
+  </Section>
+  <Section DeleteIfEmpty="true" Name="Dateien">
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Appliste" Comment="Gibt den Pfad zu der Steuerdatei an, welche die Information über den Speicherort der Softwareprofile und deren Installationsart sowie das vom Softwareprofil erwartete Betriebssystem steht." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Infobenutzer" Comment="Gibt den Pfad zu einer Datei an, die eine Liste mit Softwareprofilen zur Installation enthält." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="InfoKollektorVorlage" Comment="Der Parameter gibt an, wo sich die Quelldatei befindet, welche die Inventoryspezifikation für den Client-PC enthält." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="InfoKollektorZiel" Comment="Der Parameter gibt an, wo sich die Zieldatei befindet, in die das Inventoryergebnis für den Client-PC geschrieben werden soll." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="InfoMaschine" Comment="Gibt den Pfad zur Steuerdatei an, die zumindest die Information über zu installierende Treiber und das Betriebssystem des Client-PC enthält." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="KommandozeileWennTolerierteFehler" Comment="Der Parameter kann eine gültige Kommandozeile für einen Programmaufruf enthalten, der ausgeführt wird, wenn bei der Softwareverteilung tolerierte Fehler auftreten." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Protokollbenutzer" Comment="Gibt den Pfad zur Datei an, in die der VI Client zur Laufzeit Informationen über die installierten, benutzerabhängigen Softwareprofile schreibt." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Protokollmaschine" Comment="Gib den Pfad zur Datei an, in die der VI Client zur Laufzeit Informationen über die Installierten, maschinenabhängigen Softwareprofile schreibt." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Report" Comment="Der Schalter Report gibt den Pfad der Datei an, in die der VI Client zur Laufzeit durchgeführte Aktionen protokolliert." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Variablen" Comment="Gibt den Pfad zu einer Datei an, die Variablen enthält. Diese Variablen haben während der gesamten Softwareinstallation Gültigkeit. " />
+  </Section>
+  <Section DeleteIfEmpty="true" Name="Diverse">
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="AuswahlDialogText" Comment="Durch die Angabe dieses Parameters kann der Text der in der angezeigt wird geändert werden." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="DienstServer" Comment="Bestimmt den Server auf dem sich der VISVC befindet. Ist der Parameter nicht gesetzt, wird der Appsserver der Dienstserver." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="KommandozeilePost" Comment="Der Parameter ist eine Kommandozeile, die unmittelbar vor dem (eventuellen) Zurückwechseln des Zugriffskontext in den Benutzerkontext und nach der Applikationsverarbeitung ausgeführt wird." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="KommandozeilePre" Comment="Der Parameter ist eine Kommandozeile, die unmittelbar nach dem (eventuellen) Wechsel des Zugriffskontext und vor der Applikationsverarbeitung ausgeführt wird." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="NamensPrefixArbeitsplatzApps" Comment="Der Schalter NamensPrefixArbeitsplatzApps ermöglicht, dass nur für ausgesuchte Applikationen oder Applikationsgruppen trotz des gesetzten Schalters &quot;[MODI].Steurlogik=USER_DEPENDED&quot; trotzdem der Benutzeranteil verarbeitet wird." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="VariablenSequenzBeginn" Comment="Delimeter, der eine Wizardvariable in Steuerdateien von ActiveEntry einleitet" />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="VariablenSequenzEnde" Comment="begrenzender Delimeter, der eine Variable in ActiveEntry ausleitet" />
+    <Property DeleteIfEmpty="false" PropertyType="FreeText" Name="Version" Comment="Dieser Parameter gibt die aktuelle Version aller Komponenten des VIClients an." />
+  </Section>
+  <Section DeleteIfEmpty="true" Name="LokaleProfile">
+    <Property DeleteIfEmpty="true" PropertyType="Number" Name="AktualisierungsIntervall" Comment="Intervall für die Prüfung auf Aktualität eines Offline-Softwarestores des VI Clients" CanBeEmpty="true"/>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="Caching" Comment="Regelt bei Caching die Art und Weise wie die Software in die Cachestruktur gelangt." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON_IMMEDIATLY_SYNCHRON " />
+        <Member Value="ON_DEFERRED" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Number" Name="FürWenChachen" Comment="Mit diesem Parameter wird spezifiziert, welche Applikationsprofile gecached werden sollen." CanBeEmpty="true" />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="VerzeichnisCaching" Comment="Spezifiziert das Verzeichnis in dem die gecachten Softwareprofile abgelegt werden." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="VerzeichnisNurLesend" Comment="Hier kann ein weiteres Quellverzeichnis für Softwareprofile angegeben werden." />
+  </Section>
+  <Section DeleteIfEmpty="true" Name="Migration">
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="ÜbernameRevNummer" Comment="Es wird ohne ein Update vorzunehmen der Rev-Zähler der installierten Softwareprofile dem der Softwareprofile auf dem Server angeglichen." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="WechselAppPräfix" Comment="Änderung des App-Präfix von Softwareprofilen" CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="nicht gesetzt" />
+        <Member Value="SearchString" />
+        <Member Value="ReplaceString" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="WechselDrvPräfix" Comment="Änderung des DRV-Präfix von Treiberprofilen" CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="nicht gesetzt" />
+        <Member Value="SearchString" />
+        <Member Value="ReplaceString" />
+      </EnumMembers>
+    </Property>
+  </Section>
+  <Section DeleteIfEmpty="true" Name="MSI">
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="ZugriffsTokenVomProcess" Comment="Verfahren zur modifikation des Rechtetokens eines Prozesses bei der Vretilung von MSI-Softwareprofilen " CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="UsrUsr" />
+        <Member Value="Usr" />
+        <Member Value="Admin" />
+        <Member Value="AdminAdmin" />
+        <Member Value="UsrAdmin" />
+        <Member Value="AdminUsr" />
+        <Member Value="SystemAdmin" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="ZugriffsTokenVomThread" Comment="Verfahren zur modifikation des Rechtetokens eines Threads bei der Vretilung von MSI-Softwareprofilen " CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="Usr" />
+        <Member Value="UsrUsr" />
+        <Member Value="Admin" />
+        <Member Value="AdminAdmin" />
+        <Member Value="UsrAdmin" />
+        <Member Value="AdminUsr" />
+        <Member Value="SystemAdmin" />
+      </EnumMembers>
+    </Property>
+  </Section>
+  <Section DeleteIfEmpty="true" Name="MSI Policies">
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="AllowLockdownBrowse" Comment="Der Benutzer wärend einer Installation in die Lage versetzt, Programme mit Systemprivilegien zu starten." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="AllowLockdownMedia" Comment="Der Benutzer während einer Installation in die Lage versetzt, Programme mit Systemprivilegien zu starten." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="AllowLockdownPatch" Comment="Wird der Schalter AllowLockdownPatch=ON gesetzt, so können vorhandene Applikationen auch von Benutzern mit nichtadministrativen Privilegien gepatched werden." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="AlwaysInstallElevated" Comment="Wird gesetzt damit alle MSI-Installationen mit dem Privileg des Systems installiert werden. " CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="Debug" Comment="Durch das Setzen des Parameters DEBUG wird die Ausgabe von Debug-Meldungen ermöglicht und gesteuert." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="DisableBrowse" Comment="Wird der Schalter DisableBrowse=ON gesetzt, so wird einem Standardbenutzer das Recht entzogen den Browserdialog zum Auffinden von Ressourcen bei &quot;managed applications&quot; zu verwenden." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="DisableMedia" Comment="Wird die Systempolicy gesetzt (ON), so wird die Rückfrage nach Installationsressourcen anderer Produkte  wärend der Installation unterbunden." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="DisableMSI" Comment="Mit Hilfe dieses Propertys kann der MSI-Installer teilweise und ganz deaktiviert werden." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+        <Member Value="OFF" />
+        <Member Value="FOR_NONMANAGED" />
+        <Member Value="ALL " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="DisablePatch" Comment="Wird der Schalter gesetzt, so akzeptiert der MSI Installer keine Patches für die installierten Applikationen." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="DisableUserInstalls" Comment="Wurde die Policy gesetzt, so ignoriert der MSI Installer die Einträge aller &quot;per-User&quot; installierten Applikationen und sucht nur nach den &quot;per-machine&quot; registrierten Applikationen." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="EnableAdminTSRemote" Comment="Wird dieser Schalter gesetzt ist es Administratoren möglich Installationen aus einer Terminalsession zu starten und durchzuführen." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="EnableUserControl" Comment="Wurde der Schalter gesetzt, kann der Benutzer die durch das Paket vorgegebenen Properties zum Zeitpunkt der Installation, für die Installation anpassen und die Standardeinstellunegn (der Paket bzw. der Serverpolicy) überschreiben" CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="LimitSystemRestoreCheckpointing" Comment="Wurde der Schalter gesetzt, so wird mit dieser im Maschinenanteil gesetzten Policy die Erstellung von Systemrestore-Checkpoints während der Installation eines MSI-Pakets durch den MSI-Installer deaktiviert" CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="MAC" />
+        <Member Value="USR" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="Logging" Comment="Ist der Schalter gesetzt, so wird im Verzeichnis %temp%  der Maschine auf der die Installation stattfindet eine Datei MSI*.LOG erzeugt." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="SafeForScripting" Comment="Wird der Schalter SafeForScripting=ON des Maschinenanteils gesetzt, so wird der Benutzer nicht mehr über den Dialog informiert, wenn ein über eine Web-Page auf die MSI-Installer-API zugegriffen wird." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="SearchOrder" Comment="Mit Hilfe dieses Schalters kann die Suchreihenfolge der Quellen für den MSI Installer bestimmt werden." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="TransformsAtSource" Comment="Steht der Schalter &quot;TransformsAtSource&quot; auf ON, so sucht der Installer in allen durch die &quot;Source list&quot;.des MSI Pakets spezifizierten Netzwerkpfaden nach Transform-Dateien." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="TransformsSecure" Comment="Wird der Parameter mit ON belegt, so wird damit dem MSI Installer mitgeteilt, dass MSI-Transforms lokal auf dem Computer des Benutzers gecached werden." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LEAVE" />
+        <Member Value="MAC" />
+        <Member Value="USR" />
+        <Member Value="UNSPECIFIED" />
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+  </Section>
+  <Section DeleteIfEmpty="true" Name="Modi">
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="BenutzerTyp" Comment="Mit diesem Modus wird festgelegt, wie der Benutzertyp ermittelt wird." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="AUTO_DETECT" />
+        <Member Value="ALWAYS_GUEST" />
+        <Member Value="ALWAYS_OWNER" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="BenutzerZuRechnerDomaenenKontrolle" Comment="Ermöglicht das Konzept Walking User über die Grenzen von VI Ressource Domänen hinaus." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON_WITH_CONFIRM" />
+        <Member Value="ON_WITHOUT_CONFIRM" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="BenutzerZuRechnerKontrolle" Comment=" Mit diesem Schalter wird die Softwareverarbeitung für Gastbenutzer verhindert. " CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON_WITH_CONFIRM" />
+        <Member Value="ON_WITHOUT_CONFIRM" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="Dateiersetzung" Comment="Wenn bei der Installation einer Applikation eine zu kopierende Datei bereits als Original auf dem PC existiert, wird gemäß der Einstellung des Modus DateiErsetzung entschieden, ob diese Datei ersetzt wird. " CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="NEVER" />
+        <Member Value="ALWAYS " />
+        <Member Value="OLDER " />
+        <Member Value="NEWER" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="INIStandardVerarbeitung" Comment="Die INI Verarbeitung steuert das Standardverhalten beim Hinzufügen eines Schlüssels, wenn der Schlüssel bereits existiert." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="NEW" />
+        <Member Value="REPLACE_FIRST" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="InstallationsTypenKontrolle" Comment="Wenn die Prüfung aktiviert ist (ON_...), kann der Benutzer nur an PCs „wandern&quot;, die den gleichen Installationstyp des Benutzers aufweisen." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON_WITH_CONFIRM " />
+        <Member Value="ON_WITHOUT_CONFIRM" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="Instandsetzung" Comment="Schalter nur zu Testzwecken. Hat im Betrieb keine Bedeutung" CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="LOGONSCRIPT" />
+        <Member Value="INTERAKTIVE_REPAIR " />
+        <Member Value="INTERACTIVE_Normal" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="MeldungWennAbbruchFehler" Comment="Steuerung des Terminierungsverhaltens bei Fehlern, die zum Abbruch führen (nicht tolerierte Fehler)" CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="ON_WITH_CONFIRM" />
+        <Member Value="OFF" />
+        <Member Value="ON_WITHOUT_CONFIRM" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Number" Name="NetzwerkprotokollNr" Comment="Durch Netzwerkprotokollnummer wird das Netzwerkprotokoll festgelegt, mit dem der VI Client auf Netzwerkressourcen zugreift." CanBeEmpty="false" />
+    <Property DeleteIfEmpty="true" PropertyType="Number" Name="PlattenspeiecherReserve" Comment="Menge freien Festplattenspeichers in KB die nach einer geplanten Softwareinstallation noch frei sein muss." CanBeEmpty="false" />
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="ProgrammGruppenArt" Comment="Der Schalter regelt den Speicherort für die Verknüpfungen der Programmgruppen." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="PERSONAL" />
+        <Member Value="COMMON " />
+        <Member Value="NOT " />
+        <Member Value="AUTO" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="RebootTyp" Comment="Dieser Modus bestimmt den Zeitpunkt des Neustarts." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="AFTER_SHELL" />
+        <Member Value="IMMEDIATELY " />
+        <Member Value="SUPPRESS" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Number" Name="ReportArchivTiefe" Comment="Bestimmt die maximale Anzahl archivierter Log-Dateien im Verzeichnis ReportArchiv." CanBeEmpty="false" />
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="SimultaneSitzungsKontrolle" Comment="Unterbinden der Verarbeitung, wenn der Benutzer an anderen PCs gleichzeitig angemeldet ist " CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON_WITH_CONFIRM " />
+        <Member Value="ON_WITHOUT_CONFIRM " />
+        <Member Value="ON_WITH_LOGOFF" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Number" Name="SimultaneSitzungsKontrolle_AntwortzeitBegrenzung" Comment=" Hiermit kann die Laufzeit dieser Kontrolle begrenzt und lange Wartezeiten vermieden werden, insbesondere dann, wenn die Domäne des Benutzers mittels WAN mehrere Standorte umfasst" CanBeEmpty="false" />
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="Steuerlogik" Comment="Auswahl der Steuerlogik der Applikationsverarbeitung." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="USER_DEPENDED" />
+        <Member Value="PC_DEPENDED" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Number" Name="UpdateOptimierung" Comment="Der Modus bestimmt die Applikationsanteile, die in den Optimierungs-Prozess einbezogen werden sollen." CanBeEmpty="false" />
+    <Property DeleteIfEmpty="true" PropertyType="Number" Name="VerarbeitungAbschaltbar" Comment="Ermöglicht dem Benutzer durch einen Eingabedialog die Softwareverarbeitung vor der Installation abzuschalten." CanBeEmpty="false" />
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="VerwendungEreignisProtokollBeiTerminierung" Comment="Der Schalter regelt die Einträge ins Eventlog in Bezug auf den gesamten Softwareinstallationsprozess." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="AS_OF_ERROR_ABORT" />
+        <Member Value="AS_OF_ERROR_CONTINUE" />
+        <Member Value="AS_OF_WARNING" />
+        <Member Value="AS_OF_SUCCESS" />
+        <Member Value="OFF" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="VerwendungEreignisProtokollBeiTerminierung" Comment="Der Schalter regelt die Einträge ins Eventlog in Bezug auf den gesamten Softwareinstallationsprozess." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="AS_OF_ERROR_ABORT" />
+        <Member Value="AS_OF_ERROR_CONTINUE" />
+        <Member Value="AS_OF_WARNING" />
+        <Member Value="AS_OF_SUCCESS" />
+        <Member Value="OFF" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="ZugriffsKontext" Comment="Dieser Modus bestimmt den Zugriffskontext des VI Client auf privilegierte Operationen oder Objekte, wie Dateien, Registry-Einträge oder Netzwerkressourcen." CanBeEmpty="false">
+      <EnumMembers>
+        <Member Value="AUTO" />
+        <Member Value="COMMON" />
+        <Member Value="COMMON_LOCAL " />
+        <Member Value="PERSONAL" />
+        <Member Value="COMMON_REGISTRY " />
+      </EnumMembers>
+    </Property>
+  </Section>
+  <Section DeleteIfEmpty="true" Name="Netzwewerk">
+    <Property DeleteIfEmpty="true" PropertyType="Number" Name="AnzahlGespeicherterMesswerte" Comment="Anzahl der gespeicherten Messwerte zur Ermittlung der durchschnittlichen Bandbreite für die Bandbreitenbegrenzung des VI Client" CanBeEmpty="true" />
+    <Property DeleteIfEmpty="true" PropertyType="Number" Name="AnzahlWiederholungen" Comment="Anzahl der Sendewiederholungen bei der Feststellung der verfügbaren Bandbreite." CanBeEmpty="false" />
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="LokaleLaufwerkeEinbeziehen" Comment="Zur Festlegung der verfügbaren Netzwerkgeschwindigkeit wird ein Datenpaket definierter Größe an das Testziel übertragen und die Zeit des Vorgangs ermittelt. Hierbei wird auch die Geschwindigkeit der lokalen Festplatte mit einbezogen. Es kann durch Virenschutzprogramme oder Prozesse die zum Zeitpunkt der Messung die Festplatte des Zielrechners stark beeinflussen zu gehäuften Installationsabbrüchen der Softwareverteilung kommen, daher ermöglicht &quot;LokaleLaufwerkeEinbeziehen&quot; das deaktivieren dieser Funktion." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="ON" />
+        <Member Value="OFF" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Number" Name="MinTransferRateAbsolut" Comment="Minimal zulässige Übertragungsrate des Netzes in kBit/s" CanBeEmpty="true" />
+    <Property DeleteIfEmpty="true" PropertyType="Number" Name="MinTransferRateRelativ" Comment="Minimal zulässige Übertragungsrate des Netzes in Prozent von der durchschnittlichen Übertragungsrate Der Wertetyp des Parameters ist nicht eine Einheit (wie kBit/s) sondern ein Verhältnis in Prozent. Er bezieht sich auf die individuelle Leistungsfähigkeit des Netzes. Dazu führt der VI Client eine Statistik, um die durchschnittliche Netzleistung zu ermitteln, die dann mit der aktuellen Netzleistung verglichen wird." CanBeEmpty="true" />
+    <Property DeleteIfEmpty="true" PropertyType="Number" Name="PauseZwischenWiederholungen" Comment="Zur Festlegung der verfügbaren Netzwerkgeschwindigkeit wird ein Datenpaket definierter Größe an das Testziel übertragen und die Zeit des Vorgangs ermittelt. Dieser Testvorgang wird so oft wiederholt, wie in AnzahlWiederholungen festgelegt wurde. Die Pause zwischen den Sendungen des Datenpakets kann durch PauseZwischenWiederholungen konfiguriert werden" CanBeEmpty="true" />
+    <Property DeleteIfEmpty="true" PropertyType="Number" Name="ÜbertragungsPufferGröße" Comment="Mit ÜbertragungsPufferGröße kann die Größe des Datenpaketes angegeben werden, das zur Feststellung der Netzwerkgeschwindigkeit an die Testlokationen gesendet wird.." CanBeEmpty="true" />
+  </Section>
+  <Section DeleteIfEmpty="true" Name="Ignorieren">
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Registry" Comment="Aufzählung aller Applikationselemente, die nicht verarbeitet werden sollen. Die Sektion besteht aus einer Liste von Applikationselementen, die, wenn Sie in Applikationsprofilen enthalten sind, bei der Verarbeitung ignoriert werden. Das ist insbesondere dann nützlich, wenn nicht ausgeschlossen werden kann, dass Elemente in Applikationsprofilen enthalten sind, die nicht Bestandteil der Applikation selbst sind und die Funktionalität des Systems und des VI Client beeinträchtigen können" />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Registry" Comment="Aufzählung aller Applikationselemente, die nicht verarbeitet werden sollen. Die Sektion besteht aus einer Liste von Applikationselementen, die, wenn Sie in Applikationsprofilen enthalten sind, bei der Verarbeitung ignoriert werden. Das ist insbesondere dann nützlich, wenn nicht ausgeschlossen werden kann, dass Elemente in Applikationsprofilen enthalten sind, die nicht Bestandteil der Applikation selbst sind und die Funktionalität des Systems und des VI Client beeinträchtigen können" />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Registry" Comment="Aufzählung aller Applikationselemente, die nicht verarbeitet werden sollen. Die Sektion besteht aus einer Liste von Applikationselementen, die, wenn Sie in Applikationsprofilen enthalten sind, bei der Verarbeitung ignoriert werden. Das ist insbesondere dann nützlich, wenn nicht ausgeschlossen werden kann, dass Elemente in Applikationsprofilen enthalten sind, die nicht Bestandteil der Applikation selbst sind und die Funktionalität des Systems und des VI Client beeinträchtigen können" />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Registry" Comment="Aufzählung aller Applikationselemente, die nicht verarbeitet werden sollen. Die Sektion besteht aus einer Liste von Applikationselementen, die, wenn Sie in Applikationsprofilen enthalten sind, bei der Verarbeitung ignoriert werden. Das ist insbesondere dann nützlich, wenn nicht ausgeschlossen werden kann, dass Elemente in Applikationsprofilen enthalten sind, die nicht Bestandteil der Applikation selbst sind und die Funktionalität des Systems und des VI Client beeinträchtigen können" />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Registry" Comment="Aufzählung aller Applikationselemente, die nicht verarbeitet werden sollen. Die Sektion besteht aus einer Liste von Applikationselementen, die, wenn Sie in Applikationsprofilen enthalten sind, bei der Verarbeitung ignoriert werden. Das ist insbesondere dann nützlich, wenn nicht ausgeschlossen werden kann, dass Elemente in Applikationsprofilen enthalten sind, die nicht Bestandteil der Applikation selbst sind und die Funktionalität des Systems und des VI Client beeinträchtigen können" />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Registry" Comment="Aufzählung aller Applikationselemente, die nicht verarbeitet werden sollen. Die Sektion besteht aus einer Liste von Applikationselementen, die, wenn Sie in Applikationsprofilen enthalten sind, bei der Verarbeitung ignoriert werden. Das ist insbesondere dann nützlich, wenn nicht ausgeschlossen werden kann, dass Elemente in Applikationsprofilen enthalten sind, die nicht Bestandteil der Applikation selbst sind und die Funktionalität des Systems und des VI Client beeinträchtigen können" />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Registry" Comment="Aufzählung aller Applikationselemente, die nicht verarbeitet werden sollen. Die Sektion besteht aus einer Liste von Applikationselementen, die, wenn Sie in Applikationsprofilen enthalten sind, bei der Verarbeitung ignoriert werden. Das ist insbesondere dann nützlich, wenn nicht ausgeschlossen werden kann, dass Elemente in Applikationsprofilen enthalten sind, die nicht Bestandteil der Applikation selbst sind und die Funktionalität des Systems und des VI Client beeinträchtigen können" />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Registry" Comment="Aufzählung aller Applikationselemente, die nicht verarbeitet werden sollen. Die Sektion besteht aus einer Liste von Applikationselementen, die, wenn Sie in Applikationsprofilen enthalten sind, bei der Verarbeitung ignoriert werden. Das ist insbesondere dann nützlich, wenn nicht ausgeschlossen werden kann, dass Elemente in Applikationsprofilen enthalten sind, die nicht Bestandteil der Applikation selbst sind und die Funktionalität des Systems und des VI Client beeinträchtigen können" />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Registry" Comment="Aufzählung aller Applikationselemente, die nicht verarbeitet werden sollen. Die Sektion besteht aus einer Liste von Applikationselementen, die, wenn Sie in Applikationsprofilen enthalten sind, bei der Verarbeitung ignoriert werden. Das ist insbesondere dann nützlich, wenn nicht ausgeschlossen werden kann, dass Elemente in Applikationsprofilen enthalten sind, die nicht Bestandteil der Applikation selbst sind und die Funktionalität des Systems und des VI Client beeinträchtigen können" />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Registry" Comment="Aufzählung aller Applikationselemente, die nicht verarbeitet werden sollen. Die Sektion besteht aus einer Liste von Applikationselementen, die, wenn Sie in Applikationsprofilen enthalten sind, bei der Verarbeitung ignoriert werden. Das ist insbesondere dann nützlich, wenn nicht ausgeschlossen werden kann, dass Elemente in Applikationsprofilen enthalten sind, die nicht Bestandteil der Applikation selbst sind und die Funktionalität des Systems und des VI Client beeinträchtigen können" />
+  </Section>
+  <Section DeleteIfEmpty="true" Name="Rechtegruppe">
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="GruppenNameWizardRechte" Comment="Die für die VI Client-Verarbeitung notwendigen Rechte auf der Arbeitsstation werden nicht an einzelne Benutzer vergeben, sondern an die Gruppe, in der der Benutzer Mitglied sein muss." />
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="MitgliedschaftsKontrolle" Comment="Ermöglicht die Clientverarbeitung nur für bestimmte Benutzer zu aktivieren" CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON_WITH_CONFIRM " />
+        <Member Value="ON_WITHOUT_CONFIRM" />
+      </EnumMembers>
+    </Property>
+  </Section>
+  <Section DeleteIfEmpty="true" Name="Schalter">
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="AuswahlDialogUnterdrücken" Comment="Dieser Schalter verhindert, dass der &quot;Walking-User&quot;-Dialog angezeigt wird." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="BenutzerInformationenAusZugriffsTokenEntnehmen" Comment="Meldet sich ein Gastbenutzer an einem PC an, so wird vor der Softwareverteilung eine Dialogmaske angezeigt, die den Benutzer in die Lage versetzt, die zu installierenden Softwareprofile auszuwählen (Walking User-Dialog). Dieser Schalter verhindert, dass der &quot;Walking-User&quot;-Dialog angezeigt wird." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="BetriebssystemVerarbeitung" Comment="Für die Ermittlung der dem Benutzer zugeordneten Applikationsprofile muss die Gruppenzugehörigkeit des Accounts des angemeldeten Benutzers ermittelt werden. Hierzu wird eine SMB-Anfrage an das Betriebsystem verwendet. Um diesen Vorgang zu beschleunigen kann die Gruppenzugehörigkeit des angemeldeten Benutzers auch aus dem Benutzertoken extrahiert werden. Der Benutzertoken ist die Systeminformation die bei der Anmeldung aus dem Accountnamen und allen Rechten, Gruppenzugehörigkeiten usw. die dem Account zugeordnet wurden gebildet wird. Mit dem Benutzertoken authentifiziert sich der Benutzer an allen Systemen, die Ressourcen zur Verfügung stellen (Server)." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="DateiErsetzungNurNachAlter" Comment="Datei Verarbeitung: Ersetzung von Originaldateien bei Installation. Der Schalter ist nur relevant, wenn Modus DateiErsetzung auf OLDER oder NEWER eingestellt ist. Bei aktivem Schalter wird als Maß ausschließlich das Datum benutzt, nicht die Versionsnummer." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="DekomprimierenBeiBedarf" Comment="Bei Kopieren von mit compress.exe komprimierten Dateien (Bsp: Test.EX_), werden diese automatisch dekomprimiert. " CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="EinfacheOberfläche" Comment="Ist der Schalter gesetzt, wird bei der Softwareinstallation eine &quot;einfachere Oberfläche&quot; die nur den Gesamtfortschritt abbildet angezeigt. " CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON" />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="ImmerSpiegeln" Comment="Aktivieren der Spiegelung („Mirroring“) trotz abgewählter Applikationsverarbeitung durch den Benutzer." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="Instandsetzung" Comment="Dieser Schalter entspricht dem Repairmodus der in der Regel durch den Startparameter des VI Client &quot;INTERACTIVE_REPAIR&quot; aufgerufen wird" CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="KeineUpdateOptimierung" Comment="Wird bei der Softwareinstallation ein bestehendes Softwareprofil zum Update eingestellt, so vergleicht der VI Client vor der Installation die Steuerdateien der alten Version mit denen der neuen Version. Hierbei werden die einzelnen Tasks des Clients (Registry, Dateien, Ini-Dateien, Verknüpfungen) nur dann installiert wenn sich bei der Installation unterschiede zeigen. Die Folge ist ein echtes Update des Softwareprofils. Wird der Schalter gesetzt wird der Vergleich unterdrückt. Im Updatefall deinstalliert der VI Client das alte Softwareprofil und installiert das Updateprofil" CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="KeinReportInStatusInfo" Comment="Der Schalter bezieht sich auf den Parameter Verzeichnis StatusInfo. Ist der Schalter nicht gesetzt, wird die komplette Protokolldatei (Datei unter Parameter Datei Report) in die Status Info Datei (Parameter Verzeichnis StatusInfo) eingebettet, sonst nicht." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="KeinStandardkommentarBeiShortcutsAufBatches" Comment="Bei der Softwareverteilung werden durch den VI Client unter anderem Verknüpfungen (Shortcuts) z.B. im Startmenü erzeugt. Beim Anlegen der Verknüpfungen wird vom VI Client als Kommentar der Verknüpfung &quot;Installed by VI Network Wizard&quot; angegeben. " CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="LokalesBenutzerKontoAnlegen" Comment="Lokale Anmeldung, wenn das Netz nicht verfügbar ist oder bei der Verwendung von Notebooks. Bei einer Netzanmeldung, in dem das Netz nicht verfügbar ist, benutzt die lokale Sicherung zwischengespeicherte Informationen der letzten erfolgreichen Netzanmeldung des Benutzers, um die Authentizität des Benutzers zu ermitteln. Allerdings verfällt nach einer gewissen Anzahl von Netzanmeldungen ohne Netz diese Authentizität mit der Folge, dass dann Netzanmeldungen ohne Netz von der lokalen Security abgelehnt werden. " CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="MeldungWennTolerierteFehlerUnterbinden" Comment="Der Schalter gibt an, ob am Ende der Verarbeitung ein Hinweis auf die tolerierten Fehler, die während der Applikationsverarbeitung aufgetreten sind, erfolgen soll. Der Hinweis erfolgt über eine MessageBox unmittelbar vor Beendigung des VI Client. Bei aktiviertem Schalter wird der Hinweis über die MessageBox unterdrückt. Unabhängig von diesem Schalter werden zusätzlich die einzelnen tolerierten Fehler und der abschließende Hinweis auf tolerierte Fehler in der Protokolldatei (Parameter Datei Report) festgehalten." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="NeuesSymbolAnzeigen" Comment="Bei aktiviertem Schalter werden Programmgruppen von neu installierten Applikationen in der Task-Leiste angezeigt (= minimiert geöffnet). Das gilt nicht für schon bestehende (bereits installierte) Applikationen. Dadurch werden dem Benutzer direkt die Verknüpfungen von den unmittelbar zuvor neu installierten Applikationen aufgezeigt und zugänglich gemacht, ohne dass er sie suchen muss. Bei inaktivem Schalter werden in keinem Fall Programmgruppen angezeigt." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="NurFehlerReport" Comment="Der Schalter bezieht sich auf die Protokolldatei des VI Client. Ist der Schalter aktiv, werden nur Fehler protokolliert (alle Zeilen, die mit „Fehler:“ beginnen)." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="NurStammBenutzerInstallation" Comment="Nur wirksam bei einem Gastbenutzer. Der Gastbenutzer kann vorhandene Applikationen (von Stammbenutzer oder PC) benutzen, aber keine neuen PCs installieren. Ist dieser Schalter aktiv, so werden für den PC-Anteil von Applikationen keine neuen Installationen für den Gast durchgeführt. Des Weiteren werden bestehende Applikationen, die für einen Gastbenutzer installiert wurden, deinstalliert. Gleichwohl kann und muss nach wie vor ein Revisions Update auf eine Applikation (PC- sowie Benutzeranteil) durchgeführt werden. Der Schalter ermöglicht das Binden der Software-Lizenzen an PCs und nicht an Benutzer. " CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="PersönlicheEinstellungenÜbernehmen" Comment="Im Standardfall wird eine INI durch die noch nicht vorhandenen Werte ergänzt, bereits vorhandenen Werte werden ersetzt. Wird dieser Schalter gesetzt, wird die INI nur ergänzt. Das bedeutet es werden alle Werte angehängt. Somit kann in einer Sektion eine Variable mehrfach mit verschiedenen Werten vorhanden sein." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="RebootUnterbinden" Comment="Ist der Schalter gesetzt, wird nach oder während der der Softwareinstallation grundsätzlich kein Reboot durchgeführt. Dieser Schalter setzt alle Einstellungen bezüglich des Rebootverhaltens der Softwareprofile außer Kraft." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="RegIgnorieren" Comment="Ist der Schalter gesetzt findet weder bei der Installation noch bei der Deinstallation von Softwareprofilen eine Verarbeitung von Registryeinträgen statt." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="RegIgnorierenBeimDeinstallieren" Comment="Bei der Deinstallation werden nur die Registryeinträge aus dem Maschinenanteil der Installation (HKLM\...) deinstalliert. Der Benutzeranteil wird erhalten." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="SitzungsMonitorDeaktivieren" Comment="Bei der Softwareinstallation werden durch den VI Client im Normalfall alle Aktionen protokolliert. Hierbei werden die Änderungen des Maschinenanteils der Installation in das Maschinenprotokoll (lokal auf dem PC) geschrieben, während die Änderungen im Benutzeranteil (um den Walking User ermöglichen zu können) zentral auf einem Fileserver protokolliert werden. " CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="SpiegelungUnterbinden" Comment="Im gesetzten Zustand werden keine Dateien gespiegelt. Dies gilt auch für Dateien die explizit im Softwareprofil als &quot;zu spiegeln&quot; angegeben wurden." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="SynchroneVerarbeitung" Comment="Bei aktiviertem Schalter werden diese Steuerdateien hintereinander ausgeführt. Bei deaktiviertem Schalter werden diese parallel ausgeführt (ohne sich gegenseitig zu beeinflussen). Die Folge bei deaktiviertem Schalter ist, dass die CPU besser ausgenutzt wird, da parallel zu langsamen Aktionen mit vielen Wartezyklen der CPU (zum Beispiel Datei kopieren) andere Aktionen durchgeführt werden können, um die Wartezyklen auszunutzen. Der Effekt ist eine signifikante Erhöhung der Verarbeitungsgeschwindigkeit" CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="TerminalServerBenutzerSitzungSimulieren" Comment="Betreiben des viClient im Terminalserver sowie das Verhalten des viClients in einer Terminalserver Benutzersitzung." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="UmgehenvonWFP" Comment="Systemnahe Dateien werden ab MS Windows 2000 durch die betriebssystemeigene Funktion Windows File Protektion (WFP) geschützt. Hierzu wird eine Kopie der geschützten Datei außer im Zielverzeichnis auch noch in einem versteckten Systemverzeichnis als Backupkopie abgelegt (Cache). Außerdem wird mit Hilfe von &quot;Catalog-Dateien&quot; (CAT-Datei) protokolliert in welcher Version die Datei auf dem System zertifiziert ist. Wird diese Datei ausgetauscht, ohne das der Cache und die CAT-Datei zu aktualisierenwerden, stellt das Betriebsystem die ausgetauschte Datei wieder-mit Hilfe der zertifizierte Version im Cache-her. Nach der Einführung von WFP wurden von diversen Setup-Herstellern einschließlich Microsoft ein Verfahren entwickelt, dass diese WFP umgeht, in dem es Dateien im Zielverzeichnis und im Cachverzeichnis austauscht, ohne die CAT-Datei zu aktualisieren. Dieses Verhalten muss für Softwareprofile die aus solchen Setup-Sets stammen vom VI Client bei der Softwareverteilung nachempfunden werden. " CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="UnterbindenVonVerarbeitungPcAnteilApplikationen" Comment="Mit diesem Schalter wird die Verarbeitung (Installation bzw. Deinstallation) der PC-Anteile von Applikationen unterbunden. Das hat zur Folge das Applikationen auf dem PC weder installiert noch deinstalliert werden. Gleichwohl werden Benutzeranteile nach wie vor verarbeitet. Mit diesem Schalter kann sichergestellt werden, das alle PC-bezogenen Anteile durch den viClient unverändert bleiben.." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="Wiederherstellbarkeit" Comment="Dateien, die vor der ersten VI Client-Verarbeitung auf der Arbeitsstation existierten, werden beim Überschreiben im Rescue-Verzeichnis abgelegt (Verzeichnisname: VIRESCUE, Ablage:Protokollbasisverzeichnis der Arbeitsstation). Die Einstellung wird ignoriert, wenn Dateiersetzung=NEVER" CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+    <Property DeleteIfEmpty="true" PropertyType="Enum" Name="ZeitSynchronisation" Comment="Synchronisiert wird automatisch bei Start des VI Client mit dem PDC einer Microsoft Windows NT Domäne." CanBeEmpty="true">
+      <EnumMembers>
+        <Member Value="OFF" />
+        <Member Value="ON " />
+      </EnumMembers>
+    </Property>
+  </Section>
+  <Section DeleteIfEmpty="true" Name="Verzeichnisse">
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Diagnose" Comment="Durch die Verwendung dieses Parameter wird eine Kopie aller hardwareabhängigen Parameter (das gesamte Maschinenprotokoll) der Softwareinstallation in das angegebene Verzeichnis geschrieben. Hierbei wird für jeden VI Client auf ein Ordner mit einer neuen GUID erzeugt, unter dem diese Daten abgelegt werden." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="InstallationNach" Comment="Gibt den lokalen Pfad des Verzeichnisses an, in das der VI Client, vor der Softwareverteilung, auf dem Client-PC installiert werden soll." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="ReportArchiv" Comment="Gib den Speicherort für VI Client Log-Dateien an." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Spiegelbasis" Comment="In diesem Verzeichnis werden vom VI Client Dateien abgelegt, die bei der Anmeldung gespiegelt werden sollen. Diese Funktion sichert (Steuer-) Dateien von Applikationsprofilen, die auf der lokalen Festplatte liegen und durch eine Neuinstallation des PCs nicht automatisch ersetzt werden sollen." />
+    <Property DeleteIfEmpty="true" PropertyType="FreeText" Name="Statusinfo" Comment="Ist das Verzeichnis angegeben, erzeugt hier der VI Client beim Beenden eine Datei, die den Status der installierten Applikationen, die Protokolldatei, Benutzer- sowie PC-Informationen enthält (siehe Technische Details). Dabei wird für jeden Lauf eine Datei erzeugt, sofern der Lauf nicht durch Fehler abgebrochen wurde. Die in der Datei enthaltenen Informationen dienen dem Applikationsinventory. Die Dateien werden durch andere Komponenten des Wizard abgearbeitet und wieder entfernt. Der Name der erzeugten Datei ist eindeutig und hat das Format: &lt;guid&gt;.xml., wobei &lt;guid&gt; eine eindeutige hexadezimale Zahlenfolge ist." />
+  </Section>
+</IniConfiguration>

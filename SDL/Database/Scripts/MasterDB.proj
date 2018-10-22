@@ -1,0 +1,73 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0" >
+
+    <PropertyGroup>
+        <Module>SDL</Module>
+        <AllModules>ACN,ATT,CPL,HDS,POL,RMS,RPS,SDL,MDK</AllModules>
+        <BaseDir>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)\..\..\..'))</BaseDir>
+        <Assemblies>$(BaseDir)\Assemblies</Assemblies>
+        <GenerateModel>$(Assemblies)\GenerateModel.exe</GenerateModel>
+        <Migrator>$(Assemblies)\Quantum.MigratorCmd.exe</Migrator>
+        <DbCompiler>$(Assemblies)\DBCompilerCMD.exe</DbCompiler>
+        <PowerShell>powershell.exe -NoProfile -Noninteractive –ExecutionPolicy Unrestricted</PowerShell>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(AuthStr)' == ''">
+        <AuthStr>Module=Master</AuthStr>
+    </PropertyGroup>
+
+    <Target Name="all">
+        <Error Text="Either call the Prepare target to prepare a master database, or the Dump target to get changes back into the source files." />
+    </Target>
+
+    <Target Name="Prepare" DependsOnTargets="GenerateModel;UpdateModuleInfo;MasterMigration;Compile">
+    </Target>
+
+    <Target Name="Dump" DependsOnTargets="GenerateModel;DumpData">
+    </Target>
+
+
+    <Target Name="GenerateModel">
+        <Exec Command="&quot;$(GenerateModel)&quot; /CF=..\MSSQL\Generate\ControlFile.ini" />
+    </Target>
+
+    <Target Name="UpdateModuleInfo" DependsOnTargets="CheckConnStr">
+        <Exec Command="$(PowerShell) -File .\UpdateModuleInfo.ps1 -connString &quot;$(ConnStr)&quot; -moduleID &quot;$(Module)&quot; -moduleXmlPath &quot;$(BaseDir)/$(Module)/ModuleInfo.xml&quot;" />
+    </Target>
+
+    <Target Name="CreateMasterDb" DependsOnTargets="CheckConnStr">
+
+        <PropertyGroup>
+            <DbName>$([System.Text.RegularExpressions.Regex]::Match($(ConnStr), `Initial Catalog=[^;]+`, "RegexOptions.IgnoreCase").Value.SubString(16))</DbName>
+            <MasterConnStr>$([System.Text.RegularExpressions.Regex]::Replace($(ConnStr), `Initial Catalog=[^;]+`, "Initial Catalog=master" ,"RegexOptions.IgnoreCase"))</MasterConnStr>
+        </PropertyGroup>
+
+        <Message Text="Creating database $(DbName)" />
+        
+        <Exec Command="$(PowerShell) -File .\ExecuteCommand.ps1 -connString &quot;$(MasterConnStr)&quot; -statement &quot;create database $(DbName) COLLATE SQL_Latin1_General_CP1_CI_AS &quot;" />
+        <Exec Command="$(PowerShell) -File .\ExecuteCommand.ps1 -connString &quot;$(MasterConnStr)&quot; -statement &quot;alter database $(DbName) set RECOVERY SIMPLE&quot;" />
+        <Exec Command="&quot;$(Migrator)&quot; /module=&quot;$(AllModules)&quot; /O=INSTALL /S=MSSQL /C=&quot;$(ConnStr)&quot; /D=&quot;$(BaseDir)\Modules&quot; " />
+        <Exec Command="$(PowerShell) -File .\ExecuteCommand.ps1 -connString &quot;$(ConnStr)&quot; -statement &quot;update DialogDatabase set ModuleOwner = &apos;$(Module)&apos; where IsMainDatabase = 1&quot;" />
+
+        <CallTarget Targets="UpdateModuleInfo;MasterMigration;Compile" />
+    </Target>
+
+
+    <Target Name="MasterMigration" DependsOnTargets="CheckConnStr">
+        <Exec Command="&quot;$(Migrator)&quot; /module=&quot;$(AllModules)&quot; /O=UPDATE /S=MSSQL /C=&quot;$(ConnStr)&quot; /D=&quot;$(BaseDir)\Modules&quot; " />
+    </Target>
+
+    <Target Name="Compile" DependsOnTargets="CheckConnStr">
+        <Exec Command="&quot;$(DbCompiler)&quot; /Conn=&quot;$(ConnStr)&quot; /Auth=&quot;$(AuthStr)&quot; -W" />
+    </Target>
+
+    <Target Name="DumpData" DependsOnTargets="CheckConnStr">
+        <Exec Command="&quot;$(Migrator)&quot; /module=&quot;$(Module)&quot; /O=DUMP /S=MSSQL /C=&quot;$(ConnStr)&quot; /D=&quot;$(BaseDir)\$(Module)\Database\MSSQL\Dump&quot;" />
+        <Exec Command="&quot;$(Migrator)&quot; /module=&quot;$(Module)&quot; /O=DUMP /S=ALL /F=CsvLines /C=&quot;$(ConnStr)&quot; /D=&quot;$(BaseDir)\$(Module)\Database\MSSQL\MasterContent.XML&quot;" />
+    </Target>
+
+    <Target Name="CheckConnStr">
+        <Error
+            Text="You have to provide a connection string to the master database using /P:ConnStr=&quot;...&quot;"
+            Condition="'$(ConnStr)' == ''" />
+    </Target>
+</Project>

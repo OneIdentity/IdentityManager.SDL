@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebDesigner aeds:tdnsHash="20c47cec-b8c0-02f3-76bd-ec3a8dd1d28c" xmlns:aeds="http://www.vi-net.de/aeds">
+  <ConfigurationRoot MetamodelVersion="2016-05-08" ID="SDL_Common_HyperView_AccProduct_Ext">
+    <Extensions>
+      <AddObject ObjectID="ElementEdit1" ObjectType="ElementEdit" SortOrder="60">
+        <ControlReferenceControlList ID="VI_Common_HyperView_ShapeListTable" ScriptItemUID="SDLControlRef1">
+          <VirtualFunctionMapping ID="Caption()" Value="datacaption(&quot;Driver&quot;)" ScriptItemUID="SDLVirtualFunctionMapping1" />
+          <VirtualFunctionMapping ID="EnableNavigation()" Value="EnableNavigation()" ScriptItemUID="SDLVirtualFunctionMapping2" />
+          <VirtualFunctionMapping ID="TableName()" Value="'Driver'" ScriptItemUID="SDLVirtualFunctionMapping3" />
+          <VirtualFunctionMapping ID="DbWhereClause()" Value="format(&quot;UID_AccProduct ={0}&quot;, select current sqlformatvalue(UID_AccProduct, &quot;string&quot;, &quot;NonUnicodeLiterals&quot;) from Object)" ScriptItemUID="SDLVirtualFunctionMapping4" />
+          <VirtualFunctionMapping ScriptItemUID="SDLVirtualFunctionMapping5" ID="LayoutType()" Value="&quot;BottomRight&quot;" />
+          <VirtualFunctionMapping ScriptItemUID="SDLVirtualFunctionMapping6" ID="Condition()" Value="ispreprop('DRV')" />
+        </ControlReferenceControlList>
+      </AddObject>
+    </Extensions>
+  </ConfigurationRoot>
+</WebDesigner>

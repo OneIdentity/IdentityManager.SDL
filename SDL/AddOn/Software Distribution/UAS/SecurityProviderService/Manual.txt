@@ -1,0 +1,77 @@
+//_____________________________________________________________________________
+0708svc.exe
+
+Dienst, zentrale Komponente der Applikation. Sorgt für den "Elevate"-Vorgang
+von minderberechtigten Prozessen. Außerdem automatisch Installation über Netz.
+
+
+Kommandozeile:
+-b <befehl>
+  Installieren/Deinstallieren als Dienst oder Starten als konventionellen 
+  Prozess. Der Benutzer muß lokaler Administrator sein.
+  <befehl>::=InstallAndStart|StopAndRemove|Debug
+    InstallAndStart:
+      Installiert und startet den Dienst.
+      Dabei wird der Dienst auf dem PC installiert, auf dem sich diese 
+      Exe-Datei befindet und nicht auf dem PC auf dem die Kommandozeile 
+      ausgeführt wird. Liegt die Exe-Datei lokal, wird der Dienst auch
+      lokal installiert im Gegensatz zur remoten Installation.
+    StopAndRemove:
+      Stoppt und entfernt den Dienst.
+      Dabei wird der Dienst auf dem PC deinstalliert, auf dem sich diese 
+      Exe-Datei befindet und nicht auf dem PC auf dem die Kommandozeile 
+      ausgeführt wird.
+    Debug:
+      Nur vorhanden in der speziellen Diagnose-Version "0708Svc_d.exe".
+      Startet direkt und fungiert nur als Prozess und nicht als Dienst.
+      Terminierung mit [Cntrl-C] oder [Cntrl-Break].
+      In dieser Version wird NICHT der für das Elevaten benötigte "t01.sys"
+      Treiber installiert und gestartet. 0708svc dient in diesem Fall nur
+      als HOST für RPC-Calls
+
+-u {<account> [<pwd>]}|#
+      Der Parameter wird bei <befehl>=StopAndRemove ignoriert. 
+      Benutzerkonto, unter dem sich der Dienst läuft
+      Ist der Parameter nicht angegeben, muß Parameter -t angegeben sein!
+        <account>:
+          Kontoname der Form "Domäne\Name".
+          Falls keine Domäne angegeben ist wird das Konto im Netz gesucht.
+          Die Suchreihenfolge ist PC - Domäne - Trusted Domänen.
+          Account unter dem der Dienst auf dem Server läuft und 
+          mit dem auf die PC-Clients zugegriffen wird (via Admin Shares des 
+          Clients).
+          Default: Kein
+        <pwd>: 
+          Kennwort des Anmeldekontos (falls eins existiert).
+          Default: Leer
+        #:
+          Das Benutzerkonto wird interaktiv mittels Dialog erfragt.
+-s|-t
+      Der Parameter wird bei <befehl>=StopAndRemove ignoriert.
+      Anmelden als Systemkonto, wobei bei -t keine Validierung des 
+      unter Parameter -u angegebenen Benutzerkontos erfolgt.
+      Achtung: Nur der Name des Kontos wird geprueft, nicht das Kennwort!
+      Ist der Parameter nicht angegeben, muß Parameter -u angegeben sein!
+
+-p <protocolForRPC>
+  Liste der Kommunikationsprotokolle für die Kommunkation (via RPC)
+  über die die Anfragen empfangen werden sollen.
+  <protokolliste>::=<protokoll>[,<protokolliste>]|ALL
+    <protokoll>::=1|2|3|4|5|6|7|8|9
+      1*: Named Pipe ist DEFAULT (ncacn_np)
+      2: TCP/IP                  (ncacn_ip_tcp)
+      3: TCP/IP Datagram Version (ncadg_ip_udp)
+      4: TCP over NetBIOS        (ncacn_nb_tcp)
+      5: NetBEUI over NetBIOS    (ncacn_nb_nb)
+      6: DECnet                  (ncacn_dnet_nsp)
+      7: SPX                     (ncacn_spx)
+      8: IPX                     (ncadg_ipx)
+      9: RPC lokal nur Win NT    (ncalrpc)
+      ALL: Alle Protokolle, die vom Rechner unterstützt werden.
+
+Errorlevel:
+0: Installation Erfolgreich.
+1: Installation nicht erfolgreich.
+
+Protokollierung:
+Fehler werden im Eventlog protokolliert (als Error)

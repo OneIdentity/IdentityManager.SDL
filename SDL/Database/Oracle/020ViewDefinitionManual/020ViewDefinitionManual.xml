@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Commands>
+
+  <Include>ViewsForLicence\ViewsForLicence.xml</Include>
+
+  <Command Type="SqlFile">SDL_VADSNearestAppContainer.sql</Command>
+  <Command Type="SqlFile">SDL_VLDPNearestAppContainer.sql</Command>
+
+
+</Commands>
+

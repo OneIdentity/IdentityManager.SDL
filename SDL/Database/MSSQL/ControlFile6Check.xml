@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Steps>
+  <Macro Name ="QBMMasterCheckCorrectness"/>
+
+  <Step ID="CheckInsertJob" >
+    <Description Key="Key" Value="insert post processing jobs" />
+    <Prerequisites />
+    <GenConditions>
+      <Condition Type="Expression">ModuleSelected</Condition>
+    </GenConditions>
+    <RunConditions>
+      <Condition Type="SQL"  Replacement="True">
+        select 1 where dbo.QBM_FGIDBOwner() not in (  '$ModuleId$' )        -- not at master database
+      </Condition>
+    </RunConditions>
+    <Commands>
+
+      <!-- you can insert here some jobs into DBQueue, for processing after all other work is done
+      
+      <Command Type="Sql" Replacement="True">exec QBM_PDBQueueInsert_Single 'QBM-K-CommonReCalculate', N'Q E R P o l icyMakeProc', '', '$GenProcId$'</Command>
+      -->
+
+    </Commands>
+    <Repair />
+  </Step>
+
+
+  <Macro Name ="QBMCheckPointIfModule"/>
+
+</Steps>

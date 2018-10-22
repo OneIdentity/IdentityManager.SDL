@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='windows-1252' ?>
+<ApplicationInfo>
+	<VIClientErrorLevel>0</VIClientErrorLevel>
+	<UserInfo Account="danielt" NameSpace="ADS" DomainKontext="VM-NT52-32-01">
+	</UserInfo>
+	<MachineInfo Account="VM-NT52-32-01" NameSpace="ADS" DomainKontext="VI">
+	</MachineInfo>
+	<InstallLog>
+		<![CDATA[
+__________
+Logging to log file is unbuffered - due to command line parameter '-NO_LOG_BUFFERING'!
+
+Anomalie: CEnvs: Hint: UserNameDSN konnte nicht ermittelt werden: API 'GetUserNameEx(NameFullyQualifiedDN)' failed! (Code# 1332).
+Loaded Language:
+  Setting: :not specified in 'V:\VICLIENT\VICLIENT.INI', Section 'LANGUAGE', Key 'Parameters':
+  Detected: GER
+  Correspond File: '\\vmware-host\Shared Folders\OneDrive\Wizard\V2_0\CLIENT\PreProcessor\Debug\Languages\GER.txt':
+    File not available =: Default Language will be used.
+
+VI Network Client: Protokoll der Operationen vom 17/03/17 17:42:53 Uhr (FileVersion 1.4.2.8)
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+Alle Pfadangaben sind lokal aus User's Sicht.
+Detektiertes OS:
+  OS
+    Type: Workstation
+    Platform: Microsoft® Windows NT(TM) 
+    Version: 5.1
+    Build Number: 2600
+  Service Pack
+    Name: Service Pack 3
+    Version: 3.0
+  Suites
+    none
+Account: VM-NT52-32-01\danielt;  Administrator: Ja
+PC: VM-NT52-32-01
+Benutzer: danielt
+___StopWatch started...
+
+Parameter werden aus 'V:\VICLIENT\VICLIENT.INI' entnommen:
+  SCHALTER:
+    DekomprimierenBeiBedarf = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    Wiederherstellbarkeit = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    ZeitSynchronisation = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    BetriebssystemVerarbeitung = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    NurFehlerReport = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    KeinReportInStatusInfo = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    SpiegelungUnterbinden = ON -: Schalter ist aktiviert.
+    NurStammBenutzerInstallation = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    RegIgnorierenBeimDeinstallieren = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    NeueSymboleAnzeigen = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    FremdeProgrammGruppenLöschen = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    DateiErsetzungNurNachAlter = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    PersönlicheEinstellungenÜbernehmen = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    KeineUpdateOptimierung = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    ImmerSpiegeln = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    SynchroneVerarbeitung = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    MeldungWennTolerierteFehlerUnterbinden = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    AuswahlDialogUnterdrücken = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    Instandsetzung = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    SitzungsMonitorDeaktivieren = ON -: Schalter ist aktiviert.
+    UnterbindenVonVerarbeitungPcAnteilApplikationen = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    KeinStandardKommentarInShortcutsAufBatches = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    TestModusInfoDlgUnterdrücken = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    SchreibschutzBeiIniVerarbeitungUmgehen = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    VerwendungEreignisProtokollProZustandEineEventID = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    DateienUndIniBehandlungBeimRevUpdateCaseSensitiv = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    ApplikationsAbhängigkeitenIgnorieren = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    ApplikationsAusschlüsseIgnorieren = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    KeineBenutzerInteraktion = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    VerarbeitungHkcuBeimDeinstallieren = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    SupportSortOrder = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    PoliciesUmgehen = ON -: Schalter ist aktiviert.
+    LokalesBenutzerkontoAnlegen = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    BenutzerInformationenAusZugriffsTokenEntnehmen = ON -: Schalter ist aktiviert.
+    UmgehenVonWfp = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    ErhaltenDerTemporärenAppListe = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    RegIgnorieren = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+      -: Modus LOCAL, Registry wird lokal bearbeitet.
+  DATEIEN:
+    Report = log.txt
+    KommandozeileWennTolerierteFehler = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    KommandozeileWennAbbruchFehler = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    AppListe = v:\Path.vii
+    ProtokollMaschine = c:\vi\client\prot\viprot.ini
+    InfoBenutzer = v:\VIAPPSUSR.INI
+    Variablen = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    InfoMaschine = v:\cName.VII
+    Applikationsersetzungen = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    ProtokollBenutzer = c:\vi\client\prot\usr\viprot.ini
+  VERZEICHNISSE:
+    ReportArchiv = LogArchive
+    SpiegelBasis = \\obelix\Ablage\Transfer\an_Tessi\viClient\usrProt\viMirror
+    StatusInfo = c:\temp\vi\client\InstallFeedback
+    Diagnose = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+  MODI:
+    MeldungWennAbbruchFehler = Modus ON_WITH_CONFIRM, Benutzer wird bei Fehlerabbruch informiert, mit erforderlicher Bestätigung.
+    DateiErsetzung = Modus OLDER, vorhandene Datei wird ersetzt, wenn diese älter.
+    ProgrammGruppenArt = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: Modus PERSONAL, Programmgruppen werden als 'Personal' erzeugt.
+    BenutzerZuRechnerKontrolle = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: Modus OFF, Benutzer-Rechner Kontrolle wird nicht durchgeführt.
+    BenutzerZuRechnerDomaenenKontrolle = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: Modus OFF, Benutzer-MacDomainGroup Kontrolle wird nicht durchgeführt.
+    PlattenSpeicherReserve = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: 0 [KB]
+    VerarbeitungAbschaltbar = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: 0 [s]
+    SimultaneSitzungenKontrolle_AntwortzeitBegrenzung = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: 0
+    ReportArchivTiefe = 100 [Anzahl]
+    UpdateOptimierung = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: 0xF
+    InstallationstypenKontrolle = Modus OFF, Installationstyp-Kontrolle wird nicht durchgeführt.
+    IniStandardVerarbeitung = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: Modus NEW, Ini Standard Verarbeitung: Key's immer neu anlegen.
+    RebootTyp = Modus IMMEDIATELY, Reboot: Reboot erfolgt unmittelbar nach Beendigung des VIClient (vor Programmgruppen-Verarbeitung).
+    Steuerlogik = Modus PC_DEPENDED, Benutzer erhält automatisch alle Applikationen, die für den PC installiert sind.
+    BenutzerTyp = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: Modus AUTO_DETECT, BenutzerTyp wird aus der SAM entnommen.
+    SimultaneSitzungenKontrolle = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: Modus OFF, Simultane-Sitzungen-Kontrolle wird nicht durchgeführt.
+    VariablenQuellenSuchreihenfolge = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: Modus FILE_GENERAL, FILE_SPECIAL, ENVIRONMENT, ist die Suchreihenfolge der Variablenquellen.
+    TerminalServerBenutzerSitzungSimulieren = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: -1 =: Keine Simulation einer Terminal-Sitzung.
+    NeutralisierungVonVerarbeitungen = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: Keine Verarbeitungen werden neutralisiert.
+    BatchTimeout = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: 3600
+    ZugriffsKontext = Modus COMMON_LOCAL; Zugriffskontext, -Lokal: System, -Netz: Benutzer.
+    NetzwerkprotokollNr = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: Netzwerkprotokoll 'ncacn_np' wird benutzt.
+    VerwendungEreignisProtokollBeiTerminierung = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: Modus AS_OF_ERROR_ABORT, Es werden nur Läufe mit Abbruch-Fehlern im EventLog notiert.
+    VerwendungEreignisProtokollPerApplikationsProfil = Modus AS_OF_SUCCESS, Es werden alle Applikationsprofile im EventLog notiert.
+  DIVERSE:
+    VariablenSequenzBeginn = [VI:VAR=
+    VariablenSequenzEnde = ]
+    DienstServer = %APPSSERVER%
+      Pfad '%APPSSERVER%' wurde zu 'VM-NT52-32-01' expandiert.
+    KommandozeilePre = cmd /c start /w cmd
+    KommandozeilePost = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    NamensPrefixeArbeitsplatzApps = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    IgnorierenBeiKennwoertern = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    DesktopFürBatches = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: WinSta0\Default
+    ProcessCreationFlags_ForChildProcesses = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: 134217728
+  RECHTEGRUPPE:
+    GruppenNameWizardRechte = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    ZugriffsTokenVomProcess = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: UsrUsr
+    ZugriffsTokenVomThread = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: UsrAdmin
+    VerwendungZugriffsTokenDienst = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: Modus AUTO, Verwendung des Zugriffs-Token-Dienst: Die Verwendung des Dienstes erfolgt automatisch.
+  APPLIKATIONENZUGRIFFSKONTROLLE:
+    Section nicht angegeben.
+  NETZWERK:
+    Section nicht angegeben.
+  LOKALEPROFILE:
+    Section nicht angegeben.
+  LICENSING:
+    Section nicht angegeben.
+  ADS:
+    Section nicht angegeben.
+  MIGRATION:
+    Section nicht angegeben.
+  MSI:
+    ZugriffsTokenVomProcess = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: :THREAD:
+    ZugriffsTokenVomThread = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: OFF
+    ImmerProtokollieren = ON -: Schalter ist aktiviert.
+    BatchPre = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+    BatchPost = !!Nicht lesbar, es wird Voreinstellung verwendet!! -: ''
+  INSTANDSETZUNG:
+    AuwahlAllerApplikationenMöglich = Modus ON, RepairScope: Umfasst ausnahmslos alle auf dem PC installierten Applikationen.
+  FEHLERTOLERANZ:
+    AnzahlVersuche = 1
+    WartezeitZwischenVersuchenInMs = 1504
+¯¯¯StopWatch stopped: 463 [ms]
+
+Testmodus: Ja
+Ausführungsmodus: LOGONSCRIPT
+Multithreading enabled: Ja
+Applikationen mit folgenden Kennwörtern ignorieren:
+  Kennwörter aus Environment-Variable 'viClientIgnorierenBeiKennwoertern': Keine
+  Kennwörter aus Ini: Keine
+Konsistenzprüfung der Parameter:
+  Abgeschlossen.
+CTrmnlSrvr: Remote Desktop Services (formerly 'Terminal Services') are not present.
+
+___StopWatch started...
+Aufbau der Verbindung zum Server Service auf 'VM-NT52-32-01' -:
+Ping erfolgreich.
+Verbindung zum Server Service hergestellt.
+Verbindung zum Server Service beendet.
+  Identity of transferred Token: .\visvc
+CElevateMe: Find out is SecuritySupportService required:
+CElevateMe: Considering if Service required due to Vista.
+CElevateMe: OS is less than NT6.0 (aka 'Vista').
+CElevateMe: Verifying required Pivileges for doing it without Impersonation...
+CElevateMe: Privilege 'SeAssignPrimaryTokenPrivilege' was enabled.
+CElevateMe: Privilege 'SeCreateTokenPrivilege' is not assigned.
+CElevateMe: Verifying required Pivileges for doing it with Impersonation...
+CElevateMe: Privilege 'SeDebugPrivilege' was enabled.
+CElevateMe: Privilege 'SeImpersonatePrivilege' was enabled.
+CElevateMe: Elevating this Process:
+CElevateMe: Unaided Elevation =: corresponding Service not required:
+CTokenBuilder: LOKAL (well-known group)
+CTokenBuilder: VORDEFINIERT\Administratoren (alias)
+CTokenBuilder: Jeder (well-known group)
+CTokenBuilder: VORDEFINIERT\Benutzer (alias)
+CTokenBuilder: VM-NT52-32-01\BITNESS_32 (alias)
+CTokenBuilder: VM-NT52-32-01\BITNESS_64 (alias)
+CTokenBuilder: VM-NT52-32-01\Kein (group)
+CTokenBuilder: NT-AUTORITÄT\INTERAKTIV (well-known group)
+CTokenBuilder: VM-NT52-32-01\Debugger Users (alias)
+CTokenBuilder: S-1-5-5-0-76902 (Logon ID)
+CTokenBuilder: NT-AUTORITÄT\Authentifizierte Benutzer (well-known group)
+CTokenBuilder: Keine Gruppe mit Integritäts-Level ('SE_GROUP_INTEGRITY') vorhanden
+CTokenBuilder:  =: bleibt auch so, da keine Integritätsgruppe spezifiziert.
+Anomalie: Error on process elevation: Error Code 0:
+
+=: Retry after 1504 milliseconds ...
+CElevateMe: Formerly already elevated =: Method will be skipped.
+CTokenBuilder: LOKAL (well-known group)
+CTokenBuilder: VORDEFINIERT\Administratoren (alias)
+CTokenBuilder: Jeder (well-known group)
+CTokenBuilder: VORDEFINIERT\Benutzer (alias)
+CTokenBuilder: VM-NT52-32-01\BITNESS_32 (alias)
+CTokenBuilder: VM-NT52-32-01\BITNESS_64 (alias)
+CTokenBuilder: VM-NT52-32-01\Kein (group)
+CTokenBuilder: NT-AUTORITÄT\INTERAKTIV (well-known group)
+CTokenBuilder: VM-NT52-32-01\Debugger Users (alias)
+CTokenBuilder: S-1-5-5-15-4-1964-25-5-1944-18-7
+CTokenBuilder: VM-NT52-32-01\Administrator (user)
+CTokenBuilder: S-1-5-5-15-4-1964-25-5-1944-18-8
+CTokenBuilder: S-1-5-5-0-76902 (Logon ID)
+CTokenBuilder: NT-AUTORITÄT\Authentifizierte Benutzer (well-known group)
+CTokenBuilder: S-1-5-5-0-3357378 (Logon ID)
+CTokenBuilder: Keine Gruppe mit Integritäts-Level ('SE_GROUP_INTEGRITY') vorhanden
+CTokenBuilder:  =: bleibt auch so, da keine Integritätsgruppe spezifiziert.
+Zugriffskontext wurde erfolgreich auf Modus 'COMMON_LOCAL' gesetzt.
+¯¯¯StopWatch stopped: 7158 [ms]
+Globale AppListe 'v:\Path.vii' wurde temporär nach 'c:\vi\client\prot\TEMP\CachedGlobalAppList.ini' gecached.
+-: und wird am Ende gelöscht.
+___StopWatch started...
+Installationstyp des PC: NT40GER SERVER
+¯¯¯StopWatch stopped: 13 [ms]
+
+Folgende Pfade/Dateien werden benutzt:
+  VI Client Start-Verzeichnis: 'p:\Wizard\V2_0\CLIENT\PreProcessor\Debug\'.
+  AppListe, global: 'v:\Path.vii'.
+  Protokoll-Datei: 'c:\vi\client\prot\viprot.ini'.
+  Daten PC: 'v:\cName.VII'.
+  Daten Benutzer: 'v:\VIAPPSUSR.INI'.
+  Liste aller verwendeten Dateien: ':ProtRegMac:\InstalledFiles\Originals'.
+  Liste aller gespiegelten Dateien: 'c:\vi\client\prot\usr\MirroredFiles.VIP'.
+  Liste aller gespiegelten Values: 'c:\vi\client\prot\usr\MirroredValues.VIP'.
+  Kommandozeile wenn tolerierte Fehler: ''.
+  Kommandozeile wenn Abbruch-Fehler: ''.
+  Report-Archiv: 'c:\vi\client\prot\LogArchive\'.
+  Protokoll-Verzeichnis PC: 'c:\vi\client\prot\'.
+  Rescue Basis-Verzeichnis: 'c:\vi\client\prot\VIRescue\'.
+  Benutzer Arbeits-Verzeichnis: 'p:\Wizard\V2_0\CLIENT\PreProcessor'.
+  Benutzer Temp: 'C:\DOKUME~1\danielt\LOKALE~1\Temp\'.
+  viClient Temp: 'c:\vi\client\prot\TEMP\'.
+  Kommunikations-Server: 'VM-NT52-32-01'.
+  Für WalkingUser Modus:
+    Protokoll-Verzeichnis Benutzer: 'c:\vi\client\prot\usr\'.
+    Protokoll-Datei Benutzer: 'c:\vi\client\prot\usr\viprot.ini'.
+    Spiegel-Basisverzeichnis: '\\obelix\Ablage\Transfer\an_Tessi\viClient\usrProt\viMirror\'.
+    Spiegel-Dateiliste: 'c:\vi\client\prot\usr\MirroredFiles.VIP'.
+    Spiegel-Valueliste: 'c:\vi\client\prot\usr\MirroredValues.VIP'.
+
+Hinweis: Policy 'HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\System\\DisableRegistryTools' existiert nicht =: deaktivieren nicht notwendig!
+Hinweis: Policy 'HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer\DisallowRun' existiert nicht =: deaktivieren nicht notwendig!
+___StopWatch started...
+Batch 'cmd /c start /w cmd' wird synchron gestartet -:
+Api-Hook: CHook_CreateProcessAsUserA: Api was actually delay-loaded =: Install again with the real Address.
+Api-Hook: CHook_CreateProcessAsUserA: Hook installed.
+Start von Prozess '"cmd /c start /w cmd"' fehlgeschlagen (Error 2)!
+•••Fehler: Start von Prozess '"cmd /c start /w cmd"' fehlgeschlagen (ErrorNr 2)!
+  Ist terminiert mit Errorlevel 0.
+¯¯¯StopWatch stopped: 13929 [ms]
+
+Es wurde in 'V:\VICLIENT\VICLIENT.INI' eine Datei unter 'InfoBenutzer' angegeben -: Applikationen des User werden aus 'v:\VIAPPSUSR.INI' entnommen.
+
+Es wurde in 'V:\VICLIENT\VICLIENT.INI' eine Datei unter 'InfoMaschine' angegeben -: Applikationen des Computer werden aus 'v:\cName.VII' entnommen.
+•Hinweis: Gruppeninformation in Datei 'v:\cName.VII' nicht vorhanden!
+Benutzer ist Mitglied in folgenden Gruppen:
+  LEER2
+  LEER
+PC ist Mitglied in folgenden Gruppen:
+Benutzer ist Stammbenutzer des PC: Nein
+Der letzte Lauf war mit viClient Version: 1.4.1.9
+•Hinweis: Konfigurations-Datei 'V:\VICLIENT\VICLIENT.INI' unter Kommandozeilen-Parameter '-I' wurde geändert - entweder namentlich oder inhaltlich.
+___StopWatch started...
+CDoCacheCtrl::CCCacheProcess: Terminierungssignalisierung an DoCache2.exe:
+CDoCacheCtrl::CCCacheProcess: DoCache2.exe existiert nicht =: Terminierung unnötig.
+Cache Processor wurde terminiert.
+CDoCacheCtrl::CCCacheProcess: Befehl ist nicht notwendig, DoCache.exe ist nicht pausiert!
+CDoCacheCtrl::CCCacheProcess: Sende Terminierungssignal an DoCache.exe:
+CDoCacheCtrl::CCCacheProcess: DoCache.exe existiert nicht =: Terminierung ist nicht notwendig.
+Cache Processor wurde terminiert.
+¯¯¯StopWatch stopped: 24 [ms]
+___StopWatch started...
+¯¯¯StopWatch stopped: 150 [ms]
+Abhängige Applikationen:
+
+Folgende Applikationen werden verarbeitet:
+App                 Pfad                                                                  Allgemein Benutzer ProgGroupsRevisionsNr OS  
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+Reihenfolge der Verarbeitung:
+App                 Pfad                                                                  Allgemein Benutzer ProgGroupsRevisionsNr OS  
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+
+Anzahl aller zu Verarbeitenden Einträge: 0
+
+
+Abgleich abgeschlossen.
+1 tolerierte Fehler ("Fehler:") aufgetreten!
+Keine Warnungen aufgetreten.
+2 Hinweise ("Hinweis:") aufgetreten!
+Laufzeit in [s]: 48
+ExitCode: 0, Kein Abbruch.
+]]>
+	</InstallLog>
+</ApplicationInfo>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Steps>
+
+  <Macro Name ="QBMIndexCreate"/>
+
+  <Macro Name ="QBMStartupTablesFill"/>
+
+  <Macro Name ="QBMMigrationVersionForModule"/>
+
+  <Macro Name ="QBMMasterSaveRelationships"/>
+
+  <Macro Name ="QBMViewBuildV"/>
+
+  <Macro Name ="QBMCheckPointIfModule"/>
+  
+</Steps>

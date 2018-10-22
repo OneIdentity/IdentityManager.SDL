@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebDesigner aeds:tdnsHash="20c47cec-b8c0-02f3-76bd-ec3a8dd1d28c" xmlns:aeds="http://www.vi-net.de/aeds">
+  <ConfigurationRoot MetamodelVersion="2016-05-08" ID="SDL_Common_HyperView_Application_Ext">
+    <Extensions>
+      <AddObject ObjectID="ElementEdit1" ObjectType="ElementEdit" SortOrder="20">
+        <ControlReferenceControlList ID="VI_Common_HyperView_ShapeListTable" ScriptItemUID="SDLControlRef1">
+          <VirtualFunctionMapping ID="EnableNavigation()" Value="EnableNavigation()" ScriptItemUID="SDLVirtualFunctionMapping1" />
+          <VirtualFunctionMapping ID="TableName()" Value="'ApplicationProfile'" ScriptItemUID="SDLVirtualFunctionMapping2" />
+          <VirtualFunctionMapping ID="DbWhereClause()" Value="format(&quot;UID_Application={0}&quot;, select current sqlformatvalue(UID_Application, &quot;string&quot;, &quot;NonUnicodeLiterals&quot;) from Object)" ScriptItemUID="SDLVirtualFunctionMapping3" />
+          <VirtualFunctionMapping ID="Condition()" Value="ispreprop( 'SOFTWAREDISTRIBUTION AND APP' )" ScriptItemUID="SDLVirtualFunctionMapping4" />
+          <VirtualFunctionMapping ScriptItemUID="SDLVirtualFunctionMapping5" ID="LayoutType()" Value="&quot;BottomRight&quot;" />
+        </ControlReferenceControlList>
+      </AddObject>
+    </Extensions>
+  </ConfigurationRoot>
+</WebDesigner>

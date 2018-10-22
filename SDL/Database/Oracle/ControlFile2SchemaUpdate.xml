@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Steps>
+
+  <!-- Steps of 7.0 -->
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2015.0008.0023.0000"  Description="7.0 RTM"/>
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2015.0008.0023.0200"  Description="MachineAppsInfo"/>
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2015.0008.0023.0201"  Description="ADSAccountAppsInfo"/>
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2015.0008.0023.0300" Description="7.0 sp3"/>
+  <!-- / Steps of 7.0 -->
+
+  <!--beginning of Version 7.1. -->
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2016.0001.0018.0000" Description="7.1 start"/>
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2016.0010.0001.0000" Description="Release 7.1"/>
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2016.0010.0001.0100" Description="7.1 sp1"/>
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2016.0010.0001.0101" Description="BaseTreeHasDriver"/>
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2016.0010.0001.0102" Description="MachineAppsInfo"/>
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2016.0010.0001.0103" Description="ADSAccountAppsInfo"/>
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2016.0010.0001.0104" Description="UpdateUDF"/>
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2016.0010.0001.0200" Description="7.1 sp2"/>
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2016.0010.0001.0201" Description="diverse"/>
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2016.0010.0001.0210" Description="RollupPackage1"/>
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2016.0010.0001.0211" Description="Configparm"/>
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2016.0010.0001.0300" Description="7.1 SP3"/>
+  <Macro Name = "QBMUpdateStep" ModuleVersion="2016.0010.0001.0400" Description="7.1 SP4"/>
+
+
+  <!--end of Version 7.1. -->
+
+
+</Steps>

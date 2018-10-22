@@ -1,0 +1,155 @@
+﻿<FormDefinition Version="1.1">
+	<Form ID="FORM0001" Name="FormSDLDomainNetlogon" Version="1.0.0">
+		<Header>
+			<AssociatedFiles>
+				<Library DesignMode="Ignore" Name="SDL.Forms.dll" Path="localfile:bin\debug" />
+				<TypeDefinition Name="TypeDefinition.xml" Path="localfile:Definitions" Usage="Gui" />
+				<TypeDefinition Name="TypeDefinitionWeb.xml" Path="localfile:Definitions" Usage="Web" />
+				<Resource Name="FormSDLDomainNetlogon.vires" Path="localfile:" Reader="VIResourceReaderV2" />
+				<StyleDefinition Name="StyleDefinition.xml" Path="localfile:Definitions" Reader="StyleDefinitionReaderXml" />
+			</AssociatedFiles>
+			<Customizer Type="SDL.Forms.FormSDLDomainNetlogon" />
+			<Description>
+			</Description>
+			<Units Measurement="Pixel" />
+		</Header>
+		<Properties>
+			<Property Name="CacheSafe" Type="Boolean" Value="True" />
+			<Property Name="Caption" Type="String" Value="Form1" />
+		</Properties>
+		<Events>
+			<Event Handler="FrmWindowsNTDom&#228;neNetlogon_OnLoad" Name="Load" />
+		</Events>
+		<Frames>
+			<Frame ID="FRAME001" Name="Main" Style="MainFrame">
+				<Properties>
+					<Property Name="Enabled" Type="Boolean" Value="True" />
+					<Property Name="Visible" Type="Boolean" Value="True" />
+				</Properties>
+				<Events>
+					<Event Handler="FrmWindowsNTDom&#228;neNetlogon_OnSizeChanged" Name="SizeChanged" />
+				</Events>
+				<Content>
+					<Components>
+						<Component ID="COMP000" Name="SaveFileDialog" Type="System.SaveFileDialog" />
+						<Component ID="COMP001" Name="OpenFileDialog" Type="System.OpenFileDialog" />
+						<Component ID="COMP002" Name="MainActivator" Type="ActivatorComponent">
+							<Properties>
+								<Property Name="ActivationFilter" Type="String" Value="Domain" />
+								<Property Name="IsRootActivator" Type="Boolean" Value="True" />
+							</Properties>
+							<Events>
+								<Event Handler="MainActivator_OnActivating" Name="Activating" />
+								<Event Handler="MainActivator_OnActivated" Name="Activated" />
+							</Events>
+						</Component>
+						<Component ID="COMP003" Name="StockImageComponent" Type="VI.StockImageComponent">
+							<Properties>
+								<MultiValueProperty Name="ProvideProperty" Type="ProvidePropertyData">
+									<Property Name="Component" Ref="CTRL000" Type="VIButton" />
+									<Property Name="Property" Type="String" Value="StockImage" />
+									<Property Name="Value" Type="VI.StockImageDefinition" Value="Image, NewDocument, Small, Normal" />
+								</MultiValueProperty>
+								<MultiValueProperty Name="ProvideProperty" Type="ProvidePropertyData">
+									<Property Name="Component" Ref="CTRL001" Type="VIButton" />
+									<Property Name="Property" Type="String" Value="StockImage" />
+									<Property Name="Value" Type="VI.StockImageDefinition" Value="Image, FolderOpen, Small, Normal" />
+								</MultiValueProperty>
+								<MultiValueProperty Name="ProvideProperty" Type="ProvidePropertyData">
+									<Property Name="Component" Ref="CTRL002" Type="VIButton" />
+									<Property Name="Property" Type="String" Value="StockImage" />
+									<Property Name="Value" Type="VI.StockImageDefinition" Value="Image, Save, Small, Normal" />
+								</MultiValueProperty>
+							</Properties>
+						</Component>
+					</Components>
+					<Controls>
+						<Control ID="CTRL003" Name="MainPanel" Style="VIPanel" Type="VIPanel">
+							<Properties>
+								<Property Name="ControlStyle" Type="VIControlStyle" Value="Modify" />
+								<Property Name="Enabled" Type="Boolean" Value="True" />
+								<Property Name="TabIndex" Type="Integer" Value="0" />
+							</Properties>
+							<Content>
+								<Controls>
+									<Layout Style="ColumnMain" Type="Column">
+										<Control ID="CTRL004" Name="HorizFormBar" Style="VIHorizFormBar" Type="VIHorizFormBar">
+											<Properties>
+												<Property Name="ControlStyle" Type="VIControlStyle" Value="Information" />
+												<Property Name="Activator" Ref="CTRL003" Type="Activator" />
+												<Property Name="Caption" Type="String" Value="" />
+												<Property Name="Enabled" Type="Boolean" Value="True" />
+												<Property Name="TabIndex" Type="Integer" Value="3" />
+											</Properties>
+										</Control>
+										<Control ID="CTRL005" Name="EditPath" Style="LargeVIEdit" Type="VIEdit">
+											<Properties>
+												<Property Name="Activator" Ref="CTRL003" Type="Activator" />
+												<Property Name="Caption" Type="String" Value="SDL_FormSDLDomainNetlogon_NetLogonPath" />
+												<Property Name="EnabledByUser" Type="Boolean" Value="False" />
+												<Property Name="TabStop" Type="Boolean" Value="True" />
+												<Property Name="Enabled" Type="Boolean" Value="True" />
+												<Property Name="TabIndex" Type="Integer" Value="7" />
+											</Properties>
+										</Control>
+										<Layout Style="RowDefault" Type="Row">
+											<Control ID="CTRL006" Name="EditFileName" Style="VIEdit" Type="VIEdit">
+												<Properties>
+													<Property Name="ControlStyle" Type="VIControlStyle" Value="Modify" />
+													<Property Name="Activator" Ref="CTRL003" Type="Activator" />
+													<Property Name="Caption" Type="String" Value="SDL_FormSDLDomainNetlogon_FileName" />
+													<Property Name="EnabledByUser" Type="Boolean" Value="False" />
+													<Property Name="TabStop" Type="Boolean" Value="True" />
+													<Property Name="Enabled" Type="Boolean" Value="True" />
+													<Property Name="TabIndex" Type="Integer" Value="5" />
+												</Properties>
+											</Control>
+											<Control ID="CTRL000" Name="ButtonNew" Style="IconButton" Type="VIButton">
+												<Properties>
+													<Property Name="Enabled" Type="Boolean" Value="True" />
+													<Property Name="TabIndex" Type="Integer" Value="8" />
+												</Properties>
+												<Events>
+													<Event Handler="ButtonNew_Click" Name="Click" />
+												</Events>
+											</Control>
+											<Control ID="CTRL001" Name="ButtonOpen" Style="IconButton" Type="VIButton">
+												<Properties>
+													<Property Name="Enabled" Type="Boolean" Value="True" />
+													<Property Name="TabIndex" Type="Integer" Value="11" />
+												</Properties>
+												<Events>
+													<Event Handler="ButtonOpen_Click" Name="Click" />
+												</Events>
+											</Control>
+											<Control ID="CTRL002" Name="ButtonSave" Style="IconButton" Type="VIButton">
+												<Properties>
+													<Property Name="Enabled" Type="Boolean" Value="True" />
+													<Property Name="TabIndex" Type="Integer" Value="22" />
+												</Properties>
+												<Events>
+													<Event Handler="ButtonSave_Click" Name="Click" />
+												</Events>
+											</Control>
+										</Layout>
+										<Control ID="CTRL007" Name="SyntaxEdit" Style="LargeMultiLineVIEdit" Type="VIDBSyntaxEdit">
+											<Properties>
+												<Property Name="Activator" Ref="CTRL003" Type="Activator" />
+												<Property Name="TabStop" Type="Boolean" Value="True" />
+												<Property Name="Enabled" Type="Boolean" Value="True" />
+												<Property Name="TabIndex" Type="Integer" Value="6" />
+											</Properties>
+											<Events>
+												<Event Handler="SyntaxEdit_TextChanged" Name="TextChanged" />
+											</Events>
+										</Control>
+									</Layout>
+								</Controls>
+							</Content>
+						</Control>
+					</Controls>
+				</Content>
+			</Frame>
+		</Frames>
+	</Form>
+</FormDefinition>
